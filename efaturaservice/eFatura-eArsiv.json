@@ -1388,7 +1388,7 @@
 		},
 		{
 			"id": "a2650131-885c-4d77-bb55-9e694ecf1ee7",
-			"name": "Retry_InvoiceEmail",
+			"name": "Earchive_Retry_InvoiceEmail",
 			"url": "https://efaturaservicetest.isim360.com/v1/earchive/retryinvoicemail/50afb039-da4b-4743-9234-b7e4dddbf889",
 			"description": null,
 			"data": [],
