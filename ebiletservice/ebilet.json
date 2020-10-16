@@ -1,0 +1,693 @@
+{
+	"id": "d004d805-4a62-485e-8dd7-a05fa13994c4",
+	"name": "e-Bilet",
+	"description": null,
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"29c6a796-3561-423e-8f79-b6bb350cc740",
+		"5a11371a-3983-4004-b637-22e74477e486"
+	],
+	"folders_order": [
+		"8a18938a-c817-426a-abe3-7a6eb6436579",
+		"0a37ab8c-1c60-4f4b-af9f-7aaf9bc7fd2a"
+	],
+	"protocolProfileBehavior": {},
+	"folders": [
+		{
+			"id": "0a37ab8c-1c60-4f4b-af9f-7aaf9bc7fd2a",
+			"name": "Etkinlik Bileti",
+			"description": "",
+			"auth": null,
+			"events": null,
+			"collection": "d004d805-4a62-485e-8dd7-a05fa13994c4",
+			"folder": null,
+			"order": [
+				"8ef4c377-b8c2-474d-90e1-470fa3554c5e",
+				"eec9f823-cfd1-4e86-b716-42f65e580719",
+				"592f18ea-8a02-4a08-a186-ea5655d2a061",
+				"df231a1e-b28d-4e4b-8605-262b4ea9ecda",
+				"ece132eb-e108-4ff3-a249-e7a984d91ab6",
+				"cfce6351-cdcb-4dd0-afba-3777b7973039",
+				"bcfa0b97-d6ee-4821-935c-1cd66a8c6f60",
+				"3e83adce-25df-4cf0-b5f7-c6929a4894f8",
+				"3b010a9f-c5b0-4cff-b76f-d4095caf9efc"
+			],
+			"folders_order": [],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"id": "8a18938a-c817-426a-abe3-7a6eb6436579",
+			"name": "Yolcu Bileti",
+			"description": null,
+			"auth": null,
+			"events": null,
+			"collection": "d004d805-4a62-485e-8dd7-a05fa13994c4",
+			"folder": null,
+			"order": [
+				"6c03cc27-f881-4183-af84-97b904190e70",
+				"b1385b0e-e9f6-44df-a072-88337ec6db56",
+				"8be4aec7-ab6d-4f94-8edf-7763d76eb2b4",
+				"b5a84a37-3909-43d9-8c4a-cc2c07f02c1b",
+				"5b5c6eda-81af-4866-8aa0-74c42c345b2d",
+				"382e59bf-c87a-45da-b43a-859891dc6f9e",
+				"ad0faff1-9ef1-4d89-a33f-15e98f34fb76",
+				"ee7eeeb6-6be4-401a-8ddd-d430d5cc3ba0"
+			],
+			"folders_order": [],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"requests": [
+		{
+			"id": "29c6a796-3561-423e-8f79-b6bb350cc740",
+			"name": "Token Test",
+			"url": "https://coretest.isim360.com/v1/token",
+			"description": null,
+			"data": [
+				{
+					"key": "username",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "client_id",
+					"value": "serviceApi",
+					"type": "text"
+				}
+			],
+			"dataOptions": null,
+			"dataMode": "urlencoded",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"type": "text",
+					"value": "application/x-www-form-urlencoded"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "382e59bf-c87a-45da-b43a-859891dc6f9e",
+			"name": "Get Ticket List",
+			"url": "https://ebiletservicetest.isim360.com/v1/passenger-ticket?pageIndex=1&pageSize=50",
+			"description": null,
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "Connection",
+					"value": "keep-alive"
+				},
+				{
+					"key": "Pragma",
+					"value": "no-cache"
+				},
+				{
+					"key": "Cache-Control",
+					"value": "no-cache"
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer /o7AvwE/zifN9m/ZEFMnrZr4jUkq1yji7BpmFd5kY0w=@MjE5NDU="
+				},
+				{
+					"key": "User-Agent",
+					"value": "PostmanRuntime/7.25.0"
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "Accept",
+					"value": "*/*"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "pageIndex",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageSize",
+					"value": "50",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "filterQuery",
+					"value": "",
+					"enabled": false
+				}
+			],
+			"auth": null,
+			"events": null,
+			"folder": "8a18938a-c817-426a-abe3-7a6eb6436579",
+			"headers": "Connection: keep-alive\nPragma: no-cache\nCache-Control: no-cache\nAuthorization: Bearer /o7AvwE/zifN9m/ZEFMnrZr4jUkq1yji7BpmFd5kY0w=@MjE5NDU=\nUser-Agent: PostmanRuntime/7.25.0\nContent-Type: application/json\nAccept: */*\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "3b010a9f-c5b0-4cff-b76f-d4095caf9efc",
+			"name": "Get Ticket List",
+			"url": "https://ebiletservicetest.isim360.com/v1/event-ticket?pageIndex=1&pageSize=50",
+			"description": null,
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer oGBJ4EgqfBQZJ6fm0TY1yNJIWJBxQC8XjKk3jh3+GFE=@MjE5NDU="
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "pageIndex",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageSize",
+					"value": "50",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"auth": null,
+			"events": null,
+			"folder": "0a37ab8c-1c60-4f4b-af9f-7aaf9bc7fd2a",
+			"headers": "Authorization: Bearer oGBJ4EgqfBQZJ6fm0TY1yNJIWJBxQC8XjKk3jh3+GFE=@MjE5NDU=\nContent-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "3e83adce-25df-4cf0-b5f7-c6929a4894f8",
+			"name": "Put Event Ticket - Güncelleme",
+			"url": "https://ebiletservicetest.isim360.com/v1/event-ticket/ca55f33a-4a8e-4895-afa0-29da446d5c18",
+			"description": null,
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"type": "text",
+					"value": "Bearer hW9NE0ni2LMDku3DlBidUBgtvdXFhAHnh/i+Ga8EVLI=@MjIwNjc="
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "0a37ab8c-1c60-4f4b-af9f-7aaf9bc7fd2a",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"rawModeData": "{\n    \"ettn\": \"ca55f33a-4a8e-4895-afa0-29da446d5c18\",\n    \"status\": 20,\n    \"ticketNumber\": \"EMR2020000010032\",\n    \"prefix\": \"EMR\",\n    \"referenceNumber\": \"9M2N7\",\n    \"ticketType\": \"ETKINLIK\",\n    \"ticketDate\": \"2020-08-21 17:32:03.0\",\n    \"documentType\": \"SATIS\",\n    \"currencyCode\": \"TRY\",\n    \"exchangeRate\": \"\",\n    \"identifier\": \"11111111111\",\n    \"customerFirstName\": \"Emrah\",\n    \"customerLastName\": \"Tokalak\",\n    \"customerStreet\": \"\",\n    \"customerBuildingName\": \"\",\n    \"customerBuildingNo\": \"\",\n    \"customerDoorNo\": \"\",\n    \"customerTown\": \"\",\n    \"customerDistrict\": \"\",\n    \"customerCity\": \"\",\n    \"customerPostCode\": \"\",\n    \"customerCountry\": \"TR\",\n    \"customerTelephone\": \"\",\n    \"customerEmail\": \"emrah.tokalak@eplatform.com.tr\",\n    \"customerTaxCenter\": \"\",\n    \"isEmailSend\": false,\n    \"paymentType\": \"KREDIKARTI\",\n    \"paymentDescription\": \"\",\n    \"seatNumber\": \"3\",\n    \"recordExpensesVknTckn\": \"\",\n    \"recordExpensesTitle\": \"\",\n    \"eventTime\": \"2020-12-12 22:00:00.0\",\n    \"eventName\": \"Gökçe   test2\",\n    \"eventLocation\": \"Balans Terrace Volt\",\n    \"eventCity\": \"İstanbul\",\n    \"eventCityId\": 34,\n    \"eventMunicipality\": \"TAKSİM\",\n    \"eventDescription\": \"Gökçe   test2\",\n    \"organizerVknTckn\": \"\",\n    \"xsltCode\": \"\",\n    \"ticketLines\": [\n        {\n            \"serviceType\": \"DIGER\",\n            \"serviceDescription\": \"BİLET BEDELİ\",\n            \"amount\": \"100.00\",\n            \"discountRate\": 0,\n            \"discountAmount\": 0,\n            \"vatRate\": 8,\n            \"vatAmount\": \"8\",\n            \"taxes\": [\n                {\n                    \"taxCode\": \"0030\",\n                    \"taxName\": \"Özel vergi\",\n                    \"taxRate\": 15,\n                    \"taxAmount\": 5\n                },\n                {\n                    \"taxCode\": \"0030\",\n                    \"taxName\": \"Özel vergi\",\n                    \"taxRate\": 20,\n                    \"taxAmount\": 5\n                }\n            ]\n        }\n    ]\n}",
+			"headers": "Authorization: Bearer hW9NE0ni2LMDku3DlBidUBgtvdXFhAHnh/i+Ga8EVLI=@MjIwNjc=\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "592f18ea-8a02-4a08-a186-ea5655d2a061",
+			"name": "Cancel",
+			"url": "https://ebiletservicetest.isim360.com/v1/event-ticket/cancel",
+			"description": null,
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"type": "text",
+					"value": "Bearer oGBJ4EgqfBQZJ6fm0TY1yNJIWJBxQC8XjKk3jh3+GFE=@MjE5NDU="
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "0a37ab8c-1c60-4f4b-af9f-7aaf9bc7fd2a",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"rawModeData": "{\n    \"ids\": [\n        \"ecb37080-8598-5e9c-9a36-6943b0794cf6\"\n    ]\n}",
+			"headers": "Authorization: Bearer oGBJ4EgqfBQZJ6fm0TY1yNJIWJBxQC8XjKk3jh3+GFE=@MjE5NDU=\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "5a11371a-3983-4004-b637-22e74477e486",
+			"name": "Get City List",
+			"url": "https://ebiletservicetest.isim360.com/v1/city/list",
+			"description": null,
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer 1VHXLF6J/AdU2HjXZIt73WHC/css8JvNW+w77V8Ma+Y=@MjE5NDU=",
+					"type": "text"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"headers": "Authorization: Bearer 1VHXLF6J/AdU2HjXZIt73WHC/css8JvNW+w77V8Ma+Y=@MjE5NDU=\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "5b5c6eda-81af-4866-8aa0-74c42c345b2d",
+			"name": "Put Passenger Ticket - Güncelleme",
+			"url": "https://ebiletservicetest.isim360.com/v1/passenger-ticket/ECB27058-8597-5E8C-8A36-6943B0794CF1",
+			"description": null,
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"type": "text",
+					"value": "Bearer W5UjffA0VoWrQBhxYDOBbGxbkuO8bfcEEoDjRGHQCWo=@MjE5NDU="
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "8a18938a-c817-426a-abe3-7a6eb6436579",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"rawModeData": "{\n    \"ettn\": \"ecb37079-8598-5e9c-9a46-6943b0794cf2\",\n    \"status\": \"Draft\",\n    \"ticketNumber\": \"EMR2020000000002\",\n    \"prefix\": \"EMR\",\n    \"referenceNumber\": \"RFR1344\",\n    \"ticketType\": \"OTOBUS\",\n    \"ticketDate\": \"2020-08-13T00:00:00\",\n    \"documentType\": \"SATIS\",\n    \"currencyCode\": \"TRY\",\n    \"exchangeRate\": 0.0,\n    \"identifier\": \"27337871593\",\n    \"customerFirstName\": \"Emrah\",\n    \"customerLastName\": \"Tokalak\",\n    \"customerStreet\": \"a\",\n    \"customerBuildingName\": \"a\",\n    \"customerBuildingNo\": \"a\",\n    \"customerDoorNo\": \"a\",\n    \"customerTown\": \"a\",\n    \"customerDistrict\": \"a\",\n    \"customerCity\": \"b\",\n    \"customerPostCode\": null,\n    \"customerCountry\": \"NULL\",\n    \"customerTelephone\": \"5367766470\",\n    \"customerEmail\": \"emrahtokalak@gmail.com\",\n    \"customerTaxCenter\": null,\n    \"isEmailSend\": false,\n    \"totalAmount\": 90.0,\n    \"totalVat\": 16.2,\n    \"paymentType\": \"DIGER\",\n    \"paymentDescription\": \"deneme not description\",\n    \"vehicleName\":  \"AAA\",\n    \"vehiclePlate\": \"34SAS054\",\n    \"expeditionTime\": \"2020-08-13T17:30:00\",\n    \"expeditionNumber\": \"123\",\n    \"departureDate\": \"2020-08-13T17:30:00\",\n    \"departureLocation\": \"Adapazarı\",\n    \"seatNumber\": \"A21\",\n    \"vehicleOperatingVknTckn\": null,\n    \"commissionAmount\": 0.0,\n    \"commissionTaxAmount\": 0.0,\n    \"recordExpensesVknTckn\": null,\n    \"recordExpensesTitle\": null,\n    \"eventTime\": \"0001-01-01T00:00:00\",\n    \"eventName\": null,\n    \"eventLocation\": null,\n    \"eventCity\": null,\n    \"eventCityId\": 0,\n    \"eventMunicipality\": null,\n    \"eventDescription\": null,\n    \"organizerVknTckn\": null,\n    \"xsltCode\": \"master\",\n    \"ticketLines\": [\n        {\n            \"serviceType\": \"DIGER\",\n            \"serviceDescription\": \"Bilet Bedeli + Hizmet Bedeli\",\n            \"amount\": 100.0,\n            \"discountRate\": 10.0,\n            \"discountAmount\": 10.0,\n            \"vatRate\": 18.0,\n            \"vatAmount\": 16.2,\n            \"taxes\": [\n                {\n                    \"taxCode\": \"0030\",\n                    \"taxName\": \"Özel vergi\",\n                    \"taxRate\": 20.0,\n                    \"taxAmount\": 100.0\n                },\n                {\n                    \"taxCode\": \"0030\",\n                    \"taxName\": \"Özel vergi\",\n                    \"taxRate\": 20.0,\n                    \"taxAmount\": 100.0\n                }\n            ]\n        }\n    ],\n    \"notes\": [\n        {\n            \"note\": \"Odeme Aciklamasi: aa\"\n        },\n        {\n            \"note\": \"örnek not 1\"\n        },\n        {\n            \"note\": \"örnek not 2\"\n        }\n    ]\n}",
+			"headers": "Authorization: Bearer W5UjffA0VoWrQBhxYDOBbGxbkuO8bfcEEoDjRGHQCWo=@MjE5NDU=\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "6c03cc27-f881-4183-af84-97b904190e70",
+			"name": "Post Passenger Ticket",
+			"url": "https://ebiletservicetest.isim360.com/v1/passenger-ticket",
+			"description": null,
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"type": "text",
+					"value": "Bearer NFAJCGGFScocHRI33cJt56XS0jihUdA3jsQ+1FNniXs=@MjE5NDU="
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "8a18938a-c817-426a-abe3-7a6eb6436579",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"rawModeData": "{\n    \"ettn\": \"ECB37079-8598-5E9C-9A46-6943B0794CF3\",\n    \"status\": 0,\n    \"ticketNumber\": \"EMR2020000000003\",\n    \"prefix\": \"EMR\",\n    \"referenceNumber\": \"RFR1344\",\n    \"ticketType\": \"OTOBUS\",\n    \"ticketDate\": \"2020-08-13T17:30:00\",\n    \"documentType\": \"SATIS\",\n    \"currencyCode\": \"TRY\",\n    \"exchangeRate\": null,\n    \"identifier\": \"273378723\",\n    \"customerFirstName\": \"Emrah\",\n    \"customerLastName\": \"Tokalak\",\n    \"customerStreet\": \"a\",\n    \"customerBuildingName\": \"a\",\n    \"customerBuildingNo\": \"a\",\n    \"customerDoorNo\": \"a\",\n    \"customerTown\": \"a\",\n    \"customerDistrict\": \"a\",\n    \"customerCity\": \"b\",\n    \"customerPostCode\": null,\n    \"customerTelephone\": \"5367766470\",\n    \"customerEmail\": \"deneme@gmail.com\",\n    \"customerTaxCenter\": \"\",\n    \"isEmailSend\": false,\n    \"paymentType\": \"DIGER\",\n    \"paymentDescription\": \"aa\",\n    \"expeditionTime\": \"2020-08-13T17:30:00\",\n    \"departureDate\": \"2020-08-13T17:30:00\",\n    \"departureLocation\": \"Adapazarı\",\n    \"vehicleName\": \"ASSSS\",\n    \"vehiclePlate\": null ,\n    \"expeditionNumber\": 123,\n    \"seatNumber\": \"A34\",\n    \"vehicleOperatingVknTckn\": \"\",\n    \"commissionAmount\": 0.0,\n    \"commissionTaxAmount\": 0.0,\n    \"recordExpensesVknTckn\": null,\n    \"recordExpensesTitle\": null,\n    \"organizerVknTckn\": \"1234567890\",\n    \"xsltCode\": null,\n    \"ticketLines\": [\n        {\n            \"serviceType\": \"DIGER\",\n            \"serviceDescription\": \"Bilet Bedeli + Hizmet Bedeli\",\n            \"amount\": \"100\",\n            \"discountRate\": 10,\n            \"discountAmount\": 10,\n            \"vatRate\": \"18\",\n            \"vatAmount\": \"16.2\",\n            \"taxes\": [\n                {\n                    \"taxCode\": \"0030\",\n                    \"taxName\": \"Özel vergi\",\n                    \"taxRate\": 20,\n                    \"taxAmount\": 100\n                },\n                {\n                    \"taxCode\": \"0030\",\n                    \"taxName\": \"Özel vergi\",\n                    \"taxRate\": 20,\n                    \"taxAmount\": 100\n                }\n            ]\n        }\n    ],\n    \"notes\": [\n        {\n            \"note\": \"örnek not 1\"\n        },\n        {\n            \"note\": \"örnek not 2\"\n        }\n    ]\n}",
+			"headers": "Authorization: Bearer NFAJCGGFScocHRI33cJt56XS0jihUdA3jsQ+1FNniXs=@MjE5NDU=\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "8be4aec7-ab6d-4f94-8edf-7763d76eb2b4",
+			"name": "Get",
+			"url": "https://ebiletservicetest.isim360.com/v1/passenger-ticket/ecb37079-8598-5e9c-9a36-6943b0794cf2",
+			"description": null,
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "Authorization",
+					"type": "text",
+					"value": "Bearer /o7AvwE/zifN9m/ZEFMnrZr4jUkq1yji7BpmFd5kY0w=@MjE5NDU="
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "8a18938a-c817-426a-abe3-7a6eb6436579",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"headers": "Authorization: Bearer /o7AvwE/zifN9m/ZEFMnrZr4jUkq1yji7BpmFd5kY0w=@MjE5NDU=\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "8ef4c377-b8c2-474d-90e1-470fa3554c5e",
+			"name": "Get",
+			"url": "https://ebiletservicetest.isim360.com/v1/event-ticket/f314dc20-6ea5-4b4d-952b-429a41e7320b",
+			"description": null,
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer W5UjffA0VoWrQBhxYDOBbGxbkuO8bfcEEoDjRGHQCWo=@MjE5NDU=",
+					"type": "text"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "0a37ab8c-1c60-4f4b-af9f-7aaf9bc7fd2a",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"headers": "Authorization: Bearer W5UjffA0VoWrQBhxYDOBbGxbkuO8bfcEEoDjRGHQCWo=@MjE5NDU=\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "ad0faff1-9ef1-4d89-a33f-15e98f34fb76",
+			"name": "Status Update - Gönderme/Kuyruklama",
+			"url": "https://ebiletservicetest.isim360.com/v1/passenger-ticket/updatestatuslist",
+			"description": null,
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"type": "text",
+					"value": "Bearer W5UjffA0VoWrQBhxYDOBbGxbkuO8bfcEEoDjRGHQCWo=@MjE5NDU="
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "8a18938a-c817-426a-abe3-7a6eb6436579",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"rawModeData": "{\n    \"ids\": [\n        \"ecb37079-8598-5e9c-9a46-6943b0794cf2\"\n    ],\n    \"status\": 20\n}",
+			"headers": "Authorization: Bearer W5UjffA0VoWrQBhxYDOBbGxbkuO8bfcEEoDjRGHQCWo=@MjE5NDU=\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "b1385b0e-e9f6-44df-a072-88337ec6db56",
+			"name": "Get Detail - Düzenlemek için detay",
+			"url": "https://ebiletservicetest.isim360.com/v1/passenger-ticket/detail/ecb37079-8598-5e9c-9a46-6943b0794cf2",
+			"description": null,
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "Authorization",
+					"type": "text",
+					"value": "Bearer W5UjffA0VoWrQBhxYDOBbGxbkuO8bfcEEoDjRGHQCWo=@MjE5NDU="
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "8a18938a-c817-426a-abe3-7a6eb6436579",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"headers": "Authorization: Bearer W5UjffA0VoWrQBhxYDOBbGxbkuO8bfcEEoDjRGHQCWo=@MjE5NDU=\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "b5a84a37-3909-43d9-8c4a-cc2c07f02c1b",
+			"name": "Get Html",
+			"url": "https://ebiletservicetest.isim360.com/v1/passenger-ticket/ecb37079-8598-5e9c-9a36-6943b0794cf2/html",
+			"description": null,
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "Authorization",
+					"type": "text",
+					"value": "Bearer /o7AvwE/zifN9m/ZEFMnrZr4jUkq1yji7BpmFd5kY0w=@MjE5NDU="
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "8a18938a-c817-426a-abe3-7a6eb6436579",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"headers": "Authorization: Bearer /o7AvwE/zifN9m/ZEFMnrZr4jUkq1yji7BpmFd5kY0w=@MjE5NDU=\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "bcfa0b97-d6ee-4821-935c-1cd66a8c6f60",
+			"name": "Post Event Ticket",
+			"url": "https://ebiletservicetest.isim360.com/v1/event-ticket",
+			"description": null,
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer oGBJ4EgqfBQZJ6fm0TY1yNJIWJBxQC8XjKk3jh3+GFE=@MjE5NDU=",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "0a37ab8c-1c60-4f4b-af9f-7aaf9bc7fd2a",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"rawModeData": "{\n    \"ettn\": \"ECB37080-8598-5E9C-9A36-6943B0794CF6\",\n    \"status\": 20,\n    \"ticketNumber\": \"ABC2020000000003\",\n    \"prefix\": \"EMR\",\n    \"referenceNumber\": \"RFR1344\",\n    \"ticketType\": \"ETKINLIK\",\n    \"ticketDate\": \"2020-08-13T17:30:00\",\n    \"documentType\": \"SATIS\",\n    \"currencyCode\": \"TRY\",\n    \"exchangeRate\": null,\n    \"identifier\": \"273378723\",\n    \"customerFirstName\": \"Emrah\",\n    \"customerLastName\": \"Tokalak\",\n    \"customerStreet\": \"a\",\n    \"customerBuildingName\": \"a\",\n    \"customerBuildingNo\": \"a\",\n    \"customerDoorNo\": \"a\",\n    \"customerTown\": \"a\",\n    \"customerDistrict\": \"a\",\n    \"customerCity\": \"b\",\n    \"customerPostCode\": null,\n    \"customerTelephone\": \"5367766470\",\n    \"customerEmail\": \"emrah.tokalak@eplatform.com.tr\",\n    \"customerTaxCenter\": null,\n    \"isEmailSend\": true,\n    \"paymentType\": \"DIGER\",\n    \"paymentDescription\": \"aa\",\n    \"expeditionTime\": \"0001-01-01T00:00:00\",\n    \"departureTime\": \"0001-01-01T00:00:00\",\n    \"departureLocation\": null,\n    \"vehiclePlate\": null,\n    \"expeditionNumber\": null,\n    \"seatNumber\": \"A34\",\n    \"vehicleOperatingVknTckn\": null,\n    \"commissionAmount\": 10.0,\n    \"commissionTaxAmount\": 0.0,\n    \"recordExpensesVknTckn\": null,\n    \"recordExpensesTitle\": null,\n    \"eventTime\": \"2020-07-31T17:30:00\",\n    \"eventName\": \"Tarkan Konseri - 21\",\n    \"eventLocation\": \"Harbiye Açık Hava 2021\",\n    \"eventCity\": \"İstanbul\",\n    \"eventCityId\": 80,\n    \"eventMunicipality\": \"Beyoğlu\",\n    \"eventDescription\": \"Tarkan - Harbiye Açık Hava Konseri 2021\",\n    \"organizerVknTckn\": \"1234567890\",\n    \"xsltCode\": null,\n    \"ticketLines\": [\n        {\n            \"serviceType\": \"DIGER\",\n            \"serviceDescription\": \"Bilet Bedeli + Hizmet Bedeli\",\n            \"amount\": \"100\",\n            \"discountRate\": 10,\n            \"discountAmount\": 10,\n            \"vatRate\": \"18\",\n            \"vatAmount\": \"16.2\",\n            \"taxes\": [\n                {\n                    \"taxCode\": \"0030\",\n                    \"taxName\": \"Özel vergi\",\n                    \"taxRate\": 20,\n                    \"taxAmount\": 100\n                },\n                {\n                    \"taxCode\": \"0030\",\n                    \"taxName\": \"Özel vergi\",\n                    \"taxRate\": 20,\n                    \"taxAmount\": 100\n                }\n            ]\n        }\n    ],\n    \"notes\": [\n        {\n            \"note\": \"örnek not 1\"\n        },\n        {\n            \"note\": \"örnek not 2\"\n        }\n    ]\n}",
+			"headers": "Authorization: Bearer oGBJ4EgqfBQZJ6fm0TY1yNJIWJBxQC8XjKk3jh3+GFE=@MjE5NDU=\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "cfce6351-cdcb-4dd0-afba-3777b7973039",
+			"name": "Get Detail - Düzenlemek için detay",
+			"url": "https://ebiletservicetest.isim360.com/v1/event-ticket/detail/ca55f33a-4a8e-4895-afa0-29da446d5c19",
+			"description": null,
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "Authorization",
+					"type": "text",
+					"value": "Bearer hW9NE0ni2LMDku3DlBidUBgtvdXFhAHnh/i+Ga8EVLI=@MjIwNjc="
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "0a37ab8c-1c60-4f4b-af9f-7aaf9bc7fd2a",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"headers": "Authorization: Bearer hW9NE0ni2LMDku3DlBidUBgtvdXFhAHnh/i+Ga8EVLI=@MjIwNjc=\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "df231a1e-b28d-4e4b-8605-262b4ea9ecda",
+			"name": "Status Update - Gönderme/Kuyruklama",
+			"url": "https://ebiletservicetest.isim360.com/v1/event-ticket/updatestatuslist",
+			"description": null,
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"type": "text",
+					"value": "Bearer uUgQUhOTuJoOU8A5f8QNH9we6SA6I4CAa/i6PQwX3y8=@MjE5NDU="
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "0a37ab8c-1c60-4f4b-af9f-7aaf9bc7fd2a",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"rawModeData": "{\n    \"ids\": [\n        \"ca55f33a-4a8e-4895-afa0-29da446d4c18\"\n    ],\n    \"status\": 20\n}",
+			"headers": "Authorization: Bearer uUgQUhOTuJoOU8A5f8QNH9we6SA6I4CAa/i6PQwX3y8=@MjE5NDU=\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "ece132eb-e108-4ff3-a249-e7a984d91ab6",
+			"name": "Set Archive - Arşive Ekle/Kaldır",
+			"url": "https://ebiletservicetest.isim360.com/v1/event-ticket/sendorremovearchivelist",
+			"description": null,
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"type": "text",
+					"value": "Bearer eWjJrUfw8kKdHAkj3O+9bRUHcWTKEkRHV3ouy/WjuPM=@MjE5NDU="
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "0a37ab8c-1c60-4f4b-af9f-7aaf9bc7fd2a",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"rawModeData": "{\n    \"ids\": [\n        \"eef3102c-f94e-501e-a30a-3a26f4645177\"\n    ],\n    \"isArchived\": false\n}",
+			"headers": "Authorization: Bearer eWjJrUfw8kKdHAkj3O+9bRUHcWTKEkRHV3ouy/WjuPM=@MjE5NDU=\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "ee7eeeb6-6be4-401a-8ddd-d430d5cc3ba0",
+			"name": "Get Html",
+			"url": "https://ebiletservicetest.isim360.com/v1/event-ticket/4f5f8dba-e613-11ea-adc1-0242ac120002/html",
+			"description": null,
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "Authorization",
+					"type": "text",
+					"value": "Bearer eWjJrUfw8kKdHAkj3O+9bRUHcWTKEkRHV3ouy/WjuPM=@MjE5NDU="
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "8a18938a-c817-426a-abe3-7a6eb6436579",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"headers": "Authorization: Bearer eWjJrUfw8kKdHAkj3O+9bRUHcWTKEkRHV3ouy/WjuPM=@MjE5NDU=\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "eec9f823-cfd1-4e86-b716-42f65e580719",
+			"name": "Get Pdf",
+			"url": "https://ebiletservicetest.isim360.com/v1/event-ticket/pdf",
+			"description": null,
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"type": "text",
+					"value": "Bearer wUyI2KO0vpFxxoCxsN4Z+j1tqi/hfwElN5TgMDEX2UM=@MjE5NDU="
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "0a37ab8c-1c60-4f4b-af9f-7aaf9bc7fd2a",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"rawModeData": "{\n    \"selected\": [\n        \"ecb37079-8598-5e9c-9a36-6943b0794cf2\"\n    ]\n}",
+			"headers": "Authorization: Bearer wUyI2KO0vpFxxoCxsN4Z+j1tqi/hfwElN5TgMDEX2UM=@MjE5NDU=\n",
+			"pathVariables": {}
+		}
+	]
+}
