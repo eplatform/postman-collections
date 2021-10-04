@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "01245ee4-f679-4451-b15a-2ddb6a9d4164",
-		"name": "e-Fatura/Arşiv Entegrasyon",
+		"_postman_id": "eb1076b8-9378-45a4-a816-eebb92aaa9cd",
+		"name": "e-Fatura/Arşiv Entegrasyon Güncel",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -359,45 +359,6 @@
 					"response": []
 				},
 				{
-					"name": "Get_ReturnInvoice_Model",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"type": "text",
-								"value": "Bearer cDvWHvHPIIEO6w901wTDfBKE2N+sdaiA2RSKVrjto9E=@MjE2NTE="
-							},
-							{
-								"key": "Content-Type",
-								"type": "text",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v1/inboxInvoice/getreturninvoice?guid=05712F28-F709-4492-8661-90583FB634F5",
-							"protocol": "https",
-							"host": [
-								"efaturaservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v1",
-								"inboxInvoice",
-								"getreturninvoice"
-							],
-							"query": [
-								{
-									"key": "guid",
-									"value": "05712F28-F709-4492-8661-90583FB634F5"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
 					"name": "Get_InboxInvoice_Html_v2",
 					"request": {
 						"method": "GET",
@@ -529,86 +490,7 @@
 							]
 						}
 					},
-					"response": [
-						{
-							"name": "Earsiv_Cancelinvoice",
-							"originalRequest": {
-								"method": "PUT",
-								"header": [
-									{
-										"key": "Authorization",
-										"type": "text",
-										"value": "Bearer VdL/NTy1MyqMuIO5836rDL2bR3iDqaUrfflRdjvcYo0=@MjA3NDg="
-									},
-									{
-										"key": "Content-Type",
-										"value": "application/json"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "\n[\"916a56a3-8de6-4d19-bd00-6fb3ef6deafa\"]\n"
-								},
-								"url": {
-									"raw": "https://efaturaservicetest.isim360.com/v1/earchive/cancelinvoice",
-									"protocol": "https",
-									"host": [
-										"efaturaservicetest",
-										"isim360",
-										"com"
-									],
-									"path": [
-										"v1",
-										"earchive",
-										"cancelinvoice"
-									]
-								}
-							},
-							"status": "Unprocessable Entity",
-							"code": 422,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Date",
-									"value": "Tue, 19 Feb 2019 06:55:58 GMT"
-								},
-								{
-									"key": "Server",
-									"value": "Kestrel"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=utf-8"
-								},
-								{
-									"key": "api-supported-versions",
-									"value": "1.0"
-								},
-								{
-									"key": "X-Correlation-Id",
-									"value": "0HLKL9F6OFB2E:00000001"
-								},
-								{
-									"key": "X-Powered-By",
-									"value": "ASP.NET"
-								},
-								{
-									"key": "Keep-Alive",
-									"value": "timeout=5, max=100"
-								},
-								{
-									"key": "Connection",
-									"value": "Keep-Alive"
-								},
-								{
-									"key": "Transfer-Encoding",
-									"value": "chunked"
-								}
-							],
-							"cookie": [],
-							"body": "{\n    \"Uyarı\": [\n        \"e-Arşiv faturası daha önceden iptal edilmiş\"\n    ]\n}"
-						}
-					]
+					"response": []
 				},
 				{
 					"name": "EFatura_InvoiceResponse_Ticari",
@@ -643,86 +525,7 @@
 							]
 						}
 					},
-					"response": [
-						{
-							"name": "Earsiv_Cancelinvoice",
-							"originalRequest": {
-								"method": "PUT",
-								"header": [
-									{
-										"key": "Authorization",
-										"type": "text",
-										"value": "Bearer VdL/NTy1MyqMuIO5836rDL2bR3iDqaUrfflRdjvcYo0=@MjA3NDg="
-									},
-									{
-										"key": "Content-Type",
-										"value": "application/json"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "\n[\"916a56a3-8de6-4d19-bd00-6fb3ef6deafa\"]\n"
-								},
-								"url": {
-									"raw": "https://efaturaservicetest.isim360.com/v1/earchive/cancelinvoice",
-									"protocol": "https",
-									"host": [
-										"efaturaservicetest",
-										"isim360",
-										"com"
-									],
-									"path": [
-										"v1",
-										"earchive",
-										"cancelinvoice"
-									]
-								}
-							},
-							"status": "Unprocessable Entity",
-							"code": 422,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Date",
-									"value": "Tue, 19 Feb 2019 06:55:58 GMT"
-								},
-								{
-									"key": "Server",
-									"value": "Kestrel"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=utf-8"
-								},
-								{
-									"key": "api-supported-versions",
-									"value": "1.0"
-								},
-								{
-									"key": "X-Correlation-Id",
-									"value": "0HLKL9F6OFB2E:00000001"
-								},
-								{
-									"key": "X-Powered-By",
-									"value": "ASP.NET"
-								},
-								{
-									"key": "Keep-Alive",
-									"value": "timeout=5, max=100"
-								},
-								{
-									"key": "Connection",
-									"value": "Keep-Alive"
-								},
-								{
-									"key": "Transfer-Encoding",
-									"value": "chunked"
-								}
-							],
-							"cookie": [],
-							"body": "{\n    \"Uyarı\": [\n        \"e-Arşiv faturası daha önceden iptal edilmiş\"\n    ]\n}"
-						}
-					]
+					"response": []
 				},
 				{
 					"name": "Post_Pdf_List",
@@ -840,78 +643,6 @@
 			"name": "Outbox_Invoice",
 			"item": [
 				{
-					"name": "Get_Outbox_Invoice_List",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"type": "text",
-								"value": "Bearer cDvWHvHPIIEO6w901wTDfBKE2N+sdaiA2RSKVrjto9E=@MjE2NTE="
-							},
-							{
-								"key": "Content-Type",
-								"type": "text",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v1/outboxInvoice/list?pageIndex=1&pageSize=50&IsDesc=True&status=60&startDate=2020-09-23 00:00:00&endDate=2020-09-24 00:00:00",
-							"protocol": "https",
-							"host": [
-								"efaturaservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v1",
-								"outboxInvoice",
-								"list"
-							],
-							"query": [
-								{
-									"key": "pageIndex",
-									"value": "1"
-								},
-								{
-									"key": "pageSize",
-									"value": "50"
-								},
-								{
-									"key": "IsDesc",
-									"value": "True"
-								},
-								{
-									"key": "type",
-									"value": "0",
-									"description": "\n",
-									"disabled": true
-								},
-								{
-									"key": "tipType",
-									"value": "1",
-									"disabled": true
-								},
-								{
-									"key": "status",
-									"value": "60"
-								},
-								{
-									"key": "startDate",
-									"value": "2020-09-23 00:00:00",
-									"description": "Faturanın sistemde oluştma tarihi"
-								},
-								{
-									"key": "endDate",
-									"value": "2020-09-24 00:00:00",
-									"description": "Bulunduğunuz gün ve saatten büyük değer olamaz."
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
 					"name": "Get_Outbox_Invoice_Basic_Model",
 					"request": {
 						"method": "GET",
@@ -952,7 +683,7 @@
 							{
 								"key": "Authorization",
 								"type": "text",
-								"value": "Bearer cK+4ru+sHrlIDa+UgmMGNiSxGal3dQXLKz5DoUgMBtE=@MjE2NTE="
+								"value": "Bearer cDvWHvHPIIEO6w901wTDfBKE2N+sdaiA2RSKVrjto9E=@MjE2NTE="
 							},
 							{
 								"key": "Content-Type",
@@ -978,6 +709,40 @@
 									"key": "guid",
 									"value": "B87AA049-8CA1-4FCF-8C25-62A980A9C664"
 								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get_Outbox_Invoice_Reason",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer crte2q15bpJIRCrW46r0G8q/cb9lnDDtRGU+bz4KLzw=@ODQ4Njc="
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://efaturaservice.turkcellesirket.com/v1/outboxInvoice/invoicereason/81BD9D6A-3FCA-4FBA-AF15-19C5347777B4",
+							"protocol": "https",
+							"host": [
+								"efaturaservice",
+								"turkcellesirket",
+								"com"
+							],
+							"path": [
+								"v1",
+								"outboxInvoice",
+								"invoicereason",
+								"81BD9D6A-3FCA-4FBA-AF15-19C5347777B4"
 							]
 						}
 					},
@@ -1119,23 +884,30 @@
 					"response": []
 				},
 				{
-					"name": "Get_Outbox_Invoice_Envelope",
+					"name": "Get_Invoice_Status_List_v2",
 					"request": {
-						"method": "GET",
+						"method": "POST",
 						"header": [
 							{
 								"key": "Authorization",
-								"type": "text",
-								"value": "Bearer YywVvNozte7Tshtj/5ALXPo+VoU7qPwFDPL+qF8fQc4=@MjE4NDQ="
+								"value": "Bearer ybB58qbubh16Uat3f9F4cOTGbERt2+aXmjLxuhTcRRI=@Ng=="
 							},
 							{
 								"key": "Content-Type",
-								"type": "text",
 								"value": "application/json"
 							}
 						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"ids\":[\"C2F1D172-FBB6-4E4E-B3EC-52C2DE8A02F4\"]\r\n\t\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v1/outboxEnvelope?id=033c2535-c013-4790-8268-9f12a2acc4c5&isGibStatus=true",
+							"raw": "https://efaturaservicetest.isim360.com/v2/outboxinvoice/status",
 							"protocol": "https",
 							"host": [
 								"efaturaservicetest",
@@ -1143,18 +915,9 @@
 								"com"
 							],
 							"path": [
-								"v1",
-								"outboxEnvelope"
-							],
-							"query": [
-								{
-									"key": "id",
-									"value": "033c2535-c013-4790-8268-9f12a2acc4c5"
-								},
-								{
-									"key": "isGibStatus",
-									"value": "true"
-								}
+								"v2",
+								"outboxinvoice",
+								"status"
 							]
 						}
 					},
@@ -1168,7 +931,7 @@
 							{
 								"key": "Authorization",
 								"type": "text",
-								"value": "Bearer b2tEm0L7ruhUHrUKNyH1YSl3xn8Y6Zx1gn4asl+4PlY=@MjE4NDQ="
+								"value": "Bearer 9bTfNfL6kTczUP47x9pFPKvjUoRj5GWHKgoHfz5tDC4=@Ng=="
 							},
 							{
 								"key": "Content-Type",
@@ -1237,7 +1000,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer cpmYr5wndCOMaQfw1anK1iqh9mvS5FlwEzS9xcMeh4s=@MjE2NTE="
+								"value": "Bearer zftGpVltQAkHjtOdsESAtQnXFrqjT8xB5Xj8nGTKLXE=@Ng=="
 							},
 							{
 								"key": "Content-Type",
@@ -1246,7 +1009,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"recordType\": 1,\n    \"status\": 0,\n    \"localReferenceId\": \"B000045/30\",\n    \"useManualInvoiceId\": false,\n    \"notes\": [\n        {\n            \"note\": \"Harçlar KDV matrahına dahil değildir.\"\n        }\n    ],\n    \"addressBook\": {\n        \"identificationNumber\": \"2930131606\",\n        \"name\": \"ABC\",\n        \"receiverStreet\": \"aaaa\",\n        \"receiverDistrict\": \"dsada\",\n        \"receiverCity\": \"İstanbul\",\n        \"receiverCountry\": \"TÜRKİYE\",\n        \"receiverTaxOffice\": \"Üsküdar\",\n        \"alias\": \"urn:mail:denemepk@deneme.com\"\n    },\n    \"generalInfoModel\": {\n        \"invoiceNumber\": \"ABC2020000000009\",\n        \"issueDate\": \"2020-07-14 09:03:16.0\",\n        \"invoiceProfileType\": 0,\n        \"type\": 1,\n        \"currencyCode\": \"TRY\"\n    },\n    \"invoiceLines\": [\n        {\n            \"inventoryCard\": \"ggggg\",\n            \"amount\": 1,\n            \"unitCode\": \"C62\",\n            \"unitPrice\": 34.92,\n            \"vatRate\": 18,\n            \"vatAmount\": 6.28,\n            \"lineExtensionAmount\": 34.92\n        },\n        {\n            \"inventoryCard\": \"ccccc\",\n            \"amount\": 1,\n            \"unitCode\": \"C62\",\n            \"unitPrice\": 38.8,\n            \"vatRate\": 0,\n            \"vatAmount\": 0,\n            \"lineExtensionAmount\": 38.8,\n            \"vatExemptionReasonCode\": \"351\"\n        }\n    ],\n    \"ublSettingsModel\": {\n        \"useCalculatedVatAmount\": true,\n        \"useCalculatedTotalSummary\": true\n    },\n    \"paymentMeansModel\": {\n        \"paymentMeansCode\": 97,\n        \"instructionNote\": \"Kredi Kartı/Banka Kartı\",\n        \"payeeFinancialAccountCurrencyCode \": \"TRY\",\n        \"payeeFinancialAccountId \": \"TR13000100111111111111111\"\n    }\n}"
+							"raw": "{\n    \"recordType\": 1,\n    \"status\": 0,\n    \"localReferenceId\": \"B000045/30\",\n    \"useManualInvoiceId\": false,\n    \"notes\": [\n        {\n            \"note\": \"Harçlar KDV matrahına dahil değildir.\"\n        }\n    ],\n    \"addressBook\": {\n        \"identificationNumber\": \"1234567803\",\n        \"name\": \"ABC\",\n        \"receiverStreet\": \"aaaa\",\n        \"receiverDistrict\": \"dsada\",\n        \"receiverCity\": \"İstanbul\",\n        \"receiverCountry\": \"TÜRKİYE\",\n        \"receiverTaxOffice\": \"Üsküdar\",\n        \"alias\": \"urn:mail:defaulttest3pk@medyasoft.com.tr\"\n    },\n    \"generalInfoModel\": {\n        \"invoiceNumber\": \"ABC2020000000009\",\n        \"issueDate\": \"2020-07-14 09:03:16.0\",\n        \"invoiceProfileType\": 0,\n        \"type\": 1,\n        \"currencyCode\": \"TRY\"\n    },\n    \"invoiceLines\": [\n        {\n            \"inventoryCard\": \"ggggg\",\n            \"amount\": 1,\n            \"unitCode\": \"C62\",\n            \"unitPrice\": 34.92,\n            \"vatRate\": 18,\n            \"vatAmount\": 6.28,\n            \"lineExtensionAmount\": 34.92\n        },\n        {\n            \"inventoryCard\": \"ccccc\",\n            \"amount\": 1,\n            \"unitCode\": \"C62\",\n            \"unitPrice\": 38.8,\n            \"vatRate\": 0,\n            \"vatAmount\": 0,\n            \"lineExtensionAmount\": 38.8,\n            \"vatExemptionReasonCode\": \"351\"\n        }\n    ],\n    \"ublSettingsModel\": {\n        \"useCalculatedVatAmount\": true,\n        \"useCalculatedTotalSummary\": true\n    },\n    \"paymentMeansModel\": {\n        \"paymentMeansCode\": 97,\n        \"instructionNote\": \"Kredi Kartı/Banka Kartı\",\n        \"payeeFinancialAccountCurrencyCode \": \"TRY\",\n        \"payeeFinancialAccountId \": \"TR13000100111111111111111\"\n    }\n}"
 						},
 						"url": {
 							"raw": "https://efaturaservicetest.isim360.com/v1/outboxinvoice/create",
@@ -1260,42 +1023,6 @@
 								"v1",
 								"outboxinvoice",
 								"create"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get_Invoice_Status_List",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Authorization",
-								"type": "text",
-								"value": "Bearer /mAdVdlRs949IWyKYI3oXKrCRd1gOavcwV5eOGLRuTA=@MjE2NTE="
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"ids\": [\r\n        \"7DEC8196-724C-4CE1-85E4-35A00F7E22F4\",\r\n        \"879B4CBC-EF8C-4E83-B13D-35A81626ECC4\"\r\n    ]\r\n}"
-						},
-						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v2/outboxInvoice/status",
-							"protocol": "https",
-							"host": [
-								"efaturaservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v2",
-								"outboxInvoice",
-								"status"
 							]
 						}
 					},
@@ -1357,7 +1084,7 @@
 							"raw": "{\r\n\"InvoiceZip\": \"UEsDBBQAAAAIAFWzjlCOvaof1wgAAA0sAAAfAAAAVFNUMjAyMDAwMDAwMDY1MV8xMjM0NTY3ODAzLnhtbOVaSZPSQBS+W+V/SOnRAgIZcKCUMgIqzjAqZNwuVpO00DVZsNNR8A/4DzxZevSqF0/eBv+Xr7P1JJ0guJXLlMvkbf2W7u89mlwZus89YmJl6diuf/VCQN2Oh3zid1zkYL/jL7BJnhITMeK5nWBqd3xzjh3UWfpWJ9atNC5E6h0TmTua6HmO47n6bEbxDDEMjwvPxS7zzxidfp/R6yBuFho0WWwx4H+wieFfEz9FJutYnhk4IB7ZTVUsSM2csUWnVnvx4kX1hVb16KzWUFW1prZrIGP5ZHYxkcZL9l0eD5YMuz6wi7x+Zu1q9F6AbGBiq48gntUCC2tclNEd7RkBPSH+vBf4zHPIS5ApdDldwmKlWQaHcmsdu8/Oumtwdyfh2iPPCmwsarFEFhblCCipYuaTsCBqva1qtef1qlZtXEzlfVJSvHrt4egwWqRCXJ8h8O9C9/w5RbkCm65zfP3wPqY8uGG/26jWr9TyVCErkhIxjHG92ogUBCunc5d6T4mNufSwp4+HN3TjeKyHSoInxLncxGioDTX6aTVjjzJ+eIvV0LV4Vj3afYpsH4OQxBAxHoN2W7veU3tau1K/MdAre2p7UGlrml7ptbV9VRs0m/X9JPjjjEe+H2CoFu5yrypqvaJGMQtOTtggDu6qakdTO6pajQO5pGrwxBWFlFBMUIbviJ5n4e5EN4YTkJZZQufIg6UvXlSOvCnxlcC2kaNgnyl8G/o+4cd7GvgKMs3ARy4jgaMA8VmAq2A40s9be4Rsd/3xpXLxEaEOUfreSfBSuU5c5dHp55eKbjNn/fHLO8U4/UxPlENCkb/+eLHIWj+GmF5AKXbNVei5MX4EsiVcoWugpaxWwDi7yYhJ3JmslWfKmmhV4qZgbtSEnGDqQqqfY9nIFnKpvUPiQn0Dlx1BasDlbrgbZXqsgczOHWphOsZPMbcWWRKnqNFsNzMnZ8ftHK4hKpVdJruQ1tAyK33HWrldw/d6NwwPxLP01LtamXsxT05PHJJuWYSjFLKLtUVot4iF+9hfIGbOR3Ck0Axvk9K9Sn1PDrM4SEYDLMWYRLGNtzuGdIOwCE9+eiQchn9CKBMyg1MS0JzjStiioVVcvXD/4OiJ0Ts4utDVtJba3Fdb7WyPyFjy6OouomyV3WgP8BQAEh+Ph90zTRMvbMSeetSpmp5TZfHmE7KhjdR+aHZoQRhpg48FSvze6DJP0resimWPYJDJLxbSBncPdePGnfFIuX58eGwo19cfDtcfvrxdfxgp+tGdI/4/fxofDIz1B1gyVizyIksPyR7MDzbUkcJpyK8/9jynC+c7+T3PnzCKMQOj4dGuKrz7V5UbaE4xY9BiDgDdHOXm6acTtFJ6yIIBiETWhGbe5vWA2BaAexT7l3cUP1VOX6ETB50od230EnEDQmyjicCZYtrVIAKZnFfqEbaaBFOLPCd8SArtnr7xT04/Wwi2TYlIkZWQvv7A57JpYAtVWT5J/2OYQLvantaIpwlBlSqCZ3z7QOsJXBjNLDieghwJi9qGPYam50RYyW7GuLlFlmSWrB4GEg4MZBU7kI+tll0/oco7Tj4IMBJMwhOWD0cwZI/kaskuSTYEXV45ZcmgIzopmREIJcU3nTFkzjkKZsMaLMNBwc4huHCfA9HF1EzxtJwBq1qZ2Yi7hXORUMI923hMk5cNzskkWCxsgqkU95+EvvWGttdsXYZ5/4fQd4dlww89A2My7A0Pj+5w/G/wn9+2/mgwngwnfOU6X/cXdR2Df+zQXc8lDnQXQk8wIz+/t9RVdavu8vDR4536BsyvO7eJZrP5vX1CZ8jHc0Lrv6NPNDT42bZPuMjy7OC7msQfivIHen94cPr6kXJ/ML65/qD0dRh9BpP1h5+F+mleXABMlk+sgW28mPOMN7W9GHzClQWnSOUpWnKoin74AC7oefGBjU1G4eCZI0Ts7tRncBSvyVAqy+aiExHkIo4bwEa0l9tBdB/0Xe3Ah34ww66LqFd1Mfsn28DlpqZeruw3Wmrrh1zYjMgHAYU7n9M3p+9/OhjXyvG3tglsa5txtbYNgP7OQbtWjJW1vx0YDY8u5qtpQGfz3w2FKtzB7muNyl5TVbcEQziulWZDq9Qva+1d4FC34eoPac1rMwceORj+dCTMA12YhfTWb4SR64ubjCw9/LykRTmQGbJSv+gyTWbLir05cl1sR+s19+uRnszN3rm4PlxOmRx4wqvdoatguFuGO+ZnAXyZoiCLLIhvEgVwmf8FMoGrZ8dTYIjwAHj4LbNsJ9sLVhjfIC5yoUp2nFPpgvHy5WZrr/iCMXOTejzpg1SOmlZx03ohXy6aOEqDpQlJmuFxLr8TL6Bmyb2vzBOa3Cid4YJrZ8Er0+wh2wzssCGE7sD+kckZDWnTJMQkdDnIJPr09vzfz0BBoNJx/g+yIAKVsyB/lfHfJKQ8ZoEShge9OhvLUnc4xihm7DOfBSEcPgC21Grc/4RcqCwMwlTDUptnraKpjcssNy6ramJaCAvz23gHNsq8E70FQxWBWAex9DkVEkH0IE0zuBDbdUK5eV+ZGHfu6reH0oCSDSL9YlRVk4FeULefaXKuCrqow59Snr391vbl2f815Tno31duDsa9wcH25ak3f315Yqo4jXE8h/DqjT3y4AMloivBO/Pla/qWR1naNTUpXYmKsJg0VDvwyfPt90KqUWhv6H7DnlZPNkaqUWpPt23vBX8XJMxFqcXEwTKV3LS5cee367F3knBaOblOoobpmxCQ+fzXmvIXgOLFCetewN9+YCsFvgVhfNNdvdBrNS7EyCXL7bwxGpe33RjoTBZ7c97Osqc2osnvtsisrN4osBkJb2RuIBO4ybsCKn+hZ4NA1sp2uyATUa0spFxb3BrbNjTGUuz9uej7bR83tMcdGmQJBm+Bwju1ye9olMVYvAmNC/H4zyoaNM1dirb/K4v2zeb5He3z5xatoI0mIMywEz7LF44T5p1IAQEhoyU+VmawLyZtgiCwlBVLVzhrkT/LzeJKLX7ufgVQSwECPwAUAAAACABVs45Qjr2qH9cIAAANLAAAHwAkAAAAAAAAACAAAAAAAAAAVFNUMjAyMDAwMDAwMDY1MV8xMjM0NTY3ODAzLnhtbAoAIAAAAAAAAQAYALwYdJ+SEtYBQUfWn5IS1gG2t66OkhLWAVBLBQYAAAAAAQABAHEAAAAUCQAAAAA=\",\r\n\"AppType\": 1,\r\n\"Status\": 0,\r\n\"CheckLocalReferenceId\": false,\r\n\"UseManualInvoiceId\": false,\r\n\"TargetAlias\":\"urn:mail:defaulttest3pk@medyasoft.com.tr\",\r\n\"UseFirstAlias\":false\r\n}"
 						},
 						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v1/outboxInvoice/f285c633-26f7-4bcb-a2c2-059edac8a35d",
+							"raw": "https://efaturaservicetest.isim360.com/v1/outboxInvoice/DEE0D3EF-9088-444C-9A52-E9ADFACB8A4D",
 							"protocol": "https",
 							"host": [
 								"efaturaservicetest",
@@ -1367,7 +1094,7 @@
 							"path": [
 								"v1",
 								"outboxInvoice",
-								"f285c633-26f7-4bcb-a2c2-059edac8a35d"
+								"DEE0D3EF-9088-444C-9A52-E9ADFACB8A4D"
 							]
 						}
 					},
@@ -1407,86 +1134,7 @@
 							]
 						}
 					},
-					"response": [
-						{
-							"name": "Earsiv_Cancelinvoice",
-							"originalRequest": {
-								"method": "PUT",
-								"header": [
-									{
-										"key": "Authorization",
-										"type": "text",
-										"value": "Bearer VdL/NTy1MyqMuIO5836rDL2bR3iDqaUrfflRdjvcYo0=@MjA3NDg="
-									},
-									{
-										"key": "Content-Type",
-										"value": "application/json"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "\n[\"916a56a3-8de6-4d19-bd00-6fb3ef6deafa\"]\n"
-								},
-								"url": {
-									"raw": "https://efaturaservicetest.isim360.com/v1/earchive/cancelinvoice",
-									"protocol": "https",
-									"host": [
-										"efaturaservicetest",
-										"isim360",
-										"com"
-									],
-									"path": [
-										"v1",
-										"earchive",
-										"cancelinvoice"
-									]
-								}
-							},
-							"status": "Unprocessable Entity",
-							"code": 422,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Date",
-									"value": "Tue, 19 Feb 2019 06:55:58 GMT"
-								},
-								{
-									"key": "Server",
-									"value": "Kestrel"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=utf-8"
-								},
-								{
-									"key": "api-supported-versions",
-									"value": "1.0"
-								},
-								{
-									"key": "X-Correlation-Id",
-									"value": "0HLKL9F6OFB2E:00000001"
-								},
-								{
-									"key": "X-Powered-By",
-									"value": "ASP.NET"
-								},
-								{
-									"key": "Keep-Alive",
-									"value": "timeout=5, max=100"
-								},
-								{
-									"key": "Connection",
-									"value": "Keep-Alive"
-								},
-								{
-									"key": "Transfer-Encoding",
-									"value": "chunked"
-								}
-							],
-							"cookie": [],
-							"body": "{\n    \"Uyarı\": [\n        \"e-Arşiv faturası daha önceden iptal edilmiş\"\n    ]\n}"
-						}
-					]
+					"response": []
 				}
 			]
 		},
@@ -1915,86 +1563,7 @@
 							]
 						}
 					},
-					"response": [
-						{
-							"name": "Earsiv_Cancelinvoice",
-							"originalRequest": {
-								"method": "PUT",
-								"header": [
-									{
-										"key": "Authorization",
-										"type": "text",
-										"value": "Bearer VdL/NTy1MyqMuIO5836rDL2bR3iDqaUrfflRdjvcYo0=@MjA3NDg="
-									},
-									{
-										"key": "Content-Type",
-										"value": "application/json"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "\n[\"916a56a3-8de6-4d19-bd00-6fb3ef6deafa\"]\n"
-								},
-								"url": {
-									"raw": "https://efaturaservicetest.isim360.com/v1/earchive/cancelinvoice",
-									"protocol": "https",
-									"host": [
-										"efaturaservicetest",
-										"isim360",
-										"com"
-									],
-									"path": [
-										"v1",
-										"earchive",
-										"cancelinvoice"
-									]
-								}
-							},
-							"status": "Unprocessable Entity",
-							"code": 422,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Date",
-									"value": "Tue, 19 Feb 2019 06:55:58 GMT"
-								},
-								{
-									"key": "Server",
-									"value": "Kestrel"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=utf-8"
-								},
-								{
-									"key": "api-supported-versions",
-									"value": "1.0"
-								},
-								{
-									"key": "X-Correlation-Id",
-									"value": "0HLKL9F6OFB2E:00000001"
-								},
-								{
-									"key": "X-Powered-By",
-									"value": "ASP.NET"
-								},
-								{
-									"key": "Keep-Alive",
-									"value": "timeout=5, max=100"
-								},
-								{
-									"key": "Connection",
-									"value": "Keep-Alive"
-								},
-								{
-									"key": "Transfer-Encoding",
-									"value": "chunked"
-								}
-							],
-							"cookie": [],
-							"body": "{\n    \"Uyarı\": [\n        \"e-Arşiv faturası daha önceden iptal edilmiş\"\n    ]\n}"
-						}
-					]
+					"response": []
 				}
 			]
 		},
@@ -2002,19 +1571,18 @@
 			"name": "Gib_User",
 			"item": [
 				{
-					"name": "Get_GibUserList",
+					"name": "Get_GibUserZipList",
 					"request": {
 						"method": "GET",
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer UhPHhyIfCmrbyQ6RL4tsQ8cZ3UjY3yNU+mSLhPz+CiY=@MjE4MDU=",
-								"type": "text"
+								"type": "text",
+								"value": "Bearer l9tMB9qejH8CtsOYkrv+z7xj7PZTd2P/9aqUa9b2/hU=@MjE1NjU="
 							},
 							{
 								"key": "Content-Type",
-								"value": "application/json",
-								"type": "text"
+								"value": "application/json"
 							}
 						],
 						"url": {
@@ -2054,7 +1622,7 @@
 					"urlencoded": [
 						{
 							"key": "username",
-							"value": "aybarsservice",
+							"value": "tfsturkcell@service.com",
 							"type": "text"
 						},
 						{
