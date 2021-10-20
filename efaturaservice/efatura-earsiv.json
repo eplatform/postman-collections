@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "eb1076b8-9378-45a4-a816-eebb92aaa9cd",
+		"_postman_id": "66507147-42c9-4f0e-9129-d709eb558265",
 		"name": "e-Fatura/Arşiv Entegrasyon Güncel",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -287,78 +287,6 @@
 					"response": []
 				},
 				{
-					"name": "Get_Inbox_Invoice_Basic_Model",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"type": "text",
-								"value": "Bearer cDvWHvHPIIEO6w901wTDfBKE2N+sdaiA2RSKVrjto9E=@MjE2NTE="
-							},
-							{
-								"key": "Content-Type",
-								"type": "text",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v1/inboxinvoice/8ECC8A7D-BA68-437F-B777-40B493EF0202",
-							"protocol": "https",
-							"host": [
-								"efaturaservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v1",
-								"inboxinvoice",
-								"8ECC8A7D-BA68-437F-B777-40B493EF0202"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get_Inbox_Invoice_Full_Model",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"type": "text",
-								"value": "Bearer cDvWHvHPIIEO6w901wTDfBKE2N+sdaiA2RSKVrjto9E=@MjE2NTE="
-							},
-							{
-								"key": "Content-Type",
-								"type": "text",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v1/inboxInvoice/getinvoice?guid=05712F28-F709-4492-8661-90583FB634F5",
-							"protocol": "https",
-							"host": [
-								"efaturaservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v1",
-								"inboxInvoice",
-								"getinvoice"
-							],
-							"query": [
-								{
-									"key": "guid",
-									"value": "05712F28-F709-4492-8661-90583FB634F5"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
 					"name": "Get_InboxInvoice_Html_v2",
 					"request": {
 						"method": "GET",
@@ -528,42 +456,6 @@
 					"response": []
 				},
 				{
-					"name": "Post_Pdf_List",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Authorization",
-								"type": "text",
-								"value": "Bearer cDvWHvHPIIEO6w901wTDfBKE2N+sdaiA2RSKVrjto9E=@MjE2NTE="
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"ids\": [\n        \"eb42e3f1-e2e8-47d8-ae2b-88e27865e08d\",\n        \"32ca2fb1-8ecf-47a2-889b-54fc8c720987\"\n    ],\n    \"isStandartXslt\": false\n}"
-						},
-						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v1/inboxinvoice/pdflist",
-							"protocol": "https",
-							"host": [
-								"efaturaservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v1",
-								"inboxinvoice",
-								"pdflist"
-							]
-						}
-					},
-					"response": []
-				},
-				{
 					"name": "Put_RetryInvoiceResponse",
 					"request": {
 						"method": "PUT",
@@ -643,78 +535,6 @@
 			"name": "Outbox_Invoice",
 			"item": [
 				{
-					"name": "Get_Outbox_Invoice_Basic_Model",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"type": "text",
-								"value": "Bearer cDvWHvHPIIEO6w901wTDfBKE2N+sdaiA2RSKVrjto9E=@MjE2NTE="
-							},
-							{
-								"key": "Content-Type",
-								"type": "text",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v1/outboxInvoice/30E6E1FF-B325-4270-810A-E9B719054915",
-							"protocol": "https",
-							"host": [
-								"efaturaservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v1",
-								"outboxInvoice",
-								"30E6E1FF-B325-4270-810A-E9B719054915"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get_Outbox_Invoice_Full_Model",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"type": "text",
-								"value": "Bearer cDvWHvHPIIEO6w901wTDfBKE2N+sdaiA2RSKVrjto9E=@MjE2NTE="
-							},
-							{
-								"key": "Content-Type",
-								"type": "text",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v1/outboxInvoice/getinvoice?guid=B87AA049-8CA1-4FCF-8C25-62A980A9C664",
-							"protocol": "https",
-							"host": [
-								"efaturaservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v1",
-								"outboxInvoice",
-								"getinvoice"
-							],
-							"query": [
-								{
-									"key": "guid",
-									"value": "B87AA049-8CA1-4FCF-8C25-62A980A9C664"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
 					"name": "Get_Outbox_Invoice_Reason",
 					"request": {
 						"method": "GET",
@@ -743,6 +563,55 @@
 								"outboxInvoice",
 								"invoicereason",
 								"81BD9D6A-3FCA-4FBA-AF15-19C5347777B4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Arayüzden_Kesilen_eFaturalar",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer OKy1DtGZ6QYr9JY9srVtwmJQ53LRFMsT/mcbMNKxx9w=@Ng=="
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://efaturaservicetest.isim360.com/v2/outboxinvoice/withnulllocalreferences?startDate=2021-10-01&endDate=2021-10-20",
+							"protocol": "https",
+							"host": [
+								"efaturaservicetest",
+								"isim360",
+								"com"
+							],
+							"path": [
+								"v2",
+								"outboxinvoice",
+								"withnulllocalreferences"
+							],
+							"query": [
+								{
+									"key": "startDate",
+									"value": "2021-10-01"
+								},
+								{
+									"key": "endDate",
+									"value": "2021-10-20"
+								}
 							]
 						}
 					},
@@ -1142,39 +1011,6 @@
 			"name": "Archive_Invoice",
 			"item": [
 				{
-					"name": "Get_Earchive_Invoice",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"type": "text",
-								"value": "Bearer 82W3TYWOvkftunEQvf7VYovyaI5OCc7J+HpH111Ipz8=@MjE1NjU="
-							},
-							{
-								"key": "Content-Type",
-								"type": "text",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v1/earchive/ef1b30ea-a8d6-4f34-85d9-073dd6311cb2",
-							"protocol": "https",
-							"host": [
-								"efaturaservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v1",
-								"earchive",
-								"ef1b30ea-a8d6-4f34-85d9-073dd6311cb2"
-							]
-						}
-					},
-					"response": []
-				},
-				{
 					"name": "Earchive_BackToDraft",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -1308,6 +1144,55 @@
 								"earchive",
 								"retryinvoicemail",
 								"1244eab8-ddad-4551-bacc-051abd49e1a3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Arayüzden_Kesilen_eArşivFaturalar",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer XBVXaWGrV2vkt1z15h7AiRJzZ26rCHFmUfYXkgnd4tQ=@MjE2NTE="
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://efaturaservicetest.isim360.com/v2/earchive/withnulllocalreferences?startDate=2021-10-01&endDate=2021-10-20",
+							"protocol": "https",
+							"host": [
+								"efaturaservicetest",
+								"isim360",
+								"com"
+							],
+							"path": [
+								"v2",
+								"earchive",
+								"withnulllocalreferences"
+							],
+							"query": [
+								{
+									"key": "startDate",
+									"value": "2021-10-01"
+								},
+								{
+									"key": "endDate",
+									"value": "2021-10-20"
+								}
 							]
 						}
 					},
@@ -1622,7 +1507,7 @@
 					"urlencoded": [
 						{
 							"key": "username",
-							"value": "tfsturkcell@service.com",
+							"value": "aybarsservice",
 							"type": "text"
 						},
 						{

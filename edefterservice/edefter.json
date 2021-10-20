@@ -1,375 +1,343 @@
 {
-    "id": "745c52e1-63a0-457f-9adb-7c7669a22d02",
-    "name": "e-Defter Entegrasyon",
-    "description": "",
-    "auth": null,
-    "events": null,
-    "variables": [],
-    "order": [
-        "99992bd7-c373-4968-9de6-c8f1e207047b",
-        "61c6875b-3084-48aa-9950-4acd369bc1c4",
-        "fcd68141-0071-453b-a789-539a461c68f7",
-        "5b402c97-e34a-4502-9845-7d6cdabe1978",
-        "1005f4e3-e72c-4ec8-8d30-969f215479f2",
-        "ff890f6f-c7f4-4601-a2f8-5cae06c29411",
-        "fa37a571-b7d5-472b-9fb2-b085b0885f07"
-    ],
-    "folders_order": [],
-    "protocolProfileBehavior": {},
-    "folders": [],
-    "requests": [
-        {
-            "id": "1005f4e3-e72c-4ec8-8d30-969f215479f2",
-            "name": "Post",
-            "url": "https://edefterservicetest.isim360.com/v2/period",
-            "description": null,
-            "data": [
-                {
-                    "key": "Files",
-                    "value": "/C:/Users/aybars.karaman/Desktop/Entegrasyonlar/defter.zip",
-                    "description": "",
-                    "type": "file",
-                    "enabled": true
-                },
-                {
-                    "key": "startDate",
-                    "value": "2020-01-01",
-                    "description": "",
-                    "type": "text",
-                    "enabled": true
-                },
-                {
-                    "key": "endDate",
-                    "value": "2020-01-31",
-                    "description": "",
-                    "type": "text",
-                    "enabled": true
-                },
-                {
-                    "key": "splitSize",
-                    "value": "5",
-                    "description": "",
-                    "type": "text",
-                    "enabled": true
-                },
-                {
-                    "key": "timeStamp",
-                    "value": "false",
-                    "description": "",
-                    "type": "text",
-                    "enabled": true
-                },
-                {
-                    "key": "withoutTaxDetail",
-                    "value": "false",
-                    "description": "",
-                    "type": "text",
-                    "enabled": true
-                }
-            ],
-            "dataOptions": null,
-            "dataMode": "params",
-            "headerData": [
-                {
-                    "key": "Authorization",
-                    "type": "text",
-                    "value": "Bearer Ly+Cm0z23WSNe6MFvaFJ4FA3CaS3+Pph8xVnZptO6XQ=@MjE3MjU="
-                },
-                {
-                    "key": "Content-Type",
-                    "value": "application/json"
-                }
-            ],
-            "method": "POST",
-            "pathVariableData": [],
-            "queryParams": [],
-            "auth": null,
-            "events": null,
-            "folder": null,
-            "headers": "Authorization: Bearer Ly+Cm0z23WSNe6MFvaFJ4FA3CaS3+Pph8xVnZptO6XQ=@MjE3MjU=\nContent-Type: application/json\n",
-            "pathVariables": {}
-        },
-        {
-            "id": "5b402c97-e34a-4502-9845-7d6cdabe1978",
-            "name": "Get_eDefter_Preview",
-            "url": "https://edefterservicetest.isim360.com/v1/generalbook/getpreview?generalBookId=108447&previewType=1",
-            "description": "",
-            "data": null,
-            "dataOptions": null,
-            "dataMode": null,
-            "headerData": [
-                {
-                    "description": "",
-                    "enabled": true,
-                    "key": "Authorization",
-                    "type": "text",
-                    "value": "Bearer pXJ5M/TrkmRSDdss1EhfBPJf2Cw18lH5z3v7w7e8ys0=@MjE3NzE="
-                },
-                {
-                    "description": "",
-                    "enabled": true,
-                    "key": "Content-Type",
-                    "type": "text",
-                    "value": "application/json"
-                }
-            ],
-            "method": "GET",
-            "pathVariableData": [],
-            "queryParams": [
-                {
-                    "key": "generalBookId",
-                    "value": "108447",
-                    "equals": true,
-                    "description": "",
-                    "enabled": true
-                },
-                {
-                    "key": "previewType",
-                    "value": "1",
-                    "equals": true,
-                    "description": "",
-                    "enabled": true
-                }
-            ],
-            "auth": null,
-            "events": null,
-            "folder": null,
-            "headers": "Authorization: Bearer pXJ5M/TrkmRSDdss1EhfBPJf2Cw18lH5z3v7w7e8ys0=@MjE3NzE=\nContent-Type: application/json\n",
-            "pathVariables": {}
-        },
-        {
-            "id": "61c6875b-3084-48aa-9950-4acd369bc1c4",
-            "name": "Get_eDefter_Part_List",
-            "url": "https://edefterservicetest.isim360.com/v1/part/getlist?periodId=4186&pageIndex=1&pageSize=50",
-            "description": "",
-            "data": null,
-            "dataOptions": null,
-            "dataMode": null,
-            "headerData": [
-                {
-                    "description": "",
-                    "enabled": true,
-                    "key": "Authorization",
-                    "type": "text",
-                    "value": "Bearer IarUIUnkY9PaJjwdHC4sSVeMI2GINshD6mei2tI/OEE=@MjE2MTc="
-                },
-                {
-                    "description": "",
-                    "enabled": true,
-                    "key": "Content-Type",
-                    "type": "text",
-                    "value": "application/json"
-                }
-            ],
-            "method": "GET",
-            "pathVariableData": [],
-            "queryParams": [
-                {
-                    "key": "periodId",
-                    "value": "4186",
-                    "equals": true,
-                    "description": "",
-                    "enabled": true
-                },
-                {
-                    "key": "pageIndex",
-                    "value": "1",
-                    "equals": true,
-                    "description": "",
-                    "enabled": true
-                },
-                {
-                    "key": "pageSize",
-                    "value": "50",
-                    "equals": true,
-                    "description": "",
-                    "enabled": true
-                },
-                {
-                    "key": "sortedColumn",
-                    "value": "",
-                    "description": "",
-                    "enabled": false
-                },
-                {
-                    "key": "isDesc",
-                    "value": "",
-                    "description": "",
-                    "enabled": false
-                }
-            ],
-            "auth": null,
-            "events": null,
-            "folder": null,
-            "headers": "Authorization: Bearer IarUIUnkY9PaJjwdHC4sSVeMI2GINshD6mei2tI/OEE=@MjE2MTc=\nContent-Type: application/json\n",
-            "pathVariables": {}
-        },
-        {
-            "id": "99992bd7-c373-4968-9de6-c8f1e207047b",
-            "name": "Get_eDefter_List",
-            "url": "https://edefterservicetest.isim360.com/v1/period/getperiodlist?pageIndex=1&pageSize=50",
-            "description": "",
-            "data": null,
-            "dataOptions": null,
-            "dataMode": null,
-            "headerData": [
-                {
-                    "description": "",
-                    "enabled": true,
-                    "key": "Authorization",
-                    "type": "text",
-                    "value": "Bearer umZIxR8IwfzgI4e8Kv3+5+1ceXbZMTaIId2uKOC0JoM=@Ng=="
-                },
-                {
-                    "description": "",
-                    "enabled": true,
-                    "key": "Content-Type",
-                    "type": "text",
-                    "value": "application/json"
-                }
-            ],
-            "method": "GET",
-            "pathVariableData": [],
-            "queryParams": [
-                {
-                    "key": "pageIndex",
-                    "value": "1",
-                    "equals": true,
-                    "description": "",
-                    "enabled": true
-                },
-                {
-                    "key": "pageSize",
-                    "value": "50",
-                    "equals": true,
-                    "description": "",
-                    "enabled": true
-                },
-                {
-                    "key": "sortedColumn",
-                    "value": "",
-                    "description": "",
-                    "enabled": false
-                },
-                {
-                    "key": "isDesc",
-                    "value": "",
-                    "description": "",
-                    "enabled": false
-                }
-            ],
-            "auth": null,
-            "events": null,
-            "folder": null,
-            "headers": "Authorization: Bearer umZIxR8IwfzgI4e8Kv3+5+1ceXbZMTaIId2uKOC0JoM=@Ng==\nContent-Type: application/json\n",
-            "pathVariables": {}
-        },
-        {
-            "id": "fa37a571-b7d5-472b-9fb2-b085b0885f07",
-            "name": "Token",
-            "url": "https://coretest.isim360.com/v1/token",
-            "description": null,
-            "data": [
-                {
-                    "key": "username",
-                    "value": "",
-                    "type": "text"
-                },
-                {
-                    "key": "password",
-                    "value": "",
-                    "type": "text"
-                },
-                {
-                    "key": "client_id",
-                    "value": "serviceApi",
-                    "type": "text"
-                }
-            ],
-            "dataOptions": null,
-            "dataMode": "urlencoded",
-            "headerData": [
-                {
-                    "key": "Content-Type",
-                    "name": "Content-Type",
-                    "type": "text",
-                    "value": "application/x-www-form-urlencoded"
-                }
-            ],
-            "method": "POST",
-            "pathVariableData": [],
-            "queryParams": [],
-            "auth": null,
-            "events": null,
-            "folder": null,
-            "headers": "Content-Type: application/x-www-form-urlencoded\n",
-            "pathVariables": {}
-        },
-        {
-            "id": "fcd68141-0071-453b-a789-539a461c68f7",
-            "name": "Get_eDefter_GeneralBook_List",
-            "url": "https://edefterservicetest.isim360.com/v1/generalbook/getlistbypartid/14577",
-            "description": "",
-            "data": null,
-            "dataOptions": null,
-            "dataMode": null,
-            "headerData": [
-                {
-                    "description": "",
-                    "enabled": true,
-                    "key": "Authorization",
-                    "type": "text",
-                    "value": "Bearer pXJ5M/TrkmRSDdss1EhfBPJf2Cw18lH5z3v7w7e8ys0=@MjE3NzE="
-                },
-                {
-                    "description": "",
-                    "enabled": true,
-                    "key": "Content-Type",
-                    "type": "text",
-                    "value": "application/json"
-                }
-            ],
-            "method": "GET",
-            "pathVariableData": [],
-            "queryParams": [],
-            "auth": null,
-            "events": null,
-            "folder": null,
-            "headers": "Authorization: Bearer pXJ5M/TrkmRSDdss1EhfBPJf2Cw18lH5z3v7w7e8ys0=@MjE3NzE=\nContent-Type: application/json\n",
-            "pathVariables": {}
-        },
-        {
-            "id": "ff890f6f-c7f4-4601-a2f8-5cae06c29411",
-            "name": "Delete Defter",
-            "url": "https://edefterservicetest.isim360.com/v1/period/4185",
-            "description": "",
-            "data": null,
-            "dataOptions": null,
-            "dataMode": null,
-            "headerData": [
-                {
-                    "key": "Authorization",
-                    "value": "Bearer IarUIUnkY9PaJjwdHC4sSVeMI2GINshD6mei2tI/OEE=@MjE2MTc=",
-                    "description": "",
-                    "type": "text",
-                    "enabled": true
-                },
-                {
-                    "key": "Content-Type",
-                    "value": "application/json",
-                    "description": "",
-                    "type": "text",
-                    "enabled": true
-                }
-            ],
-            "method": "DELETE",
-            "pathVariableData": [],
-            "queryParams": [],
-            "auth": null,
-            "events": null,
-            "folder": null,
-            "headers": "Authorization: Bearer IarUIUnkY9PaJjwdHC4sSVeMI2GINshD6mei2tI/OEE=@MjE2MTc=\nContent-Type: application/json\n",
-            "pathVariables": {}
-        }
-    ]
+	"info": {
+		"_postman_id": "745c52e1-63a0-457f-9adb-7c7669a22d02",
+		"name": "e-Defter Entegrasyon",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get_eDefter_List",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer iS0LUZI9H+y2EFhaxZXoATabxOkcy6kHCAXKNnTBnKM=@MjE4NDQ="
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://edefterservicetest.isim360.com/v1/period/getperiodlist?pageIndex=1&pageSize=50",
+					"protocol": "https",
+					"host": [
+						"edefterservicetest",
+						"isim360",
+						"com"
+					],
+					"path": [
+						"v1",
+						"period",
+						"getperiodlist"
+					],
+					"query": [
+						{
+							"key": "pageIndex",
+							"value": "1"
+						},
+						{
+							"key": "pageSize",
+							"value": "50"
+						},
+						{
+							"key": "sortedColumn",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "isDesc",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_eDefter_Part_List",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer IarUIUnkY9PaJjwdHC4sSVeMI2GINshD6mei2tI/OEE=@MjE2MTc="
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://edefterservicetest.isim360.com/v1/part/getlist?periodId=4186&pageIndex=1&pageSize=50",
+					"protocol": "https",
+					"host": [
+						"edefterservicetest",
+						"isim360",
+						"com"
+					],
+					"path": [
+						"v1",
+						"part",
+						"getlist"
+					],
+					"query": [
+						{
+							"key": "periodId",
+							"value": "4186"
+						},
+						{
+							"key": "pageIndex",
+							"value": "1"
+						},
+						{
+							"key": "pageSize",
+							"value": "50"
+						},
+						{
+							"key": "sortedColumn",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "isDesc",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_eDefter_GeneralBook_List",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer pXJ5M/TrkmRSDdss1EhfBPJf2Cw18lH5z3v7w7e8ys0=@MjE3NzE="
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://edefterservicetest.isim360.com/v1/generalbook/getlistbypartid/14577",
+					"protocol": "https",
+					"host": [
+						"edefterservicetest",
+						"isim360",
+						"com"
+					],
+					"path": [
+						"v1",
+						"generalbook",
+						"getlistbypartid",
+						"14577"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_eDefter_Preview",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer pXJ5M/TrkmRSDdss1EhfBPJf2Cw18lH5z3v7w7e8ys0=@MjE3NzE="
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://edefterservicetest.isim360.com/v1/generalbook/getpreview?generalBookId=108447&previewType=1",
+					"protocol": "https",
+					"host": [
+						"edefterservicetest",
+						"isim360",
+						"com"
+					],
+					"path": [
+						"v1",
+						"generalbook",
+						"getpreview"
+					],
+					"query": [
+						{
+							"key": "generalBookId",
+							"value": "108447"
+						},
+						{
+							"key": "previewType",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer Ly+Cm0z23WSNe6MFvaFJ4FA3CaS3+Pph8xVnZptO6XQ=@MjE3MjU="
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Files",
+							"type": "file",
+							"src": "/C:/Users/aybars.karaman/Desktop/Entegrasyonlar/defter.zip"
+						},
+						{
+							"key": "startDate",
+							"value": "2020-01-01",
+							"type": "text"
+						},
+						{
+							"key": "endDate",
+							"value": "2020-01-31",
+							"type": "text"
+						},
+						{
+							"key": "splitSize",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "timeStamp",
+							"value": "false",
+							"type": "text"
+						},
+						{
+							"key": "withoutTaxDetail",
+							"value": "false",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://edefterservicetest.isim360.com/v2/period",
+					"protocol": "https",
+					"host": [
+						"edefterservicetest",
+						"isim360",
+						"com"
+					],
+					"path": [
+						"v2",
+						"period"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Defter",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer IarUIUnkY9PaJjwdHC4sSVeMI2GINshD6mei2tI/OEE=@MjE2MTc=",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://edefterservicetest.isim360.com/v1/period/4185",
+					"protocol": "https",
+					"host": [
+						"edefterservicetest",
+						"isim360",
+						"com"
+					],
+					"path": [
+						"v1",
+						"period",
+						"4185"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "serviceApi",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://coretest.isim360.com/v1/token",
+					"protocol": "https",
+					"host": [
+						"coretest",
+						"isim360",
+						"com"
+					],
+					"path": [
+						"v1",
+						"token"
+					]
+				}
+			},
+			"response": []
+		}
+	]
 }
