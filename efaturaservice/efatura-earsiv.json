@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "66507147-42c9-4f0e-9129-d709eb558265",
-		"name": "e-Fatura/Arşiv Entegrasyon Güncel",
+		"_postman_id": "0c9a7afd-96b7-4c13-9543-7110eee41a28",
+		"name": "e-Fatura/Arşiv Entegrasyon Postman",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -14,9 +14,9 @@
 						"method": "GET",
 						"header": [
 							{
-								"key": "Authorization",
+								"key": "x-api-key",
 								"type": "text",
-								"value": "Bearer iS0LUZI9H+y2EFhaxZXoATabxOkcy6kHCAXKNnTBnKM=@MjE4NDQ="
+								"value": ""
 							},
 							{
 								"key": "Content-Type",
@@ -48,9 +48,9 @@
 						"method": "GET",
 						"header": [
 							{
-								"key": "Authorization",
+								"key": "x-api-key",
 								"type": "text",
-								"value": "Bearer iS0LUZI9H+y2EFhaxZXoATabxOkcy6kHCAXKNnTBnKM=@MjE4NDQ="
+								"value": ""
 							},
 							{
 								"key": "Content-Type",
@@ -82,9 +82,9 @@
 						"method": "GET",
 						"header": [
 							{
-								"key": "Authorization",
+								"key": "x-api-key",
 								"type": "text",
-								"value": "Bearer iS0LUZI9H+y2EFhaxZXoATabxOkcy6kHCAXKNnTBnKM=@MjE4NDQ="
+								"value": ""
 							},
 							{
 								"key": "Content-Type",
@@ -116,9 +116,9 @@
 						"method": "GET",
 						"header": [
 							{
-								"key": "Authorization",
+								"key": "x-api-key",
 								"type": "text",
-								"value": "Bearer iS0LUZI9H+y2EFhaxZXoATabxOkcy6kHCAXKNnTBnKM=@MjE4NDQ="
+								"value": ""
 							},
 							{
 								"key": "Content-Type",
@@ -150,9 +150,9 @@
 						"method": "GET",
 						"header": [
 							{
-								"key": "Authorization",
+								"key": "x-api-key",
 								"type": "text",
-								"value": "Bearer lxFXqq1c8eGPUcEGwR8kuc9cYXM21eEq/6hMziJEISM=@MjEwNzU="
+								"value": ""
 							},
 							{
 								"key": "Content-Type",
@@ -184,9 +184,9 @@
 						"method": "GET",
 						"header": [
 							{
-								"key": "Authorization",
+								"key": "x-api-key",
 								"type": "text",
-								"value": "Bearer lxFXqq1c8eGPUcEGwR8kuc9cYXM21eEq/6hMziJEISM=@MjEwNzU="
+								"value": ""
 							},
 							{
 								"key": "Content-Type",
@@ -218,14 +218,14 @@
 			"name": "Inbox_Invoice",
 			"item": [
 				{
-					"name": "Get_Inbox_Invoice_List",
+					"name": "Gelen Fatura Listesi",
 					"request": {
 						"method": "GET",
 						"header": [
 							{
-								"key": "Authorization",
+								"key": "x-api-key",
 								"type": "text",
-								"value": "Bearer cDvWHvHPIIEO6w901wTDfBKE2N+sdaiA2RSKVrjto9E=@MjE2NTE="
+								"value": ""
 							},
 							{
 								"key": "Content-Type",
@@ -234,7 +234,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v1/inboxInvoice/list?pageIndex=1&pageSize=100&isNew=true&type=0&tipType=1&status=60&startDate=2020-09-01 00:00:00&endDate=2020-09-24 00:00:00",
+							"raw": "https://efaturaservicetest.isim360.com/v1/inboxInvoice/list?pageIndex=1&pageSize=100&isNew=true&startDate=2020-09-01 00:00:00&endDate=2020-09-24 00:00:00",
 							"protocol": "https",
 							"host": [
 								"efaturaservicetest",
@@ -260,18 +260,6 @@
 									"value": "true"
 								},
 								{
-									"key": "type",
-									"value": "0"
-								},
-								{
-									"key": "tipType",
-									"value": "1"
-								},
-								{
-									"key": "status",
-									"value": "60"
-								},
-								{
 									"key": "startDate",
 									"value": "2020-09-01 00:00:00",
 									"description": "Faturanın sistemde oluştma tarihi"
@@ -287,14 +275,14 @@
 					"response": []
 				},
 				{
-					"name": "Get_InboxInvoice_Html_v2",
+					"name": "Gelen Fatura HTML",
 					"request": {
 						"method": "GET",
 						"header": [
 							{
-								"key": "Authorization",
+								"key": "x-api-key",
 								"type": "text",
-								"value": "Bearer n1EKcwy8MLPMnVsYUhkdyFkXSZkBjBWtzPoUgv/Xlhg=@MjE1NDE="
+								"value": ""
 							},
 							{
 								"key": "Content-Type",
@@ -321,14 +309,14 @@
 					"response": []
 				},
 				{
-					"name": "Get_InboxInvoice_Pdf_v2",
+					"name": "Gelen Fatura Pdf",
 					"request": {
 						"method": "GET",
 						"header": [
 							{
-								"key": "Authorization",
+								"key": "x-api-key",
 								"type": "text",
-								"value": "Bearer n1EKcwy8MLPMnVsYUhkdyFkXSZkBjBWtzPoUgv/Xlhg=@MjE1NDE="
+								"value": ""
 							},
 							{
 								"key": "Content-Type",
@@ -355,14 +343,14 @@
 					"response": []
 				},
 				{
-					"name": "Get_InboxInvoice_Ubl_v2",
+					"name": "Gelen Fatura UBL",
 					"request": {
 						"method": "GET",
 						"header": [
 							{
-								"key": "Authorization",
+								"key": "x-api-key",
 								"type": "text",
-								"value": "Bearer n1EKcwy8MLPMnVsYUhkdyFkXSZkBjBWtzPoUgv/Xlhg=@MjE1NDE="
+								"value": ""
 							},
 							{
 								"key": "Content-Type",
@@ -388,47 +376,14 @@
 					"response": []
 				},
 				{
-					"name": "EFatura_InvoiceResponseStatus_Ticari",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"type": "text",
-								"value": "Bearer 82W3TYWOvkftunEQvf7VYovyaI5OCc7J+HpH111Ipz8=@MjE1NjU="
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v1/invoiceresponse/getbyinvoiceid/6987FB63-A6E5-4753-AE2C-5D44EB6CCBFE",
-							"protocol": "https",
-							"host": [
-								"efaturaservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v1",
-								"invoiceresponse",
-								"getbyinvoiceid",
-								"6987FB63-A6E5-4753-AE2C-5D44EB6CCBFE"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "EFatura_InvoiceResponse_Ticari",
+					"name": "Ticari E-Fatura Cevap Verme",
 					"request": {
 						"method": "POST",
 						"header": [
 							{
-								"key": "Authorization",
+								"key": "x-api-key",
 								"type": "text",
-								"value": "Bearer cDvWHvHPIIEO6w901wTDfBKE2N+sdaiA2RSKVrjto9E=@MjE2NTE="
+								"value": ""
 							},
 							{
 								"key": "Content-Type",
@@ -456,14 +411,14 @@
 					"response": []
 				},
 				{
-					"name": "Put_RetryInvoiceResponse",
+					"name": "Ticari E-Fatura Cevabını Tekrar Gönderme",
 					"request": {
 						"method": "PUT",
 						"header": [
 							{
-								"key": "Authorization",
+								"key": "x-api-key",
 								"type": "text",
-								"value": "Bearer 0ctzpXeOmp9xOCCc72CUqwRRC330hq0ejsV+ishbguI=@MTI3MzA="
+								"value": ""
 							},
 							{
 								"key": "Content-Type",
@@ -476,11 +431,11 @@
 							"raw": "[\"33F8B2E6-E3EC-4E33-A43A-90388A3E8C1B\"] //invoiceId"
 						},
 						"url": {
-							"raw": "https://efaturaservice.turkcellesirket.com/v1/invoiceresponse/retryinvoiceresponselist",
+							"raw": "https://efaturaservicetest.isim360.com/v1/invoiceresponse/retryinvoiceresponselist",
 							"protocol": "https",
 							"host": [
-								"efaturaservice",
-								"turkcellesirket",
+								"efaturaservicetest",
+								"isim360",
 								"com"
 							],
 							"path": [
@@ -493,14 +448,14 @@
 					"response": []
 				},
 				{
-					"name": "Put_IsNewFlag",
+					"name": "Gelen Faturayı Alındı Olarak İşaretleme",
 					"request": {
 						"method": "PUT",
 						"header": [
 							{
-								"key": "Authorization",
+								"key": "x-api-key",
 								"type": "text",
-								"value": "Bearer TgE4h4c0K5gW8OH+WmvJLKvrs1e62W6FDJOBjDOKx94=@MjE0ODQ="
+								"value": ""
 							},
 							{
 								"key": "Content-Type",
@@ -535,14 +490,14 @@
 			"name": "Outbox_Invoice",
 			"item": [
 				{
-					"name": "Get_Outbox_Invoice_Reason",
+					"name": "İhracat ve Ticari Fatura Cevabı",
 					"request": {
 						"method": "GET",
 						"header": [
 							{
-								"key": "Authorization",
+								"key": "x-api-key",
 								"type": "text",
-								"value": "Bearer crte2q15bpJIRCrW46r0G8q/cb9lnDDtRGU+bz4KLzw=@ODQ4Njc="
+								"value": ""
 							},
 							{
 								"key": "Content-Type",
@@ -551,11 +506,11 @@
 							}
 						],
 						"url": {
-							"raw": "https://efaturaservice.turkcellesirket.com/v1/outboxInvoice/invoicereason/81BD9D6A-3FCA-4FBA-AF15-19C5347777B4",
+							"raw": "https://efaturaservicetest.isim360.com/v1/outboxInvoice/invoicereason/81BD9D6A-3FCA-4FBA-AF15-19C5347777B4",
 							"protocol": "https",
 							"host": [
-								"efaturaservice",
-								"turkcellesirket",
+								"efaturaservicetest",
+								"isim360",
 								"com"
 							],
 							"path": [
@@ -577,9 +532,9 @@
 						"method": "GET",
 						"header": [
 							{
-								"key": "Authorization",
+								"key": "x-api-key",
 								"type": "text",
-								"value": "Bearer OKy1DtGZ6QYr9JY9srVtwmJQ53LRFMsT/mcbMNKxx9w=@Ng=="
+								"value": ""
 							},
 							{
 								"key": "Content-Type",
@@ -623,9 +578,9 @@
 						"method": "GET",
 						"header": [
 							{
-								"key": "Authorization",
+								"key": "x-api-key",
 								"type": "text",
-								"value": "Bearer YywVvNozte7Tshtj/5ALXPo+VoU7qPwFDPL+qF8fQc4=@MjE4NDQ="
+								"value": ""
 							},
 							{
 								"key": "Content-Type",
@@ -657,9 +612,9 @@
 						"method": "GET",
 						"header": [
 							{
-								"key": "Authorization",
+								"key": "x-api-key",
 								"type": "text",
-								"value": "Bearer n1EKcwy8MLPMnVsYUhkdyFkXSZkBjBWtzPoUgv/Xlhg=@MjE1NDE="
+								"value": ""
 							},
 							{
 								"key": "Content-Type",
@@ -691,9 +646,9 @@
 						"method": "GET",
 						"header": [
 							{
-								"key": "Authorization",
+								"key": "x-api-key",
 								"type": "text",
-								"value": "Bearer n1EKcwy8MLPMnVsYUhkdyFkXSZkBjBWtzPoUgv/Xlhg=@MjE1NDE="
+								"value": ""
 							},
 							{
 								"key": "Content-Type",
@@ -725,9 +680,9 @@
 						"method": "GET",
 						"header": [
 							{
-								"key": "Authorization",
+								"key": "x-api-key",
 								"type": "text",
-								"value": "Bearer n1EKcwy8MLPMnVsYUhkdyFkXSZkBjBWtzPoUgv/Xlhg=@MjE1NDE="
+								"value": ""
 							},
 							{
 								"key": "Content-Type",
@@ -758,8 +713,8 @@
 						"method": "POST",
 						"header": [
 							{
-								"key": "Authorization",
-								"value": "Bearer ybB58qbubh16Uat3f9F4cOTGbERt2+aXmjLxuhTcRRI=@Ng=="
+								"key": "x-api-key",
+								"value": ""
 							},
 							{
 								"key": "Content-Type",
@@ -793,14 +748,14 @@
 					"response": []
 				},
 				{
-					"name": "Post_Outbox_Invoice_UBL",
+					"name": "E-Fatura UBL Gönderim",
 					"request": {
 						"method": "POST",
 						"header": [
 							{
-								"key": "Authorization",
+								"key": "x-api-key",
 								"type": "text",
-								"value": "Bearer 9bTfNfL6kTczUP47x9pFPKvjUoRj5GWHKgoHfz5tDC4=@Ng=="
+								"value": ""
 							},
 							{
 								"key": "Content-Type",
@@ -828,13 +783,13 @@
 					"response": []
 				},
 				{
-					"name": "Post_Outbox_Invoice_Basic_Model_Json",
+					"name": "E-Fatura Json Model Gönderim",
 					"request": {
 						"method": "POST",
 						"header": [
 							{
-								"key": "Authorization",
-								"value": "Bearer iS0LUZI9H+y2EFhaxZXoATabxOkcy6kHCAXKNnTBnKM=@MjE4NDQ="
+								"key": "x-api-key",
+								"value": ""
 							},
 							{
 								"key": "Content-Type",
@@ -868,8 +823,8 @@
 						"method": "POST",
 						"header": [
 							{
-								"key": "Authorization",
-								"value": "Bearer zftGpVltQAkHjtOdsESAtQnXFrqjT8xB5Xj8nGTKLXE=@Ng=="
+								"key": "x-api-key",
+								"value": ""
 							},
 							{
 								"key": "Content-Type",
@@ -903,8 +858,8 @@
 						"method": "PUT",
 						"header": [
 							{
-								"key": "Authorization",
-								"value": "Bearer iS0LUZI9H+y2EFhaxZXoATabxOkcy6kHCAXKNnTBnKM=@MjE4NDQ="
+								"key": "x-api-key",
+								"value": ""
 							},
 							{
 								"key": "Content-Type",
@@ -934,14 +889,14 @@
 					"response": []
 				},
 				{
-					"name": "Put_Outbox_Invoice_UBL",
+					"name": "E-Fatura UBL Güncelleme",
 					"request": {
 						"method": "PUT",
 						"header": [
 							{
-								"key": "Authorization",
+								"key": "x-api-key",
 								"type": "text",
-								"value": "Bearer +bdhk5Qu2PpWbQytcrZsIFY4XIIyGZFAmk2UBpYBVdA=@NzE4NDE="
+								"value": ""
 							},
 							{
 								"key": "Content-Type",
@@ -975,9 +930,9 @@
 						"method": "PUT",
 						"header": [
 							{
-								"key": "Authorization",
+								"key": "x-api-key",
 								"type": "text",
-								"value": "Bearer bMwSUr2X8+F7qmo0ie/HMTSvIpqRZv1Cp/u1ETWJZyY=@MjE1NjU="
+								"value": ""
 							},
 							{
 								"key": "Content-Type",
@@ -1011,7 +966,7 @@
 			"name": "Archive_Invoice",
 			"item": [
 				{
-					"name": "Earchive_BackToDraft",
+					"name": "E-Arşiv Aynı Faturanın Mailini Tekrar Gönderme",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -1019,108 +974,9 @@
 						"method": "GET",
 						"header": [
 							{
-								"key": "Authorization",
+								"key": "x-api-key",
 								"type": "text",
-								"value": "Bearer hDHjjC3tYYrP1bSf2GPv537KjGJhPXlr78V5r2jTW/s=@MjE1NjU="
-							},
-							{
-								"key": "Content-Type",
-								"name": "Content-Type",
-								"value": "application/x-www-form-urlencoded",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
-						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v1/earchive/backtodraft?ids=23EE1D2A-E7E0-4168-AB20-0B7CBDC64799",
-							"protocol": "https",
-							"host": [
-								"efaturaservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v1",
-								"earchive",
-								"backtodraft"
-							],
-							"query": [
-								{
-									"key": "ids",
-									"value": "23EE1D2A-E7E0-4168-AB20-0B7CBDC64799",
-									"description": "birden fazla faturayı taslağa çekmek için 2. ids eklenmeli"
-								},
-								{
-									"key": "ids",
-									"value": "588F83EF-30FF-482A-BD5D-129DDE617B19",
-									"description": "birden fazla için örnek",
-									"disabled": true
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Earchive_GetEmailDetail",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"type": "text",
-								"value": "Bearer OKy1DtGZ6QYr9JY9srVtwmJQ53LRFMsT/mcbMNKxx9w=@Ng=="
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "formdata",
-							"formdata": []
-						},
-						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v1/earchive/getmaildetail?id=d75d7747-7912-4df6-913a-7ffb8cdb7f3e",
-							"protocol": "https",
-							"host": [
-								"efaturaservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v1",
-								"earchive",
-								"getmaildetail"
-							],
-							"query": [
-								{
-									"key": "id",
-									"value": "d75d7747-7912-4df6-913a-7ffb8cdb7f3e"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Earchive_ReTryEmail_ForError",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"type": "text",
-								"value": "Bearer bSluy87oLNgMLL9niwVzP6ig977JmDcIeSI/9/CMcjs=@Ng=="
+								"value": ""
 							},
 							{
 								"key": "Content-Type",
@@ -1158,9 +1014,9 @@
 						"method": "GET",
 						"header": [
 							{
-								"key": "Authorization",
+								"key": "x-api-key",
 								"type": "text",
-								"value": "Bearer XBVXaWGrV2vkt1z15h7AiRJzZ26rCHFmUfYXkgnd4tQ=@MjE2NTE="
+								"value": ""
 							},
 							{
 								"key": "Content-Type",
@@ -1199,49 +1055,14 @@
 					"response": []
 				},
 				{
-					"name": "Post_Outbox_EArsivInvoice_UBL",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Authorization",
-								"type": "text",
-								"value": "Bearer 0VEYj7uiOVjKB53B62btuv3bllHZtdcZbpKv0v6Lh3E=@MjE2NTE="
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"InvoiceZip\": \"\",\r\n    \"AppType\": 2,\r\n    \"Status\": 0,\r\n    \"Prefix\": \"\",\r\n    \"localReferenceId\":\"aybars123\",\r\n    \"CheckLocalReferenceId\": false,\r\n    \"UseManualInvoiceId\": false,\r\n    \"UseFirstAlias\": false,\r\n    \"eArsivInfo\": {\r\n        \"sendEMail\":false,\r\n        \"eMailAddress\":\"\"\r\n    }\r\n}"
-						},
-						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v1/outboxInvoice",
-							"protocol": "https",
-							"host": [
-								"efaturaservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v1",
-								"outboxInvoice"
-							]
-						}
-					},
-					"response": []
-				},
-				{
 					"name": "Get_Earchive_Status_List",
 					"request": {
 						"method": "POST",
 						"header": [
 							{
-								"key": "Authorization",
+								"key": "x-api-key",
 								"type": "text",
-								"value": "Bearer /mAdVdlRs949IWyKYI3oXKrCRd1gOavcwV5eOGLRuTA=@MjE2NTE="
+								"value": ""
 							},
 							{
 								"key": "Content-Type",
@@ -1270,14 +1091,14 @@
 					"response": []
 				},
 				{
-					"name": "Post_Earchive_ReTryEmail",
+					"name": "Post_Outbox_EArsivInvoice_UBL",
 					"request": {
 						"method": "POST",
 						"header": [
 							{
-								"key": "Authorization",
+								"key": "x-api-key",
 								"type": "text",
-								"value": "Bearer 6MDxgF76SNrCK7dO/k11Y/dUvtl93pjvCRsBy8VM4kM=@Ng=="
+								"value": ""
 							},
 							{
 								"key": "Content-Type",
@@ -1286,7 +1107,42 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\":\"9BC954F4-94E3-42D9-8DC0-392E0A2577EA\",\n    \"emailaddresses\":\"aybars.karaman@eplatform.com.tr;cagla.inan@eplatform.com.tr\"\n}"
+							"raw": "{\r\n    \"InvoiceZip\": \"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\",\r\n    \"AppType\": 2,\r\n    \"Status\": 0,\r\n    \"Prefix\": \"\",\r\n    \"localReferenceId\":\"aybars123\",\r\n    \"CheckLocalReferenceId\": false,\r\n    \"UseManualInvoiceId\": false,\r\n    \"UseFirstAlias\": false,\r\n    \"eArsivInfo\": {\r\n        \"sendEMail\":false,\r\n        \"eMailAddress\":\"\"\r\n    }\r\n}"
+						},
+						"url": {
+							"raw": "https://efaturaservicetest.isim360.com/v1/outboxInvoice",
+							"protocol": "https",
+							"host": [
+								"efaturaservicetest",
+								"isim360",
+								"com"
+							],
+							"path": [
+								"v1",
+								"outboxInvoice"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Gönderilen E-Arşiv Faturanın Mailini Farklı Maile Gönderme",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"type": "text",
+								"value": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\":\"9BC954F4-94E3-42D9-8DC0-392E0A2577EA\",\n    \"emailaddresses\":\"deneme1@deneme.com;deneme2@deneme.com\"\n}"
 						},
 						"url": {
 							"raw": "https://efaturaservicetest.isim360.com/v1/earchive/retryinvoicemail",
@@ -1311,9 +1167,9 @@
 						"method": "POST",
 						"header": [
 							{
-								"key": "Authorization",
+								"key": "x-api-key",
 								"type": "text",
-								"value": "Bearer L9pLjQyRAdoB1cAOwECM9gns4qVakEqT6iP4oZx1n74=@MjE2ODM="
+								"value": ""
 							},
 							{
 								"key": "Content-Type",
@@ -1347,8 +1203,8 @@
 						"method": "POST",
 						"header": [
 							{
-								"key": "Authorization",
-								"value": "Bearer m9G31/4VrU1iz7TxRI4tLJFnRaoaQWHvIMj2JY5slGs=@Ng==",
+								"key": "x-api-key",
+								"value": "",
 								"type": "text"
 							},
 							{
@@ -1384,9 +1240,9 @@
 						"method": "PUT",
 						"header": [
 							{
-								"key": "Authorization",
+								"key": "x-api-key",
 								"type": "text",
-								"value": "Bearer iS0LUZI9H+y2EFhaxZXoATabxOkcy6kHCAXKNnTBnKM=@MjE4NDQ="
+								"value": ""
 							},
 							{
 								"key": "Content-Type",
@@ -1415,14 +1271,14 @@
 					"response": []
 				},
 				{
-					"name": "Cancel_Earchive_Invoice",
+					"name": "E-Arşiv İptal (Resmi İşlemdir, Silme Değildir)",
 					"request": {
 						"method": "PUT",
 						"header": [
 							{
-								"key": "Authorization",
+								"key": "x-api-key",
 								"type": "text",
-								"value": "Bearer iS0LUZI9H+y2EFhaxZXoATabxOkcy6kHCAXKNnTBnKM=@MjE4NDQ="
+								"value": ""
 							},
 							{
 								"key": "Content-Type",
@@ -1456,14 +1312,14 @@
 			"name": "Gib_User",
 			"item": [
 				{
-					"name": "Get_GibUserZipList",
+					"name": "E-Fatura Mükellef Listesi",
 					"request": {
 						"method": "GET",
 						"header": [
 							{
-								"key": "Authorization",
+								"key": "x-api-key",
 								"type": "text",
-								"value": "Bearer l9tMB9qejH8CtsOYkrv+z7xj7PZTd2P/9aqUa9b2/hU=@MjE1NjU="
+								"value": ""
 							},
 							{
 								"key": "Content-Type",
@@ -1489,54 +1345,6 @@
 					"response": []
 				}
 			]
-		},
-		{
-			"name": "Token",
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"name": "Content-Type",
-						"type": "text",
-						"value": "application/x-www-form-urlencoded"
-					}
-				],
-				"body": {
-					"mode": "urlencoded",
-					"urlencoded": [
-						{
-							"key": "username",
-							"value": "aybarsservice",
-							"type": "text"
-						},
-						{
-							"key": "password",
-							"value": "asd123",
-							"type": "text"
-						},
-						{
-							"key": "client_id",
-							"value": "serviceApi",
-							"type": "text"
-						}
-					]
-				},
-				"url": {
-					"raw": "https://coretest.isim360.com/v1/token",
-					"protocol": "https",
-					"host": [
-						"coretest",
-						"isim360",
-						"com"
-					],
-					"path": [
-						"v1",
-						"token"
-					]
-				}
-			},
-			"response": []
 		}
 	]
 }
