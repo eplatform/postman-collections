@@ -309,6 +309,39 @@
 					"response": []
 				},
 				{
+					"name": "Gelen Fatura Durum Sorgulama",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"type": "text",
+								"value": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://efaturaservicetest.isim360.com/v2/inboxinvoice/9758339E-EB0B-454C-8C2F-18059F944A3F/status",
+							"protocol": "https",
+							"host": [
+								"efaturaservicetest",
+								"isim360",
+								"com"
+							],
+							"path": [
+								"v2",
+								"inboxinvoice",
+								"9758339E-EB0B-454C-8C2F-18059F944A3F",
+								"status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Gelen Fatura Pdf",
 					"request": {
 						"method": "GET",
@@ -708,12 +741,13 @@
 					"response": []
 				},
 				{
-					"name": "Get_Invoice_Status_List_v2",
+					"name": "Giden Fatura Durum Sorgulama",
 					"request": {
-						"method": "POST",
+						"method": "GET",
 						"header": [
 							{
 								"key": "x-api-key",
+								"type": "text",
 								"value": ""
 							},
 							{
@@ -721,17 +755,8 @@
 								"value": "application/json"
 							}
 						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n\t\"ids\":[\"C2F1D172-FBB6-4E4E-B3EC-52C2DE8A02F4\"]\r\n\t\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
 						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v2/outboxinvoice/status",
+							"raw": "https://efaturaservicetest.isim360.com/v2/outboxinvoice/9758339E-EB0B-454C-8C2F-18059F944A3F/status",
 							"protocol": "https",
 							"host": [
 								"efaturaservicetest",
@@ -741,6 +766,7 @@
 							"path": [
 								"v2",
 								"outboxinvoice",
+								"9758339E-EB0B-454C-8C2F-18059F944A3F",
 								"status"
 							]
 						}
@@ -1055,9 +1081,9 @@
 					"response": []
 				},
 				{
-					"name": "Get_Earchive_Status_List",
+					"name": "E-Arşiv Fatura Durum Sorgulama",
 					"request": {
-						"method": "POST",
+						"method": "GET",
 						"header": [
 							{
 								"key": "x-api-key",
@@ -1069,12 +1095,8 @@
 								"value": "application/json"
 							}
 						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"ids\": [\r\n        \"51CB09FC-FAA3-4876-B916-04C256D1486C\",\r\n        \"5FE799EC-F956-4DD4-9C4B-0A432E27C898\"\r\n    ]\r\n}"
-						},
 						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v2/earchive/status",
+							"raw": "https://efaturaservicetest.isim360.com/v2/earchive/51CB09FC-FAA3-4876-B916-04C256D1486C/status",
 							"protocol": "https",
 							"host": [
 								"efaturaservicetest",
@@ -1084,6 +1106,7 @@
 							"path": [
 								"v2",
 								"earchive",
+								"51CB09FC-FAA3-4876-B916-04C256D1486C",
 								"status"
 							]
 						}
