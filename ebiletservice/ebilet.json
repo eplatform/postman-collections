@@ -1,124 +1,13 @@
 {
 	"info": {
-		"_postman_id": "ff43d8b7-b476-4f89-b7e2-181728a68412",
-		"name": "e-Bilet Etkinlik",
+		"_postman_id": "2550d24c-08f4-4be7-8db4-2bb9bbc1515f",
+		"name": "e-Bilet Entegrasyon Postman",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
 			"name": "Etkinlik Bileti",
 			"item": [
-				{
-					"name": "Get Ticket List",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Bearer iRj5ivVQnT1COqPkuJT1NrNzcZ+0qHC1rafdketJJUw=@MjIwNjc="
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "https://ebiletservicetest.isim360.com/v1/event-ticket?pageIndex=1&pageSize=50&queryFilter=&isDesc=false",
-							"protocol": "https",
-							"host": [
-								"ebiletservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v1",
-								"event-ticket"
-							],
-							"query": [
-								{
-									"key": "pageIndex",
-									"value": "1"
-								},
-								{
-									"key": "pageSize",
-									"value": "50"
-								},
-								{
-									"key": "queryFilter",
-									"value": ""
-								},
-								{
-									"key": "isDesc",
-									"value": "false"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get Detail - Düzenlemek için Detay",
-					"protocolProfileBehavior": {
-						"disabledSystemHeaders": {}
-					},
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"type": "text",
-								"value": "Bearer D11KAaE1ctPEO0Z3QOzb2wRajAohvIX3lRXoCqlir2g=@MjE5NDU="
-							}
-						],
-						"url": {
-							"raw": "https://ebiletservicetest.isim360.com/v1/event-ticket/detail/ECB27058-8597-5E8C-8A36-5943B0794CF1",
-							"protocol": "https",
-							"host": [
-								"ebiletservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v1",
-								"event-ticket",
-								"detail",
-								"ECB27058-8597-5E8C-8A36-5943B0794CF1"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get - Basic Model",
-					"protocolProfileBehavior": {
-						"disabledSystemHeaders": {}
-					},
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Bearer Nw/yYMmKtzOJ+F80UHnYjEmb2GdmYdyyXwVGsRz3HpU=@MjE2NTE=",
-								"type": "text"
-							}
-						],
-						"url": {
-							"raw": "https://ebiletservicetest.isim360.com/v1/event-ticket/39df93b2-8fae-46e1-a923-2827a66046e9",
-							"protocol": "https",
-							"host": [
-								"ebiletservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v1",
-								"event-ticket",
-								"39df93b2-8fae-46e1-a923-2827a66046e9"
-							]
-						}
-					},
-					"response": []
-				},
 				{
 					"name": "Get Xml",
 					"protocolProfileBehavior": {
@@ -128,9 +17,9 @@
 						"method": "GET",
 						"header": [
 							{
-								"key": "Authorization",
+								"key": "x-api-key",
 								"type": "text",
-								"value": "Bearer 7vxkUF/7QhmqUAo7VxPdcLhvxTiWW6cMq+armNCXg8Y=@MjIwNjc="
+								"value": ""
 							}
 						],
 						"url": {
@@ -160,9 +49,9 @@
 						"method": "GET",
 						"header": [
 							{
-								"key": "Authorization",
+								"key": "x-api-key",
 								"type": "text",
-								"value": "Bearer 7vxkUF/7QhmqUAo7VxPdcLhvxTiWW6cMq+armNCXg8Y=@MjIwNjc="
+								"value": ""
 							}
 						],
 						"url": {
@@ -184,6 +73,38 @@
 					"response": []
 				},
 				{
+					"name": "Get Status",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"type": "text",
+								"value": ""
+							}
+						],
+						"url": {
+							"raw": "https://ebiletservicetest.isim360.com/v1/event-ticket/1c42564a-46be-4304-ab35-f9b9f6c7a105/status",
+							"protocol": "https",
+							"host": [
+								"ebiletservicetest",
+								"isim360",
+								"com"
+							],
+							"path": [
+								"v1",
+								"event-ticket",
+								"1c42564a-46be-4304-ab35-f9b9f6c7a105",
+								"status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Get Pdf",
 					"protocolProfileBehavior": {
 						"disabledSystemHeaders": {}
@@ -192,9 +113,9 @@
 						"method": "POST",
 						"header": [
 							{
-								"key": "Authorization",
+								"key": "x-api-key",
 								"type": "text",
-								"value": "Bearer eWjJrUfw8kKdHAkj3O+9bRUHcWTKEkRHV3ouy/WjuPM=@MjE5NDU="
+								"value": ""
 							}
 						],
 						"body": {
@@ -224,46 +145,6 @@
 					"response": []
 				},
 				{
-					"name": "Get Status List",
-					"protocolProfileBehavior": {
-						"disabledSystemHeaders": {}
-					},
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Authorization",
-								"type": "text",
-								"value": "Bearer E2ovhk+3bfc5o8TsP57wkiZ+Flclnj5P+4XrpUTCJEE=@MjE2NTE="
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "[\n        \"1c42564a-46be-4304-ab35-f9b9f6c7a105\",\n        \"1c42564a-46be-4304-ab35-f9b9f6c7a104\"\n]",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "https://ebiletservicetest.isim360.com/v1/event-ticket/status",
-							"protocol": "https",
-							"host": [
-								"ebiletservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v1",
-								"event-ticket",
-								"status"
-							]
-						}
-					},
-					"response": []
-				},
-				{
 					"name": "Post Event Ticket",
 					"protocolProfileBehavior": {
 						"disabledSystemHeaders": {}
@@ -272,9 +153,9 @@
 						"method": "POST",
 						"header": [
 							{
-								"key": "Authorization",
+								"key": "x-api-key",
 								"type": "text",
-								"value": "Bearer 2s4RcvAVqWh+du76U0tMo9Wgen44RGZ5BtqlzzhO4Qw=@MjE2NTE="
+								"value": ""
 							}
 						],
 						"body": {
@@ -308,12 +189,8 @@
 						"method": "POST",
 						"header": [
 							{
-								"key": "Authorization",
-								"value": "Bearer TWH+a+qVW7Vk0s6lmu57EzYCDQk8ejtx1/KNN2ZJGUs=@Ng=="
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
+								"key": "x-api-key",
+								"value": ""
 							}
 						],
 						"body": {
@@ -346,9 +223,9 @@
 						"method": "PUT",
 						"header": [
 							{
-								"key": "Authorization",
+								"key": "x-api-key",
 								"type": "text",
-								"value": "Bearer D11KAaE1ctPEO0Z3QOzb2wRajAohvIX3lRXoCqlir2g=@MjE5NDU="
+								"value": ""
 							}
 						],
 						"body": {
@@ -386,9 +263,9 @@
 						"method": "PUT",
 						"header": [
 							{
-								"key": "Authorization",
+								"key": "x-api-key",
 								"type": "text",
-								"value": "Bearer eWjJrUfw8kKdHAkj3O+9bRUHcWTKEkRHV3ouy/WjuPM=@MjE5NDU="
+								"value": ""
 							}
 						],
 						"body": {
@@ -566,114 +443,6 @@
 					]
 				},
 				{
-					"name": "Get-Basic Model",
-					"protocolProfileBehavior": {
-						"disabledSystemHeaders": {}
-					},
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"type": "text",
-								"value": "Bearer /o7AvwE/zifN9m/ZEFMnrZr4jUkq1yji7BpmFd5kY0w=@MjE5NDU="
-							}
-						],
-						"url": {
-							"raw": "https://ebiletservicetest.isim360.com/v1/passenger-ticket/ecb37079-8598-5e9c-9a36-6943b0794cf2",
-							"protocol": "https",
-							"host": [
-								"ebiletservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v1",
-								"passenger-ticket",
-								"ecb37079-8598-5e9c-9a36-6943b0794cf2"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get Detail - Düzenlemek için detay",
-					"protocolProfileBehavior": {
-						"disabledSystemHeaders": {}
-					},
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"type": "text",
-								"value": "Bearer W5UjffA0VoWrQBhxYDOBbGxbkuO8bfcEEoDjRGHQCWo=@MjE5NDU="
-							}
-						],
-						"url": {
-							"raw": "https://ebiletservicetest.isim360.com/v1/passenger-ticket/detail/ecb37079-8598-5e9c-9a46-6943b0794cf2",
-							"protocol": "https",
-							"host": [
-								"ebiletservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v1",
-								"passenger-ticket",
-								"detail",
-								"ecb37079-8598-5e9c-9a46-6943b0794cf2"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get Ticket List",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Bearer U+fKghzkQOtbBa4cv0162+DReO9+La3VZmAfZzW7DfU=@MzIxMTU="
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "https://ebiletservicetest.isim360.com/v1/passenger-ticket?pageIndex=1&pageSize=50",
-							"protocol": "https",
-							"host": [
-								"ebiletservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v1",
-								"passenger-ticket"
-							],
-							"query": [
-								{
-									"key": "pageIndex",
-									"value": "1"
-								},
-								{
-									"key": "pageSize",
-									"value": "50"
-								},
-								{
-									"key": "filterQuery",
-									"value": "",
-									"disabled": true
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
 					"name": "Get Xml",
 					"protocolProfileBehavior": {
 						"disabledSystemHeaders": {}
@@ -682,9 +451,9 @@
 						"method": "GET",
 						"header": [
 							{
-								"key": "Authorization",
+								"key": "x-api-key",
 								"type": "text",
-								"value": "Bearer 7vxkUF/7QhmqUAo7VxPdcLhvxTiWW6cMq+armNCXg8Y=@MjIwNjc="
+								"value": ""
 							}
 						],
 						"url": {
@@ -714,9 +483,9 @@
 						"method": "GET",
 						"header": [
 							{
-								"key": "Authorization",
+								"key": "x-api-key",
 								"type": "text",
-								"value": "Bearer /o7AvwE/zifN9m/ZEFMnrZr4jUkq1yji7BpmFd5kY0w=@MjE5NDU="
+								"value": ""
 							}
 						],
 						"url": {
@@ -738,6 +507,38 @@
 					"response": []
 				},
 				{
+					"name": "Get Status List",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"type": "text",
+								"value": ""
+							}
+						],
+						"url": {
+							"raw": "https://ebiletservicetest.isim360.com/v1/passenger-ticket/ecb37079-8598-5e9c-9a46-6943b0794cf2/status",
+							"protocol": "https",
+							"host": [
+								"ebiletservicetest",
+								"isim360",
+								"com"
+							],
+							"path": [
+								"v1",
+								"passenger-ticket",
+								"ecb37079-8598-5e9c-9a46-6943b0794cf2",
+								"status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Get Pdf",
 					"protocolProfileBehavior": {
 						"disabledSystemHeaders": {}
@@ -746,9 +547,9 @@
 						"method": "POST",
 						"header": [
 							{
-								"key": "Authorization",
+								"key": "x-api-key",
 								"type": "text",
-								"value": "Bearer wUyI2KO0vpFxxoCxsN4Z+j1tqi/hfwElN5TgMDEX2UM=@MjE5NDU="
+								"value": ""
 							}
 						],
 						"body": {
@@ -778,57 +579,13 @@
 					"response": []
 				},
 				{
-					"name": "Get Status List",
-					"protocolProfileBehavior": {
-						"disabledSystemHeaders": {}
-					},
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Authorization",
-								"type": "text",
-								"value": "Bearer E2ovhk+3bfc5o8TsP57wkiZ+Flclnj5P+4XrpUTCJEE=@MjE2NTE="
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "[\n        \"ecb37079-8598-5e9c-9a46-6943b0794cf2\"\n]",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "https://ebiletservicetest.isim360.com/v1/passenger-ticket/status",
-							"protocol": "https",
-							"host": [
-								"ebiletservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v1",
-								"passenger-ticket",
-								"status"
-							]
-						}
-					},
-					"response": []
-				},
-				{
 					"name": "Post Passenger Ticket",
 					"request": {
 						"method": "POST",
 						"header": [
 							{
-								"key": "Authorization",
-								"value": "Bearer ruQoz/NjzU0lE/ZlIvBHujWxPK6YF3X9CSe0DIO9wOo=@MjE2NTE="
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
+								"key": "x-api-key",
+								"value": ""
 							}
 						],
 						"body": {
@@ -860,9 +617,9 @@
 						"method": "POST",
 						"header": [
 							{
-								"key": "Authorization",
+								"key": "x-api-key",
 								"type": "text",
-								"value": "Bearer U+fKghzkQOtbBa4cv0162+DReO9+La3VZmAfZzW7DfU=@MzIxMTU="
+								"value": ""
 							}
 						],
 						"body": {
@@ -897,12 +654,8 @@
 						"method": "PUT",
 						"header": [
 							{
-								"key": "Authorization",
-								"value": "Bearer ruQoz/NjzU0lE/ZlIvBHujWxPK6YF3X9CSe0DIO9wOo=@MjE2NTE="
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
+								"key": "x-api-key",
+								"value": ""
 							}
 						],
 						"body": {
@@ -935,9 +688,9 @@
 						"method": "PUT",
 						"header": [
 							{
-								"key": "Authorization",
+								"key": "x-api-key",
 								"type": "text",
-								"value": "Bearer W5UjffA0VoWrQBhxYDOBbGxbkuO8bfcEEoDjRGHQCWo=@MjE5NDU="
+								"value": ""
 							}
 						],
 						"body": {
@@ -967,54 +720,6 @@
 					"response": []
 				}
 			]
-		},
-		{
-			"name": "Token",
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"name": "Content-Type",
-						"type": "text",
-						"value": "application/x-www-form-urlencoded"
-					}
-				],
-				"body": {
-					"mode": "urlencoded",
-					"urlencoded": [
-						{
-							"key": "username",
-							"value": "",
-							"type": "text"
-						},
-						{
-							"key": "password",
-							"value": "",
-							"type": "text"
-						},
-						{
-							"key": "client_id",
-							"value": "serviceApi",
-							"type": "text"
-						}
-					]
-				},
-				"url": {
-					"raw": "https://coretest.isim360.com/v1/token",
-					"protocol": "https",
-					"host": [
-						"coretest",
-						"isim360",
-						"com"
-					],
-					"path": [
-						"v1",
-						"token"
-					]
-				}
-			},
-			"response": []
 		}
 	]
 }

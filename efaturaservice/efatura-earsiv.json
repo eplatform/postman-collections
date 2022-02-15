@@ -674,40 +674,6 @@
 					"response": []
 				},
 				{
-					"name": "Get_OutboxInvoice_Zip_v2",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "x-api-key",
-								"type": "text",
-								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v2/outboxinvoice/B1120903-EE7E-4432-8ACF-038207F17CD0/zip/true",
-							"protocol": "https",
-							"host": [
-								"efaturaservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v2",
-								"outboxinvoice",
-								"B1120903-EE7E-4432-8ACF-038207F17CD0",
-								"zip",
-								"true"
-							]
-						}
-					},
-					"response": []
-				},
-				{
 					"name": "Get_OutboxInvoice_Ubl_v2",
 					"request": {
 						"method": "GET",
@@ -774,7 +740,10 @@
 					"response": []
 				},
 				{
-					"name": "E-Fatura UBL Gönderim",
+					"name": "Post_OutboxInvoice_UBL",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
 					"request": {
 						"method": "POST",
 						"header": [
@@ -782,18 +751,81 @@
 								"key": "x-api-key",
 								"type": "text",
 								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
 							}
 						],
 						"body": {
-							"mode": "raw",
-							"raw": "{\r\n\"InvoiceZip\": \"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\",\r\n\"AppType\": 1,\r\n\"Status\": 20,\r\n\"Prefix\": \"\",\r\n\"CheckLocalReferenceId\": false,\r\n\"UseManualInvoiceId\": false,\r\n\"TargetAlias\":\"urn:mail:defaulttest3pk@medyasoft.com.tr\",\r\n\"UseFirstAlias\":false\r\n}"
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "invoiceFile",
+									"type": "file",
+									"src": "/C:/Users/Aybars Karaman/Downloads/TST2022000000325_6220517884.xml"
+								},
+								{
+									"key": "appType",
+									"value": "1",
+									"description": "appType 1 olarak gönderilmek durumunda",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "20",
+									"type": "text"
+								},
+								{
+									"key": "useManualInvoiceId",
+									"value": "false",
+									"type": "text"
+								},
+								{
+									"key": "targetAlias",
+									"value": "urn:mail:defaulttest3pk@medyasoft.com.tr",
+									"description": "alıcı kurumun etiketi",
+									"type": "text"
+								},
+								{
+									"key": "useFirstAlias",
+									"value": "true",
+									"description": "eğer etiket gönderilmeyecekse, alıcının rastgele bir etiketine fatura gönder",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "prefix",
+									"value": "EPA",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "localReferenceId",
+									"value": "deneme",
+									"description": "Sisteme ERP numaranızı eklemek için kullanılan alan",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "checkLocalReferenceId",
+									"value": "false",
+									"description": "Daha önce ERP numaranız kullanıldı mı kontrolü",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "xsltCode",
+									"value": "code",
+									"description": "Sistemde tanımlı fatura olan fatura görselini kullanmak için gerekli kod",
+									"type": "text",
+									"disabled": true
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
 						},
 						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v1/outboxInvoice",
+							"raw": "https://efaturaservicetest.isim360.com/v2/outboxinvoice",
 							"protocol": "https",
 							"host": [
 								"efaturaservicetest",
@@ -801,8 +833,8 @@
 								"com"
 							],
 							"path": [
-								"v1",
-								"outboxInvoice"
+								"v2",
+								"outboxinvoice"
 							]
 						}
 					},
@@ -844,25 +876,81 @@
 					"response": []
 				},
 				{
-					"name": "Post_Outbox_Invoice_Full_Model_Json",
+					"name": "Put_OutboxInvoice_UBL",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
 					"request": {
-						"method": "POST",
+						"method": "PUT",
 						"header": [
 							{
 								"key": "x-api-key",
+								"type": "text",
 								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
 							}
 						],
 						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"recordType\": 1,\n    \"status\": 0,\n    \"localReferenceId\": \"B000045/30\",\n    \"useManualInvoiceId\": false,\n    \"notes\": [\n        {\n            \"note\": \"Harçlar KDV matrahına dahil değildir.\"\n        }\n    ],\n    \"addressBook\": {\n        \"identificationNumber\": \"1234567803\",\n        \"name\": \"ABC\",\n        \"receiverStreet\": \"aaaa\",\n        \"receiverDistrict\": \"dsada\",\n        \"receiverCity\": \"İstanbul\",\n        \"receiverCountry\": \"TÜRKİYE\",\n        \"receiverTaxOffice\": \"Üsküdar\",\n        \"alias\": \"urn:mail:defaulttest3pk@medyasoft.com.tr\"\n    },\n    \"generalInfoModel\": {\n        \"invoiceNumber\": \"ABC2020000000009\",\n        \"issueDate\": \"2020-07-14 09:03:16.0\",\n        \"invoiceProfileType\": 0,\n        \"type\": 1,\n        \"currencyCode\": \"TRY\"\n    },\n    \"invoiceLines\": [\n        {\n            \"inventoryCard\": \"ggggg\",\n            \"amount\": 1,\n            \"unitCode\": \"C62\",\n            \"unitPrice\": 34.92,\n            \"vatRate\": 18,\n            \"vatAmount\": 6.28,\n            \"lineExtensionAmount\": 34.92\n        },\n        {\n            \"inventoryCard\": \"ccccc\",\n            \"amount\": 1,\n            \"unitCode\": \"C62\",\n            \"unitPrice\": 38.8,\n            \"vatRate\": 0,\n            \"vatAmount\": 0,\n            \"lineExtensionAmount\": 38.8,\n            \"vatExemptionReasonCode\": \"351\"\n        }\n    ],\n    \"ublSettingsModel\": {\n        \"useCalculatedVatAmount\": true,\n        \"useCalculatedTotalSummary\": true\n    },\n    \"paymentMeansModel\": {\n        \"paymentMeansCode\": 97,\n        \"instructionNote\": \"Kredi Kartı/Banka Kartı\",\n        \"payeeFinancialAccountCurrencyCode \": \"TRY\",\n        \"payeeFinancialAccountId \": \"TR13000100111111111111111\"\n    }\n}"
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "invoiceFile",
+									"type": "file",
+									"src": "/C:/Users/Aybars Karaman/Downloads/TST2022000000325_6220517884.xml"
+								},
+								{
+									"key": "appType",
+									"value": "1",
+									"description": "appType 1 olarak gönderilmek durumunda",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "20",
+									"type": "text"
+								},
+								{
+									"key": "targetAlias",
+									"value": "urn:mail:defaulttest3pk@medyasoft.com.tr",
+									"description": "alıcı kurumun etiketi",
+									"type": "text"
+								},
+								{
+									"key": "useFirstAlias",
+									"value": "true",
+									"description": "eğer etiket gönderilmeyecekse, alıcının rastgele bir etiketine fatura gönder",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "localReferenceId",
+									"value": "deneme",
+									"description": "Sisteme ERP numaranızı eklemek için kullanılan alan",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "checkLocalReferenceId",
+									"value": "false",
+									"description": "Daha önce ERP numaranız kullanıldı mı kontrolü",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "xsltCode",
+									"value": "code",
+									"description": "Sistemde tanımlı fatura olan fatura görselini kullanmak için gerekli kod",
+									"type": "text",
+									"disabled": true
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
 						},
 						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v1/outboxinvoice/create",
+							"raw": "https://efaturaservicetest.isim360.com/v2/outboxinvoice/CCC25052-B857-431B-B9AE-357C31D2C195",
 							"protocol": "https",
 							"host": [
 								"efaturaservicetest",
@@ -870,16 +958,16 @@
 								"com"
 							],
 							"path": [
-								"v1",
+								"v2",
 								"outboxinvoice",
-								"create"
+								"CCC25052-B857-431B-B9AE-357C31D2C195"
 							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "Put_Outbox_Invoice_Basic_Model_Json",
+					"name": "E-Fatura Json Model Güncelleme",
 					"request": {
 						"method": "PUT",
 						"header": [
@@ -909,42 +997,6 @@
 								"outboxinvoice",
 								"update",
 								"00afab92-2f34-4952-bda7-214b312a4b16"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "E-Fatura UBL Güncelleme",
-					"request": {
-						"method": "PUT",
-						"header": [
-							{
-								"key": "x-api-key",
-								"type": "text",
-								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n\"InvoiceZip\": \"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\",\r\n\"AppType\": 1,\r\n\"Status\": 0,\r\n\"CheckLocalReferenceId\": false,\r\n\"UseManualInvoiceId\": false,\r\n\"TargetAlias\":\"urn:mail:defaulttest3pk@medyasoft.com.tr\",\r\n\"UseFirstAlias\":false\r\n}"
-						},
-						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v1/outboxInvoice/DEE0D3EF-9088-444C-9A52-E9ADFACB8A4D",
-							"protocol": "https",
-							"host": [
-								"efaturaservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v1",
-								"outboxInvoice",
-								"DEE0D3EF-9088-444C-9A52-E9ADFACB8A4D"
 							]
 						}
 					},
@@ -1114,9 +1166,9 @@
 					"response": []
 				},
 				{
-					"name": "Post_Outbox_EArsivInvoice_UBL",
+					"name": "Get_EarchiveInvoice_Ubl_v2",
 					"request": {
-						"method": "POST",
+						"method": "GET",
 						"header": [
 							{
 								"key": "x-api-key",
@@ -1128,12 +1180,8 @@
 								"value": "application/json"
 							}
 						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"InvoiceZip\": \"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\",\r\n    \"AppType\": 2,\r\n    \"Status\": 0,\r\n    \"Prefix\": \"\",\r\n    \"localReferenceId\":\"aybars123\",\r\n    \"CheckLocalReferenceId\": false,\r\n    \"UseManualInvoiceId\": false,\r\n    \"UseFirstAlias\": false,\r\n    \"eArsivInfo\": {\r\n        \"sendEMail\":false,\r\n        \"eMailAddress\":\"\"\r\n    }\r\n}"
-						},
 						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v1/outboxInvoice",
+							"raw": "https://efaturaservicetest.isim360.com/v2/earchive/5FD1469C-2B42-449D-A09E-1551E59BBBF9/ubl",
 							"protocol": "https",
 							"host": [
 								"efaturaservicetest",
@@ -1141,8 +1189,177 @@
 								"com"
 							],
 							"path": [
-								"v1",
-								"outboxInvoice"
+								"v2",
+								"earchive",
+								"5FD1469C-2B42-449D-A09E-1551E59BBBF9",
+								"ubl"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get_EarchiveInvoice_Pdf_v2",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"type": "text",
+								"value": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://efaturaservicetest.isim360.com/v2/earchive/B1120903-EE7E-4432-8ACF-038207F17CD0/pdf/true",
+							"protocol": "https",
+							"host": [
+								"efaturaservicetest",
+								"isim360",
+								"com"
+							],
+							"path": [
+								"v2",
+								"earchive",
+								"B1120903-EE7E-4432-8ACF-038207F17CD0",
+								"pdf",
+								"true"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get_EarchiveInvoice_Html_v2",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"type": "text",
+								"value": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://efaturaservicetest.isim360.com/v2/earchive/bf579d26-b73e-4dd3-bd1b-1226ffc28d9d/html/true",
+							"protocol": "https",
+							"host": [
+								"efaturaservicetest",
+								"isim360",
+								"com"
+							],
+							"path": [
+								"v2",
+								"earchive",
+								"bf579d26-b73e-4dd3-bd1b-1226ffc28d9d",
+								"html",
+								"true"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post_EArsivInvoice_UBL",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"type": "text",
+								"value": ""
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "invoiceFile",
+									"type": "file",
+									"src": "/C:/Users/Aybars Karaman/Downloads/EPA2022000001781_11111111111.xml"
+								},
+								{
+									"key": "status",
+									"value": "20",
+									"type": "text"
+								},
+								{
+									"key": "useManualInvoiceId",
+									"value": "false",
+									"type": "text"
+								},
+								{
+									"key": "sendEMail",
+									"value": "false",
+									"type": "text"
+								},
+								{
+									"key": "eMailAddress",
+									"value": "r@r.com",
+									"type": "text"
+								},
+								{
+									"key": "prefix",
+									"value": "EPA",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "localReferenceId",
+									"value": "deneme",
+									"description": "Sisteme ERP numaranızı eklemek için kullanılan alan",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "checkLocalReferenceId",
+									"value": "false",
+									"description": "Daha önce ERP numaranız kullanıldı mı kontrolü",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "xsltCode",
+									"value": "code",
+									"description": "Sistemde tanımlı fatura olan fatura görselini kullanmak için gerekli kod",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "allowOldEArsivCustomer",
+									"value": "false",
+									"description": "Eskiden e-arşiv kullanan, sonradan e-fatura kullanıcısı olan firmalara e-arşiv fatura kesmek için true gönderilme",
+									"type": "text",
+									"disabled": true
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://efaturaservicetest.isim360.com/v2/earchive",
+							"protocol": "https",
+							"host": [
+								"efaturaservicetest",
+								"isim360",
+								"com"
+							],
+							"path": [
+								"v2",
+								"earchive"
 							]
 						}
 					},
@@ -1204,7 +1421,7 @@
 							"raw": "{\n      \"recordType\": 0,\n      \"status\": 20,\n      \"isNew\": true,\n      \"localReferenceId\": null,\n      \"useManualInvoiceId\": false,\n      \"note\": null,\n      \"generalInfoModel\": {\n        \"ettn\": \"89a1bd8a-309d-453a-bff5-a95464ac4162\",\n        \"invoiceProfileType\": 4,\n        \"issueDate\": \"2020-07-10T14:50:51.0000000\",\n        \"type\": 1,\n        \"currencyCode\": \"TRY\",\n        \"exchangeRate\": 0.0,\n        \"totalAmount\": null,\n        \"invoiceNumber\": \"\",\n        \"issueTime\": \"2020-07-10T14:50:51.0000000\",\n        \"prefix\": null,\n        \"returnInvoiceDate\": null,\n        \"returnInvoiceNumber\": null,\n        \"slipNumber\": null\n      },\n      \"addressBook\": {\n        \"identificationNumber\": \"1123581321\",\n        \"name\": \"Nihai Tüketici\",\n        \"receiverBuildingName\": null,\n        \"receiverPersonSurName\": \"\",\n        \"receiverNumber\": null,\n        \"receiverStreet\": \"\",\n        \"receiverEmail\": \"abb@gmail.com\",\n        \"receiverDistrict\": \"PENDİK\",\n        \"receiverCity\": \"İSTANBUL\",\n        \"receiverCountry\": \"Türkiye\",\n        \"registerNumber\": null,\n        \"receiverTaxOffice\": \"\",\n        \"receiverPhoneNumber\": \"\"\n      },\n      \"invoiceLines\": [\n        {\n          \"inventoryCard\": \"YEDEK SİM KART(%8)\",\n          \"disableVatExemption\": false,\n          \"amount\": 1.0,\n          \"unitCode\": \"C62\",\n          \"unitPrice\": 0.05,\n          \"vatRate\": 8.0,\n          \"discountAmount\": 0.0,\n          \"vatAmount\": 0.0,\n          \"lineExtensionAmount\": 0.05,\n          \"vatExemptionReasonCode\": \"\"\n        }\n      ],\n      \"archiveInfoModel\": {\n        \"isInternetSale\": false,\n        \"shipmentDate\": null,\n        \"shipmentSendType\": null,\n        \"shipmentSenderName\": null,\n        \"shipmentSenderSurname\": null,\n        \"shipmentSenderTcknVkn\": null,\n        \"subscriptionType\": null,\n        \"subscriptionTypeNumber\": null,\n        \"websiteUrl\": null\n      },\n      \"paymentMeansModel\": {\n        \"instructionNote\": null,\n        \"payeeFinancialAccountCurrencyCode\": \"TRY\",\n        \"payeeFinancialAccountId\": null,\n        \"paymentChannelCode\": null,\n        \"paymentDueDate\": null,\n        \"paymentMeansCode\": 0\n      },\n      \"ublSettingsModel\": {\n        \"useCalculatedVatAmount\": true,\n        \"hideDespatchMessage\": false\n      },\n      \"eArsivInfo\": {\n        \"sendEMail\": true,\n        \"eMailAddress\": \"abb@gmail.com\"\n      }\n}\n\n"
 						},
 						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v1/outboxInvoice/create",
+							"raw": "https://efaturaservicetest.isim360.com/v2/earchive/create",
 							"protocol": "https",
 							"host": [
 								"efaturaservicetest",
@@ -1212,8 +1429,8 @@
 								"com"
 							],
 							"path": [
-								"v1",
-								"outboxInvoice",
+								"v2",
+								"earchive",
 								"create"
 							]
 						}
@@ -1241,7 +1458,7 @@
 							"raw": "{\n\t\"recordType\": 0,\n\t\"status\": 0,\n\t\"note\": null,\n\t\"notes\": [],\n\t\"addressBook\": {\n\t\t\"id\": 324,\n\t\t\"customerId\": \"842084f8-8301-4d28-89cf-1828b3449c49\",\n\t\t\"isArchive\": false,\n\t\t\"createdDate\": \"2020-04-07T15:16:15.317\",\n\t\t\"alias\": null,\n\t\t\"identificationNumber\": \"11111111111\",\n\t\t\"name\": \"Ahmet\",\n\t\t\"registerNumber\": \"11111111\",\n\t\t\"receiverPersonSurName\": \"Demir\",\n\t\t\"receiverStreet\": \"Bulvar/Cadde/Sokak\",\n\t\t\"receiverBuildingName\": \"Bina Adı\",\n\t\t\"receiverBuildingNumber\": \"1\",\n\t\t\"receiverDoorNumber\": \"11\",\n\t\t\"receiverSmallTown\": \"Kasaba/Köy\",\n\t\t\"receiverDistrict\": \"Mahalle/Semt/İlçe\",\n\t\t\"receiverZipCode\": \"34000\",\n\t\t\"receiverCity\": \"İstanbul\",\n\t\t\"receiverCountry\": \"Türkiye\",\n\t\t\"receiverCountryId\": 1,\n\t\t\"receiverPhoneNumber\": \"5052003131\",\n\t\t\"receiverFaxNumber\": \"2123559898\",\n\t\t\"receiverEmail\": \"deneme@deneme.com\",\n\t\t\"receiverWebSite\": \"www.deneme.com\",\n\t\t\"receiverTaxOffice\": \"Vergi Dairesi\",\n\t\t\"isDeleted\": false,\n\t\t\"type\": \"2\",\n\t\t\"status\": null,\n\t\t\"updatedDate\": null,\n\t\t\"isSaveAddress\": false\n\t},\n\t\"eArsivInfo\": {\n\t\t\"sendEMail\": true\n\t},\n\t\"generalInfoModel\": {\n\t\t\"ettn\": null,\n\t\t\"prefix\": \"EPI\",\n\t\t\"customizationId\": null,\n\t\t\"invoiceNumber\": null,\n\t\t\"slipNumber\": null,\n\t\t\"invoiceProfileType\": 4,\n\t\t\"issueDate\": \"2020-05-12T00:00:00+03:00\",\n\t\t\"issueTime\": \"2020-05-12T08:09:23.7141455+03:00\",\n\t\t\"type\": 1,\n\t\t\"returnInvoiceNumber\": null,\n\t\t\"returnInvoiceDate\": null,\n\t\t\"currencyId\": 1,\n\t\t\"currencyCode\": \"TRY\",\n\t\t\"exchangeRate\": 0,\n\t\t\"despatchNumber\": null,\n\t\t\"despatchType\": 0,\n\t\t\"despatchProfileType\": null,\n\t\t\"totalAmount\": null\n\t},\n\t\"invoiceLines\": [\n\t\t{\n\t\t\t\"disableVatExemption\": true,\n\t\t\t\"inventoryCard\": \"Kazak\",\n\t\t\t\"amount\": 10,\n\t\t\t\"discountAmount\": 0,\n\t\t\t\"lineAmount\": 599,\n\t\t\t\"vatAmount\": 47.92,\n\t\t\t\"unitCode\": \"C62\",\n\t\t\t\"unitPrice\": 59.9,\n\t\t\t\"vatRate\": 8,\n\t\t\t\"vatExemptionReasonCode\": null\n\t\t}\n\t],\n\t\"paymentMeansModel\": {\n\t\t\"paymentMeansCode\": 10,\n\t\t\"paymentDueDate\": \"2020-05-12T00:00:00+03:00\",\n\t\t\"paymentChannelCode\": \"ABC\",\n\t\t\"instructionNote\": \"Açıklama\",\n\t\t\"payeeFinancialAccountId\": \"1234-8654761\",\n\t\t\"payeeFinancialAccountCurrencyCode\": \"TRY\"\n\t},\n\t\"archiveInfoModel\": {\n\t\t\"isInternetSale\": true,\n\t\t\"websiteUrl\": \"www.deneme123.com\",\n\t\t\"shipmentSenderTcknVkn\": \"1234567890\",\n\t\t\"shipmentSendType\": \"ELEKTRONIK\",\n\t\t\"shipmentSenderName\": \"Aras Kargo\",\n\t\t\"shipmentSenderSurname\": null,\n\t\t\"shipmentDate\": \"2020-05-12T00:00:00+03:00\",\n\t\t\"hideDespatchMessage\": false,\n\t\t\"subscriptionType\": \"MUSTERINO\",\n\t\t\"subscriptionTypeNumber\": \"321456987\"\n\t}\n}"
 						},
 						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v1/outboxinvoice/create",
+							"raw": "https://efaturaservicetest.isim360.com/v2/earchive/create",
 							"protocol": "https",
 							"host": [
 								"efaturaservicetest",
@@ -1249,8 +1466,8 @@
 								"com"
 							],
 							"path": [
-								"v1",
-								"outboxinvoice",
+								"v2",
+								"earchive",
 								"create"
 							]
 						}
@@ -1266,18 +1483,59 @@
 								"key": "x-api-key",
 								"type": "text",
 								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
 							}
 						],
 						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"InvoiceZip\": \"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\",\n    \"AppType\": 2,\n    \"Status\": 0,\n    \"Prefix\": \"\",\n    \"CheckLocalReferenceId\": false,\n    \"UseManualInvoiceId\": false,\n    \"EArsivInfo\": {\n        \"sendEmail\": true,\n        \"emailAddress\": \"deneme@eplatform.com.tr;deneme2@deneme.com.tr\"\n    }\n}"
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "invoiceFile",
+									"type": "file",
+									"src": "/C:/Users/Aybars Karaman/Downloads/EPA2022000001781_11111111111.xml"
+								},
+								{
+									"key": "status",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "sendEMail",
+									"value": "false",
+									"type": "text"
+								},
+								{
+									"key": "eMailAddress",
+									"value": "deneme@deneme.com",
+									"type": "text"
+								},
+								{
+									"key": "localReferenceId",
+									"value": "deneme",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "checkLocalReferenceId",
+									"value": "false",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "xsltCode",
+									"value": "code",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "allowOldEArsivCustomer",
+									"value": "false",
+									"type": "text",
+									"disabled": true
+								}
+							]
 						},
 						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v1/outboxInvoice/c772b4ad-3447-4ddf-95f8-7e5251178a49",
+							"raw": "https://efaturaservicetest.isim360.com/v2/earchive/c209e2f2-eac6-4e3a-8f17-b9b61ccc6c10",
 							"protocol": "https",
 							"host": [
 								"efaturaservicetest",
@@ -1285,9 +1543,9 @@
 								"com"
 							],
 							"path": [
-								"v1",
-								"outboxInvoice",
-								"c772b4ad-3447-4ddf-95f8-7e5251178a49"
+								"v2",
+								"earchive",
+								"c209e2f2-eac6-4e3a-8f17-b9b61ccc6c10"
 							]
 						}
 					},
