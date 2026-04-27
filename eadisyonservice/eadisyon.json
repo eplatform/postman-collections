@@ -1,0 +1,686 @@
+{
+    "info": {
+        "_postman_id": "6d192c61-311d-4e73-88de-2885fe5bf10d",
+        "name": "e-Adisyon (Github)",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Status",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "https://efaturaservicetest.isim360.com/v1/eadisyon/:id/status",
+                    "protocol": "https",
+                    "host": [
+                        "efaturaservicetest",
+                        "isim360",
+                        "com"
+                    ],
+                    "path": [
+                        "v1",
+                        "eadisyon",
+                        ":id",
+                        "status"
+                    ],
+                    "variable": [
+                        {
+                            "key": "id",
+                            "value": "",
+                            "description": "Adisyon ID'si"
+                        }
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "UBL",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "https://efaturaservicetest.isim360.com/v1/eadisyon/:id/ubl",
+                    "protocol": "https",
+                    "host": [
+                        "efaturaservicetest",
+                        "isim360",
+                        "com"
+                    ],
+                    "path": [
+                        "v1",
+                        "eadisyon",
+                        ":id",
+                        "ubl"
+                    ],
+                    "variable": [
+                        {
+                            "key": "id",
+                            "value": "",
+                            "description": "Adisyon ID'si"
+                        }
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "PDF",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "https://efaturaservicetest.isim360.com/v1/eadisyon/:id/pdf/:isStandartXslt",
+                    "protocol": "https",
+                    "host": [
+                        "efaturaservicetest",
+                        "isim360",
+                        "com"
+                    ],
+                    "path": [
+                        "v1",
+                        "eadisyon",
+                        ":id",
+                        "pdf",
+                        ":isStandartXslt"
+                    ],
+                    "variable": [
+                        {
+                            "key": "id",
+                            "value": "",
+                            "description": "Adisyon ID'si"
+                        },
+                        {
+                            "key": "isStandartXslt",
+                            "value": "",
+                            "description": "Standart XSLT olup olmadığını belirtir."
+                        }
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "HTML",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "https://efaturaservicetest.isim360.com/v1/eadisyon/:id/html/:isStandartXslt",
+                    "protocol": "https",
+                    "host": [
+                        "efaturaservicetest",
+                        "isim360",
+                        "com"
+                    ],
+                    "path": [
+                        "v1",
+                        "eadisyon",
+                        ":id",
+                        "html",
+                        ":isStandartXslt"
+                    ],
+                    "variable": [
+                        {
+                            "key": "id",
+                            "value": "",
+                            "description": "Adisyon ID'si"
+                        },
+                        {
+                            "key": "isStandartXslt",
+                            "value": "",
+                            "description": "Standart XSLT olup olmadığını belirtir."
+                        }
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "ZIP",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "https://efaturaservicetest.isim360.com/v1/eadisyon/:id/zip/:isStandartXslt",
+                    "protocol": "https",
+                    "host": [
+                        "efaturaservicetest",
+                        "isim360",
+                        "com"
+                    ],
+                    "path": [
+                        "v1",
+                        "eadisyon",
+                        ":id",
+                        "zip",
+                        ":isStandartXslt"
+                    ],
+                    "variable": [
+                        {
+                            "key": "id",
+                            "value": "",
+                            "description": "Adisyon ID'si"
+                        },
+                        {
+                            "key": "isStandartXslt",
+                            "value": "",
+                            "description": "Standart XSLT olup olmadığını belirtir."
+                        }
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "GetAdditionalDocumentList",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "https://efaturaservicetest.isim360.com/v1/eadisyon/:id/getadditionaldocumentlist",
+                    "protocol": "https",
+                    "host": [
+                        "efaturaservicetest",
+                        "isim360",
+                        "com"
+                    ],
+                    "path": [
+                        "v1",
+                        "eadisyon",
+                        ":id",
+                        "getadditionaldocumentlist"
+                    ],
+                    "variable": [
+                        {
+                            "key": "id",
+                            "value": "",
+                            "description": "Adisyon ID'si"
+                        }
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "DownloadAdditionalDocument",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "https://efaturaservicetest.isim360.com/v1/eadisyon/:id/downloadadditionaldocument",
+                    "protocol": "https",
+                    "host": [
+                        "efaturaservicetest",
+                        "isim360",
+                        "com"
+                    ],
+                    "path": [
+                        "v1",
+                        "eadisyon",
+                        ":id",
+                        "downloadadditionaldocument"
+                    ],
+                    "variable": [
+                        {
+                            "key": "id",
+                            "value": "",
+                            "description": "Adisyon ID'si"
+                        }
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "InvoiceHTML (Adisyona ait Fatura Görüntüleme)",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "https://efaturaservicetest.isim360.com/v1/eadisyon/invoicehtml?id=e11b7ec4-8b30-464a-8e50-64c7596dfca8&isStandartXslt=false",
+                    "protocol": "https",
+                    "host": [
+                        "efaturaservicetest",
+                        "isim360",
+                        "com"
+                    ],
+                    "path": [
+                        "v1",
+                        "eadisyon",
+                        "invoicehtml"
+                    ],
+                    "query": [
+                        {
+                            "key": "id",
+                            "value": "e11b7ec4-8b30-464a-8e50-64c7596dfca8"
+                        },
+                        {
+                            "key": "isStandartXslt",
+                            "value": "false"
+                        }
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "InvoiceList (Adisyona ait fatura listesi)",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "https://efaturaservicetest.isim360.com/v1/eadisyon/invoicelist/:id",
+                    "protocol": "https",
+                    "host": [
+                        "efaturaservicetest",
+                        "isim360",
+                        "com"
+                    ],
+                    "path": [
+                        "v1",
+                        "eadisyon",
+                        "invoicelist",
+                        ":id"
+                    ],
+                    "variable": [
+                        {
+                            "key": "id",
+                            "value": "",
+                            "description": "Adisyon ID'si"
+                        }
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "ReTryEAdisyonMail",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "https://efaturaservicetest.isim360.com/v1/eadisyon/retryeadisyonmail/:id",
+                    "protocol": "https",
+                    "host": [
+                        "efaturaservicetest",
+                        "isim360",
+                        "com"
+                    ],
+                    "path": [
+                        "v1",
+                        "eadisyon",
+                        "retryeadisyonmail",
+                        ":id"
+                    ],
+                    "variable": [
+                        {
+                            "key": "id",
+                            "value": "",
+                            "description": "Adisyon ID'si"
+                        }
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "GetMailDetails",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "https://efaturaservicetest.isim360.com/v1/eadisyon/getmaildetails?id=",
+                    "protocol": "https",
+                    "host": [
+                        "efaturaservicetest",
+                        "isim360",
+                        "com"
+                    ],
+                    "path": [
+                        "v1",
+                        "eadisyon",
+                        "getmaildetails"
+                    ],
+                    "query": [
+                        {
+                            "key": "id",
+                            "value": "",
+                            "description": "Adisyon ID'si"
+                        }
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Create",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n    \"id\": \"00000000-0000-0000-0000-000000000000\",\r\n    \"status\": 0,\r\n    // \"isNew\": true,\r\n    //\"xsltCode\": false,\r\n    \"useManuelEAdisyonId\": true,\r\n    \"sendType\": 2,\r\n    \"sendEMail\": false,\r\n    \"isSend\": false,\r\n    \"recordType\": 0,\r\n    \"isTdevice\": false,\r\n    \"isCreateInvoice\": true,\r\n    \"notes\": [\r\n        {\r\n            \"note\": \"bu bir nottur\\n\"\r\n        }\r\n    ],\r\n    \"generalInfoModel\": {\r\n        \"invoiceProfileType\": 7,\r\n        \"issueDate\": \"2025-09-03T15:46:00+03:00\",\r\n        \"type\": 21,\r\n        \"currencyId\": 1,\r\n        \"currencyCode\": \"TRY\",\r\n        \"exchangeRate\": 0,\r\n        \"despatchType\": 0,  \r\n        \"prefix\": \"EAD\",\r\n        //\"invoiceNumber\": \"EAD2025000000003\",\r\n        \"sessionInfo\": {\r\n            \"startDate\": \"2025-09-03 13:11:20\",\r\n            \"endDate\": \"2025-09-03 15:21:20\"\r\n        }\r\n    },\r\n    \"taxes\": [],\r\n    \"invoiceLines\": [\r\n        {\r\n            \"discounts\": [\r\n                {\r\n                    \"discountRate\": 15.00,\r\n                    \"discountAmount\": 7.00\r\n                }\r\n            ],\r\n            \"taxes\": [\r\n            ],\r\n            \"inventoryCard\": \"Kuru Fasulye\",\r\n            \"amount\": 3,\r\n            \"lineAmount\": 3,\r\n            \"lineExtensionAmount\": 3,\r\n            \"vatAmount\": 0.6,\r\n            \"vatExtensionAmount\": null,\r\n            \"unitCode\": \"C62\",\r\n            \"unitPrice\": 350,\r\n            \"vatRate\": 10,\r\n            \"vatExemptionReasonCode\": null\r\n        }\r\n    ],   \r\n    \"ublSettingsModel\": {\r\n        \"useCalculatedVatAmount\": false,\r\n        \"useCalculatedTotalSummary\": false,\r\n        \"isFreeOfCharge\": false,\r\n        \"isFit\": true\r\n    },\r\n    \"customDocumentReferenceList\": [\r\n        {\r\n            \"id\": \"isAdvancedNote\",\r\n            \"documentType\": true\r\n        }\r\n    ],\r\n    \"addressBook\": {\r\n        \"identificationNumber\": \"11111111111\",\r\n        \"id\": 0,\r\n        \"receiverCity\": \"İstanbul\",\r\n        \"receiverDistrict\": \"Kadıköy\",\r\n        \"receiverCountry\": \"Türkiye\",\r\n        \"name\": \"Nihai\",\r\n        \"ReceiverPersonSurName\": \"Tüketici\",\r\n        \"receiverEmail\": \"test@ui.com\"\r\n    },\r\n    \"sellerSupplierInfo\": {\r\n        \"webSite\": \"www.turkcellesirket.com\",\r\n        \"name\": \"Buğra\",\r\n        \"personSurName\": \"Kandemir\",\r\n        \"tableNumber\": \"B11\",\r\n        \"user\": \"Garson 12\",\r\n        \"streetName\": \"Şair Arşi Caddesi\",\r\n        \"citySubdivisionName\": \"Merkez\",\r\n        \"city\": \"Kars\",\r\n        \"smallTown\": \"\",\r\n        \"countryName\": \"Türkiye\"\r\n    }\r\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "https://efaturaservicetest.isim360.com/v1/eadisyon/create",
+                    "protocol": "https",
+                    "host": [
+                        "efaturaservicetest",
+                        "isim360",
+                        "com"
+                    ],
+                    "path": [
+                        "v1",
+                        "eadisyon",
+                        "create"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "UBL (zip yükleme)",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n    \"branchCode\": \"\",\r\n    \"cashRegisterCode\": \"\",\r\n    \"checkLocalReferenceId\": false,\r\n    \"eAdisyonZip\": \"{{zip-base64}}\",\r\n    \"emailAddress\":\"\",\r\n    \"isCreateInvoice\": false,\r\n    \"localReferenceId\": \"\",\r\n    \"prefix\": \"EAD\",\r\n    \"recordType\": 0,\r\n    \"sendEMail\": false,\r\n    \"sendType\": 0,\r\n    \"status\": 0,\r\n    \"targetAlias\": \"\",\r\n    \"useFirstAlias\": false,\r\n    \"useManuelEAdisyonId\": false,\r\n    \"xsltCode\": \"master\"\r\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "https://efaturaservicetest.isim360.com/v1/eadisyon",
+                    "protocol": "https",
+                    "host": [
+                        "efaturaservicetest",
+                        "isim360",
+                        "com"
+                    ],
+                    "path": [
+                        "v1",
+                        "eadisyon"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Cancel (Adisyonu İptal Et)",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "[\"21CCDFF1-DEF7-4596-8E2C-08DD80B575A3\"]",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "https://efaturaservicetest.isim360.com/v1/eadisyon/cancel",
+                    "protocol": "https",
+                    "host": [
+                        "efaturaservicetest",
+                        "isim360",
+                        "com"
+                    ],
+                    "path": [
+                        "v1",
+                        "eadisyon",
+                        "cancel"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "ReTryEAdisyonMail",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n    \"emailAddresses\": \"dev@eplatform.com.tr\",\r\n    \"id\": \"D7B55238-3B64-458D-8B89-08DDE70D4C1F\"\r\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "https://efaturaservicetest.isim360.com/v1/eadisyon/retryeadisyonmail",
+                    "protocol": "https",
+                    "host": [
+                        "efaturaservicetest",
+                        "isim360",
+                        "com"
+                    ],
+                    "path": [
+                        "v1",
+                        "eadisyon",
+                        "retryeadisyonmail"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Update",
+            "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n    \"id\": \"c795ed73-5daf-4bf8-6047-08dd7e7785f5\",\r\n    \"status\": 0,\r\n    \"isNew\": false,\r\n    \"xsltCode\": false,\r\n    \"UseManuelEAdisyonId\": false,\r\n    \"addressBook\": {\r\n        \"id\": 0,\r\n        \"customerId\": \"00000000-0000-0000-0000-000000000000\",\r\n        \"createdDate\": \"0001-01-01T00:00:00\",\r\n        \"identificationNumber\": \"7840629543\",\r\n        \"name\": \"TEst\",\r\n        \"receiverDistrict\": \"asdasd\",\r\n        \"receiverCity\": \"İstanbul\",\r\n        \"receiverCountry\": \"Türkiye\",\r\n        \"receiverCountryId\": 1,\r\n        \"receiverEmail\": \"tugbagul@ui.com\",\r\n        \"type\": 0,\r\n        \"isDefault\": false\r\n    },\r\n    \"sendType\": 2,\r\n    \"sendEMail\": false,\r\n    \"isSend\": false,\r\n    \"recordType\": 0,\r\n    \"isTdevice\": false,\r\n    \"note\": \"bu bir nottur\\n\",\r\n    \"notes\": [\r\n        {\r\n            \"note\": \"bu bir nottur2\\n\"\r\n        }\r\n    ],\r\n    \"generalInfoModel\": {\r\n        \"ettn\": \"A0A60DF3-E0B8-457D-352E-08DD945D15A1\",\r\n        \"prefix\": \"ABN\",\r\n        \"customizationId\": \"TR1.2.1\",\r\n        \"invoiceNumber\": \"ABN2025000000012\",\r\n        \"invoiceProfileType\": 7,\r\n        \"issueDate\": \"2025-04-18T15:46:00\",\r\n        \"issueTime\": \"2025-04-18T15:46:00\",\r\n        \"deliveryDate\": \"2025-04-17T15:49:26\",\r\n        \"type\": 20,\r\n        \"returnInvoiceDate\": \"2025-05-21T06:38:52.4249086Z\",\r\n        \"currencyId\": 1,\r\n        \"currencyCode\": \"TRY\",\r\n        \"exchangeRate\": 0,\r\n        \"despatchType\": 0,\r\n          \"sessionInfo\":{\r\n            \"id\": \"7b7b4a30-0a49-11ee-be56-0242ac120002\",\r\n            \"startdate\":\"2025-05-16T12:00:00\",\r\n            \"enddate\":\"2025-05-21T00:13:01\"\r\n        }\r\n    },\r\n    \"taxes\": [],\r\n    \"invoiceLines\": [\r\n        {\r\n            \"delivery\": [],\r\n            \"inventoryServiceType\": 0,\r\n            \"inventoryCard\": \"çanta2\",\r\n            \"serialNoEnabled\": false,\r\n            \"amount\": 1,\r\n            \"unitCodeId\": 28,\r\n            \"unitCode\": \"GRM\",\r\n            \"unitPrice\": 1,\r\n            \"discountRate\": 0,\r\n            \"discountAmount\": 0,\r\n            \"lineExtensionAmount\": 1,\r\n            \"vatRate\": 0,\r\n            \"vatAmount\": 0,\r\n            \"taxes\": [\r\n                {\r\n                    \"taxTypeCode\": \"0003\",\r\n                    \"taxName\": \"GV STOPAJI\",\r\n                    \"taxRate\": 20,\r\n                    \"taxAmount\": 0.2,\r\n                    \"isWithHolding\": false,\r\n                    \"isNegative\": true,\r\n                    \"taxableAmount\": 0\r\n                }\r\n            ],\r\n            \"invoiceLineDeliveryInfoModel\": {},\r\n            \"serialNumberList\": [],\r\n            \"lineAmount\": 1,\r\n            \"netAmount\": 1,\r\n            \"incomeTaxStoppageRate\": 20,\r\n            \"incomeTaxStoppageAmount\": 0.2,\r\n            \"totalTaxAmount\": 0.2\r\n        }\r\n    ],\r\n    \"invoiceTotalsModel\": {\r\n        \"lineExtensionAmount\": \"1.00\",\r\n        \"taxExclusiveAmount\": \"0.80\",\r\n        \"taxInclusiveAmount\": \"1.00\",\r\n        \"allowanceTotalAmount\": \"\",\r\n        \"payableAmount\": \"0.80\"\r\n    },\r\n    \"paymentMeansModel\": {\r\n        \"paymentMeansCode\": 0\r\n    },\r\n    \"paymentTermsModel\": {},\r\n    \"orderInfoModel\": {\r\n        \"invoiceDocumentModel\": {\r\n            \"isFileExist\": false,\r\n            \"documentDateInString\": \"\"\r\n        }\r\n    },\r\n    \"archiveInfoModel\": {\r\n        \"isInternetSale\": false,\r\n        \"hideDespatchMessage\": false\r\n    },\r\n    \"ublSettingsModel\": {\r\n        \"useCalculatedVatAmount\": false,\r\n        \"useCalculatedTotalSummary\": false,\r\n        \"isFit\": true,\r\n        \"isFreeOfCharge\": false\r\n    },\r\n    \"relatedDespatchList\": [],\r\n    \"customDocumentReferenceList\": [\r\n        {\r\n            \"id\": \"isAdvancedNote\",\r\n            \"documentTypeCode\": \"CUSTOM\",\r\n            \"documentType\": true,\r\n            \"issueDate\": \"2024-04-18T00:00:00\"\r\n        }\r\n    ],\r\n    \"additionalInvoiceTypeInfo\": {},\r\n    \"customerAddress\": {\r\n        \"id\": 0,\r\n        \"currentAccountId\": 0,\r\n        \"country\": \"Türkiye\",\r\n        \"city\": \"İstanbul\",\r\n        \"subDivisionName\": \"asdasd\",\r\n        \"emailAddress\": \"ali@ui.com\",\r\n        \"isDefault\": false,\r\n        \"branchId\": 0,\r\n        \"createDate\": \"0001-01-01T00:00:00\",\r\n        \"status\": 0,\r\n        \"currentAccountIdentifier\": \"7840629543\"\r\n    },\r\n    \"supplierAddress\": {\r\n        \"id\": 0,\r\n        \"currentAccountId\": 0,\r\n        \"streetName\": \"İzmir Teknopark Yerleşkesi\",\r\n        \"buildingName\": \"-\",\r\n        \"buildingNumber\": \"86\",\r\n        \"doorNumber\": \"-\",\r\n        \"region\": \"Gaziemir\",\r\n        \"country\": \"Türkiye\",\r\n        \"city\": \"İzmir\",\r\n        \"subDivisionName\": \"Merkez\",\r\n        \"postalZone\": \"35400\",\r\n        \"phoneNumber\": \"2324468664\",\r\n        \"faxNumber\": \"2862175852\",\r\n        \"emailAddress\": \"iletisim@mevki.com\",\r\n        \"webSite\": \"https://mevki.com\",\r\n        \"isDefault\": false,\r\n        \"branchId\": 0,\r\n        \"createDate\": \"0001-01-01T00:00:00\",\r\n        \"status\": 0,\r\n        \"currentAccountIdentifier\": \"1234567803\",\r\n        \"currentAccountTaxOffice\": \"GAZİEMİR VERGİ DAİRESİ\",\r\n        \"currentAccountRegistrationNumber\": \"252596\"\r\n    },\r\n    \"buyerCustomerInfoModel\": {\r\n        \"issueDate\": \"0001-01-01T00:00:00\"\r\n    },\r\n    \"taxRepresentativePartyInfoModel\": {},\r\n    \"allowanceCharges\": [],\r\n    \"allDiscount\": false,\r\n    \"allDiscountRate\": 0\r\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "https://efaturaservicetest.isim360.com/v1/eadisyon/update/:id",
+                    "protocol": "https",
+                    "host": [
+                        "efaturaservicetest",
+                        "isim360",
+                        "com"
+                    ],
+                    "path": [
+                        "v1",
+                        "eadisyon",
+                        "update",
+                        ":id"
+                    ],
+                    "variable": [
+                        {
+                            "key": "id",
+                            "value": "",
+                            "description": "Adisyon ID'si"
+                        }
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "CreateInvoice (Adisyona ait fatura üretilmesi)",
+            "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n    \"EAdisyonId\": \"bef77522-f974-489c-38c1-08ddaf29413b\",\r\n    \"RecordType\": 1,\r\n    \"Alias\": \"urn:mail:defaultpk@eplatform.local\",\r\n    \"issueDate\": \"2025-07-04T00:00:00+03:00\",\r\n    \"issueTime\": \"2025-06-04T12:15:20.9441379+03:00\",\r\n    \"prefix\": \"EFT\"\r\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "https://efaturaservicetest.isim360.com/v1/eadisyon/createinvoice",
+                    "protocol": "https",
+                    "host": [
+                        "efaturaservicetest",
+                        "isim360",
+                        "com"
+                    ],
+                    "path": [
+                        "v1",
+                        "eadisyon",
+                        "createinvoice"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "UBL (zip yükleme)",
+            "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n    \"eAdisyonZip\": \"zip-base64\",\r\n    \"status\": 0,\r\n    \"localReferenceId\": \"\",\r\n    \"prefix\": \"EAD\",\r\n    \"useManuelEAdisyonId\": false,\r\n    \"checkLocalReferenceId\": false,\r\n    \"targetAlias\": \"\",\r\n    \"useFirstAlias\": false,\r\n    \"xsltCode\": \"master\",\r\n    \"sendType\": 0,\r\n    \"recordType\": 0,\r\n    \"isCreateInvoice\": false,\r\n    \"branchCode\": \"\",\r\n    \"cashRegisterCode\": \"\",\r\n    \"sendEMail\": false,\r\n    \"eMailAddress\":\"\"\r\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "https://efaturaservicetest.isim360.com/v1/eadisyon/:id",
+                    "protocol": "https",
+                    "host": [
+                        "efaturaservicetest",
+                        "isim360",
+                        "com"
+                    ],
+                    "path": [
+                        "v1",
+                        "eadisyon",
+                        ":id"
+                    ],
+                    "variable": [
+                        {
+                            "key": "id",
+                            "value": "",
+                            "description": "Adisyon ID'si"
+                        }
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "UpdateStatusList",
+            "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n    \"ids\": [\r\n        \"D690858E-F47E-4A58-5E65-08DD945D140C\"\r\n    ],\r\n    \"status\": 20\r\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "https://efaturaservicetest.isim360.com/v1/eadisyon/updatestatuslist",
+                    "protocol": "https",
+                    "host": [
+                        "efaturaservicetest",
+                        "isim360",
+                        "com"
+                    ],
+                    "path": [
+                        "v1",
+                        "eadisyon",
+                        "updatestatuslist"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "sendorremovearchivelist (Arşive Gönder - Arşivden Çıkar)",
+            "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n    \"ids\": [\r\n        \"21CCDFF1-DEF7-4596-8E2C-08DD80B575A3\"\r\n    ],\r\n    \"isArchived\": false\r\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "https://efaturaservicetest.isim360.com/v1/eadisyon/sendorremovearchivelist",
+                    "protocol": "https",
+                    "host": [
+                        "efaturaservicetest",
+                        "isim360",
+                        "com"
+                    ],
+                    "path": [
+                        "v1",
+                        "eadisyon",
+                        "sendorremovearchivelist"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "{id}",
+            "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                    "raw": "https://efaturaservicetest.isim360.com/v1/eadisyon/:id",
+                    "protocol": "https",
+                    "host": [
+                        "efaturaservicetest",
+                        "isim360",
+                        "com"
+                    ],
+                    "path": [
+                        "v1",
+                        "eadisyon",
+                        ":id"
+                    ],
+                    "variable": [
+                        {
+                            "key": "id",
+                            "value": "",
+                            "description": "Adisyon Id'si"
+                        }
+                    ]
+                }
+            },
+            "response": []
+        }
+    ],
+    "variable": [
+        {
+            "key": "zip-base64",
+            "value": ""
+        }
+    ]
+}
