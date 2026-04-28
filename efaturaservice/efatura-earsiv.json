@@ -1,1631 +1,2198 @@
 {
-	"info": {
-		"_postman_id": "0c9a7afd-96b7-4c13-9543-7110eee41a28",
-		"name": "e-Fatura/Arşiv Entegrasyon Postman",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
-	},
-	"item": [
-		{
-			"name": "StaticList",
-			"item": [
-				{
-					"name": "Get_StaticList_UnitCode",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "x-api-key",
-								"type": "text",
-								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"type": "text",
-								"value": "application/json",
-								"disabled": true
-							}
-						],
-						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v1/staticlist/unit",
-							"protocol": "https",
-							"host": [
-								"efaturaservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v1",
-								"staticlist",
-								"unit"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get_StaticList_TaxExemptionReasons",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "x-api-key",
-								"type": "text",
-								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"type": "text",
-								"value": "application/json",
-								"disabled": true
-							}
-						],
-						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v1/staticlist/taxexemptionreason",
-							"protocol": "https",
-							"host": [
-								"efaturaservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v1",
-								"staticlist",
-								"taxexemptionreason"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get_StaticList_WithHolding",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "x-api-key",
-								"type": "text",
-								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"type": "text",
-								"value": "application/json",
-								"disabled": true
-							}
-						],
-						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v1/staticlist/withholding",
-							"protocol": "https",
-							"host": [
-								"efaturaservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v1",
-								"staticlist",
-								"withholding"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get_StaticList_TaxTypeCode",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "x-api-key",
-								"type": "text",
-								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"type": "text",
-								"value": "application/json",
-								"disabled": true
-							}
-						],
-						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v1/staticlist/taxtypecode",
-							"protocol": "https",
-							"host": [
-								"efaturaservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v1",
-								"staticlist",
-								"taxtypecode"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get_StaticList_TaxOffice",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "x-api-key",
-								"type": "text",
-								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"type": "text",
-								"value": "application/json",
-								"disabled": true
-							}
-						],
-						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v1/staticlist/taxoffice",
-							"protocol": "https",
-							"host": [
-								"efaturaservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v1",
-								"staticlist",
-								"taxoffice"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get_StaticList_Country",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "x-api-key",
-								"type": "text",
-								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"type": "text",
-								"value": "application/json",
-								"disabled": true
-							}
-						],
-						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v1/staticlist/country",
-							"protocol": "https",
-							"host": [
-								"efaturaservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v1",
-								"staticlist",
-								"country"
-							]
-						}
-					},
-					"response": []
-				}
-			]
-		},
-		{
-			"name": "Inbox_Invoice",
-			"item": [
-				{
-					"name": "Gelen Fatura Listesi",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "x-api-key",
-								"type": "text",
-								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"type": "text",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v1/inboxInvoice/list?pageIndex=1&pageSize=100&isNew=true&startDate=2020-09-01 00:00:00&endDate=2020-09-24 00:00:00",
-							"protocol": "https",
-							"host": [
-								"efaturaservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v1",
-								"inboxInvoice",
-								"list"
-							],
-							"query": [
-								{
-									"key": "pageIndex",
-									"value": "1"
-								},
-								{
-									"key": "pageSize",
-									"value": "100"
-								},
-								{
-									"key": "isNew",
-									"value": "true"
-								},
-								{
-									"key": "startDate",
-									"value": "2020-09-01 00:00:00",
-									"description": "Faturanın sistemde oluştma tarihi"
-								},
-								{
-									"key": "endDate",
-									"value": "2020-09-24 00:00:00",
-									"description": "Bulunduğunuz gün ve saatten büyük değer olamaz."
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Gelen Fatura HTML",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "x-api-key",
-								"type": "text",
-								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v2/inboxinvoice/9758339E-EB0B-454C-8C2F-18059F944A3F/html/true",
-							"protocol": "https",
-							"host": [
-								"efaturaservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v2",
-								"inboxinvoice",
-								"9758339E-EB0B-454C-8C2F-18059F944A3F",
-								"html",
-								"true"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Gelen Fatura Durum Sorgulama",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "x-api-key",
-								"type": "text",
-								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v2/inboxinvoice/9758339E-EB0B-454C-8C2F-18059F944A3F/status",
-							"protocol": "https",
-							"host": [
-								"efaturaservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v2",
-								"inboxinvoice",
-								"9758339E-EB0B-454C-8C2F-18059F944A3F",
-								"status"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Gelen Fatura Pdf",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "x-api-key",
-								"type": "text",
-								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v2/inboxinvoice/9758339E-EB0B-454C-8C2F-18059F944A3F/pdf/true",
-							"protocol": "https",
-							"host": [
-								"efaturaservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v2",
-								"inboxinvoice",
-								"9758339E-EB0B-454C-8C2F-18059F944A3F",
-								"pdf",
-								"true"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Gelen Fatura UBL",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "x-api-key",
-								"type": "text",
-								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v2/inboxinvoice/9758339E-EB0B-454C-8C2F-18059F944A3F/ubl",
-							"protocol": "https",
-							"host": [
-								"efaturaservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v2",
-								"inboxinvoice",
-								"9758339E-EB0B-454C-8C2F-18059F944A3F",
-								"ubl"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Ticari E-Fatura Cevap Verme",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "x-api-key",
-								"type": "text",
-								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n\t\"InvoiceId\" :\"362fa960-1d03-4a37-8894-68d6a2566428\",\n\t\"Status\" : 1,\n\t\"Reason\" :\"Kabul\"\n}\n"
-						},
-						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v1/invoiceresponse",
-							"protocol": "https",
-							"host": [
-								"efaturaservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v1",
-								"invoiceresponse"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Ticari E-Fatura Cevabını Tekrar Gönderme",
-					"request": {
-						"method": "PUT",
-						"header": [
-							{
-								"key": "x-api-key",
-								"type": "text",
-								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"type": "text",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "[\"33F8B2E6-E3EC-4E33-A43A-90388A3E8C1B\"] //invoiceId"
-						},
-						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v1/invoiceresponse/retryinvoiceresponselist",
-							"protocol": "https",
-							"host": [
-								"efaturaservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v1",
-								"invoiceresponse",
-								"retryinvoiceresponselist"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Gelen Faturayı Alındı Olarak İşaretleme",
-					"request": {
-						"method": "PUT",
-						"header": [
-							{
-								"key": "x-api-key",
-								"type": "text",
-								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"type": "text",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "[\r\n    {\r\n        \"InvoiceId\": \"384ed203-22ab-4623-995b-4824ff1c6e30\",\r\n        \"IsNew\": true\r\n    },\r\n    {\r\n        \"InvoiceId\": \"c149356e-a09f-455a-90e6-4ab96cd27b39\",\r\n        \"IsNew\": true\r\n    },\r\n    {\r\n        \"InvoiceId\": \"bd0b3e0e-8bd5-4736-9bd1-7dc8fb4a72b3\",\r\n        \"IsNew\": true\r\n    }\r\n]"
-						},
-						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v1/inboxinvoice/updateisnew",
-							"protocol": "https",
-							"host": [
-								"efaturaservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v1",
-								"inboxinvoice",
-								"updateisnew"
-							]
-						}
-					},
-					"response": []
-				}
-			]
-		},
-		{
-			"name": "Outbox_Invoice",
-			"item": [
-				{
-					"name": "İhracat ve Ticari Fatura Cevabı",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "x-api-key",
-								"type": "text",
-								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"type": "text",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v1/outboxInvoice/invoicereason/81BD9D6A-3FCA-4FBA-AF15-19C5347777B4",
-							"protocol": "https",
-							"host": [
-								"efaturaservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v1",
-								"outboxInvoice",
-								"invoicereason",
-								"81BD9D6A-3FCA-4FBA-AF15-19C5347777B4"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Arayüzden_Kesilen_eFaturalar",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "x-api-key",
-								"type": "text",
-								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "formdata",
-							"formdata": []
-						},
-						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v2/outboxinvoice/withnulllocalreferences?startDate=2021-10-01&endDate=2021-10-20",
-							"protocol": "https",
-							"host": [
-								"efaturaservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v2",
-								"outboxinvoice",
-								"withnulllocalreferences"
-							],
-							"query": [
-								{
-									"key": "startDate",
-									"value": "2021-10-01"
-								},
-								{
-									"key": "endDate",
-									"value": "2021-10-20"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get_OutboxInvoice_Html_v2",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "x-api-key",
-								"type": "text",
-								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v2/outboxinvoice/bf579d26-b73e-4dd3-bd1b-1226ffc28d9d/html/true",
-							"protocol": "https",
-							"host": [
-								"efaturaservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v2",
-								"outboxinvoice",
-								"bf579d26-b73e-4dd3-bd1b-1226ffc28d9d",
-								"html",
-								"true"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get_OutboxInvoice_Pdf_v2",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "x-api-key",
-								"type": "text",
-								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v2/outboxinvoice/B1120903-EE7E-4432-8ACF-038207F17CD0/pdf/true",
-							"protocol": "https",
-							"host": [
-								"efaturaservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v2",
-								"outboxinvoice",
-								"B1120903-EE7E-4432-8ACF-038207F17CD0",
-								"pdf",
-								"true"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get_OutboxInvoice_Ubl_v2",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "x-api-key",
-								"type": "text",
-								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v2/outboxinvoice/5FD1469C-2B42-449D-A09E-1551E59BBBF9/ubl",
-							"protocol": "https",
-							"host": [
-								"efaturaservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v2",
-								"outboxinvoice",
-								"5FD1469C-2B42-449D-A09E-1551E59BBBF9",
-								"ubl"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Giden Fatura Durum Sorgulama",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "x-api-key",
-								"type": "text",
-								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v2/outboxinvoice/9758339E-EB0B-454C-8C2F-18059F944A3F/status",
-							"protocol": "https",
-							"host": [
-								"efaturaservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v2",
-								"outboxinvoice",
-								"9758339E-EB0B-454C-8C2F-18059F944A3F",
-								"status"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Post_OutboxInvoice_UBL",
-					"protocolProfileBehavior": {
-						"disabledSystemHeaders": {}
-					},
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "x-api-key",
-								"type": "text",
-								"value": ""
-							}
-						],
-						"body": {
-							"mode": "formdata",
-							"formdata": [
-								{
-									"key": "invoiceFile",
-									"type": "file",
-									"src": "/C:/Users/Aybars Karaman/Downloads/TST2022000000325_6220517884.xml"
-								},
-								{
-									"key": "appType",
-									"value": "1",
-									"description": "appType 1 olarak gönderilmek durumunda",
-									"type": "text"
-								},
-								{
-									"key": "status",
-									"value": "20",
-									"type": "text"
-								},
-								{
-									"key": "useManualInvoiceId",
-									"value": "false",
-									"type": "text"
-								},
-								{
-									"key": "targetAlias",
-									"value": "urn:mail:defaulttest3pk@medyasoft.com.tr",
-									"description": "alıcı kurumun etiketi",
-									"type": "text"
-								},
-								{
-									"key": "useFirstAlias",
-									"value": "true",
-									"description": "eğer etiket gönderilmeyecekse, alıcının rastgele bir etiketine fatura gönder",
-									"type": "text",
-									"disabled": true
-								},
-								{
-									"key": "prefix",
-									"value": "EPA",
-									"type": "text",
-									"disabled": true
-								},
-								{
-									"key": "localReferenceId",
-									"value": "deneme",
-									"description": "Sisteme ERP numaranızı eklemek için kullanılan alan",
-									"type": "text",
-									"disabled": true
-								},
-								{
-									"key": "checkLocalReferenceId",
-									"value": "false",
-									"description": "Daha önce ERP numaranız kullanıldı mı kontrolü",
-									"type": "text",
-									"disabled": true
-								},
-								{
-									"key": "xsltCode",
-									"value": "code",
-									"description": "Sistemde tanımlı fatura olan fatura görselini kullanmak için gerekli kod",
-									"type": "text",
-									"disabled": true
-								}
-							],
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v2/outboxinvoice",
-							"protocol": "https",
-							"host": [
-								"efaturaservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v2",
-								"outboxinvoice"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "E-Fatura Json Model Gönderim",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "x-api-key",
-								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n\t\"recordType\": 1,\n    \"status\": 0,\n    \"xsltCode\": null,\n    \"localReferenceId\": null,\n    \"useManualInvoiceId\": false,\n    \"note\": null,\n    \"notes\": [],\n    \"addressBook\": {\n        \"name\": \"Alıcı adı\",\n        \"receiverPersonSurName\": \"Alıcı Soyadı\",\n        \"identificationNumber\": \"1234567803\",\n        \"alias\": \"urn:mail:defaulttest3pk@medyasoft.com.tr\",\n        \"registerNumber\": \"11112222333444\",\n        \"receiverStreet\": \"Bulvar / cadde / sokak\",\n        \"receiverBuildingName\": \"Bina adı\",\n        \"receiverBuildingNumber\": \"1\",\n        \"receiverDoorNumber\": \"11\",\n        \"receiverSmallTown\": \"Kasaba / Köy\",\n        \"receiverDistrict\": \"Üsküdar\",\n        \"receiverZipCode\": \"34000\",\n        \"receiverCity\": \"İstanbul\",\n        \"receiverCountry\": \"Türkiye\",\n        \"receiverPhoneNumber\": \"2123546363\",\n        \"receiverFaxNumber\": \"2123543636\",\n        \"receiverEmail\": \"deneme@deneme.com\",\n        \"receiverWebSite\": \"www.deneme.com\",\n        \"receiverTaxOffice\": \"Üsküdar vergi dairesi\"\n    },\n    \"generalInfoModel\": {\n        \"ettn\": null,\n        \"prefix\": \"\",\n        \"invoiceNumber\": null,\n        \"invoiceProfileType\": 0,\n        \"issueDate\": \"2020-04-15T07:51:56.9575976+03:00\",\n        \"type\": 1,\n        \"returnInvoiceNumber\": null,\n        \"returnInvoiceDate\": null,\n        \"currencyCode\": \"TRY\",\n        \"exchangeRate\": 0\n    },\n    \"invoiceLines\": [\n        {\n            \"inventoryCard\": \"Asus Laptop\",\n            \"amount\": 1,\n            \"discountAmount\": 870,\n            \"lineAmount\": 7830,\n            \"vatAmount\": 1522.1519999999998,\n            \"unitCode\": \"C62\",\n            \"unitPrice\": 8700,\n            \"discountRate\": 10,\n            \"vatRate\": 18,\n            \"vatExemptionReasonCode\": null,\n            \"description\":\"İlk açıklama\",\n            \"note\":\"ilk note\",\n            \"sellersItemIdentification\":\"11111\",\n            \"buyersItemIdentification\":\"22222\",\n            \"manufacturersItemIdentification\":\"33333\"\n        }\n    ]\n}"
-						},
-						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v1/outboxinvoice/create",
-							"protocol": "https",
-							"host": [
-								"efaturaservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v1",
-								"outboxinvoice",
-								"create"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Put_OutboxInvoice_UBL",
-					"protocolProfileBehavior": {
-						"disabledSystemHeaders": {}
-					},
-					"request": {
-						"method": "PUT",
-						"header": [
-							{
-								"key": "x-api-key",
-								"type": "text",
-								"value": ""
-							}
-						],
-						"body": {
-							"mode": "formdata",
-							"formdata": [
-								{
-									"key": "invoiceFile",
-									"type": "file",
-									"src": "/C:/Users/Aybars Karaman/Downloads/TST2022000000325_6220517884.xml"
-								},
-								{
-									"key": "appType",
-									"value": "1",
-									"description": "appType 1 olarak gönderilmek durumunda",
-									"type": "text"
-								},
-								{
-									"key": "status",
-									"value": "20",
-									"type": "text"
-								},
-								{
-									"key": "targetAlias",
-									"value": "urn:mail:defaulttest3pk@medyasoft.com.tr",
-									"description": "alıcı kurumun etiketi",
-									"type": "text"
-								},
-								{
-									"key": "useFirstAlias",
-									"value": "true",
-									"description": "eğer etiket gönderilmeyecekse, alıcının rastgele bir etiketine fatura gönder",
-									"type": "text",
-									"disabled": true
-								},
-								{
-									"key": "localReferenceId",
-									"value": "deneme",
-									"description": "Sisteme ERP numaranızı eklemek için kullanılan alan",
-									"type": "text",
-									"disabled": true
-								},
-								{
-									"key": "checkLocalReferenceId",
-									"value": "false",
-									"description": "Daha önce ERP numaranız kullanıldı mı kontrolü",
-									"type": "text",
-									"disabled": true
-								},
-								{
-									"key": "xsltCode",
-									"value": "code",
-									"description": "Sistemde tanımlı fatura olan fatura görselini kullanmak için gerekli kod",
-									"type": "text",
-									"disabled": true
-								}
-							],
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v2/outboxinvoice/CCC25052-B857-431B-B9AE-357C31D2C195",
-							"protocol": "https",
-							"host": [
-								"efaturaservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v2",
-								"outboxinvoice",
-								"CCC25052-B857-431B-B9AE-357C31D2C195"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "E-Fatura Json Model Güncelleme",
-					"request": {
-						"method": "PUT",
-						"header": [
-							{
-								"key": "x-api-key",
-								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n\t\"recordType\": 1,\n    \"status\": 0,\n    \"xsltCode\": \"master\",\n    \"localReferenceId\": null,\n    \"useManualInvoiceId\": false,\n    \"note\": null,\n    \"notes\": [],\n    \"addressBook\": {\n        \"name\": \"Alıcı adı\",\n        \"receiverPersonSurName\": \"Alıcı Soyadı\",\n        \"identificationNumber\": \"1234567803\",\n        \"alias\": \"urn:mail:defaulttest3pk@medyasoft.com.tr\",\n        \"registerNumber\": \"11112222333444\",\n        \"receiverStreet\": \"Bulvar / cadde / sokak\",\n        \"receiverBuildingName\": \"Bina adı\",\n        \"receiverBuildingNumber\": \"1\",\n        \"receiverDoorNumber\": \"11\",\n        \"receiverSmallTown\": \"Kasaba / Köy\",\n        \"receiverDistrict\": \"Üsküdar\",\n        \"receiverZipCode\": \"34000\",\n        \"receiverCity\": \"İstanbul\",\n        \"receiverCountry\": \"Türkiye\",\n        \"receiverPhoneNumber\": \"2123546363\",\n        \"receiverFaxNumber\": \"2123543636\",\n        \"receiverEmail\": \"deneme@deneme.com\",\n        \"receiverWebSite\": \"www.deneme.com\",\n        \"receiverTaxOffice\": \"Üsküdar vergi dairesi\"\n    },\n    \"generalInfoModel\": {\n        \"ettn\": \"00afab92-2f34-4952-bda7-214b312a4b16\",\n        \"prefix\":null,\n        \"invoiceNumber\": null,\n        \"invoiceProfileType\": 0,\n        \"issueDate\": \"2020-04-15T07:51:56.9575976+03:00\",\n        \"type\": 1,\n        \"returnInvoiceNumber\": null,\n        \"returnInvoiceDate\": null,\n        \"currencyCode\": \"TRY\",\n        \"exchangeRate\": 0\n    },\n    \"invoiceLines\": [\n        {\n            \"inventoryCard\": \"Asus Laptop\",\n            \"amount\": 1,\n            \"discountAmount\": 870,\n            \"lineAmount\": 7830,\n            \"vatAmount\": 1522.1519999999998,\n            \"unitCode\": \"C62\",\n            \"unitPrice\": 8700,\n            \"discountRate\": 10,\n            \"vatRate\": 18,\n            \"vatExemptionReasonCode\": null,\n            \"taxes\": [\n                {\n                    \"taxName\": \"ÖTV 1.LİSTE\",\n                    \"isNegative\": false,\n                    \"taxTypeCode\": \"0071\",\n                    \"taxRate\": 8,\n                    \"taxAmount\": 626.4\n                }\n            ]\n        }\n    ],\n    \"invoiceTotalsModel\": {\n        \"lineExtensionAmount\": null,\n        \"taxExclusiveAmount\": null,\n        \"taxInclusiveAmount\": null,\n        \"allowanceTotalAmount\": null,\n        \"payableAmount\": null,\n        \"amountInWords\": null\n    }\n}"
-						},
-						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v1/outboxinvoice/update/00afab92-2f34-4952-bda7-214b312a4b16",
-							"protocol": "https",
-							"host": [
-								"efaturaservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v1",
-								"outboxinvoice",
-								"update",
-								"00afab92-2f34-4952-bda7-214b312a4b16"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Put_Status_Outbox_Invoice_List",
-					"request": {
-						"method": "PUT",
-						"header": [
-							{
-								"key": "x-api-key",
-								"type": "text",
-								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"ids\": [\n        \"652869f4-e7cc-4101-a54c-644593ab342d\",\n        \"6F223EB2-F1A9-4C1D-BC3A-CF7F17078FED\"\n    ],\n    \"status\": 20\n}"
-						},
-						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v1/outboxinvoice/updatestatuslist",
-							"protocol": "https",
-							"host": [
-								"efaturaservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v1",
-								"outboxinvoice",
-								"updatestatuslist"
-							]
-						}
-					},
-					"response": []
-				}
-			]
-		},
-		{
-			"name": "Archive_Invoice",
-			"item": [
-				{
-					"name": "E-Arşiv Aynı Faturanın Mailini Tekrar Gönderme",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "x-api-key",
-								"type": "text",
-								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "formdata",
-							"formdata": []
-						},
-						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v1/earchive/retryinvoicemail/1244eab8-ddad-4551-bacc-051abd49e1a3",
-							"protocol": "https",
-							"host": [
-								"efaturaservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v1",
-								"earchive",
-								"retryinvoicemail",
-								"1244eab8-ddad-4551-bacc-051abd49e1a3"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Arayüzden_Kesilen_eArşivFaturalar",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "x-api-key",
-								"type": "text",
-								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "formdata",
-							"formdata": []
-						},
-						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v2/earchive/withnulllocalreferences?startDate=2021-10-01&endDate=2021-10-20",
-							"protocol": "https",
-							"host": [
-								"efaturaservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v2",
-								"earchive",
-								"withnulllocalreferences"
-							],
-							"query": [
-								{
-									"key": "startDate",
-									"value": "2021-10-01"
-								},
-								{
-									"key": "endDate",
-									"value": "2021-10-20"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "E-Arşiv Fatura Durum Sorgulama",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "x-api-key",
-								"type": "text",
-								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v2/earchive/51CB09FC-FAA3-4876-B916-04C256D1486C/status",
-							"protocol": "https",
-							"host": [
-								"efaturaservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v2",
-								"earchive",
-								"51CB09FC-FAA3-4876-B916-04C256D1486C",
-								"status"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get_EarchiveInvoice_Ubl_v2",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "x-api-key",
-								"type": "text",
-								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v2/earchive/5FD1469C-2B42-449D-A09E-1551E59BBBF9/ubl",
-							"protocol": "https",
-							"host": [
-								"efaturaservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v2",
-								"earchive",
-								"5FD1469C-2B42-449D-A09E-1551E59BBBF9",
-								"ubl"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get_EarchiveInvoice_Pdf_v2",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "x-api-key",
-								"type": "text",
-								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v2/earchive/B1120903-EE7E-4432-8ACF-038207F17CD0/pdf/true",
-							"protocol": "https",
-							"host": [
-								"efaturaservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v2",
-								"earchive",
-								"B1120903-EE7E-4432-8ACF-038207F17CD0",
-								"pdf",
-								"true"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get_EarchiveInvoice_Html_v2",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "x-api-key",
-								"type": "text",
-								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v2/earchive/bf579d26-b73e-4dd3-bd1b-1226ffc28d9d/html/true",
-							"protocol": "https",
-							"host": [
-								"efaturaservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v2",
-								"earchive",
-								"bf579d26-b73e-4dd3-bd1b-1226ffc28d9d",
-								"html",
-								"true"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Post_EArsivInvoice_UBL",
-					"protocolProfileBehavior": {
-						"disabledSystemHeaders": {}
-					},
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "x-api-key",
-								"type": "text",
-								"value": ""
-							}
-						],
-						"body": {
-							"mode": "formdata",
-							"formdata": [
-								{
-									"key": "invoiceFile",
-									"type": "file",
-									"src": "/C:/Users/Aybars Karaman/Downloads/EPA2022000001781_11111111111.xml"
-								},
-								{
-									"key": "status",
-									"value": "20",
-									"type": "text"
-								},
-								{
-									"key": "useManualInvoiceId",
-									"value": "false",
-									"type": "text"
-								},
-								{
-									"key": "sendEMail",
-									"value": "false",
-									"type": "text"
-								},
-								{
-									"key": "eMailAddress",
-									"value": "r@r.com",
-									"type": "text"
-								},
-								{
-									"key": "prefix",
-									"value": "EPA",
-									"type": "text",
-									"disabled": true
-								},
-								{
-									"key": "localReferenceId",
-									"value": "deneme",
-									"description": "Sisteme ERP numaranızı eklemek için kullanılan alan",
-									"type": "text",
-									"disabled": true
-								},
-								{
-									"key": "checkLocalReferenceId",
-									"value": "false",
-									"description": "Daha önce ERP numaranız kullanıldı mı kontrolü",
-									"type": "text",
-									"disabled": true
-								},
-								{
-									"key": "xsltCode",
-									"value": "code",
-									"description": "Sistemde tanımlı fatura olan fatura görselini kullanmak için gerekli kod",
-									"type": "text",
-									"disabled": true
-								},
-								{
-									"key": "allowOldEArsivCustomer",
-									"value": "false",
-									"description": "Eskiden e-arşiv kullanan, sonradan e-fatura kullanıcısı olan firmalara e-arşiv fatura kesmek için true gönderilme",
-									"type": "text",
-									"disabled": true
-								}
-							],
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v2/earchive",
-							"protocol": "https",
-							"host": [
-								"efaturaservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v2",
-								"earchive"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Gönderilen E-Arşiv Faturanın Mailini Farklı Maile Gönderme",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "x-api-key",
-								"type": "text",
-								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"id\":\"9BC954F4-94E3-42D9-8DC0-392E0A2577EA\",\n    \"emailaddresses\":\"deneme1@deneme.com;deneme2@deneme.com\"\n}"
-						},
-						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v1/earchive/retryinvoicemail",
-							"protocol": "https",
-							"host": [
-								"efaturaservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v1",
-								"earchive",
-								"retryinvoicemail"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Post_Earchive_Invoice_Json",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "x-api-key",
-								"type": "text",
-								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n      \"recordType\": 0,\n      \"status\": 20,\n      \"isNew\": true,\n      \"localReferenceId\": null,\n      \"useManualInvoiceId\": false,\n      \"note\": null,\n      \"generalInfoModel\": {\n        \"ettn\": \"89a1bd8a-309d-453a-bff5-a95464ac4162\",\n        \"invoiceProfileType\": 4,\n        \"issueDate\": \"2020-07-10T14:50:51.0000000\",\n        \"type\": 1,\n        \"currencyCode\": \"TRY\",\n        \"exchangeRate\": 0.0,\n        \"totalAmount\": null,\n        \"invoiceNumber\": \"\",\n        \"issueTime\": \"2020-07-10T14:50:51.0000000\",\n        \"prefix\": null,\n        \"returnInvoiceDate\": null,\n        \"returnInvoiceNumber\": null,\n        \"slipNumber\": null\n      },\n      \"addressBook\": {\n        \"identificationNumber\": \"1123581321\",\n        \"name\": \"Nihai Tüketici\",\n        \"receiverBuildingName\": null,\n        \"receiverPersonSurName\": \"\",\n        \"receiverNumber\": null,\n        \"receiverStreet\": \"\",\n        \"receiverEmail\": \"abb@gmail.com\",\n        \"receiverDistrict\": \"PENDİK\",\n        \"receiverCity\": \"İSTANBUL\",\n        \"receiverCountry\": \"Türkiye\",\n        \"registerNumber\": null,\n        \"receiverTaxOffice\": \"\",\n        \"receiverPhoneNumber\": \"\"\n      },\n      \"invoiceLines\": [\n        {\n          \"inventoryCard\": \"YEDEK SİM KART(%8)\",\n          \"disableVatExemption\": false,\n          \"amount\": 1.0,\n          \"unitCode\": \"C62\",\n          \"unitPrice\": 0.05,\n          \"vatRate\": 8.0,\n          \"discountAmount\": 0.0,\n          \"vatAmount\": 0.0,\n          \"lineExtensionAmount\": 0.05,\n          \"vatExemptionReasonCode\": \"\"\n        }\n      ],\n      \"archiveInfoModel\": {\n        \"isInternetSale\": false,\n        \"shipmentDate\": null,\n        \"shipmentSendType\": null,\n        \"shipmentSenderName\": null,\n        \"shipmentSenderSurname\": null,\n        \"shipmentSenderTcknVkn\": null,\n        \"subscriptionType\": null,\n        \"subscriptionTypeNumber\": null,\n        \"websiteUrl\": null\n      },\n      \"paymentMeansModel\": {\n        \"instructionNote\": null,\n        \"payeeFinancialAccountCurrencyCode\": \"TRY\",\n        \"payeeFinancialAccountId\": null,\n        \"paymentChannelCode\": null,\n        \"paymentDueDate\": null,\n        \"paymentMeansCode\": 0\n      },\n      \"ublSettingsModel\": {\n        \"useCalculatedVatAmount\": true,\n        \"hideDespatchMessage\": false\n      },\n      \"eArsivInfo\": {\n        \"sendEMail\": true,\n        \"eMailAddress\": \"abb@gmail.com\"\n      }\n}\n\n"
-						},
-						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v2/earchive/create",
-							"protocol": "https",
-							"host": [
-								"efaturaservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v2",
-								"earchive",
-								"create"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Post_Earchive_InternetSale",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "x-api-key",
-								"value": "",
-								"type": "text"
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n\t\"recordType\": 0,\n\t\"status\": 0,\n\t\"note\": null,\n\t\"notes\": [],\n\t\"addressBook\": {\n\t\t\"id\": 324,\n\t\t\"customerId\": \"842084f8-8301-4d28-89cf-1828b3449c49\",\n\t\t\"isArchive\": false,\n\t\t\"createdDate\": \"2020-04-07T15:16:15.317\",\n\t\t\"alias\": null,\n\t\t\"identificationNumber\": \"11111111111\",\n\t\t\"name\": \"Ahmet\",\n\t\t\"registerNumber\": \"11111111\",\n\t\t\"receiverPersonSurName\": \"Demir\",\n\t\t\"receiverStreet\": \"Bulvar/Cadde/Sokak\",\n\t\t\"receiverBuildingName\": \"Bina Adı\",\n\t\t\"receiverBuildingNumber\": \"1\",\n\t\t\"receiverDoorNumber\": \"11\",\n\t\t\"receiverSmallTown\": \"Kasaba/Köy\",\n\t\t\"receiverDistrict\": \"Mahalle/Semt/İlçe\",\n\t\t\"receiverZipCode\": \"34000\",\n\t\t\"receiverCity\": \"İstanbul\",\n\t\t\"receiverCountry\": \"Türkiye\",\n\t\t\"receiverCountryId\": 1,\n\t\t\"receiverPhoneNumber\": \"5052003131\",\n\t\t\"receiverFaxNumber\": \"2123559898\",\n\t\t\"receiverEmail\": \"deneme@deneme.com\",\n\t\t\"receiverWebSite\": \"www.deneme.com\",\n\t\t\"receiverTaxOffice\": \"Vergi Dairesi\",\n\t\t\"isDeleted\": false,\n\t\t\"type\": \"2\",\n\t\t\"status\": null,\n\t\t\"updatedDate\": null,\n\t\t\"isSaveAddress\": false\n\t},\n\t\"eArsivInfo\": {\n\t\t\"sendEMail\": true\n\t},\n\t\"generalInfoModel\": {\n\t\t\"ettn\": null,\n\t\t\"prefix\": \"EPI\",\n\t\t\"customizationId\": null,\n\t\t\"invoiceNumber\": null,\n\t\t\"slipNumber\": null,\n\t\t\"invoiceProfileType\": 4,\n\t\t\"issueDate\": \"2020-05-12T00:00:00+03:00\",\n\t\t\"issueTime\": \"2020-05-12T08:09:23.7141455+03:00\",\n\t\t\"type\": 1,\n\t\t\"returnInvoiceNumber\": null,\n\t\t\"returnInvoiceDate\": null,\n\t\t\"currencyId\": 1,\n\t\t\"currencyCode\": \"TRY\",\n\t\t\"exchangeRate\": 0,\n\t\t\"despatchNumber\": null,\n\t\t\"despatchType\": 0,\n\t\t\"despatchProfileType\": null,\n\t\t\"totalAmount\": null\n\t},\n\t\"invoiceLines\": [\n\t\t{\n\t\t\t\"disableVatExemption\": true,\n\t\t\t\"inventoryCard\": \"Kazak\",\n\t\t\t\"amount\": 10,\n\t\t\t\"discountAmount\": 0,\n\t\t\t\"lineAmount\": 599,\n\t\t\t\"vatAmount\": 47.92,\n\t\t\t\"unitCode\": \"C62\",\n\t\t\t\"unitPrice\": 59.9,\n\t\t\t\"vatRate\": 8,\n\t\t\t\"vatExemptionReasonCode\": null\n\t\t}\n\t],\n\t\"paymentMeansModel\": {\n\t\t\"paymentMeansCode\": 10,\n\t\t\"paymentDueDate\": \"2020-05-12T00:00:00+03:00\",\n\t\t\"paymentChannelCode\": \"ABC\",\n\t\t\"instructionNote\": \"Açıklama\",\n\t\t\"payeeFinancialAccountId\": \"1234-8654761\",\n\t\t\"payeeFinancialAccountCurrencyCode\": \"TRY\"\n\t},\n\t\"archiveInfoModel\": {\n\t\t\"isInternetSale\": true,\n\t\t\"websiteUrl\": \"www.deneme123.com\",\n\t\t\"shipmentSenderTcknVkn\": \"1234567890\",\n\t\t\"shipmentSendType\": \"ELEKTRONIK\",\n\t\t\"shipmentSenderName\": \"Aras Kargo\",\n\t\t\"shipmentSenderSurname\": null,\n\t\t\"shipmentDate\": \"2020-05-12T00:00:00+03:00\",\n\t\t\"hideDespatchMessage\": false,\n\t\t\"subscriptionType\": \"MUSTERINO\",\n\t\t\"subscriptionTypeNumber\": \"321456987\"\n\t}\n}"
-						},
-						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v2/earchive/create",
-							"protocol": "https",
-							"host": [
-								"efaturaservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v2",
-								"earchive",
-								"create"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Put_Earchive_UBL",
-					"request": {
-						"method": "PUT",
-						"header": [
-							{
-								"key": "x-api-key",
-								"type": "text",
-								"value": ""
-							}
-						],
-						"body": {
-							"mode": "formdata",
-							"formdata": [
-								{
-									"key": "invoiceFile",
-									"type": "file",
-									"src": "/C:/Users/Aybars Karaman/Downloads/EPA2022000001781_11111111111.xml"
-								},
-								{
-									"key": "status",
-									"value": "0",
-									"type": "text"
-								},
-								{
-									"key": "sendEMail",
-									"value": "false",
-									"type": "text"
-								},
-								{
-									"key": "eMailAddress",
-									"value": "deneme@deneme.com",
-									"type": "text"
-								},
-								{
-									"key": "localReferenceId",
-									"value": "deneme",
-									"type": "text",
-									"disabled": true
-								},
-								{
-									"key": "checkLocalReferenceId",
-									"value": "false",
-									"type": "text",
-									"disabled": true
-								},
-								{
-									"key": "xsltCode",
-									"value": "code",
-									"type": "text",
-									"disabled": true
-								},
-								{
-									"key": "allowOldEArsivCustomer",
-									"value": "false",
-									"type": "text",
-									"disabled": true
-								}
-							]
-						},
-						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v2/earchive/c209e2f2-eac6-4e3a-8f17-b9b61ccc6c10",
-							"protocol": "https",
-							"host": [
-								"efaturaservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v2",
-								"earchive",
-								"c209e2f2-eac6-4e3a-8f17-b9b61ccc6c10"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "E-Arşiv İptal (Resmi İşlemdir, Silme Değildir)",
-					"request": {
-						"method": "PUT",
-						"header": [
-							{
-								"key": "x-api-key",
-								"type": "text",
-								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "\n[\n\t\"3b753375-1f84-4c50-9075-2279806849ae\",\"5fac6277-df1b-4ac2-9f42-f18e61535a6d\"\n]\n\n"
-						},
-						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v1/earchive/cancelinvoice",
-							"protocol": "https",
-							"host": [
-								"efaturaservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v1",
-								"earchive",
-								"cancelinvoice"
-							]
-						}
-					},
-					"response": []
-				}
-			]
-		},
-		{
-			"name": "Gib_User",
-			"item": [
-				{
-					"name": "E-Fatura Mükellef Listesi",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "x-api-key",
-								"type": "text",
-								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "https://efaturaservicetest.isim360.com/v2/gibuser/recipient/zip",
-							"protocol": "https",
-							"host": [
-								"efaturaservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v2",
-								"gibuser",
-								"recipient",
-								"zip"
-							]
-						}
-					},
-					"response": []
-				}
-			]
-		}
-	]
+  "info": {
+    "_postman_id": "26e18dc9-0c77-452e-95da-c9c966de7ff0",
+    "name": "e-Fatura/Arşiv Entegrasyon (Github)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "39898782"
+  },
+  "item": [
+    {
+      "name": "StaticList",
+      "item": [
+        {
+          "name": "Get_StaticList_UnitCode",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "url": {
+              "raw": "https://efaturaservicetest.isim360.com/v1/staticlist/unit",
+              "protocol": "https",
+              "host": [
+                "efaturaservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v1",
+                "staticlist",
+                "unit"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get_StaticList_TaxExemptionReasons",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "url": {
+              "raw": "https://efaturaservicetest.isim360.com/v1/staticlist/taxexemptionreason",
+              "protocol": "https",
+              "host": [
+                "efaturaservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v1",
+                "staticlist",
+                "taxexemptionreason"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get_StaticList_WithHolding",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "url": {
+              "raw": "https://efaturaservicetest.isim360.com/v1/staticlist/withholding",
+              "protocol": "https",
+              "host": [
+                "efaturaservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v1",
+                "staticlist",
+                "withholding"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get_StaticList_TaxTypeCode",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "url": {
+              "raw": "https://efaturaservicetest.isim360.com/v1/staticlist/taxtypecode",
+              "protocol": "https",
+              "host": [
+                "efaturaservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v1",
+                "staticlist",
+                "taxtypecode"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get_StaticList_TaxOffice",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "url": {
+              "raw": "https://efaturaservicetest.isim360.com/v1/staticlist/taxoffice",
+              "protocol": "https",
+              "host": [
+                "efaturaservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v1",
+                "staticlist",
+                "taxoffice"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get_StaticList_Country",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "url": {
+              "raw": "https://efaturaservicetest.isim360.com/v1/staticlist/country",
+              "protocol": "https",
+              "host": [
+                "efaturaservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v1",
+                "staticlist",
+                "country"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Inbox_Invoice",
+      "item": [
+        {
+          "name": "Gelen Fatura Listesi",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://efaturaservicetest.isim360.com/v1/inboxInvoice/list?pageIndex=1&pageSize=100&isNew=true&startDate=2020-09-01 00:00:00&endDate=2020-09-24 00:00:00",
+              "protocol": "https",
+              "host": [
+                "efaturaservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v1",
+                "inboxInvoice",
+                "list"
+              ],
+              "query": [
+                {
+                  "key": "pageIndex",
+                  "value": "1"
+                },
+                {
+                  "key": "pageSize",
+                  "value": "100"
+                },
+                {
+                  "key": "isNew",
+                  "value": "true"
+                },
+                {
+                  "key": "startDate",
+                  "value": "2020-09-01 00:00:00",
+                  "description": "Faturanın sistemde oluştma tarihi"
+                },
+                {
+                  "key": "endDate",
+                  "value": "2020-09-24 00:00:00",
+                  "description": "Bulunduğunuz gün ve saatten büyük değer olamaz."
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Gelen Fatura HTML",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://efaturaservicetest.isim360.com/v2/inboxinvoice/9758339E-EB0B-454C-8C2F-18059F944A3F/html/true",
+              "protocol": "https",
+              "host": [
+                "efaturaservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "inboxinvoice",
+                "9758339E-EB0B-454C-8C2F-18059F944A3F",
+                "html",
+                "true"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Gelen Fatura Durum Sorgulama",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://efaturaservicetest.isim360.com/v2/inboxinvoice/9758339E-EB0B-454C-8C2F-18059F944A3F/status",
+              "protocol": "https",
+              "host": [
+                "efaturaservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "inboxinvoice",
+                "9758339E-EB0B-454C-8C2F-18059F944A3F",
+                "status"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Gelen Fatura Pdf",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://efaturaservicetest.isim360.com/v2/inboxinvoice/9758339E-EB0B-454C-8C2F-18059F944A3F/pdf/true",
+              "protocol": "https",
+              "host": [
+                "efaturaservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "inboxinvoice",
+                "9758339E-EB0B-454C-8C2F-18059F944A3F",
+                "pdf",
+                "true"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Gelen Fatura UBL",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://efaturaservicetest.isim360.com/v2/inboxinvoice/9758339E-EB0B-454C-8C2F-18059F944A3F/ubl",
+              "protocol": "https",
+              "host": [
+                "efaturaservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "inboxinvoice",
+                "9758339E-EB0B-454C-8C2F-18059F944A3F",
+                "ubl"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Ticari E-Fatura Cevap Verme",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"InvoiceId\" :\"362fa960-1d03-4a37-8894-68d6a2566428\",\n\t\"Status\" : 1,\n\t\"Reason\" :\"Kabul\"\n}\n"
+            },
+            "url": {
+              "raw": "https://efaturaservicetest.isim360.com/v1/invoiceresponse",
+              "protocol": "https",
+              "host": [
+                "efaturaservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v1",
+                "invoiceresponse"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Ticari E-Fatura Cevabını Tekrar Gönderme",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "[\"33F8B2E6-E3EC-4E33-A43A-90388A3E8C1B\"] //invoiceId"
+            },
+            "url": {
+              "raw": "https://efaturaservicetest.isim360.com/v1/invoiceresponse/retryinvoiceresponselist",
+              "protocol": "https",
+              "host": [
+                "efaturaservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v1",
+                "invoiceresponse",
+                "retryinvoiceresponselist"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Gelen Faturayı Alındı Olarak İşaretleme",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "[\r\n    {\r\n        \"InvoiceId\": \"384ed203-22ab-4623-995b-4824ff1c6e30\",\r\n        \"IsNew\": true\r\n    },\r\n    {\r\n        \"InvoiceId\": \"c149356e-a09f-455a-90e6-4ab96cd27b39\",\r\n        \"IsNew\": true\r\n    },\r\n    {\r\n        \"InvoiceId\": \"bd0b3e0e-8bd5-4736-9bd1-7dc8fb4a72b3\",\r\n        \"IsNew\": true\r\n    }\r\n]"
+            },
+            "url": {
+              "raw": "https://efaturaservicetest.isim360.com/v1/inboxinvoice/updateisnew",
+              "protocol": "https",
+              "host": [
+                "efaturaservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v1",
+                "inboxinvoice",
+                "updateisnew"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Outbox_Invoice",
+      "item": [
+        {
+          "name": "İhracat ve Ticari Fatura Cevabı",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://efaturaservicetest.isim360.com/v1/outboxInvoice/invoicereason/81BD9D6A-3FCA-4FBA-AF15-19C5347777B4",
+              "protocol": "https",
+              "host": [
+                "efaturaservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v1",
+                "outboxInvoice",
+                "invoicereason",
+                "81BD9D6A-3FCA-4FBA-AF15-19C5347777B4"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Arayüzden_Kesilen_eFaturalar",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
+            "url": {
+              "raw": "https://efaturaservicetest.isim360.com/v2/outboxinvoice/withnulllocalreferences?startDate=2021-10-01&endDate=2021-10-20",
+              "protocol": "https",
+              "host": [
+                "efaturaservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "outboxinvoice",
+                "withnulllocalreferences"
+              ],
+              "query": [
+                {
+                  "key": "startDate",
+                  "value": "2021-10-01"
+                },
+                {
+                  "key": "endDate",
+                  "value": "2021-10-20"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get_OutboxInvoice_Html_v2",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://efaturaservicetest.isim360.com/v2/outboxinvoice/bf579d26-b73e-4dd3-bd1b-1226ffc28d9d/html/true",
+              "protocol": "https",
+              "host": [
+                "efaturaservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "outboxinvoice",
+                "bf579d26-b73e-4dd3-bd1b-1226ffc28d9d",
+                "html",
+                "true"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get_OutboxInvoice_Pdf_v2",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://efaturaservicetest.isim360.com/v2/outboxinvoice/B1120903-EE7E-4432-8ACF-038207F17CD0/pdf/true",
+              "protocol": "https",
+              "host": [
+                "efaturaservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "outboxinvoice",
+                "B1120903-EE7E-4432-8ACF-038207F17CD0",
+                "pdf",
+                "true"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get_OutboxInvoice_Ubl_v2",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://efaturaservicetest.isim360.com/v2/outboxinvoice/5FD1469C-2B42-449D-A09E-1551E59BBBF9/ubl",
+              "protocol": "https",
+              "host": [
+                "efaturaservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "outboxinvoice",
+                "5FD1469C-2B42-449D-A09E-1551E59BBBF9",
+                "ubl"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Giden Fatura Durum Sorgulama",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://efaturaservicetest.isim360.com/v2/outboxinvoice/9758339E-EB0B-454C-8C2F-18059F944A3F/status",
+              "protocol": "https",
+              "host": [
+                "efaturaservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "outboxinvoice",
+                "9758339E-EB0B-454C-8C2F-18059F944A3F",
+                "status"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Post_OutboxInvoice_UBL",
+          "protocolProfileBehavior": {
+            "disabledSystemHeaders": {}
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "invoiceFile",
+                  "type": "file",
+                  "src": "/C:/Users/Aybars Karaman/Downloads/TST2022000000325_6220517884.xml"
+                },
+                {
+                  "key": "appType",
+                  "value": "1",
+                  "description": "appType 1 olarak gönderilmek durumunda",
+                  "type": "text"
+                },
+                {
+                  "key": "status",
+                  "value": "20",
+                  "type": "text"
+                },
+                {
+                  "key": "useManualInvoiceId",
+                  "value": "false",
+                  "type": "text"
+                },
+                {
+                  "key": "targetAlias",
+                  "value": "urn:mail:defaulttest3pk@medyasoft.com.tr",
+                  "description": "alıcı kurumun etiketi",
+                  "type": "text"
+                },
+                {
+                  "key": "useFirstAlias",
+                  "value": "true",
+                  "description": "eğer etiket gönderilmeyecekse, alıcının rastgele bir etiketine fatura gönder",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "prefix",
+                  "value": "EPA",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "localReferenceId",
+                  "value": "deneme",
+                  "description": "Sisteme ERP numaranızı eklemek için kullanılan alan",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "checkLocalReferenceId",
+                  "value": "false",
+                  "description": "Daha önce ERP numaranız kullanıldı mı kontrolü",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "xsltCode",
+                  "value": "code",
+                  "description": "Sistemde tanımlı fatura olan fatura görselini kullanmak için gerekli kod",
+                  "type": "text",
+                  "disabled": true
+                }
+              ]
+            },
+            "url": {
+              "raw": "https://efaturaservicetest.isim360.com/v2/outboxinvoice",
+              "protocol": "https",
+              "host": [
+                "efaturaservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "outboxinvoice"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "E-Fatura Json Model Gönderim",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": ""
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"recordType\": 1,\n    \"status\": 0,\n    \"xsltCode\": null,\n    \"localReferenceId\": null,\n    \"useManualInvoiceId\": false,\n    \"note\": null,\n    \"notes\": [],\n    \"addressBook\": {\n        \"name\": \"Alıcı adı\",\n        \"receiverPersonSurName\": \"Alıcı Soyadı\",\n        \"identificationNumber\": \"1234567803\",\n        \"alias\": \"urn:mail:defaulttest3pk@medyasoft.com.tr\",\n        \"registerNumber\": \"11112222333444\",\n        \"receiverStreet\": \"Bulvar / cadde / sokak\",\n        \"receiverBuildingName\": \"Bina adı\",\n        \"receiverBuildingNumber\": \"1\",\n        \"receiverDoorNumber\": \"11\",\n        \"receiverSmallTown\": \"Kasaba / Köy\",\n        \"receiverDistrict\": \"Üsküdar\",\n        \"receiverZipCode\": \"34000\",\n        \"receiverCity\": \"İstanbul\",\n        \"receiverCountry\": \"Türkiye\",\n        \"receiverPhoneNumber\": \"2123546363\",\n        \"receiverFaxNumber\": \"2123543636\",\n        \"receiverEmail\": \"deneme@deneme.com\",\n        \"receiverWebSite\": \"www.deneme.com\",\n        \"receiverTaxOffice\": \"Üsküdar vergi dairesi\"\n    },\n    \"generalInfoModel\": {\n        \"ettn\": null,\n        \"prefix\": \"\",\n        \"invoiceNumber\": null,\n        \"invoiceProfileType\": 0,\n        \"issueDate\": \"2020-04-15T07:51:56.9575976+03:00\",\n        \"type\": 1,\n        \"returnInvoiceNumber\": null,\n        \"returnInvoiceDate\": null,\n        \"currencyCode\": \"TRY\",\n        \"exchangeRate\": 0\n    },\n    \"invoiceLines\": [\n        {\n            \"inventoryCard\": \"Asus Laptop\",\n            \"amount\": 1,\n            \"discountAmount\": 870,\n            \"lineAmount\": 7830,\n            \"vatAmount\": 1522.1519999999998,\n            \"unitCode\": \"C62\",\n            \"unitPrice\": 8700,\n            \"discountRate\": 10,\n            \"vatRate\": 18,\n            \"vatExemptionReasonCode\": null,\n            \"description\":\"İlk açıklama\",\n            \"note\":\"ilk note\",\n            \"sellersItemIdentification\":\"11111\",\n            \"buyersItemIdentification\":\"22222\",\n            \"manufacturersItemIdentification\":\"33333\"\n        }\n    ]\n}"
+            },
+            "url": {
+              "raw": "https://efaturaservicetest.isim360.com/v1/outboxinvoice/create",
+              "protocol": "https",
+              "host": [
+                "efaturaservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v1",
+                "outboxinvoice",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Put_OutboxInvoice_UBL",
+          "protocolProfileBehavior": {
+            "disabledSystemHeaders": {}
+          },
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "invoiceFile",
+                  "type": "file",
+                  "src": "/C:/Users/Aybars Karaman/Downloads/TST2022000000325_6220517884.xml"
+                },
+                {
+                  "key": "appType",
+                  "value": "1",
+                  "description": "appType 1 olarak gönderilmek durumunda",
+                  "type": "text"
+                },
+                {
+                  "key": "status",
+                  "value": "20",
+                  "type": "text"
+                },
+                {
+                  "key": "targetAlias",
+                  "value": "urn:mail:defaulttest3pk@medyasoft.com.tr",
+                  "description": "alıcı kurumun etiketi",
+                  "type": "text"
+                },
+                {
+                  "key": "useFirstAlias",
+                  "value": "true",
+                  "description": "eğer etiket gönderilmeyecekse, alıcının rastgele bir etiketine fatura gönder",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "localReferenceId",
+                  "value": "deneme",
+                  "description": "Sisteme ERP numaranızı eklemek için kullanılan alan",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "checkLocalReferenceId",
+                  "value": "false",
+                  "description": "Daha önce ERP numaranız kullanıldı mı kontrolü",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "xsltCode",
+                  "value": "code",
+                  "description": "Sistemde tanımlı fatura olan fatura görselini kullanmak için gerekli kod",
+                  "type": "text",
+                  "disabled": true
+                }
+              ]
+            },
+            "url": {
+              "raw": "https://efaturaservicetest.isim360.com/v2/outboxinvoice/CCC25052-B857-431B-B9AE-357C31D2C195",
+              "protocol": "https",
+              "host": [
+                "efaturaservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "outboxinvoice",
+                "CCC25052-B857-431B-B9AE-357C31D2C195"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "E-Fatura Json Model Güncelleme",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": ""
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"recordType\": 1,\n    \"status\": 0,\n    \"xsltCode\": \"master\",\n    \"localReferenceId\": null,\n    \"useManualInvoiceId\": false,\n    \"note\": null,\n    \"notes\": [],\n    \"addressBook\": {\n        \"name\": \"Alıcı adı\",\n        \"receiverPersonSurName\": \"Alıcı Soyadı\",\n        \"identificationNumber\": \"1234567803\",\n        \"alias\": \"urn:mail:defaulttest3pk@medyasoft.com.tr\",\n        \"registerNumber\": \"11112222333444\",\n        \"receiverStreet\": \"Bulvar / cadde / sokak\",\n        \"receiverBuildingName\": \"Bina adı\",\n        \"receiverBuildingNumber\": \"1\",\n        \"receiverDoorNumber\": \"11\",\n        \"receiverSmallTown\": \"Kasaba / Köy\",\n        \"receiverDistrict\": \"Üsküdar\",\n        \"receiverZipCode\": \"34000\",\n        \"receiverCity\": \"İstanbul\",\n        \"receiverCountry\": \"Türkiye\",\n        \"receiverPhoneNumber\": \"2123546363\",\n        \"receiverFaxNumber\": \"2123543636\",\n        \"receiverEmail\": \"deneme@deneme.com\",\n        \"receiverWebSite\": \"www.deneme.com\",\n        \"receiverTaxOffice\": \"Üsküdar vergi dairesi\"\n    },\n    \"generalInfoModel\": {\n        \"ettn\": \"00afab92-2f34-4952-bda7-214b312a4b16\",\n        \"prefix\":null,\n        \"invoiceNumber\": null,\n        \"invoiceProfileType\": 0,\n        \"issueDate\": \"2020-04-15T07:51:56.9575976+03:00\",\n        \"type\": 1,\n        \"returnInvoiceNumber\": null,\n        \"returnInvoiceDate\": null,\n        \"currencyCode\": \"TRY\",\n        \"exchangeRate\": 0\n    },\n    \"invoiceLines\": [\n        {\n            \"inventoryCard\": \"Asus Laptop\",\n            \"amount\": 1,\n            \"discountAmount\": 870,\n            \"lineAmount\": 7830,\n            \"vatAmount\": 1522.1519999999998,\n            \"unitCode\": \"C62\",\n            \"unitPrice\": 8700,\n            \"discountRate\": 10,\n            \"vatRate\": 18,\n            \"vatExemptionReasonCode\": null,\n            \"taxes\": [\n                {\n                    \"taxName\": \"ÖTV 1.LİSTE\",\n                    \"isNegative\": false,\n                    \"taxTypeCode\": \"0071\",\n                    \"taxRate\": 8,\n                    \"taxAmount\": 626.4\n                }\n            ]\n        }\n    ],\n    \"invoiceTotalsModel\": {\n        \"lineExtensionAmount\": null,\n        \"taxExclusiveAmount\": null,\n        \"taxInclusiveAmount\": null,\n        \"allowanceTotalAmount\": null,\n        \"payableAmount\": null,\n        \"amountInWords\": null\n    }\n}"
+            },
+            "url": {
+              "raw": "https://efaturaservicetest.isim360.com/v1/outboxinvoice/update/00afab92-2f34-4952-bda7-214b312a4b16",
+              "protocol": "https",
+              "host": [
+                "efaturaservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v1",
+                "outboxinvoice",
+                "update",
+                "00afab92-2f34-4952-bda7-214b312a4b16"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Put_Status_Outbox_Invoice_List",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"ids\": [\n        \"652869f4-e7cc-4101-a54c-644593ab342d\",\n        \"6F223EB2-F1A9-4C1D-BC3A-CF7F17078FED\"\n    ],\n    \"status\": 20\n}"
+            },
+            "url": {
+              "raw": "https://efaturaservicetest.isim360.com/v1/outboxinvoice/updatestatuslist",
+              "protocol": "https",
+              "host": [
+                "efaturaservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v1",
+                "outboxinvoice",
+                "updatestatuslist"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Ytb_Satış",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"invoiceId\": \"00000000-0000-0000-0000-000000000000\",\r\n    \"status\": 0,\r\n    \"isNew\": true,\r\n    \"xsltCode\": \"master\",\r\n    \"useManualInvoiceId\": false,\r\n    \"allowOldEArsivCustomer\": false,\r\n    \"checkLocalReferenceId\": false,\r\n    \"useFirstAlias\": false,\r\n    \"isSend\": false,\r\n    \"recordType\": 1,\r\n    \"isTdevice\": false,\r\n    \"notes\": [],\r\n    \"generalInfoModel\": {\r\n        \"issueDate\": \"2026-04-27T00:00:00+03:00\",\r\n        \"issueTime\": \"2026-04-27T14:47:40.6424837+03:00\",\r\n        \"type\": 1,\r\n        \"currencyId\": 1,\r\n        \"currencyCode\": \"TRY\",\r\n        \"exchangeRate\": 0,\r\n        \"despatchType\": 0,\r\n        \"standard\": 0,\r\n        \"invoiceProfileType\": 12,\r\n        \"prefix\": \"TRV\",\r\n        \"contractDocument\": {\r\n            \"documentDate\": \"Mon Apr 27 2026\",\r\n            \"documentNumber\": \"123456\"\r\n        },\r\n        \"periodDate\": \"Mon Apr 27 2026\"\r\n    },\r\n    \"taxes\": [],\r\n    \"invoiceLines\": [\r\n        {\r\n            \"disableVatExemption\": true,\r\n            \"discounts\": [],\r\n            \"inventoryCard\": \"YTB_SATİS\",\r\n            \"amount\": 1,\r\n            \"lineAmount\": 10,\r\n            \"lineExtensionAmount\": 10,\r\n            \"vatAmount\": 1.8,\r\n            \"vatExtensionAmount\": null,\r\n            \"unitCode\": \"C62\",\r\n            \"unitPrice\": 10,\r\n            \"unitPriceWithVat\": 10,\r\n            \"vatRate\": 18,\r\n            \"ozelMatrahtVat\": null,\r\n            \"ozelMatrahAmount\": null,\r\n            \"additionalIdentification\": {\r\n                \"productTraceNumber\": \"15151515\",\r\n                \"serialNumber\": \"456\",\r\n                \"modelName\": \"123\",\r\n                \"unitCode\": \"01\"\r\n            }\r\n        }\r\n    ],\r\n    \"invoiceTotalsModel\": {},\r\n    \"paymentMeansModel\": {\r\n        \"paymentMeansCode\": 0\r\n    },\r\n    \"paymentTermsModel\": {},\r\n    \"orderInfoModel\": {\r\n        \"invoiceDocumentModel\": {\r\n            \"isFileExist\": false,\r\n            \"documentDateInString\": \"\"\r\n        },\r\n        \"orderDate\": null,\r\n        \"orderNumber\": null\r\n    },\r\n    \"archiveInfoModel\": {\r\n        \"isInternetSale\": false,\r\n        \"shipmentSendType\": \"KAGIT\",\r\n        \"hideDespatchMessage\": false\r\n    },\r\n    \"ublSettingsModel\": {\r\n        \"useCalculatedVatAmount\": true,\r\n        \"useCalculatedTotalSummary\": true,\r\n        \"isFreeOfCharge\": false,\r\n        \"hideDespatchMessage\": true,\r\n        \"isFit\": false\r\n    },\r\n    \"relatedDespatchList\": [],\r\n    \"customDocumentReferenceList\": [\r\n        {\r\n            \"id\": \"isAdvancedNote\",\r\n            \"documentType\": true\r\n        }\r\n    ],\r\n    \"additionalInvoiceTypeInfo\": {},\r\n    \"buyerCustomerInfoModel\": {},\r\n    \"taxRepresentativePartyInfoModel\": {},\r\n    \"allowanceCharges\": [],\r\n    \"allDiscount\": false,\r\n    \"allDiscountRate\": 0,\r\n    \"addressBook\": {\r\n        \"id\": 1737,\r\n        \"customerId\": \"842084f8-8301-4d28-89cf-1828b3449c49\",\r\n        \"createdDate\": \"2021-12-03T11:20:06.693\",\r\n        \"description\": \"testtttt1234\",\r\n        \"alias\": \"urn:mail:defaulttest3pk@medyasoft.com.tr\",\r\n        \"identificationNumber\": \"1234567803\",\r\n        \"name\": \"TEST KURUM 3\",\r\n        \"receiverDistrict\": \"test\",\r\n        \"receiverCity\": \"İstanbul\",\r\n        \"receiverCountry\": \"Türkiye\",\r\n        \"receiverCountryId\": 1,\r\n        \"type\": 1,\r\n        \"isDefault\": false,\r\n        \"addressOriginalAlias\": \"urn:mail:defaultpk@elogo.com.tr\"\r\n    },\r\n    \"gibUserId\": \"1234567803\",\r\n    \"allDiscountAmount\": 0\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://efaturaservicetest.isim360.com/v1/outboxinvoice/create",
+              "protocol": "https",
+              "host": [
+                "efaturaservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v1",
+                "outboxinvoice",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Ytb_İade",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"invoiceId\": \"00000000-0000-0000-0000-000000000000\",\r\n    \"status\": 0,\r\n    \"isNew\": true,\r\n    \"xsltCode\": \"master\",\r\n    \"useManualInvoiceId\": false,\r\n    \"allowOldEArsivCustomer\": false,\r\n    \"checkLocalReferenceId\": false,\r\n    \"useFirstAlias\": false,\r\n    \"isSend\": false,\r\n    \"recordType\": 1,\r\n    \"isTdevice\": false,\r\n    \"notes\": [],\r\n    \"generalInfoModel\": {\r\n        \"issueDate\": \"2026-04-27T00:00:00+03:00\",\r\n        \"issueTime\": \"2026-04-27T15:05:54.3277215+03:00\",\r\n        \"type\": 2,\r\n        \"currencyId\": 1,\r\n        \"currencyCode\": \"TRY\",\r\n        \"exchangeRate\": 0,\r\n        \"despatchType\": 0,\r\n        \"standard\": 0,\r\n        \"invoiceProfileType\": 12,\r\n        \"prefix\": \"TRV\",\r\n        \"contractDocument\": {\r\n            \"documentDate\": \"Mon Apr 27 2026\",\r\n            \"documentNumber\": \"123456\"\r\n        },\r\n        \"returnInvoiceDateLines\": [\r\n            {\r\n                \"returnInvoiceDate\": \"Mon Apr 27 2026\",\r\n                \"returnInvoiceNumber\": \"TRV2026000000063\"\r\n            }\r\n        ],\r\n        \"returnInvoiceNumber\": null,\r\n        \"periodDate\": \"Mon Apr 27 2026\"\r\n    },\r\n    \"taxes\": [],\r\n    \"invoiceLines\": [\r\n        {\r\n            \"disableVatExemption\": true,\r\n            \"discounts\": [],\r\n            \"inventoryCard\": \"YTB_IADE\",\r\n            \"amount\": 1,\r\n            \"lineAmount\": 10,\r\n            \"lineExtensionAmount\": 10,\r\n            \"vatAmount\": 1.8,\r\n            \"vatExtensionAmount\": null,\r\n            \"unitCode\": \"C62\",\r\n            \"unitPrice\": 10,\r\n            \"unitPriceWithVat\": 10,\r\n            \"vatRate\": 18,\r\n            \"ozelMatrahtVat\": null,\r\n            \"ozelMatrahAmount\": null,\r\n            \"additionalIdentification\": {\r\n                \"productTraceNumber\": null,\r\n                \"serialNumber\": null,\r\n                \"modelName\": null,\r\n                \"unitCode\": \"04\"\r\n            }\r\n        }\r\n    ],\r\n    \"invoiceTotalsModel\": {},\r\n    \"paymentMeansModel\": {\r\n        \"paymentMeansCode\": 0\r\n    },\r\n    \"paymentTermsModel\": {},\r\n    \"orderInfoModel\": {\r\n        \"invoiceDocumentModel\": {\r\n            \"isFileExist\": false,\r\n            \"documentDateInString\": \"\"\r\n        },\r\n        \"orderDate\": null,\r\n        \"orderNumber\": null\r\n    },\r\n    \"archiveInfoModel\": {\r\n        \"isInternetSale\": false,\r\n        \"shipmentSendType\": \"KAGIT\",\r\n        \"hideDespatchMessage\": false\r\n    },\r\n    \"ublSettingsModel\": {\r\n        \"useCalculatedVatAmount\": true,\r\n        \"useCalculatedTotalSummary\": true,\r\n        \"isFreeOfCharge\": false,\r\n        \"hideDespatchMessage\": true,\r\n        \"isFit\": false\r\n    },\r\n    \"relatedDespatchList\": [],\r\n    \"customDocumentReferenceList\": [\r\n        {\r\n            \"id\": \"isAdvancedNote\",\r\n            \"documentType\": true\r\n        }\r\n    ],\r\n    \"additionalInvoiceTypeInfo\": {},\r\n    \"buyerCustomerInfoModel\": {},\r\n    \"taxRepresentativePartyInfoModel\": {},\r\n    \"allowanceCharges\": [],\r\n    \"allDiscount\": false,\r\n    \"allDiscountRate\": 0,\r\n    \"addressBook\": {\r\n        \"id\": 1121,\r\n        \"customerId\": \"842084f8-8301-4d28-89cf-1828b3449c49\",\r\n        \"createdDate\": \"2021-06-30T17:07:48.54\",\r\n        \"description\": \"Test\",\r\n        \"identificationNumber\": \"1234567803\",\r\n        \"name\": \"Test\",\r\n        \"registerNumber\": \"Test\",\r\n        \"receiverPersonSurName\": \"Test\",\r\n        \"receiverStreet\": \"Test\",\r\n        \"receiverBuildingName\": \"Test\",\r\n        \"receiverBuildingNumber\": \"1\",\r\n        \"receiverDoorNumber\": \"1\",\r\n        \"receiverSmallTown\": \"Test\",\r\n        \"receiverDistrict\": \"Test\",\r\n        \"receiverZipCode\": \"12345\",\r\n        \"receiverCity\": \"İstanbul\",\r\n        \"receiverCountry\": \"Türkiye\",\r\n        \"receiverCountryId\": 1,\r\n        \"receiverEmail\": \"test@test.com\",\r\n        \"receiverTaxOffice\": \"Kadıköy\",\r\n        \"type\": 1,\r\n        \"updatedDate\": \"2021-06-24T11:33:15.193\",\r\n        \"isDefault\": false,\r\n        \"alias\": \"urn:mail:defaulttest3pk@medyasoft.com.tr\"\r\n    },\r\n    \"gibUserId\": \"1234567803\",\r\n    \"allDiscountAmount\": 0\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://efaturaservicetest.isim360.com/v1/outboxinvoice/create",
+              "protocol": "https",
+              "host": [
+                "efaturaservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v1",
+                "outboxinvoice",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Ytb_İstisna",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"invoiceId\": \"00000000-0000-0000-0000-000000000000\",\r\n    \"status\": 0,\r\n    \"isNew\": true,\r\n    \"xsltCode\": \"master\",\r\n    \"useManualInvoiceId\": false,\r\n    \"allowOldEArsivCustomer\": false,\r\n    \"checkLocalReferenceId\": false,\r\n    \"useFirstAlias\": false,\r\n    \"isSend\": false,\r\n    \"recordType\": 1,\r\n    \"isTdevice\": false,\r\n    \"notes\": [],\r\n    \"generalInfoModel\": {\r\n        \"issueDate\": \"2026-04-27T00:00:00+03:00\",\r\n        \"issueTime\": \"2026-04-27T14:58:19.0002578+03:00\",\r\n        \"type\": 3,\r\n        \"currencyId\": 1,\r\n        \"currencyCode\": \"TRY\",\r\n        \"exchangeRate\": 0,\r\n        \"despatchType\": 0,\r\n        \"standard\": 0,\r\n        \"invoiceProfileType\": 12,\r\n        \"prefix\": \"TRV\",\r\n        \"contractDocument\": {\r\n            \"documentDate\": \"Mon Apr 27 2026\",\r\n            \"documentNumber\": \"123456\"\r\n        },\r\n        \"periodDate\": \"Mon Apr 27 2026\"\r\n    },\r\n    \"taxes\": [],\r\n    \"invoiceLines\": [\r\n        {\r\n            \"disableVatExemption\": true,\r\n            \"vatRate\": 18,\r\n            \"discounts\": [],\r\n            \"inventoryCard\": \"YTB_ISTISNA\",\r\n            \"amount\": 1,\r\n            \"lineAmount\": 10,\r\n            \"lineExtensionAmount\": 10,\r\n            \"vatAmount\": 0,\r\n            \"vatExtensionAmount\": null,\r\n            \"unitCode\": \"C62\",\r\n            \"unitPrice\": 10,\r\n            \"unitPriceWithVat\": 10,\r\n            \"canceledVatRate\": 18,\r\n            \"isIncludeVat\": false,\r\n            \"additionalIdentification\": {\r\n                \"productTraceNumber\": null,\r\n                \"serialNumber\": null,\r\n                \"modelName\": null,\r\n                \"unitCode\": \"02\"\r\n            },\r\n            \"vatExemptionReasonCode\": \"339\"\r\n        }\r\n    ],\r\n    \"invoiceTotalsModel\": {},\r\n    \"paymentMeansModel\": {\r\n        \"paymentMeansCode\": 0\r\n    },\r\n    \"paymentTermsModel\": {},\r\n    \"orderInfoModel\": {\r\n        \"invoiceDocumentModel\": {\r\n            \"isFileExist\": false,\r\n            \"documentDateInString\": \"\"\r\n        },\r\n        \"orderDate\": null,\r\n        \"orderNumber\": null\r\n    },\r\n    \"archiveInfoModel\": {\r\n        \"isInternetSale\": false,\r\n        \"shipmentSendType\": \"KAGIT\",\r\n        \"hideDespatchMessage\": false\r\n    },\r\n    \"ublSettingsModel\": {\r\n        \"useCalculatedVatAmount\": true,\r\n        \"useCalculatedTotalSummary\": true,\r\n        \"isFreeOfCharge\": false,\r\n        \"hideDespatchMessage\": true,\r\n        \"isFit\": false\r\n    },\r\n    \"relatedDespatchList\": [],\r\n    \"customDocumentReferenceList\": [\r\n        {\r\n            \"id\": \"isAdvancedNote\",\r\n            \"documentType\": true\r\n        }\r\n    ],\r\n    \"additionalInvoiceTypeInfo\": {},\r\n    \"buyerCustomerInfoModel\": {},\r\n    \"taxRepresentativePartyInfoModel\": {},\r\n    \"allowanceCharges\": [],\r\n    \"allDiscount\": false,\r\n    \"allDiscountRate\": 0,\r\n    \"addressBook\": {\r\n        \"id\": 1122,\r\n        \"customerId\": \"842084f8-8301-4d28-89cf-1828b3449c49\",\r\n        \"createdDate\": \"2021-06-30T17:21:32.95\",\r\n        \"description\": \"Test13\",\r\n        \"alias\": \"urn:mail:defaulttest3pk@medyasoft.com.tr\",\r\n        \"identificationNumber\": \"1234567803\",\r\n        \"name\": \"Test\",\r\n        \"registerNumber\": \"Test\",\r\n        \"receiverPersonSurName\": \"Test\",\r\n        \"receiverStreet\": \"Test\",\r\n        \"receiverBuildingName\": \"Test\",\r\n        \"receiverBuildingNumber\": \"1\",\r\n        \"receiverDoorNumber\": \"1\",\r\n        \"receiverSmallTown\": \"Test\",\r\n        \"receiverDistrict\": \"Test\",\r\n        \"receiverZipCode\": \"12345\",\r\n        \"receiverCity\": \"İstanbul\",\r\n        \"receiverCountry\": \"Türkiye\",\r\n        \"receiverCountryId\": 1,\r\n        \"receiverEmail\": \"test@test.com\",\r\n        \"receiverTaxOffice\": \"Kadıköy\",\r\n        \"type\": 1,\r\n        \"updatedDate\": \"2022-09-30T14:47:20.503\",\r\n        \"isDefault\": false,\r\n        \"addressOriginalAlias\": \"urn:mail:defaulttest3pk@medyasoft.com.tr\"\r\n    },\r\n    \"gibUserId\": \"1234567803\",\r\n    \"allDiscountAmount\": 0\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://efaturaservicetest.isim360.com/v1/outboxinvoice/create",
+              "protocol": "https",
+              "host": [
+                "efaturaservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v1",
+                "outboxinvoice",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Ytb_Tevkifat",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"invoiceId\": \"00000000-0000-0000-0000-000000000000\",\r\n    \"status\": 0,\r\n    \"isNew\": true,\r\n    \"xsltCode\": \"master\",\r\n    \"useManualInvoiceId\": false,\r\n    \"allowOldEArsivCustomer\": false,\r\n    \"checkLocalReferenceId\": false,\r\n    \"useFirstAlias\": false,\r\n    \"isSend\": false,\r\n    \"recordType\": 1,\r\n    \"isTdevice\": false,\r\n    \"notes\": [],\r\n    \"generalInfoModel\": {\r\n        \"issueDate\": \"2026-04-27T00:00:00+03:00\",\r\n        \"issueTime\": \"2026-04-27T15:08:43.724569+03:00\",\r\n        \"type\": 5,\r\n        \"currencyId\": 1,\r\n        \"currencyCode\": \"TRY\",\r\n        \"exchangeRate\": 0,\r\n        \"despatchType\": 0,\r\n        \"standard\": 0,\r\n        \"invoiceProfileType\": 12,\r\n        \"prefix\": \"TRV\",\r\n        \"contractDocument\": {\r\n            \"documentDate\": \"Mon Apr 27 2026\",\r\n            \"documentNumber\": \"123456\"\r\n        },\r\n        \"periodDate\": \"Mon Apr 27 2026\"\r\n    },\r\n    \"taxes\": [],\r\n    \"invoiceLines\": [\r\n        {\r\n            \"disableVatExemption\": true,\r\n            \"discounts\": [],\r\n            \"inventoryCard\": \"YTB_Tevkifat\",\r\n            \"amount\": 1,\r\n            \"lineAmount\": 10,\r\n            \"lineExtensionAmount\": 10,\r\n            \"vatAmount\": 1.8,\r\n            \"vatExtensionAmount\": null,\r\n            \"unitCode\": \"C62\",\r\n            \"vatRate\": 18,\r\n            \"ozelMatrahtVat\": null,\r\n            \"ozelMatrahAmount\": null,\r\n            \"unitPrice\": 10,\r\n            \"unitPriceWithVat\": 11.8,\r\n            \"additionalIdentification\": {\r\n                \"productTraceNumber\": null,\r\n                \"serialNumber\": null,\r\n                \"modelName\": null,\r\n                \"unitCode\": \"03\"\r\n            }\r\n        }\r\n    ],\r\n    \"invoiceTotalsModel\": {},\r\n    \"paymentMeansModel\": {\r\n        \"paymentMeansCode\": 0\r\n    },\r\n    \"paymentTermsModel\": {},\r\n    \"orderInfoModel\": {\r\n        \"invoiceDocumentModel\": {\r\n            \"isFileExist\": false,\r\n            \"documentDateInString\": \"\"\r\n        },\r\n        \"orderDate\": null,\r\n        \"orderNumber\": null\r\n    },\r\n    \"archiveInfoModel\": {\r\n        \"isInternetSale\": false,\r\n        \"shipmentSendType\": \"KAGIT\",\r\n        \"hideDespatchMessage\": false\r\n    },\r\n    \"ublSettingsModel\": {\r\n        \"useCalculatedVatAmount\": true,\r\n        \"useCalculatedTotalSummary\": true,\r\n        \"isFreeOfCharge\": false,\r\n        \"hideDespatchMessage\": true,\r\n        \"isFit\": false\r\n    },\r\n    \"relatedDespatchList\": [],\r\n    \"customDocumentReferenceList\": [\r\n        {\r\n            \"id\": \"isAdvancedNote\",\r\n            \"documentType\": true\r\n        }\r\n    ],\r\n    \"additionalInvoiceTypeInfo\": {},\r\n    \"buyerCustomerInfoModel\": {},\r\n    \"taxRepresentativePartyInfoModel\": {},\r\n    \"allowanceCharges\": [],\r\n    \"allDiscount\": false,\r\n    \"allDiscountRate\": 0,\r\n    \"addressBook\": {\r\n        \"id\": 1122,\r\n        \"customerId\": \"842084f8-8301-4d28-89cf-1828b3449c49\",\r\n        \"createdDate\": \"2021-06-30T17:21:32.95\",\r\n        \"description\": \"Test13\",\r\n        \"alias\": \"urn:mail:defaulttest3pk@medyasoft.com.tr\",\r\n        \"identificationNumber\": \"1234567803\",\r\n        \"name\": \"Test\",\r\n        \"registerNumber\": \"Test\",\r\n        \"receiverPersonSurName\": \"Test\",\r\n        \"receiverStreet\": \"Test\",\r\n        \"receiverBuildingName\": \"Test\",\r\n        \"receiverBuildingNumber\": \"1\",\r\n        \"receiverDoorNumber\": \"1\",\r\n        \"receiverSmallTown\": \"Test\",\r\n        \"receiverDistrict\": \"Test\",\r\n        \"receiverZipCode\": \"12345\",\r\n        \"receiverCity\": \"İstanbul\",\r\n        \"receiverCountry\": \"Türkiye\",\r\n        \"receiverCountryId\": 1,\r\n        \"receiverEmail\": \"test@test.com\",\r\n        \"receiverTaxOffice\": \"Kadıköy\",\r\n        \"type\": 1,\r\n        \"updatedDate\": \"2022-09-30T14:47:20.503\",\r\n        \"isDefault\": false,\r\n        \"addressOriginalAlias\": \"urn:mail:defaulttest3pk@medyasoft.com.tr\"\r\n    },\r\n    \"gibUserId\": \"1234567803\",\r\n    \"allDiscountAmount\": 0\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://efaturaservicetest.isim360.com/v1/outboxinvoice/create",
+              "protocol": "https",
+              "host": [
+                "efaturaservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v1",
+                "outboxinvoice",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Ytb_Tevkifatlı_İade",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"invoiceId\": \"00000000-0000-0000-0000-000000000000\",\r\n    \"status\": 0,\r\n    \"isNew\": true,\r\n    \"xsltCode\": \"master\",\r\n    \"useManualInvoiceId\": false,\r\n    \"allowOldEArsivCustomer\": false,\r\n    \"checkLocalReferenceId\": false,\r\n    \"useFirstAlias\": false,\r\n    \"isSend\": false,\r\n    \"recordType\": 1,\r\n    \"isTdevice\": false,\r\n    \"notes\": [],\r\n    \"generalInfoModel\": {\r\n        \"issueDate\": \"2026-04-27T00:00:00+03:00\",\r\n        \"issueTime\": \"2026-04-27T18:08:32.0911237+03:00\",\r\n        \"type\": 15,\r\n        \"currencyId\": 1,\r\n        \"currencyCode\": \"TRY\",\r\n        \"exchangeRate\": 0,\r\n        \"despatchType\": 0,\r\n        \"standard\": 0,\r\n        \"invoiceProfileType\": 12,\r\n        \"prefix\": \"TRV\",\r\n        \"contractDocument\": {\r\n            \"documentDate\": \"Mon Apr 27 2026\",\r\n            \"documentNumber\": \"123456\"\r\n        },\r\n        \"returnInvoiceDateLines\": [\r\n            {\r\n                \"returnInvoiceDate\": \"Mon Apr 27 2026\",\r\n                \"returnInvoiceNumber\": \"TRV2026000000066\"\r\n            }\r\n        ],\r\n        \"returnInvoiceNumber\": null,\r\n        \"periodDate\": \"Mon Apr 27 2026\"\r\n    },\r\n    \"taxes\": [],\r\n    \"invoiceLines\": [\r\n        {\r\n            \"disableVatExemption\": true,\r\n            \"discounts\": [],\r\n            \"inventoryCard\": \"eplt_hizmet\",\r\n            \"amount\": 1,\r\n            \"lineAmount\": 10,\r\n            \"lineExtensionAmount\": 10,\r\n            \"vatAmount\": 1.8,\r\n            \"vatExtensionAmount\": null,\r\n            \"unitCode\": \"C62\",\r\n            \"unitPrice\": 10,\r\n            \"unitPriceWithVat\": 10,\r\n            \"vatRate\": 18,\r\n            \"ozelMatrahtVat\": null,\r\n            \"ozelMatrahAmount\": null,\r\n            \"additionalIdentification\": {\r\n                \"productTraceNumber\": \"15151515\",\r\n                \"unitCode\": \"01\",\r\n                \"modelName\": \"123\",\r\n                \"serialNumber\": \"1235\"\r\n            }\r\n        }\r\n    ],\r\n    \"invoiceTotalsModel\": {},\r\n    \"paymentMeansModel\": {\r\n        \"paymentMeansCode\": 0\r\n    },\r\n    \"paymentTermsModel\": {},\r\n    \"orderInfoModel\": {\r\n        \"invoiceDocumentModel\": {\r\n            \"isFileExist\": false,\r\n            \"documentDateInString\": \"\"\r\n        },\r\n        \"orderDate\": null,\r\n        \"orderNumber\": null\r\n    },\r\n    \"archiveInfoModel\": {\r\n        \"isInternetSale\": false,\r\n        \"shipmentSendType\": \"KAGIT\",\r\n        \"hideDespatchMessage\": false\r\n    },\r\n    \"ublSettingsModel\": {\r\n        \"useCalculatedVatAmount\": true,\r\n        \"useCalculatedTotalSummary\": true,\r\n        \"isFreeOfCharge\": false,\r\n        \"hideDespatchMessage\": true,\r\n        \"isFit\": false\r\n    },\r\n    \"relatedDespatchList\": [],\r\n    \"customDocumentReferenceList\": [\r\n        {\r\n            \"id\": \"isAdvancedNote\",\r\n            \"documentType\": true\r\n        }\r\n    ],\r\n    \"additionalInvoiceTypeInfo\": {},\r\n    \"buyerCustomerInfoModel\": {},\r\n    \"taxRepresentativePartyInfoModel\": {},\r\n    \"allowanceCharges\": [],\r\n    \"allDiscount\": false,\r\n    \"allDiscountRate\": 0,\r\n    \"addressBook\": {\r\n        \"id\": 3730,\r\n        \"customerId\": \"842084f8-8301-4d28-89cf-1828b3449c49\",\r\n        \"createdDate\": \"2026-02-23T13:18:28.437\",\r\n        \"description\": \"Postacılar, 7620/1. Sk NO:20A, \",\r\n        \"alias\": \"urn:mail:defaultpk@gelirler.gov.tr\",\r\n        \"identificationNumber\": \"5555550012\",\r\n        \"name\": \"Test Kurum - 08 Test Kullanıcısı\",\r\n        \"registerNumber\": \"1\",\r\n        \"receiverPersonSurName\": \"3STEST\",\r\n        \"receiverStreet\": \"Türközü Mahallesi 396.Cadde \",\r\n        \"receiverBuildingName\": \"Doğan AY\",\r\n        \"receiverBuildingNumber\": \"1\",\r\n        \"receiverDoorNumber\": \"1\",\r\n        \"receiverSmallTown\": \"1\",\r\n        \"receiverDistrict\": \"deneme\",\r\n        \"receiverZipCode\": \"35520\",\r\n        \"receiverCity\": \"İzmir\",\r\n        \"receiverCountry\": \"Türkiye\",\r\n        \"receiverCountryId\": 1,\r\n        \"receiverFaxNumber\": \"1\",\r\n        \"receiverEmail\": \"kerem.kaplan@3syazilim.com.tr\",\r\n        \"receiverWebSite\": \"1\",\r\n        \"receiverTaxOffice\": \"1\",\r\n        \"type\": 1,\r\n        \"updatedDate\": \"2025-12-08T07:53:39.103\",\r\n        \"isDefault\": true,\r\n        \"addressOriginalAlias\": \"urn:mail:defaulttest3pk@medyasoft.com.tr\"\r\n    },\r\n    \"gibUserId\": \"5555550012\",\r\n    \"allDiscountAmount\": 0\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://efaturaservicetest.isim360.com/v1/outboxinvoice/create",
+              "protocol": "https",
+              "host": [
+                "efaturaservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v1",
+                "outboxinvoice",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Archive_Invoice",
+      "item": [
+        {
+          "name": "E-Arşiv Aynı Faturanın Mailini Tekrar Gönderme",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
+            "url": {
+              "raw": "https://efaturaservicetest.isim360.com/v1/earchive/retryinvoicemail/1244eab8-ddad-4551-bacc-051abd49e1a3",
+              "protocol": "https",
+              "host": [
+                "efaturaservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v1",
+                "earchive",
+                "retryinvoicemail",
+                "1244eab8-ddad-4551-bacc-051abd49e1a3"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Arayüzden_Kesilen_eArşivFaturalar",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
+            "url": {
+              "raw": "https://efaturaservicetest.isim360.com/v2/earchive/withnulllocalreferences?startDate=2021-10-01&endDate=2021-10-20",
+              "protocol": "https",
+              "host": [
+                "efaturaservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "earchive",
+                "withnulllocalreferences"
+              ],
+              "query": [
+                {
+                  "key": "startDate",
+                  "value": "2021-10-01"
+                },
+                {
+                  "key": "endDate",
+                  "value": "2021-10-20"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "E-Arşiv Fatura Durum Sorgulama",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://efaturaservicetest.isim360.com/v2/earchive/51CB09FC-FAA3-4876-B916-04C256D1486C/status",
+              "protocol": "https",
+              "host": [
+                "efaturaservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "earchive",
+                "51CB09FC-FAA3-4876-B916-04C256D1486C",
+                "status"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get_EarchiveInvoice_Ubl_v2",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://efaturaservicetest.isim360.com/v2/earchive/5FD1469C-2B42-449D-A09E-1551E59BBBF9/ubl",
+              "protocol": "https",
+              "host": [
+                "efaturaservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "earchive",
+                "5FD1469C-2B42-449D-A09E-1551E59BBBF9",
+                "ubl"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get_EarchiveInvoice_Pdf_v2",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://efaturaservicetest.isim360.com/v2/earchive/B1120903-EE7E-4432-8ACF-038207F17CD0/pdf/true",
+              "protocol": "https",
+              "host": [
+                "efaturaservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "earchive",
+                "B1120903-EE7E-4432-8ACF-038207F17CD0",
+                "pdf",
+                "true"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get_EarchiveInvoice_Html_v2",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://efaturaservicetest.isim360.com/v2/earchive/bf579d26-b73e-4dd3-bd1b-1226ffc28d9d/html/true",
+              "protocol": "https",
+              "host": [
+                "efaturaservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "earchive",
+                "bf579d26-b73e-4dd3-bd1b-1226ffc28d9d",
+                "html",
+                "true"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Post_EArsivInvoice_UBL",
+          "protocolProfileBehavior": {
+            "disabledSystemHeaders": {}
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "invoiceFile",
+                  "type": "file",
+                  "src": "/C:/Users/Aybars Karaman/Downloads/EPA2022000001781_11111111111.xml"
+                },
+                {
+                  "key": "status",
+                  "value": "20",
+                  "type": "text"
+                },
+                {
+                  "key": "useManualInvoiceId",
+                  "value": "false",
+                  "type": "text"
+                },
+                {
+                  "key": "sendEMail",
+                  "value": "false",
+                  "type": "text"
+                },
+                {
+                  "key": "eMailAddress",
+                  "value": "r@r.com",
+                  "type": "text"
+                },
+                {
+                  "key": "prefix",
+                  "value": "EPA",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "localReferenceId",
+                  "value": "deneme",
+                  "description": "Sisteme ERP numaranızı eklemek için kullanılan alan",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "checkLocalReferenceId",
+                  "value": "false",
+                  "description": "Daha önce ERP numaranız kullanıldı mı kontrolü",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "xsltCode",
+                  "value": "code",
+                  "description": "Sistemde tanımlı fatura olan fatura görselini kullanmak için gerekli kod",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "allowOldEArsivCustomer",
+                  "value": "false",
+                  "description": "Eskiden e-arşiv kullanan, sonradan e-fatura kullanıcısı olan firmalara e-arşiv fatura kesmek için true gönderilme",
+                  "type": "text",
+                  "disabled": true
+                }
+              ]
+            },
+            "url": {
+              "raw": "https://efaturaservicetest.isim360.com/v2/earchive",
+              "protocol": "https",
+              "host": [
+                "efaturaservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "earchive"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Gönderilen E-Arşiv Faturanın Mailini Farklı Maile Gönderme",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"id\":\"9BC954F4-94E3-42D9-8DC0-392E0A2577EA\",\n    \"emailaddresses\":\"deneme1@deneme.com;deneme2@deneme.com\"\n}"
+            },
+            "url": {
+              "raw": "https://efaturaservicetest.isim360.com/v1/earchive/retryinvoicemail",
+              "protocol": "https",
+              "host": [
+                "efaturaservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v1",
+                "earchive",
+                "retryinvoicemail"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Post_Earchive_Invoice_Json",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n      \"recordType\": 0,\n      \"status\": 20,\n      \"isNew\": true,\n      \"localReferenceId\": null,\n      \"useManualInvoiceId\": false,\n      \"note\": null,\n      \"generalInfoModel\": {\n        \"ettn\": \"89a1bd8a-309d-453a-bff5-a95464ac4162\",\n        \"invoiceProfileType\": 4,\n        \"issueDate\": \"2020-07-10T14:50:51.0000000\",\n        \"type\": 1,\n        \"currencyCode\": \"TRY\",\n        \"exchangeRate\": 0.0,\n        \"totalAmount\": null,\n        \"invoiceNumber\": \"\",\n        \"issueTime\": \"2020-07-10T14:50:51.0000000\",\n        \"prefix\": null,\n        \"returnInvoiceDate\": null,\n        \"returnInvoiceNumber\": null,\n        \"slipNumber\": null\n      },\n      \"addressBook\": {\n        \"identificationNumber\": \"1123581321\",\n        \"name\": \"Nihai Tüketici\",\n        \"receiverBuildingName\": null,\n        \"receiverPersonSurName\": \"\",\n        \"receiverNumber\": null,\n        \"receiverStreet\": \"\",\n        \"receiverEmail\": \"abb@gmail.com\",\n        \"receiverDistrict\": \"PENDİK\",\n        \"receiverCity\": \"İSTANBUL\",\n        \"receiverCountry\": \"Türkiye\",\n        \"registerNumber\": null,\n        \"receiverTaxOffice\": \"\",\n        \"receiverPhoneNumber\": \"\"\n      },\n      \"invoiceLines\": [\n        {\n          \"inventoryCard\": \"YEDEK SİM KART(%8)\",\n          \"disableVatExemption\": false,\n          \"amount\": 1.0,\n          \"unitCode\": \"C62\",\n          \"unitPrice\": 0.05,\n          \"vatRate\": 8.0,\n          \"discountAmount\": 0.0,\n          \"vatAmount\": 0.0,\n          \"lineExtensionAmount\": 0.05,\n          \"vatExemptionReasonCode\": \"\"\n        }\n      ],\n      \"archiveInfoModel\": {\n        \"isInternetSale\": false,\n        \"shipmentDate\": null,\n        \"shipmentSendType\": null,\n        \"shipmentSenderName\": null,\n        \"shipmentSenderSurname\": null,\n        \"shipmentSenderTcknVkn\": null,\n        \"subscriptionType\": null,\n        \"subscriptionTypeNumber\": null,\n        \"websiteUrl\": null\n      },\n      \"paymentMeansModel\": {\n        \"instructionNote\": null,\n        \"payeeFinancialAccountCurrencyCode\": \"TRY\",\n        \"payeeFinancialAccountId\": null,\n        \"paymentChannelCode\": null,\n        \"paymentDueDate\": null,\n        \"paymentMeansCode\": 0\n      },\n      \"ublSettingsModel\": {\n        \"useCalculatedVatAmount\": true,\n        \"hideDespatchMessage\": false\n      },\n      \"eArsivInfo\": {\n        \"sendEMail\": true,\n        \"eMailAddress\": \"abb@gmail.com\"\n      }\n}\n\n"
+            },
+            "url": {
+              "raw": "https://efaturaservicetest.isim360.com/v2/earchive/create",
+              "protocol": "https",
+              "host": [
+                "efaturaservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "earchive",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Post_Earchive_InternetSale",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"recordType\": 0,\n\t\"status\": 0,\n\t\"note\": null,\n\t\"notes\": [],\n\t\"addressBook\": {\n\t\t\"id\": 324,\n\t\t\"customerId\": \"842084f8-8301-4d28-89cf-1828b3449c49\",\n\t\t\"isArchive\": false,\n\t\t\"createdDate\": \"2020-04-07T15:16:15.317\",\n\t\t\"alias\": null,\n\t\t\"identificationNumber\": \"11111111111\",\n\t\t\"name\": \"Ahmet\",\n\t\t\"registerNumber\": \"11111111\",\n\t\t\"receiverPersonSurName\": \"Demir\",\n\t\t\"receiverStreet\": \"Bulvar/Cadde/Sokak\",\n\t\t\"receiverBuildingName\": \"Bina Adı\",\n\t\t\"receiverBuildingNumber\": \"1\",\n\t\t\"receiverDoorNumber\": \"11\",\n\t\t\"receiverSmallTown\": \"Kasaba/Köy\",\n\t\t\"receiverDistrict\": \"Mahalle/Semt/İlçe\",\n\t\t\"receiverZipCode\": \"34000\",\n\t\t\"receiverCity\": \"İstanbul\",\n\t\t\"receiverCountry\": \"Türkiye\",\n\t\t\"receiverCountryId\": 1,\n\t\t\"receiverPhoneNumber\": \"5052003131\",\n\t\t\"receiverFaxNumber\": \"2123559898\",\n\t\t\"receiverEmail\": \"deneme@deneme.com\",\n\t\t\"receiverWebSite\": \"www.deneme.com\",\n\t\t\"receiverTaxOffice\": \"Vergi Dairesi\",\n\t\t\"isDeleted\": false,\n\t\t\"type\": \"2\",\n\t\t\"status\": null,\n\t\t\"updatedDate\": null,\n\t\t\"isSaveAddress\": false\n\t},\n\t\"eArsivInfo\": {\n\t\t\"sendEMail\": true\n\t},\n\t\"generalInfoModel\": {\n\t\t\"ettn\": null,\n\t\t\"prefix\": \"EPI\",\n\t\t\"customizationId\": null,\n\t\t\"invoiceNumber\": null,\n\t\t\"slipNumber\": null,\n\t\t\"invoiceProfileType\": 4,\n\t\t\"issueDate\": \"2020-05-12T00:00:00+03:00\",\n\t\t\"issueTime\": \"2020-05-12T08:09:23.7141455+03:00\",\n\t\t\"type\": 1,\n\t\t\"returnInvoiceNumber\": null,\n\t\t\"returnInvoiceDate\": null,\n\t\t\"currencyId\": 1,\n\t\t\"currencyCode\": \"TRY\",\n\t\t\"exchangeRate\": 0,\n\t\t\"despatchNumber\": null,\n\t\t\"despatchType\": 0,\n\t\t\"despatchProfileType\": null,\n\t\t\"totalAmount\": null\n\t},\n\t\"invoiceLines\": [\n\t\t{\n\t\t\t\"disableVatExemption\": true,\n\t\t\t\"inventoryCard\": \"Kazak\",\n\t\t\t\"amount\": 10,\n\t\t\t\"discountAmount\": 0,\n\t\t\t\"lineAmount\": 599,\n\t\t\t\"vatAmount\": 47.92,\n\t\t\t\"unitCode\": \"C62\",\n\t\t\t\"unitPrice\": 59.9,\n\t\t\t\"vatRate\": 8,\n\t\t\t\"vatExemptionReasonCode\": null\n\t\t}\n\t],\n\t\"paymentMeansModel\": {\n\t\t\"paymentMeansCode\": 10,\n\t\t\"paymentDueDate\": \"2020-05-12T00:00:00+03:00\",\n\t\t\"paymentChannelCode\": \"ABC\",\n\t\t\"instructionNote\": \"Açıklama\",\n\t\t\"payeeFinancialAccountId\": \"1234-8654761\",\n\t\t\"payeeFinancialAccountCurrencyCode\": \"TRY\"\n\t},\n\t\"archiveInfoModel\": {\n\t\t\"isInternetSale\": true,\n\t\t\"websiteUrl\": \"www.deneme123.com\",\n\t\t\"shipmentSenderTcknVkn\": \"1234567890\",\n\t\t\"shipmentSendType\": \"ELEKTRONIK\",\n\t\t\"shipmentSenderName\": \"Aras Kargo\",\n\t\t\"shipmentSenderSurname\": null,\n\t\t\"shipmentDate\": \"2020-05-12T00:00:00+03:00\",\n\t\t\"hideDespatchMessage\": false,\n\t\t\"subscriptionType\": \"MUSTERINO\",\n\t\t\"subscriptionTypeNumber\": \"321456987\"\n\t}\n}"
+            },
+            "url": {
+              "raw": "https://efaturaservicetest.isim360.com/v2/earchive/create",
+              "protocol": "https",
+              "host": [
+                "efaturaservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "earchive",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Post_Earchive_KonaklamaVergisi",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"invoiceId\": \"3a1bbb34-fc5f-4bb0-ac30-638e7d99d932\",\n    \"status\": 0,\n    \"isNew\": false,\n    \"xsltCode\": \"master\",\n    \"useManualInvoiceId\": false,\n    \"allowOldEArsivCustomer\": false,\n    \"checkLocalReferenceId\": false,\n    \"useFirstAlias\": false,\n    \"addressBook\": {\n        \"id\": 0,\n        \"customerId\": \"00000000-0000-0000-0000-000000000000\",\n        \"createdDate\": \"0001-01-01T00:00:00\",\n        \"identificationNumber\": \"11111111111\",\n        \"name\": \"Muhammet\",\n        \"receiverPersonSurName\": \"AVCI\",\n        \"receiverStreet\": \"Dudullu Cad. No:1\",\n        \"receiverBuildingNumber\": \"1\",\n        \"receiverDistrict\": \"Üsküdar\",\n        \"receiverCity\": \"İstanbul\",\n        \"receiverCountry\": \"Türkiye\",\n        \"receiverCountryId\": 1,\n        \"receiverEmail\": \"test@example.com\",\n        \"receiverTaxOffice\": \"-\",\n        \"type\": \"2\",\n        \"isDefault\": false\n    },\n    \"eArsivInfo\": {\n        \"sendEMail\": true\n    },\n    \"isSend\": false,\n    \"recordType\": 0,\n    \"isTdevice\": false,\n    \"notes\": [],\n    \"generalInfoModel\": {\n        \"ettn\": null,\n        \"customizationId\": \"TR1.2\",\n        \"invoiceNumber\": \"PER2026000000528\",\n        \"invoiceProfileType\": 4,\n        \"issueDate\": \"2026-04-20T11:47:51.356Z\",\n        \"issueTime\": \"2026-04-20T11:47:51.356Z\",\n        \"type\": 17,\n        \"returnInvoiceDate\": \"2026-04-20T11:47:49.8959468Z\",\n        \"currencyId\": 1,\n        \"currencyCode\": \"TRY\",\n        \"exchangeRate\": 1,\n        \"periodDate\": \"2026-04-01T00:00:00\",\n        \"despatchType\": 0,\n        \"standard\": 0,\n        \"prefix\": \"EZA\"\n    },\n    \"taxes\": [\n        {\n            \"taxTypeCode\": \"0059\",\n            \"taxName\": \"KONAKLAMA VERGİSİ\",\n            \"taxRate\": 2,\n            \"taxAmount\": 80,\n            \"isWithHolding\": false,\n            \"isNegative\": false,\n            \"isYtbIstisnaCancelVatRate\": false,\n            \"taxableAmount\": 0\n        },\n        {\n            \"taxTypeCode\": \"0015\",\n            \"taxName\": \"KDV GERCEK\",\n            \"taxRate\": 20,\n            \"taxAmount\": 800,\n            \"isWithHolding\": false,\n            \"isNegative\": false,\n            \"isYtbIstisnaCancelVatRate\": false,\n            \"taxableAmount\": 0\n        }\n    ],\n    \"invoiceLines\": [\n        {\n            \"delivery\": [],\n            \"inventoryServiceType\": 0,\n            \"inventoryCard\": \"Oda Konaklama\",\n            \"serialNoEnabled\": false,\n            \"amount\": 2,\n            \"unitCodeId\": 1,\n            \"unitCode\": \"C62\",\n            \"unitPrice\": 2000,\n            \"discountRate\": 0,\n            \"discountAmount\": 0,\n            \"discounts\": [\n                {\n                    \"discountRate\": 0,\n                    \"discountAmount\": 0\n                }\n            ],\n            \"lineExtensionAmount\": 4000,\n            \"vatRate\": 20,\n            \"vatAmount\": 800,\n            \"vatExemptionReasonCode\": \"\",\n            \"vatExemptionReason\": \"\",\n            \"taxes\": [\n                {\n                    \"taxTypeCode\": \"0059\",\n                    \"taxName\": \"KONAKLAMA VERGİSİ\",\n                    \"taxRate\": 2,\n                    \"taxAmount\": 80,\n                    \"isWithHolding\": false,\n                    \"isNegative\": false,\n                    \"isYtbIstisnaCancelVatRate\": false,\n                    \"taxableAmount\": 0\n                }\n            ],\n            \"invoiceLineDeliveryInfoModel\": {},\n            \"serialNumberList\": [],\n            \"medicalItems\": [],\n            \"ozelMatrahAmount\": 0,\n            \"canceledVatAmount\": 0,\n            \"lineAmount\": 4000,\n            \"disableVatExemption\": true\n        }\n    ],\n    \"invoiceTotalsModel\": {\n        \"lineExtensionAmount\": \"4000.00\",\n        \"taxExclusiveAmount\": \"4000.00\",\n        \"taxInclusiveAmount\": \"4880.00\",\n        \"allowanceTotalAmount\": \"0\",\n        \"payableAmount\": \"4880.00\"\n    },\n    \"paymentMeansModel\": {\n        \"paymentMeansCode\": 0\n    },\n    \"paymentTermsModel\": {},\n    \"orderInfoModel\": {\n        \"invoiceDocumentModel\": {\n            \"isFileExist\": false,\n            \"documentDateInString\": \"\"\n        },\n        \"orderDate\": null,\n        \"orderNumber\": null\n    },\n    \"archiveInfoModel\": {\n        \"isInternetSale\": false,\n        \"shipmentSendType\": \"ELEKTRONIK\",\n        \"hideDespatchMessage\": false\n    },\n    \"ublSettingsModel\": {\n        \"useCalculatedVatAmount\": true,\n        \"useCalculatedTotalSummary\": true,\n        \"hideDespatchMessage\": false,\n        \"isFit\": false,\n        \"isFreeOfCharge\": false\n    },\n    \"relatedDespatchList\": [],\n    \"customDocumentReferenceList\": [\n        {\n            \"id\": \"isAdvancedNote\",\n            \"documentTypeCode\": \"CUSTOM\",\n            \"documentType\": true,\n            \"issueDate\": \"2026-04-15T00:00:00\"\n        }\n    ],\n    \"additionalInvoiceTypeInfo\": {},\n    \"customerAddress\": {\n        \"id\": 0,\n        \"currentAccountId\": 0,\n        \"streetName\": \"Dudullu Cad. No:1\",\n        \"buildingNumber\": \"1\",\n        \"country\": \"Türkiye\",\n        \"city\": \"İstanbul\",\n        \"subDivisionName\": \"Üsküdar\",\n        \"emailAddress\": \"test@example.com\",\n        \"isDefault\": false,\n        \"branchId\": 0,\n        \"createDate\": \"0001-01-01T00:00:00\",\n        \"status\": 0,\n        \"currentAccountIdentifier\": \"11111111111\",\n        \"currentAccountName\": \"Muhammet\",\n        \"currentAccountTaxOffice\": \"-\",\n        \"currentAccountSurname\": \"AVCI\"\n    },\n    \"supplierAddress\": {\n        \"id\": 0,\n        \"currentAccountId\": 0,\n        \"streetName\": \"-\",\n        \"buildingNumber\": \"1\",\n        \"country\": \"Türkiye\",\n        \"city\": \"İstanbul\",\n        \"subDivisionName\": \"Merkez\",\n        \"isDefault\": false,\n        \"branchId\": 0,\n        \"createDate\": \"0001-01-01T00:00:00\",\n        \"status\": 0,\n        \"currentAccountIdentifier\": \"1234567803\",\n        \"currentAccountTaxOffice\": \"Test VD\"\n    },\n    \"buyerCustomerInfoModel\": {\n        \"issueDate\": \"0001-01-01T00:00:00\"\n    },\n    \"taxRepresentativePartyInfoModel\": {},\n    \"allowanceCharges\": [],\n    \"allDiscount\": false,\n    \"allDiscountRate\": 0,\n    \"id\": \"00000000-0000-0000-0000-000000000000\",\n    \"allDiscountAmount\": 0\n}"
+            },
+            "url": {
+              "raw": "https://efaturaservicetest.isim360.com/v2/earchive/create",
+              "protocol": "https",
+              "host": [
+                "efaturaservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "earchive",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Post_Earchive_Şarj",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"invoiceId\": \"0dc1ad65-9b66-487e-ae81-cca1b68941c0\",\n    \"status\": 0,\n    \"isNew\": false,\n    \"xsltCode\": \"master\",\n    \"useManualInvoiceId\": false,\n    \"allowOldEArsivCustomer\": false,\n    \"checkLocalReferenceId\": false,\n    \"useFirstAlias\": false,\n    \"addressBook\": {\n        \"id\": 0,\n        \"customerId\": \"00000000-0000-0000-0000-000000000000\",\n        \"createdDate\": \"0001-01-01T00:00:00\",\n        \"identificationNumber\": \"11111111111\",\n        \"name\": \"Muhammet\",\n        \"receiverPersonSurName\": \"AVCI\",\n        \"receiverStreet\": \"Dudullu Cad. No:1\",\n        \"receiverBuildingNumber\": \"1\",\n        \"receiverDistrict\": \"Üsküdar\",\n        \"receiverCity\": \"İstanbul\",\n        \"receiverCountry\": \"Türkiye\",\n        \"receiverCountryId\": 1,\n        \"receiverEmail\": \"test@example.com\",\n        \"receiverTaxOffice\": \"-\",\n        \"type\": \"2\",\n        \"isDefault\": false,\n        \"plateNo\": \"34TYU678\",\n        \"vehicleNumber\": \"11111111111\"\n    },\n    \"eArsivInfo\": {\n        \"sendEMail\": true\n    },\n    \"isSend\": false,\n    \"recordType\": 0,\n    \"isTdevice\": false,\n    \"notes\": [],\n    \"generalInfoModel\": {\n        \"ettn\": null,\n        \"customizationId\": \"TR1.2\",\n        \"invoiceNumber\": \"PER2026000000529\",\n        \"invoiceProfileType\": 4,\n        \"issueDate\": \"2026-04-20T12:12:39.129Z\",\n        \"issueTime\": \"2026-04-20T12:12:39.129Z\",\n        \"type\": 18,\n        \"returnInvoiceDate\": \"2026-04-20T12:12:37.5650163Z\",\n        \"currencyId\": 1,\n        \"currencyCode\": \"TRY\",\n        \"exchangeRate\": 1,\n        \"chargeStartDate\": \"2026-04-15T00:00:00\",\n        \"chargeStartTime\": \"0001-01-01T10:00:00+01:56\",\n        \"chargeEndDate\": \"2026-04-15T00:00:00\",\n        \"chargeEndTime\": \"0001-01-01T11:30:00+01:56\",\n        \"despatchType\": 0,\n        \"standard\": 0,\n        \"prefix\": \"EZA\",\n        \"periodDate\": \"Mon Apr 20 2026\"\n    },\n    \"taxes\": [\n        {\n            \"taxTypeCode\": \"0015\",\n            \"taxName\": \"KDV GERCEK\",\n            \"taxRate\": 20,\n            \"taxAmount\": 90,\n            \"isWithHolding\": false,\n            \"isNegative\": false,\n            \"isYtbIstisnaCancelVatRate\": false,\n            \"taxableAmount\": 0\n        }\n    ],\n    \"invoiceLines\": [\n        {\n            \"delivery\": [],\n            \"inventoryServiceType\": 0,\n            \"inventoryCard\": \"Elektrik Şarj Hizmeti\",\n            \"serialNoEnabled\": false,\n            \"amount\": 45,\n            \"unitCodeId\": 45,\n            \"unitCode\": \"KWH\",\n            \"unitPrice\": 10,\n            \"discountRate\": 0,\n            \"discountAmount\": 0,\n            \"discounts\": [\n                {\n                    \"discountRate\": 0,\n                    \"discountAmount\": 0\n                }\n            ],\n            \"lineExtensionAmount\": 450,\n            \"vatRate\": 20,\n            \"vatAmount\": 90,\n            \"vatExemptionReasonCode\": \"\",\n            \"vatExemptionReason\": \"\",\n            \"taxes\": [],\n            \"invoiceLineDeliveryInfoModel\": {},\n            \"serialNumberList\": [],\n            \"medicalItems\": [],\n            \"ozelMatrahAmount\": 0,\n            \"canceledVatAmount\": 0,\n            \"lineAmount\": 450,\n            \"disableVatExemption\": true\n        }\n    ],\n    \"invoiceTotalsModel\": {\n        \"lineExtensionAmount\": \"450.00\",\n        \"taxExclusiveAmount\": \"450.00\",\n        \"taxInclusiveAmount\": \"540.00\",\n        \"allowanceTotalAmount\": \"0\",\n        \"payableAmount\": \"540.00\"\n    },\n    \"paymentMeansModel\": {\n        \"paymentMeansCode\": 0\n    },\n    \"paymentTermsModel\": {},\n    \"orderInfoModel\": {\n        \"invoiceDocumentModel\": {\n            \"isFileExist\": false,\n            \"documentDateInString\": \"\"\n        },\n        \"orderDate\": null,\n        \"orderNumber\": null\n    },\n    \"archiveInfoModel\": {\n        \"isInternetSale\": false,\n        \"shipmentSendType\": \"ELEKTRONIK\",\n        \"hideDespatchMessage\": false\n    },\n    \"ublSettingsModel\": {\n        \"useCalculatedVatAmount\": true,\n        \"useCalculatedTotalSummary\": true,\n        \"hideDespatchMessage\": false,\n        \"isFit\": false,\n        \"isFreeOfCharge\": false\n    },\n    \"relatedDespatchList\": [],\n    \"customDocumentReferenceList\": [\n        {\n            \"id\": \"isAdvancedNote\",\n            \"documentTypeCode\": \"CUSTOM\",\n            \"documentType\": true,\n            \"issueDate\": \"2026-04-15T00:00:00\"\n        }\n    ],\n    \"additionalInvoiceTypeInfo\": {},\n    \"customerAddress\": {\n        \"id\": 0,\n        \"currentAccountId\": 0,\n        \"streetName\": \"Dudullu Cad. No:1\",\n        \"buildingNumber\": \"1\",\n        \"country\": \"Türkiye\",\n        \"city\": \"İstanbul\",\n        \"subDivisionName\": \"Üsküdar\",\n        \"emailAddress\": \"test@example.com\",\n        \"plateNo\": \"34 ABC 123\",\n        \"vehicleNumber\": \"WDB2030081A123456\",\n        \"isDefault\": false,\n        \"branchId\": 0,\n        \"createDate\": \"0001-01-01T00:00:00\",\n        \"status\": 0,\n        \"currentAccountIdentifier\": \"11111111111\",\n        \"currentAccountName\": \"Muhammet\",\n        \"currentAccountTaxOffice\": \"-\",\n        \"currentAccountSurname\": \"AVCI\"\n    },\n    \"supplierAddress\": {\n        \"id\": 0,\n        \"currentAccountId\": 0,\n        \"streetName\": \"-\",\n        \"buildingNumber\": \"1\",\n        \"country\": \"Türkiye\",\n        \"city\": \"İstanbul\",\n        \"subDivisionName\": \"Merkez\",\n        \"isDefault\": false,\n        \"branchId\": 0,\n        \"createDate\": \"0001-01-01T00:00:00\",\n        \"status\": 0,\n        \"currentAccountIdentifier\": \"1234567803\",\n        \"currentAccountTaxOffice\": \"Test VD\"\n    },\n    \"buyerCustomerInfoModel\": {\n        \"issueDate\": \"0001-01-01T00:00:00\"\n    },\n    \"taxRepresentativePartyInfoModel\": {},\n    \"allowanceCharges\": [],\n    \"allDiscount\": false,\n    \"allDiscountRate\": 0,\n    \"id\": \"00000000-0000-0000-0000-000000000000\",\n    \"allDiscountAmount\": 0\n}"
+            },
+            "url": {
+              "raw": "https://efaturaservicetest.isim360.com/v2/earchive/create",
+              "protocol": "https",
+              "host": [
+                "efaturaservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "earchive",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Post_Earchive_Şarjanlık",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"invoiceId\": \"5304def7-ad3b-4643-941b-722722225660\",\n    \"status\": 0,\n    \"isNew\": false,\n    \"xsltCode\": \"master\",\n    \"useManualInvoiceId\": false,\n    \"allowOldEArsivCustomer\": false,\n    \"checkLocalReferenceId\": false,\n    \"useFirstAlias\": false,\n    \"addressBook\": {\n        \"id\": 0,\n        \"customerId\": \"00000000-0000-0000-0000-000000000000\",\n        \"createdDate\": \"0001-01-01T00:00:00\",\n        \"identificationNumber\": \"11111111111\",\n        \"name\": \"Muhammet\",\n        \"receiverPersonSurName\": \"AVCI\",\n        \"receiverStreet\": \"Dudullu Cad. No:1\",\n        \"receiverBuildingNumber\": \"1\",\n        \"receiverDistrict\": \"Üsküdar\",\n        \"receiverCity\": \"İstanbul\",\n        \"receiverCountry\": \"Türkiye\",\n        \"receiverCountryId\": 1,\n        \"receiverEmail\": \"test@example.com\",\n        \"receiverTaxOffice\": \"-\",\n        \"type\": \"2\",\n        \"isDefault\": false,\n        \"plateNo\": \"34TYU679\",\n        \"vehicleNumber\": \"11111111112\"\n    },\n    \"eArsivInfo\": {\n        \"sendEMail\": true\n    },\n    \"isSend\": false,\n    \"recordType\": 0,\n    \"isTdevice\": false,\n    \"notes\": [],\n    \"generalInfoModel\": {\n        \"ettn\": null,\n        \"customizationId\": \"TR1.2\",\n        \"invoiceNumber\": \"PER2026000000342\",\n        \"invoiceProfileType\": 4,\n        \"issueDate\": \"2026-04-20T12:30:54.938Z\",\n        \"issueTime\": \"2026-04-20T12:30:54.938Z\",\n        \"type\": 19,\n        \"returnInvoiceDate\": \"2026-04-20T12:30:53.2977588Z\",\n        \"currencyId\": 1,\n        \"currencyCode\": \"TRY\",\n        \"exchangeRate\": 0,\n        \"chargeStartDate\": \"2026-04-13T00:00:00\",\n        \"chargeEndDate\": \"2026-04-13T00:00:00\",\n        \"despatchType\": 0,\n        \"standard\": 0,\n        \"chargeStartTime\": \"Mon Apr 20 2026\",\n        \"chargeEndTime\": \"Mon Apr 20 2026\",\n        \"prefix\": \"EZA\",\n        \"periodDate\": \"Mon Apr 20 2026\"\n    },\n    \"taxes\": [\n        {\n            \"taxTypeCode\": \"0015\",\n            \"taxName\": \"KDV GERCEK\",\n            \"taxRate\": 20,\n            \"taxAmount\": 11,\n            \"isWithHolding\": false,\n            \"isNegative\": false,\n            \"isYtbIstisnaCancelVatRate\": false,\n            \"taxableAmount\": 0\n        }\n    ],\n    \"invoiceLines\": [\n        {\n            \"delivery\": [],\n            \"inventoryServiceType\": 0,\n            \"inventoryCard\": \"Şarjanlık\",\n            \"serialNoEnabled\": false,\n            \"amount\": 1,\n            \"unitCodeId\": 45,\n            \"unitCode\": \"KWH\",\n            \"unitPrice\": 55,\n            \"discountRate\": 0,\n            \"discountAmount\": 0,\n            \"discounts\": [\n                {\n                    \"discountRate\": 0,\n                    \"discountAmount\": 0\n                }\n            ],\n            \"lineExtensionAmount\": 55,\n            \"vatRate\": 20,\n            \"vatAmount\": 11,\n            \"vatExemptionReasonCode\": \"\",\n            \"vatExemptionReason\": \"\",\n            \"taxes\": [],\n            \"invoiceLineDeliveryInfoModel\": {},\n            \"serialNumberList\": [\n                \"155855\"\n            ],\n            \"medicalItems\": [],\n            \"ozelMatrahAmount\": 0,\n            \"canceledVatAmount\": 0,\n            \"lineAmount\": 55,\n            \"disableVatExemption\": true\n        }\n    ],\n    \"invoiceTotalsModel\": {\n        \"lineExtensionAmount\": \"55.00\",\n        \"taxExclusiveAmount\": \"55.00\",\n        \"taxInclusiveAmount\": \"66.00\",\n        \"allowanceTotalAmount\": \"0\",\n        \"payableAmount\": \"66.00\"\n    },\n    \"paymentMeansModel\": {\n        \"paymentMeansCode\": 0\n    },\n    \"paymentTermsModel\": {},\n    \"orderInfoModel\": {\n        \"invoiceDocumentModel\": {\n            \"isFileExist\": false,\n            \"documentDateInString\": \"\"\n        },\n        \"orderDate\": null,\n        \"orderNumber\": null\n    },\n    \"archiveInfoModel\": {\n        \"isInternetSale\": false,\n        \"shipmentSendType\": \"ELEKTRONIK\",\n        \"hideDespatchMessage\": false\n    },\n    \"ublSettingsModel\": {\n        \"useCalculatedVatAmount\": true,\n        \"useCalculatedTotalSummary\": true,\n        \"hideDespatchMessage\": false,\n        \"isFit\": false,\n        \"isFreeOfCharge\": false\n    },\n    \"relatedDespatchList\": [],\n    \"customDocumentReferenceList\": [\n        {\n            \"id\": \"isAdvancedNote\",\n            \"documentTypeCode\": \"CUSTOM\",\n            \"documentType\": true,\n            \"issueDate\": \"2026-04-13T00:00:00\"\n        }\n    ],\n    \"additionalInvoiceTypeInfo\": {},\n    \"customerAddress\": {\n        \"id\": 0,\n        \"currentAccountId\": 0,\n        \"streetName\": \"Dudullu Cad. No:1\",\n        \"buildingNumber\": \"1\",\n        \"country\": \"Türkiye\",\n        \"city\": \"İstanbul\",\n        \"subDivisionName\": \"Üsküdar\",\n        \"emailAddress\": \"test@example.com\",\n        \"plateNo\": \"34 XYZ 999\",\n        \"vehicleNumber\": \"WDD2050421F000002\",\n        \"isDefault\": false,\n        \"branchId\": 0,\n        \"createDate\": \"0001-01-01T00:00:00\",\n        \"status\": 0,\n        \"currentAccountIdentifier\": \"11111111111\",\n        \"currentAccountName\": \"Muhammet\",\n        \"currentAccountTaxOffice\": \"-\",\n        \"currentAccountSurname\": \"AVCI\"\n    },\n    \"supplierAddress\": {\n        \"id\": 0,\n        \"currentAccountId\": 0,\n        \"streetName\": \"-\",\n        \"buildingNumber\": \"1\",\n        \"country\": \"Türkiye\",\n        \"city\": \"İstanbul\",\n        \"subDivisionName\": \"Merkez\",\n        \"isDefault\": false,\n        \"branchId\": 0,\n        \"createDate\": \"0001-01-01T00:00:00\",\n        \"status\": 0,\n        \"currentAccountIdentifier\": \"1234567803\",\n        \"currentAccountTaxOffice\": \"Test VD\"\n    },\n    \"buyerCustomerInfoModel\": {\n        \"issueDate\": \"0001-01-01T00:00:00\"\n    },\n    \"taxRepresentativePartyInfoModel\": {},\n    \"allowanceCharges\": [],\n    \"allDiscount\": false,\n    \"allDiscountRate\": 0,\n    \"id\": \"00000000-0000-0000-0000-000000000000\",\n    \"allDiscountAmount\": 0\n}"
+            },
+            "url": {
+              "raw": "https://efaturaservicetest.isim360.com/v2/earchive/create",
+              "protocol": "https",
+              "host": [
+                "efaturaservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "earchive",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Post_Earchive_TeknolojiDestek",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"invoiceId\": \"ecaa3ad4-bf76-45ec-8c4e-53e364557791\",\n    \"status\": 0,\n    \"isNew\": false,\n    \"xsltCode\": \"master\",\n    \"useManualInvoiceId\": false,\n    \"allowOldEArsivCustomer\": false,\n    \"checkLocalReferenceId\": false,\n    \"useFirstAlias\": false,\n    \"addressBook\": {\n        \"id\": 0,\n        \"customerId\": \"00000000-0000-0000-0000-000000000000\",\n        \"createdDate\": \"0001-01-01T00:00:00\",\n        \"identificationNumber\": \"11111111111\",\n        \"name\": \"Muhammet\",\n        \"receiverPersonSurName\": \"AVCI\",\n        \"receiverStreet\": \"Dudullu Cad. No:1\",\n        \"receiverBuildingNumber\": \"1\",\n        \"receiverDistrict\": \"Üsküdar\",\n        \"receiverCity\": \"İstanbul\",\n        \"receiverCountry\": \"Türkiye\",\n        \"receiverCountryId\": 1,\n        \"receiverEmail\": \"test@example.com\",\n        \"receiverTaxOffice\": \"-\",\n        \"type\": \"2\",\n        \"isDefault\": false\n    },\n    \"eArsivInfo\": {\n        \"sendEMail\": true\n    },\n    \"isSend\": false,\n    \"recordType\": 0,\n    \"isTdevice\": false,\n    \"notes\": [],\n    \"generalInfoModel\": {\n        \"ettn\": null,\n        \"customizationId\": \"TR1.2\",\n        \"invoiceNumber\": \"PER2026000000531\",\n        \"invoiceProfileType\": 4,\n        \"issueDate\": \"2026-04-20T12:32:05.045Z\",\n        \"issueTime\": \"2026-04-20T12:32:05.045Z\",\n        \"type\": 20,\n        \"returnInvoiceDate\": \"2026-04-20T12:32:03.390996Z\",\n        \"currencyId\": 1,\n        \"currencyCode\": \"TRY\",\n        \"exchangeRate\": 1,\n        \"periodDate\": \"2026-04-01T00:00:00\",\n        \"despatchType\": 0,\n        \"standard\": 0,\n        \"prefix\": \"EZA\"\n    },\n    \"taxes\": [\n        {\n            \"taxTypeCode\": \"0015\",\n            \"taxName\": \"KDV GERCEK\",\n            \"taxRate\": 20,\n            \"taxAmount\": 10000,\n            \"isWithHolding\": false,\n            \"isNegative\": false,\n            \"isYtbIstisnaCancelVatRate\": false,\n            \"taxableAmount\": 0\n        }\n    ],\n    \"invoiceLines\": [\n        {\n            \"delivery\": [],\n            \"inventoryServiceType\": 0,\n            \"inventoryCard\": \"Cep Telefonu\",\n            \"serialNoEnabled\": false,\n            \"amount\": 2,\n            \"unitCodeId\": 1,\n            \"unitCode\": \"C62\",\n            \"unitPrice\": 25000,\n            \"discountRate\": 0,\n            \"discountAmount\": 0,\n            \"discounts\": [\n                {\n                    \"discountRate\": 0,\n                    \"discountAmount\": 0\n                }\n            ],\n            \"lineExtensionAmount\": 50000,\n            \"vatRate\": 20,\n            \"vatAmount\": 10000,\n            \"vatExemptionReasonCode\": \"\",\n            \"vatExemptionReason\": \"\",\n            \"taxes\": [],\n            \"invoiceLineDeliveryInfoModel\": {},\n            \"serialNumberList\": [],\n            \"medicalItems\": [],\n            \"additionalItemIdentification\": {\n                \"id\": \"TELEFON\",\n                \"imeiList\": [\n                    \"356938035643809\"\n                ]\n            },\n            \"ozelMatrahAmount\": 0,\n            \"canceledVatAmount\": 0,\n            \"lineAmount\": 50000,\n            \"disableVatExemption\": true\n        }\n    ],\n    \"invoiceTotalsModel\": {\n        \"lineExtensionAmount\": \"50000.00\",\n        \"taxExclusiveAmount\": \"50000.00\",\n        \"taxInclusiveAmount\": \"60000.00\",\n        \"allowanceTotalAmount\": \"0\",\n        \"payableAmount\": \"60000.00\"\n    },\n    \"paymentMeansModel\": {\n        \"paymentMeansCode\": 0\n    },\n    \"paymentTermsModel\": {},\n    \"orderInfoModel\": {\n        \"invoiceDocumentModel\": {\n            \"isFileExist\": false,\n            \"documentDateInString\": \"\"\n        },\n        \"orderDate\": null,\n        \"orderNumber\": null\n    },\n    \"archiveInfoModel\": {\n        \"isInternetSale\": false,\n        \"shipmentSendType\": \"ELEKTRONIK\",\n        \"hideDespatchMessage\": false\n    },\n    \"ublSettingsModel\": {\n        \"useCalculatedVatAmount\": true,\n        \"useCalculatedTotalSummary\": true,\n        \"hideDespatchMessage\": false,\n        \"isFit\": false,\n        \"isFreeOfCharge\": false\n    },\n    \"relatedDespatchList\": [],\n    \"customDocumentReferenceList\": [\n        {\n            \"id\": \"isAdvancedNote\",\n            \"documentTypeCode\": \"CUSTOM\",\n            \"documentType\": true,\n            \"issueDate\": \"2026-04-15T00:00:00\"\n        }\n    ],\n    \"additionalInvoiceTypeInfo\": {},\n    \"customerAddress\": {\n        \"id\": 0,\n        \"currentAccountId\": 0,\n        \"streetName\": \"Dudullu Cad. No:1\",\n        \"buildingNumber\": \"1\",\n        \"country\": \"Türkiye\",\n        \"city\": \"İstanbul\",\n        \"subDivisionName\": \"Üsküdar\",\n        \"emailAddress\": \"test@example.com\",\n        \"isDefault\": false,\n        \"branchId\": 0,\n        \"createDate\": \"0001-01-01T00:00:00\",\n        \"status\": 0,\n        \"currentAccountIdentifier\": \"11111111111\",\n        \"currentAccountName\": \"Muhammet\",\n        \"currentAccountTaxOffice\": \"-\",\n        \"currentAccountSurname\": \"AVCI\"\n    },\n    \"supplierAddress\": {\n        \"id\": 0,\n        \"currentAccountId\": 0,\n        \"streetName\": \"-\",\n        \"buildingNumber\": \"1\",\n        \"country\": \"Türkiye\",\n        \"city\": \"İstanbul\",\n        \"subDivisionName\": \"Merkez\",\n        \"isDefault\": false,\n        \"branchId\": 0,\n        \"createDate\": \"0001-01-01T00:00:00\",\n        \"status\": 0,\n        \"currentAccountIdentifier\": \"1234567803\",\n        \"currentAccountTaxOffice\": \"Test VD\"\n    },\n    \"buyerCustomerInfoModel\": {\n        \"issueDate\": \"0001-01-01T00:00:00\"\n    },\n    \"taxRepresentativePartyInfoModel\": {},\n    \"allowanceCharges\": [],\n    \"allDiscount\": false,\n    \"allDiscountRate\": 0,\n    \"id\": \"00000000-0000-0000-0000-000000000000\",\n    \"allDiscountAmount\": 0\n}"
+            },
+            "url": {
+              "raw": "https://efaturaservicetest.isim360.com/v2/earchive/create",
+              "protocol": "https",
+              "host": [
+                "efaturaservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "earchive",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Put_Earchive_UBL",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "invoiceFile",
+                  "type": "file",
+                  "src": "/C:/Users/Aybars Karaman/Downloads/EPA2022000001781_11111111111.xml"
+                },
+                {
+                  "key": "status",
+                  "value": "0",
+                  "type": "text"
+                },
+                {
+                  "key": "sendEMail",
+                  "value": "false",
+                  "type": "text"
+                },
+                {
+                  "key": "eMailAddress",
+                  "value": "deneme@deneme.com",
+                  "type": "text"
+                },
+                {
+                  "key": "localReferenceId",
+                  "value": "deneme",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "checkLocalReferenceId",
+                  "value": "false",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "xsltCode",
+                  "value": "code",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "allowOldEArsivCustomer",
+                  "value": "false",
+                  "type": "text",
+                  "disabled": true
+                }
+              ]
+            },
+            "url": {
+              "raw": "https://efaturaservicetest.isim360.com/v2/earchive/c209e2f2-eac6-4e3a-8f17-b9b61ccc6c10",
+              "protocol": "https",
+              "host": [
+                "efaturaservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "earchive",
+                "c209e2f2-eac6-4e3a-8f17-b9b61ccc6c10"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "E-Arşiv İptal (Resmi İşlemdir, Silme Değildir)",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "\n[\n\t\"3b753375-1f84-4c50-9075-2279806849ae\",\"5fac6277-df1b-4ac2-9f42-f18e61535a6d\"\n]\n\n"
+            },
+            "url": {
+              "raw": "https://efaturaservicetest.isim360.com/v1/earchive/cancelinvoice",
+              "protocol": "https",
+              "host": [
+                "efaturaservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v1",
+                "earchive",
+                "cancelinvoice"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Ytb_Satış",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"invoiceId\":\"00000000-0000-0000-0000-000000000000\",\"status\":0,\"isNew\":true,\"xsltCode\":\"master\",\"useManualInvoiceId\":true,\"allowOldEArsivCustomer\":false,\"checkLocalReferenceId\":false,\"useFirstAlias\":false,\"isSend\":false,\"recordType\":0,\"isTdevice\":false,\"notes\":[],\"generalInfoModel\":{\"issueDate\":\"2026-04-27T00:00:00+03:00\",\"issueTime\":\"2026-04-27T17:02:11.7720286+03:00\",\"type\":22,\"currencyId\":1,\"currencyCode\":\"TRY\",\"exchangeRate\":0,\"despatchType\":0,\"standard\":0,\"invoiceProfileType\":4,\"prefix\":\"PER\",\"contractDocument\":{\"documentDate\":\"Mon Apr 27 2026\",\"documentNumber\":\"123456\"},\"invoiceNumber\":\"PER2026000000768\",\"periodDate\":\"Mon Apr 27 2026\"},\"taxes\":[],\"invoiceLines\":[{\"disableVatExemption\":true,\"discounts\":[],\"inventoryCard\":\"YTBSATIS\",\"amount\":1,\"lineAmount\":10,\"lineExtensionAmount\":10,\"vatAmount\":1.8,\"vatExtensionAmount\":null,\"unitCode\":\"C62\",\"unitPrice\":10,\"unitPriceWithVat\":10,\"vatRate\":18,\"vatExemptionReasonCode\":null,\"ozelMatrahtVat\":null,\"ozelMatrahAmount\":null,\"additionalIdentification\":{\"productTraceNumber\":\"15151515\",\"serialNumber\":\"1235\",\"modelName\":\"123\",\"unitCode\":\"01\"}}],\"invoiceTotalsModel\":{},\"paymentMeansModel\":{\"paymentMeansCode\":0},\"paymentTermsModel\":{},\"orderInfoModel\":{\"invoiceDocumentModel\":{\"isFileExist\":false,\"documentDateInString\":\"\"},\"orderDate\":null,\"orderNumber\":null},\"archiveInfoModel\":{\"isInternetSale\":false,\"shipmentSendType\":\"KAGIT\",\"hideDespatchMessage\":false},\"ublSettingsModel\":{\"useCalculatedVatAmount\":true,\"useCalculatedTotalSummary\":true,\"isFreeOfCharge\":false,\"isFit\":false},\"relatedDespatchList\":[],\"customDocumentReferenceList\":[{\"id\":\"isAdvancedNote\",\"documentType\":true}],\"additionalInvoiceTypeInfo\":{},\"buyerCustomerInfoModel\":{\"issueDate\":\"0001-01-01T00:00:00\"},\"taxRepresentativePartyInfoModel\":{},\"allowanceCharges\":[],\"allDiscount\":false,\"allDiscountRate\":0,\"addressBook\":{\"id\":384,\"customerId\":\"842084f8-8301-4d28-89cf-1828b3449c49\",\"createdDate\":\"2020-06-09T16:29:50.26\",\"description\":\"default\",\"identificationNumber\":\"1234567801\",\"name\":\"test1442\",\"receiverPersonSurName\":\"testtest\",\"receiverBuildingName\":\"test\",\"receiverDistrict\":\"test\",\"receiverCity\":\"test\",\"receiverCountry\":\"Türkiye\",\"receiverCountryId\":1,\"type\":2,\"updatedDate\":\"2024-09-12T13:50:17.867\",\"isDefault\":true},\"allDiscountAmount\":0}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://efaturaservicetest.isim360.com/v1/outboxinvoice/create",
+              "protocol": "https",
+              "host": [
+                "efaturaservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v1",
+                "outboxinvoice",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Ytb_İade",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"invoiceId\": \"00000000-0000-0000-0000-000000000000\",\r\n    \"status\": 0,\r\n    \"isNew\": true,\r\n    \"xsltCode\": \"master\",\r\n    \"useManualInvoiceId\": true,\r\n    \"allowOldEArsivCustomer\": false,\r\n    \"checkLocalReferenceId\": false,\r\n    \"useFirstAlias\": false,\r\n    \"isSend\": false,\r\n    \"recordType\": 0,\r\n    \"isTdevice\": false,\r\n    \"notes\": [],\r\n    \"generalInfoModel\": {\r\n        \"issueDate\": \"2026-04-27T00:00:00+03:00\",\r\n        \"issueTime\": \"2026-04-27T18:34:35.1742829+03:00\",\r\n        \"type\": 24,\r\n        \"currencyId\": 1,\r\n        \"currencyCode\": \"TRY\",\r\n        \"exchangeRate\": 0,\r\n        \"despatchType\": 0,\r\n        \"standard\": 0,\r\n        \"invoiceProfileType\": 4,\r\n        \"prefix\": \"PER\",\r\n        \"contractDocument\": {\r\n            \"documentDate\": \"Mon Apr 27 2026\",\r\n            \"documentNumber\": \"123456\"\r\n        },\r\n        \"returnInvoiceDateLines\": [\r\n            {\r\n                \"returnInvoiceDate\": \"Mon Apr 27 2026\",\r\n                \"returnInvoiceNumber\": \"PER2026000000768\"\r\n            }\r\n        ],\r\n        \"invoiceNumber\": \"PER2026000000764\",\r\n        \"periodDate\": \"Mon Apr 27 2026\"\r\n    },\r\n    \"taxes\": [],\r\n    \"invoiceLines\": [\r\n        {\r\n            \"disableVatExemption\": true,\r\n            \"discounts\": [],\r\n            \"inventoryCard\": \"ytbiade\",\r\n            \"amount\": 1,\r\n            \"lineAmount\": 100,\r\n            \"lineExtensionAmount\": 100,\r\n            \"vatAmount\": 18,\r\n            \"vatExtensionAmount\": null,\r\n            \"vatRate\": 18,\r\n            \"vatExemptionReasonCode\": null,\r\n            \"ozelMatrahtVat\": null,\r\n            \"ozelMatrahAmount\": null,\r\n            \"unitPrice\": 100,\r\n            \"unitPriceWithVat\": 100,\r\n            \"unitCode\": \"C62\",\r\n            \"additionalIdentification\": {\r\n                \"productTraceNumber\": \"9999\",\r\n                \"serialNumber\": \"456\",\r\n                \"modelName\": \"123\",\r\n                \"unitCode\": \"01\"\r\n            }\r\n        }\r\n    ],\r\n    \"invoiceTotalsModel\": {},\r\n    \"paymentMeansModel\": {\r\n        \"paymentMeansCode\": 0\r\n    },\r\n    \"paymentTermsModel\": {},\r\n    \"orderInfoModel\": {\r\n        \"invoiceDocumentModel\": {\r\n            \"isFileExist\": false,\r\n            \"documentDateInString\": \"\"\r\n        },\r\n        \"orderDate\": null,\r\n        \"orderNumber\": null\r\n    },\r\n    \"archiveInfoModel\": {\r\n        \"isInternetSale\": false,\r\n        \"shipmentSendType\": \"KAGIT\",\r\n        \"hideDespatchMessage\": false,\r\n        \"shipmentDate\": \"Mon Apr 27 2026\"\r\n    },\r\n    \"ublSettingsModel\": {\r\n        \"useCalculatedVatAmount\": true,\r\n        \"useCalculatedTotalSummary\": true,\r\n        \"isFreeOfCharge\": false,\r\n        \"isFit\": false\r\n    },\r\n    \"relatedDespatchList\": [],\r\n    \"customDocumentReferenceList\": [\r\n        {\r\n            \"id\": \"isAdvancedNote\",\r\n            \"documentType\": true\r\n        }\r\n    ],\r\n    \"additionalInvoiceTypeInfo\": {},\r\n    \"buyerCustomerInfoModel\": {\r\n        \"issueDate\": \"0001-01-01T00:00:00\"\r\n    },\r\n    \"taxRepresentativePartyInfoModel\": {},\r\n    \"allowanceCharges\": [],\r\n    \"allDiscount\": false,\r\n    \"allDiscountRate\": 0,\r\n    \"addressBook\": {\r\n        \"id\": 384,\r\n        \"customerId\": \"842084f8-8301-4d28-89cf-1828b3449c49\",\r\n        \"createdDate\": \"2020-06-09T16:29:50.26\",\r\n        \"description\": \"default\",\r\n        \"identificationNumber\": \"1234567801\",\r\n        \"name\": \"test1442\",\r\n        \"receiverPersonSurName\": \"testtest\",\r\n        \"receiverBuildingName\": \"test\",\r\n        \"receiverDistrict\": \"test\",\r\n        \"receiverCity\": \"test\",\r\n        \"receiverCountry\": \"Türkiye\",\r\n        \"receiverCountryId\": 1,\r\n        \"type\": 2,\r\n        \"updatedDate\": \"2024-09-12T13:50:17.867\",\r\n        \"isDefault\": true\r\n    },\r\n    \"allDiscountAmount\": 0\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://efaturaservicetest.isim360.com/v1/outboxinvoice/create",
+              "protocol": "https",
+              "host": [
+                "efaturaservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v1",
+                "outboxinvoice",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Ytb_İstisna",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"invoiceId\":\"00000000-0000-0000-0000-000000000000\",\"status\":0,\"isNew\":true,\"xsltCode\":\"master\",\"useManualInvoiceId\":true,\"allowOldEArsivCustomer\":false,\"checkLocalReferenceId\":false,\"useFirstAlias\":false,\"isSend\":false,\"recordType\":0,\"isTdevice\":false,\"notes\":[],\"generalInfoModel\":{\"issueDate\":\"2026-04-27T00:00:00+03:00\",\"issueTime\":\"2026-04-27T17:33:36.6913951+03:00\",\"type\":23,\"currencyId\":1,\"currencyCode\":\"TRY\",\"exchangeRate\":0,\"despatchType\":0,\"standard\":0,\"invoiceProfileType\":4,\"prefix\":\"PER\",\"contractDocument\":{\"documentDate\":\"Mon Apr 27 2026\",\"documentNumber\":\"123456\"},\"invoiceNumber\":\"PER2026000000766\",\"periodDate\":\"Mon Apr 27 2026\"},\"taxes\":[],\"invoiceLines\":[{\"disableVatExemption\":true,\"vatRate\":18,\"discounts\":[],\"inventoryCard\":\"YTBISTISNA\",\"amount\":1,\"lineAmount\":10,\"lineExtensionAmount\":10,\"vatAmount\":0,\"vatExtensionAmount\":null,\"unitCode\":\"C62\",\"unitPrice\":10,\"unitPriceWithVat\":10,\"canceledVatRate\":18,\"additionalIdentification\":{\"productTraceNumber\":\"15151515\",\"serialNumber\":\"1235\",\"modelName\":\"123\",\"unitCode\":\"01\"},\"vatExemptionReasonCode\":\"308\"}],\"invoiceTotalsModel\":{},\"paymentMeansModel\":{\"paymentMeansCode\":0},\"paymentTermsModel\":{},\"orderInfoModel\":{\"invoiceDocumentModel\":{\"isFileExist\":false,\"documentDateInString\":\"\"},\"orderDate\":null,\"orderNumber\":null},\"archiveInfoModel\":{\"isInternetSale\":false,\"shipmentSendType\":\"KAGIT\",\"hideDespatchMessage\":false},\"ublSettingsModel\":{\"useCalculatedVatAmount\":true,\"useCalculatedTotalSummary\":true,\"isFreeOfCharge\":false,\"isFit\":false},\"relatedDespatchList\":[],\"customDocumentReferenceList\":[{\"id\":\"isAdvancedNote\",\"documentType\":true}],\"additionalInvoiceTypeInfo\":{},\"buyerCustomerInfoModel\":{\"issueDate\":\"0001-01-01T00:00:00\"},\"taxRepresentativePartyInfoModel\":{},\"allowanceCharges\":[],\"allDiscount\":false,\"allDiscountRate\":0,\"addressBook\":{\"id\":384,\"customerId\":\"842084f8-8301-4d28-89cf-1828b3449c49\",\"createdDate\":\"2020-06-09T16:29:50.26\",\"description\":\"default\",\"identificationNumber\":\"1234567801\",\"name\":\"test1442\",\"receiverPersonSurName\":\"testtest\",\"receiverBuildingName\":\"test\",\"receiverDistrict\":\"test\",\"receiverCity\":\"test\",\"receiverCountry\":\"Türkiye\",\"receiverCountryId\":1,\"type\":2,\"updatedDate\":\"2024-09-12T13:50:17.867\",\"isDefault\":true},\"allDiscountAmount\":0}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://efaturaservicetest.isim360.com/v1/outboxinvoice/create",
+              "protocol": "https",
+              "host": [
+                "efaturaservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v1",
+                "outboxinvoice",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Ytb_Tevkifat",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"invoiceId\": \"00000000-0000-0000-0000-000000000000\",\r\n    \"status\": 0,\r\n    \"isNew\": true,\r\n    \"xsltCode\": \"master\",\r\n    \"useManualInvoiceId\": true,\r\n    \"allowOldEArsivCustomer\": false,\r\n    \"checkLocalReferenceId\": false,\r\n    \"useFirstAlias\": false,\r\n    \"isSend\": false,\r\n    \"recordType\": 0,\r\n    \"isTdevice\": false,\r\n    \"notes\": [],\r\n    \"generalInfoModel\": {\r\n        \"issueDate\": \"2026-04-27T00:00:00+03:00\",\r\n        \"issueTime\": \"2026-04-27T19:54:47.3743139+03:00\",\r\n        \"type\": 25,\r\n        \"currencyId\": 1,\r\n        \"currencyCode\": \"TRY\",\r\n        \"exchangeRate\": 0,\r\n        \"despatchType\": 0,\r\n        \"standard\": 0,\r\n        \"invoiceProfileType\": 4,\r\n        \"prefix\": \"PER\",\r\n        \"invoiceNumber\": \"PER2026000000760\",\r\n        \"periodDate\": \"Mon Apr 27 2026\",\r\n          \"contractDocument\": {\r\n            \"documentDate\": \"Mon Apr 27 2026\",\r\n            \"documentNumber\": \"123456\"\r\n        }\r\n    },\r\n    \"taxes\": [],\r\n    \"invoiceLines\": [\r\n        {\r\n            \"disableVatExemption\": true,\r\n            \"discounts\": [],\r\n            \"inventoryCard\": \"YTB_Tevkifat_EAR\",\r\n            \"vatRate\": 18,\r\n            \"vatAmount\": 1.8,\r\n            \"vatExemptionReasonCode\": null,\r\n            \"gtpCode\": null,\r\n            \"dibSatirCode\": null,\r\n            \"ozelMatrahAmount\": null,\r\n            \"ozelMatrahtVat\": null,\r\n            \"goodsOwnerName\": null,\r\n            \"goodsOwnerIdentifier\": null,\r\n            \"additionalIdentification\": {\r\n                \"productTraceNumber\": \"9999\",\r\n                \"serialNumber\": \"456\",\r\n                \"modelName\": \"123\",\r\n                \"unitCode\": \"01\"\r\n            },\r\n            \"amount\": 1,\r\n            \"lineAmount\": 10,\r\n            \"lineExtensionAmount\": 10,\r\n            \"vatExtensionAmount\": null,\r\n            \"unitCode\": \"C62\",\r\n            \"unitPrice\": 10,\r\n            \"unitPriceWithVat\": 10\r\n        }\r\n    ],\r\n    \"invoiceTotalsModel\": {},\r\n    \"paymentMeansModel\": {\r\n        \"paymentMeansCode\": 0\r\n    },\r\n    \"paymentTermsModel\": {},\r\n    \"orderInfoModel\": {\r\n        \"invoiceDocumentModel\": {\r\n            \"isFileExist\": false,\r\n            \"documentDateInString\": \"\"\r\n        },\r\n        \"orderDate\": null,\r\n        \"orderNumber\": null\r\n    },\r\n    \"archiveInfoModel\": {\r\n        \"isInternetSale\": false,\r\n        \"shipmentSendType\": \"KAGIT\",\r\n        \"hideDespatchMessage\": false\r\n    },\r\n    \"ublSettingsModel\": {\r\n        \"useCalculatedVatAmount\": true,\r\n        \"useCalculatedTotalSummary\": true,\r\n        \"isFreeOfCharge\": false,\r\n        \"isFit\": false\r\n    },\r\n    \"relatedDespatchList\": [],\r\n    \"customDocumentReferenceList\": [\r\n        {\r\n            \"id\": \"isAdvancedNote\",\r\n            \"documentType\": true\r\n        }\r\n    ],\r\n    \"additionalInvoiceTypeInfo\": {},\r\n    \"buyerCustomerInfoModel\": {\r\n        \"issueDate\": \"0001-01-01T00:00:00\"\r\n    },\r\n    \"taxRepresentativePartyInfoModel\": {},\r\n    \"allowanceCharges\": [],\r\n    \"allDiscount\": false,\r\n    \"allDiscountRate\": 0,\r\n    \"addressBook\": {\r\n        \"id\": 384,\r\n        \"customerId\": \"842084f8-8301-4d28-89cf-1828b3449c49\",\r\n        \"createdDate\": \"2020-06-09T16:29:50.26\",\r\n        \"description\": \"default\",\r\n        \"identificationNumber\": \"1234567801\",\r\n        \"name\": \"test1442\",\r\n        \"receiverPersonSurName\": \"testtest\",\r\n        \"receiverBuildingName\": \"test\",\r\n        \"receiverDistrict\": \"test\",\r\n        \"receiverCity\": \"test\",\r\n        \"receiverCountry\": \"Türkiye\",\r\n        \"receiverCountryId\": 1,\r\n        \"type\": 2,\r\n        \"updatedDate\": \"2024-09-12T13:50:17.867\",\r\n        \"isDefault\": true\r\n    },\r\n    \"allDiscountAmount\": 0\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://efaturaservicetest.isim360.com/v1/outboxinvoice/create",
+              "protocol": "https",
+              "host": [
+                "efaturaservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v1",
+                "outboxinvoice",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Ytb_Tevkifatlı_İade",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"invoiceId\": \"00000000-0000-0000-0000-000000000000\",\r\n    \"status\": 0,\r\n    \"isNew\": true,\r\n    \"xsltCode\": \"master\",\r\n    \"useManualInvoiceId\": true,\r\n    \"allowOldEArsivCustomer\": false,\r\n    \"checkLocalReferenceId\": false,\r\n    \"useFirstAlias\": false,\r\n    \"isSend\": false,\r\n    \"recordType\": 0,\r\n    \"isTdevice\": false,\r\n    \"notes\": [],\r\n    \"generalInfoModel\": {\r\n        \"issueDate\": \"2026-04-27T00:00:00+03:00\",\r\n        \"issueTime\": \"2026-04-27T20:06:13.547986+03:00\",\r\n        \"type\": 26,\r\n        \"currencyId\": 1,\r\n        \"currencyCode\": \"TRY\",\r\n        \"exchangeRate\": 0,\r\n        \"despatchType\": 0,\r\n        \"standard\": 0,\r\n        \"invoiceProfileType\": 4,\r\n        \"prefix\": \"PER\",\r\n        \"invoiceNumber\": \"PER2026000000755\",\r\n        \"periodDate\": \"Mon Apr 27 2026\",\r\n        \"contractDocument\": {\r\n            \"documentDate\": \"Mon Apr 27 2026\",\r\n            \"documentNumber\": \"123456\"\r\n        },\r\n        \"returnInvoiceDateLines\": [\r\n            {\r\n                \"returnInvoiceDate\": \"Mon Apr 27 2026\",\r\n                \"returnInvoiceNumber\": \"PER2026000000760\"\r\n            }\r\n        ]\r\n    },\r\n    \"taxes\": [],\r\n    \"invoiceLines\": [\r\n        {\r\n            \"disableVatExemption\": true,\r\n            \"discounts\": [],\r\n            \"inventoryCard\": \"YTB_Tevkifatli_İade _EAR\",\r\n            \"amount\": 1,\r\n            \"lineAmount\": 100,\r\n            \"lineExtensionAmount\": 100,\r\n            \"vatAmount\": 18,\r\n            \"vatExtensionAmount\": null,\r\n            \"unitCode\": \"C62\",\r\n            \"unitPrice\": 100,\r\n            \"unitPriceWithVat\": 100,\r\n            \"vatRate\": 18,\r\n            \"vatExemptionReasonCode\": null,\r\n            \"ozelMatrahtVat\": null,\r\n            \"ozelMatrahAmount\": null,\r\n            \"additionalIdentification\": {\r\n                \"productTraceNumber\": \"9999\",\r\n                \"serialNumber\": \"456\",\r\n                \"modelName\": \"123\",\r\n                \"unitCode\": \"01\"\r\n            }\r\n        }\r\n    ],\r\n    \"invoiceTotalsModel\": {},\r\n    \"paymentMeansModel\": {\r\n        \"paymentMeansCode\": 0\r\n    },\r\n    \"paymentTermsModel\": {},\r\n    \"orderInfoModel\": {\r\n        \"invoiceDocumentModel\": {\r\n            \"isFileExist\": false,\r\n            \"documentDateInString\": \"\"\r\n        },\r\n        \"orderDate\": null,\r\n        \"orderNumber\": null\r\n    },\r\n    \"archiveInfoModel\": {\r\n        \"isInternetSale\": false,\r\n        \"shipmentSendType\": \"KAGIT\",\r\n        \"hideDespatchMessage\": false\r\n    },\r\n    \"ublSettingsModel\": {\r\n        \"useCalculatedVatAmount\": true,\r\n        \"useCalculatedTotalSummary\": true,\r\n        \"isFreeOfCharge\": false,\r\n        \"isFit\": false\r\n    },\r\n    \"relatedDespatchList\": [],\r\n    \"customDocumentReferenceList\": [\r\n        {\r\n            \"id\": \"isAdvancedNote\",\r\n            \"documentType\": true\r\n        }\r\n    ],\r\n    \"additionalInvoiceTypeInfo\": {},\r\n    \"buyerCustomerInfoModel\": {\r\n        \"issueDate\": \"0001-01-01T00:00:00\"\r\n    },\r\n    \"taxRepresentativePartyInfoModel\": {},\r\n    \"allowanceCharges\": [],\r\n    \"allDiscount\": false,\r\n    \"allDiscountRate\": 0,\r\n    \"addressBook\": {\r\n        \"id\": 384,\r\n        \"customerId\": \"842084f8-8301-4d28-89cf-1828b3449c49\",\r\n        \"createdDate\": \"2020-06-09T16:29:50.26\",\r\n        \"description\": \"default\",\r\n        \"identificationNumber\": \"1234567801\",\r\n        \"name\": \"test1442\",\r\n        \"receiverPersonSurName\": \"testtest\",\r\n        \"receiverBuildingName\": \"test\",\r\n        \"receiverDistrict\": \"test\",\r\n        \"receiverCity\": \"test\",\r\n        \"receiverCountry\": \"Türkiye\",\r\n        \"receiverCountryId\": 1,\r\n        \"type\": 2,\r\n        \"updatedDate\": \"2024-09-12T13:50:17.867\",\r\n        \"isDefault\": true\r\n    },\r\n    \"allDiscountAmount\": 0\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://efaturaservicetest.isim360.com/v1/outboxinvoice/create",
+              "protocol": "https",
+              "host": [
+                "efaturaservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v1",
+                "outboxinvoice",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Gib_User",
+      "item": [
+        {
+          "name": "E-Fatura Mükellef Listesi",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://efaturaservicetest.isim360.com/v2/gibuser/recipient/zip",
+              "protocol": "https",
+              "host": [
+                "efaturaservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "gibuser",
+                "recipient",
+                "zip"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Yatırım_Teşvik",
+      "item": [
+        {
+          "name": "e-Fatura",
+          "item": []
+        },
+        {
+          "name": "e-Arsiv",
+          "item": []
+        }
+      ]
+    }
+  ]
 }
