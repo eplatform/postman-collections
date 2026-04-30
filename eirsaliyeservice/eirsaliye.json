@@ -1,1118 +1,1156 @@
 {
-	"info": {
-		"_postman_id": "94f0f079-6fc9-4b9d-8c68-998e0a82035a",
-		"name": "e-İrsaliye Entegrasyon Postman",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
-	},
-	"item": [
-		{
-			"name": "Outbox_Despatch",
-			"item": [
-				{
-					"name": "Get_Outbox_Despatch_Ubl_v2",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "x-api-key",
-								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "https://eirsaliyeservicetest.isim360.com/v2/outboxdespatch/7adadedc-d0f4-47b2-b1fb-b1dfa98c2dc0/ubl",
-							"protocol": "https",
-							"host": [
-								"eirsaliyeservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v2",
-								"outboxdespatch",
-								"7adadedc-d0f4-47b2-b1fb-b1dfa98c2dc0",
-								"ubl"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get_Outbox_Despatch_Pdf_v2",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "x-api-key",
-								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "https://eirsaliyeservicetest.isim360.com/v2/outboxdespatch/7adadedc-d0f4-47b2-b1fb-b1dfa98c2dc0/pdf/false",
-							"protocol": "https",
-							"host": [
-								"eirsaliyeservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v2",
-								"outboxdespatch",
-								"7adadedc-d0f4-47b2-b1fb-b1dfa98c2dc0",
-								"pdf",
-								"false"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get_Outbox_Despatch_Html_v2",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "x-api-key",
-								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "https://eirsaliyeservicetest.isim360.com/v2/outboxdespatch/7adadedc-d0f4-47b2-b1fb-b1dfa98c2dc0/html/false",
-							"protocol": "https",
-							"host": [
-								"eirsaliyeservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v2",
-								"outboxdespatch",
-								"7adadedc-d0f4-47b2-b1fb-b1dfa98c2dc0",
-								"html",
-								"false"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get_Outbox_Despatch_Zip_v2",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "x-api-key",
-								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "https://eirsaliyeservicetest.isim360.com/v2/outboxdespatch/7adadedc-d0f4-47b2-b1fb-b1dfa98c2dc0/zip",
-							"protocol": "https",
-							"host": [
-								"eirsaliyeservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v2",
-								"outboxdespatch",
-								"7adadedc-d0f4-47b2-b1fb-b1dfa98c2dc0",
-								"zip"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get_Despatch_Statu",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "x-api-key",
-								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n\t\"ids\":[\"C2F1D172-FBB6-4E4E-B3EC-52C2DE8A02F4\"]\r\n\t\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "https://eirsaliyeservicetest.isim360.com/v2/outboxdespatch/7adadedc-d0f4-47b2-b1fb-b1dfa98c2dc0/status",
-							"protocol": "https",
-							"host": [
-								"eirsaliyeservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v2",
-								"outboxdespatch",
-								"7adadedc-d0f4-47b2-b1fb-b1dfa98c2dc0",
-								"status"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get_Outbox_Despatch_Ubl",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "x-api-key",
-								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "https://eirsaliyeservicetest.isim360.com/v2/outboxdespatch/7adadedc-d0f4-47b2-b1fb-b1dfa98c2dc0/ubl",
-							"protocol": "https",
-							"host": [
-								"eirsaliyeservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v2",
-								"outboxdespatch",
-								"7adadedc-d0f4-47b2-b1fb-b1dfa98c2dc0",
-								"ubl"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get_Outbox_Despatch_PdfList_v2",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "x-api-key",
-								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n\t\"selected\":[\"d9621cb9-20f6-4d0a-be56-60ee527007c0\",\"7f9bc059-b9a1-4e41-892a-77b67037c554\"],\n\t\"IsStandartXslt\":true\n}"
-						},
-						"url": {
-							"raw": "https://eirsaliyeservicetest.isim360.com/v2/outboxdespatch/7adadedc-d0f4-47b2-b1fb-b1dfa98c2dc0/pdf/true",
-							"protocol": "https",
-							"host": [
-								"eirsaliyeservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v2",
-								"outboxdespatch",
-								"7adadedc-d0f4-47b2-b1fb-b1dfa98c2dc0",
-								"pdf",
-								"true"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Send_Outbox_Despatch_UBL_v1",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "x-api-key",
-								"value": "",
-								"type": "text"
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n\t\"despatchAdviceZip\":\"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\",\n\t\"targetAlias\":\"urn:mail:defaultpk@eplatform.com.tr\",\n    \"localReferenceId\":\"1\",\n\t\"useManualDespatchAdviceId\":false,\n\t\"status\":0\n}\n"
-						},
-						"url": {
-							"raw": "https://eirsaliyeservicetest.isim360.com/v1/outboxdespatch",
-							"protocol": "https",
-							"host": [
-								"eirsaliyeservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v1",
-								"outboxdespatch"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Send_Outbox_Despatch_Json_v1",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "x-api-key",
-								"value": "",
-								"type": "text"
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n\t\t\"status\": 0,\r\n\t\t\"useManualDespatchAdviceId\": false,\r\n\t\t\"isNew\": true,\r\n\t\t\"localReferenceId\": null,\r\n\t\t\"note\": null,\r\n\t\t\"generalInfo\": {\r\n\t\t\t\"currencyCode\": \"TRY\",\r\n\t\t\t\"despatchNumber\": null,\r\n\t\t\t\"despatchProfileType\": 0,\r\n\t\t\t\"despatchType\": 1,\r\n\t\t\t\"ettn\": null,\r\n\t\t\t\"exchangeRate\": 0,\r\n\t\t\t\"issueDate\": \"2020-03-10T09:32:09.0450412+03:00\",\r\n\t\t\t\"issueTime\": null,\r\n\t\t\t\"prefix\":null\r\n\t\t},\r\n\t\t\"addressBook\": {\r\n\t\t\t\"alias\": \"urn:mail:defaultpk@eplatform.com.tr\",\r\n\t\t\t\"identificationNumber\": \"3360580691\",\r\n\t\t\t\"name\": \"EPLATFORM BULUT BİLİŞİM ANONİM ŞİRKETİ\",\r\n\t\t\t\"receiverBuildingName\": \"bina adı-1\",\r\n\t\t\t\"receiverBuildingNumber\": \"1\",\r\n\t\t\t\"receiverCity\": \"İstanbul\",\r\n\t\t\t\"receiverCountry\": \"Türkiye\",\r\n\t\t\t\"receiverDistrict\": \"Kadıköy\",\r\n\t\t\t\"receiverDoorNumber\": \"11\",\r\n\t\t\t\"receiverEmail\": \"deneme1@deneme.com\",\r\n\t\t\t\"receiverFaxNumber\": \"02163548899\",\r\n\t\t\t\"receiverPersonSurName\": \"soyad-1\",\r\n\t\t\t\"receiverPhoneNumber\": \"02163549988\",\r\n\t\t\t\"receiverSmallTown\": \"Maltepe\",\r\n\t\t\t\"receiverStreet\": \"sokak-1\",\r\n\t\t\t\"receiverTaxOffice\": \"Kadıköy vergisi-1\",\r\n\t\t\t\"receiverWebSite\": \"www.deneme1.com\",\r\n\t\t\t\"receiverZipCode\": \"34000\",\r\n\t\t\t\"registerNumber\": \"111222333444\"\r\n\t\t},\r\n\t\t\"deliveryAddressInfo\": {\r\n\t\t\t\"buildingName\": \"Bina adı-2\",\r\n\t\t\t\"buildingNo\": \"2\",\r\n\t\t\t\"city\": \"şehir-2\",\r\n\t\t\t\"countryName\": \"Türkiye\",\r\n\t\t\t\"district\": \"ilçe-2\",\r\n\t\t\t\"doorNumber\": \"22\",\r\n\t\t\t\"smallTown\": \"Köy-2\",\r\n\t\t\t\"street\": \"sokak-2\",\r\n\t\t\t\"zipCode\": \"34002\"\r\n\t\t},\r\n\t\t\"despatchLines\": [\r\n\t\t\t{\r\n\t\t\t\t\"amount\": 100,\r\n\t\t\t\t\"lineAmount\": 150,\r\n\t\t\t\t\"productName\": \"mal hizmet -1\",\r\n\t\t\t\t\"unitCode\": \"C62\",\r\n\t\t\t\t\"unitPrice\": 1.5,\r\n\t\t\t\t\"sellersItemIdentification\":\"123456\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"amount\": 50,\r\n\t\t\t\t\"lineAmount\": 175,\r\n\t\t\t\t\"productName\": \"mal hizmet -2 \",\r\n\t\t\t\t\"unitCode\": \"C62\",\r\n\t\t\t\t\"unitPrice\": 3.5,\r\n\t\t\t\t\"buyersItemIdentification\":\"321456\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"amount\": 10,\r\n\t\t\t\t\"lineAmount\": 35,\r\n\t\t\t\t\"productName\": \"mal hizmet -3 \",\r\n\t\t\t\t\"unitCode\": \"C62\",\r\n\t\t\t\t\"unitPrice\": 3.5,\r\n\t\t\t\t\"manufacturersItemIdentification\":\"111111\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"amount\": 10,\r\n\t\t\t\t\"lineAmount\": 35,\r\n\t\t\t\t\"productName\": \"mal hizmet -4 \",\r\n\t\t\t\t\"unitCode\": \"C62\",\r\n\t\t\t\t\"unitPrice\": 3.5,\r\n\t\t\t\t\"manufacturersItemIdentification\":\"111111\",\r\n\t\t\t\t\"sellersItemIdentification\":\"123456\",\r\n\t\t\t\t\"buyersItemIdentification\":\"321456\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"amount\": 10,\r\n\t\t\t\t\"lineAmount\": 35,\r\n\t\t\t\t\"productName\": \"mal hizmet -5 \",\r\n\t\t\t\t\"unitCode\": \"C62\",\r\n\t\t\t\t\"unitPrice\": 3.5\r\n\t\t\t}\r\n\t\t],\r\n\t\t\"despatchShipmentInfo\": {\r\n\t\t\t\"driverLines\": [\r\n\t\t\t\t{\r\n\t\t\t\t\t\"driverName\": \"sürücü adı-1\",\r\n\t\t\t\t\t\"driverSurname\": \"sürücü soyadı-1\",\r\n\t\t\t\t\t\"driverTckn\": \"11111111110\"\r\n\t\t\t\t},\r\n\t\t\t\t{\r\n\t\t\t\t\t\"driverName\": \"sürücü adı-2\",\r\n\t\t\t\t\t\"driverSurname\": \"sürücü soyadı-2\",\r\n\t\t\t\t\t\"driverTckn\": \"22222222220\"\r\n\t\t\t\t}\r\n\t\t\t],\r\n\t\t\t\"plateLines\": [\r\n\t\t\t\t{\r\n\t\t\t\t\t\"plateNumber\": \"plaka-2\"\r\n\t\t\t\t},\r\n\t\t\t\t{\r\n\t\t\t\t\t\"plateNumber\": \"plaka-3\"\r\n\t\t\t\t}\r\n\t\t\t],\r\n\t\t\t\"shipmentPlateNo\": \"plaka-1\",\r\n\t\t\t\"shipmentSenderTcknVkn\": \"9874563210\",\r\n\t\t\t\"shipmentSenderTitle\": \"taşıyıcı ünvanı\"\r\n\t\t},\r\n\t\t\r\n\t\t\"notes\": [\r\n\t\t\t{note:\"not-1\"},\r\n\t\t\t{note:\"not-2\"}\r\n\t\t],\r\n\t\t\"orderInfo\": {\r\n\t\t\t\"dispatcherNameSurname\": \"Sevk Eden-1\",\r\n\t\t\t\"orderDate\": \"Tue Mar 10 2020\",\r\n\t\t\t\"orderNumber\": \"123456\",\r\n\t\t\t\"shipmentDate\": \"2020-03-10T09:30:16+03:00\"\r\n\t\t}\r\n\t}"
-						},
-						"url": {
-							"raw": "http://eirsaliyeservicetest.isim360.com/v1/outboxdespatch/create",
-							"protocol": "http",
-							"host": [
-								"eirsaliyeservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v1",
-								"outboxdespatch",
-								"create"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Update_Outbox_Despatch_UBL_v1",
-					"request": {
-						"method": "PUT",
-						"header": [
-							{
-								"key": "x-api-key",
-								"value": "",
-								"type": "text"
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n\t\"despatchAdviceZip\":\"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\",\n\t\"targetAlias\":\"urn:mail:defaultpk@eplatform.com.tr\",\n\t\"useManualDespatchAdviceId\":true,\n\t\"status\":20\n}\n"
-						},
-						"url": {
-							"raw": "https://eirsaliyeservicetest.isim360.com/v1/outboxdespatch/3ed48427-ac7a-4d70-9b6c-b2d218796124",
-							"protocol": "https",
-							"host": [
-								"eirsaliyeservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v1",
-								"outboxdespatch",
-								"3ed48427-ac7a-4d70-9b6c-b2d218796124"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Update_Outbox_Despatch_Json_v1",
-					"request": {
-						"method": "PUT",
-						"header": [
-							{
-								"key": "x-api-key",
-								"type": "text",
-								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"type": "text",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n\t\t\"status\": 20,\r\n\t\t\"useManualDespatchAdviceId\": false,\r\n\t\t\"isNew\": true,\r\n\t\t\"localReferenceId\": null,\r\n\t\t\"note\": null,\r\n\t\t\"generalInfo\": {\r\n\t\t\t\"currencyCode\": \"TRY\",\r\n\t\t\t\"despatchNumber\": \"IS12020000000292\",\r\n\t\t\t\"despatchProfileType\": 0,\r\n\t\t\t\"despatchType\": 1,\r\n\t\t\t\"ettn\": \"c80d504a-9ba1-4516-8683-2e88617004a9\",\r\n\t\t\t\"exchangeRate\": 0,\r\n\t\t\t\"issueDate\": \"2020-03-10T09:32:09.0450412+03:00\",\r\n\t\t\t\"issueTime\": null,\r\n\t\t\t\"prefix\":null\r\n\t\t},\r\n\t\t\"addressBook\": {\r\n\t\t\t\"alias\": \"urn:mail:defaultpk@eplatform.com.tr\",\r\n\t\t\t\"identificationNumber\": \"3360580691\",\r\n\t\t\t\"name\": \"EPLATFORM BULUT BİLİŞİM ANONİM ŞİRKETİ\",\r\n\t\t\t\"receiverBuildingName\": \"bina adı-1\",\r\n\t\t\t\"receiverBuildingNumber\": \"1\",\r\n\t\t\t\"receiverCity\": \"İstanbul\",\r\n\t\t\t\"receiverCountry\": \"Türkiye\",\r\n\t\t\t\"receiverDistrict\": \"Kadıköy\",\r\n\t\t\t\"receiverDoorNumber\": \"11\",\r\n\t\t\t\"receiverEmail\": \"deneme1@deneme.com\",\r\n\t\t\t\"receiverFaxNumber\": \"02163548899\",\r\n\t\t\t\"receiverPersonSurName\": \"soyad-1\",\r\n\t\t\t\"receiverPhoneNumber\": \"02163549988\",\r\n\t\t\t\"receiverSmallTown\": \"Maltepe\",\r\n\t\t\t\"receiverStreet\": \"sokak-1\",\r\n\t\t\t\"receiverTaxOffice\": \"Kadıköy vergisi-1\",\r\n\t\t\t\"receiverWebSite\": \"www.deneme1.com\",\r\n\t\t\t\"receiverZipCode\": \"34000\",\r\n\t\t\t\"registerNumber\": \"111222333444\"\r\n\t\t},\r\n\t\t\"deliveryAddressInfo\": {\r\n\t\t\t\"buildingName\": \"Bina adı-2\",\r\n\t\t\t\"buildingNo\": \"2\",\r\n\t\t\t\"city\": \"şehir-2\",\r\n\t\t\t\"countryName\": \"Türkiye\",\r\n\t\t\t\"district\": \"ilçe-2\",\r\n\t\t\t\"doorNumber\": \"22\",\r\n\t\t\t\"smallTown\": \"Köy-2\",\r\n\t\t\t\"street\": \"sokak-2\",\r\n\t\t\t\"zipCode\": \"34002\"\r\n\t\t},\r\n\t\t\"despatchLines\": [\r\n\t\t\t{\r\n\t\t\t\t\"amount\": 100,\r\n\t\t\t\t\"lineAmount\": 150,\r\n\t\t\t\t\"productName\": \"mal hizmet -1\",\r\n\t\t\t\t\"unitCode\": \"C62\",\r\n\t\t\t\t\"unitPrice\": 1.5\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"amount\": 50,\r\n\t\t\t\t\"lineAmount\": 175,\r\n\t\t\t\t\"productName\": \"mal hizmet -2 \",\r\n\t\t\t\t\"unitCode\": \"C62\",\r\n\t\t\t\t\"unitPrice\": 3.5\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"amount\": 10,\r\n\t\t\t\t\"lineAmount\": 35,\r\n\t\t\t\t\"productName\": \"mal hizmet -3 \",\r\n\t\t\t\t\"unitCode\": \"C62\",\r\n\t\t\t\t\"unitPrice\": 3.5\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"amount\": 10,\r\n\t\t\t\t\"lineAmount\": 35,\r\n\t\t\t\t\"productName\": \"mal hizmet -4 \",\r\n\t\t\t\t\"unitCode\": \"C62\",\r\n\t\t\t\t\"unitPrice\": 3.5\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"amount\": 10,\r\n\t\t\t\t\"lineAmount\": 35,\r\n\t\t\t\t\"productName\": \"mal hizmet -5 \",\r\n\t\t\t\t\"unitCode\": \"C62\",\r\n\t\t\t\t\"unitPrice\": 3.5\r\n\t\t\t}\r\n\t\t],\r\n\t\t\"despatchShipmentInfo\": {\r\n\t\t\t\"driverLines\": [\r\n\t\t\t\t{\r\n\t\t\t\t\t\"driverName\": \"sürücü adı-1\",\r\n\t\t\t\t\t\"driverSurname\": \"sürücü soyadı-1\",\r\n\t\t\t\t\t\"driverTckn\": \"11111111110\"\r\n\t\t\t\t},\r\n\t\t\t\t{\r\n\t\t\t\t\t\"driverName\": \"sürücü adı-2\",\r\n\t\t\t\t\t\"driverSurname\": \"sürücü soyadı-2\",\r\n\t\t\t\t\t\"driverTckn\": \"22222222220\"\r\n\t\t\t\t}\r\n\t\t\t],\r\n\t\t\t\"plateLines\": [\r\n\t\t\t\t{\r\n\t\t\t\t\t\"plateNumber\": \"plaka-2\"\r\n\t\t\t\t},\r\n\t\t\t\t{\r\n\t\t\t\t\t\"plateNumber\": \"plaka-3\"\r\n\t\t\t\t}\r\n\t\t\t],\r\n\t\t\t\"shipmentPlateNo\": \"plaka-1\",\r\n\t\t\t\"shipmentSenderTcknVkn\": \"9874563210\",\r\n\t\t\t\"shipmentSenderTitle\": \"taşıyıcı ünvanı\"\r\n\t\t},\r\n\t\t\r\n\t\t\"notes\": [\r\n\t\t\t{note:\"not-1\"},\r\n\t\t\t{note:\"not-2\"}\r\n\t\t],\r\n\t\t\"orderInfo\": {\r\n\t\t\t\"dispatcherNameSurname\": \"Sevk Eden-1\",\r\n\t\t\t\"orderDate\": \"Tue Mar 10 2020\",\r\n\t\t\t\"orderNumber\": \"123456\",\r\n\t\t\t\"shipmentDate\": \"2020-03-10T09:30:16+03:00\"\r\n\t\t}\r\n\t}"
-						},
-						"url": {
-							"raw": "https://eirsaliyeservicetest.isim360.com/v1/outboxdespatch/update/c80d504a-9ba1-4516-8683-2e88617004a9",
-							"protocol": "https",
-							"host": [
-								"eirsaliyeservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v1",
-								"outboxdespatch",
-								"update",
-								"c80d504a-9ba1-4516-8683-2e88617004a9"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "UpdateStatus_Outbox_Despatch_v2",
-					"request": {
-						"method": "PUT",
-						"header": [
-							{
-								"key": "x-api-key",
-								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n\t\"id\":\"951165e2-2013-4dcc-b94b-af8ccc72db05\",\n\t\"status\":0\n}"
-						},
-						"url": {
-							"raw": "https://eirsaliyeservicetest.isim360.com/v2/outboxdespatch/updatestatus",
-							"protocol": "https",
-							"host": [
-								"eirsaliyeservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v2",
-								"outboxdespatch",
-								"updatestatus"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "UpdateStatusList_Outbox_Despatch_v2",
-					"request": {
-						"method": "PUT",
-						"header": [
-							{
-								"key": "x-api-key",
-								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n\t\"ids\":[\"D7BBE177-4FD7-41B7-838C-188341BB3DA8\",\"60db4366-4ec6-4684-b09b-8ae2d3855feb\"],\n\t\"status\":20\n}"
-						},
-						"url": {
-							"raw": "https://eirsaliyeservicetest.isim360.com/v2/outboxdespatch/updatestatuslist",
-							"protocol": "https",
-							"host": [
-								"eirsaliyeservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v2",
-								"outboxdespatch",
-								"updatestatuslist"
-							]
-						}
-					},
-					"response": []
-				}
-			]
-		},
-		{
-			"name": "Outbox_Receipt",
-			"item": [
-				{
-					"name": "Get_Outbox_Receipt_List_v2",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "x-api-key",
-								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "https://eirsaliyeservicetest.isim360.com/v2/outboxreceipt?pageIndex=1&pageSize=50&IsDesc=true",
-							"protocol": "https",
-							"host": [
-								"eirsaliyeservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v2",
-								"outboxreceipt"
-							],
-							"query": [
-								{
-									"key": "pageIndex",
-									"value": "1"
-								},
-								{
-									"key": "pageSize",
-									"value": "50"
-								},
-								{
-									"key": "IsDesc",
-									"value": "true"
-								},
-								{
-									"key": "startDate",
-									"value": "2019-12-20 09:24:53",
-									"disabled": true
-								},
-								{
-									"key": "endDate",
-									"value": "2019-12-25 00:00:00",
-									"disabled": true
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get_Receipt_Statu",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "x-api-key",
-								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "https://eirsaliyeservicetest.isim360.com/v2/outboxreceipt/94765882-A650-4C6A-9544-72E0D0333EE8/status",
-							"protocol": "https",
-							"host": [
-								"eirsaliyeservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v2",
-								"outboxreceipt",
-								"94765882-A650-4C6A-9544-72E0D0333EE8",
-								"status"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get_Outbox_Receipt_Ubl_v2",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "x-api-key",
-								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "https://eirsaliyeservicetest.isim360.com/v2/outboxreceipt/83186ea2-623a-4bb2-90b1-108ecfde1d59/ubl",
-							"protocol": "https",
-							"host": [
-								"eirsaliyeservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v2",
-								"outboxreceipt",
-								"83186ea2-623a-4bb2-90b1-108ecfde1d59",
-								"ubl"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get_Outbox_Receipt_Pdf_v2",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "x-api-key",
-								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "https://eirsaliyeservicetest.isim360.com/v2/outboxreceipt/dba1c5ea-0229-410a-8193-958ff76b7d19/pdf/false",
-							"protocol": "https",
-							"host": [
-								"eirsaliyeservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v2",
-								"outboxreceipt",
-								"dba1c5ea-0229-410a-8193-958ff76b7d19",
-								"pdf",
-								"false"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get_Outbox_Receipt_Zip_v2",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "x-api-key",
-								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "https://eirsaliyeservicetest.isim360.com/v2/outboxreceipt/83186ea2-623a-4bb2-90b1-108ecfde1d59/zip",
-							"protocol": "https",
-							"host": [
-								"eirsaliyeservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v2",
-								"outboxreceipt",
-								"83186ea2-623a-4bb2-90b1-108ecfde1d59",
-								"zip"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Outbox_Receipt_ApproveRejectDespatch",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "x-api-key",
-								"value": "",
-								"type": "text"
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json",
-								"type": "text"
-							}
-						],
-						"url": {
-							"raw": "https://eirsaliyeservicetest.isim360.com/v1/outboxreceipt/approverejectdespatch?ids=b554c821-3215-46b4-b1e2-24caf502a584&isApprove=false&reason=Hatalı ürünler&actualDeliveryDate=2019-12-30 00:00:00",
-							"protocol": "https",
-							"host": [
-								"eirsaliyeservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v1",
-								"outboxreceipt",
-								"approverejectdespatch"
-							],
-							"query": [
-								{
-									"key": "ids",
-									"value": "b554c821-3215-46b4-b1e2-24caf502a584"
-								},
-								{
-									"key": "isApprove",
-									"value": "false"
-								},
-								{
-									"key": "prefix",
-									"value": "IRY",
-									"disabled": true
-								},
-								{
-									"key": "reason",
-									"value": "Hatalı ürünler"
-								},
-								{
-									"key": "actualDeliveryDate",
-									"value": "2019-12-30 00:00:00"
-								},
-								{
-									"key": "ids",
-									"value": "b554c821-3215-46b4-b1e2-24caf502a798",
-									"description": "Toplu onaylama için ids parametresi çoklanabilir. Toplu onaylama yapılamıyor.",
-									"disabled": true
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Partial_Accept_v1",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "x-api-key",
-								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"despatchAdviceUUID\": \"b4b26383-07b2-4c02-bef8-3987406e274f\",\r\n    \"actualDeliveryDateTime\": \"2019-11-18T09:30:33.6818244+03:00\",\r\n    \"deliveryContact\": \"Test\",\r\n    \"note\": \"\",\r\n    \"prefix\": \"IRY\",\r\n    \"items\": [\r\n        {\r\n            \"id\": 1,\r\n            \"deliveredQuantity\": 10,\r\n            \"receivedQuantity\": 5,\r\n            \"rejectedQuantity\": 0,\r\n            \"rejectReason\": \"\",\r\n            \"shortQuantity\": 5,\r\n            \"oversupplyQuantity\": 0,\r\n            \"timingComplaint\": null,\r\n            \"index\": 0\r\n        }\r\n    ]\r\n}"
-						},
-						"url": {
-							"raw": "https://eirsaliyeservicetest.isim360.com/v1/outboxreceipt/partialaccept",
-							"protocol": "https",
-							"host": [
-								"eirsaliyeservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v1",
-								"outboxreceipt",
-								"partialaccept"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Outbox_Receipt_Post(UBL)",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "x-api-key",
-								"value": "",
-								"type": "text"
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"receiptAdvice\":\"UEsDBBQAAAAIADttIlHFxAtNCgUAADsTAAAJAAAAY2V2YXAueG1s7VfNjuI4EL6vtO9gcV11HMJ/lI7EANKipulZArM/N7dd0Bb5YWOnu5kH2dNqnmFOc5pbz7zXOgmQBJJhukez0kqLACmuqs9flctfbGsGFPhG9tk9p4AePdcXl7Uo9M2ACC5Mn3ggTLEBypecEskD34xuXVPQO/CI+SiYWUAwaimGSQl9Js4g8LzA769WIayIBPW4CXzwpcgwb1+G+Uq50zI8KoX6pZhR/FWpqH8KS0KlyYgkR/CDIMyIzbcbcJK5rgMWuWAegOFRvojo6FGCL5S5hKzfvKzdSbkxMX54eNCIK4N7otHAw4J4GxeUFw7kHYTJbBtC4RApus9k099s3J1pprACX2QL+yd7bm6/RMRVRmBDVdC4aFlS0bPBFv6f1XCPolCjh4YWhCts6Hod/3Y9Sdcq8+XnnbkvJPGTUgq+ozEJUmbftE2QpmE1GkocT8ICihevJkUXra4pj5r94w8IIUv1vqlc3kAY98d4aCu7hU9GM+dBJGTg8bdEppb5rK4dYo6NWdjrMFhyF+KA0fVoMp45/cn495GFi8YsQD2MnbqhG3r6add3cxTZBJvt2GdxbYLQXhJXgIVPDblcFyq+02saLb2r006r0dQ7yx7pMIPd3uqMMaPe0ncFWOynSgkJEYHqDbATUl2jbeHi+JHvnHtg67qZfLVdGj/pDfVk4aJXFllYq7gLBwED2xm9ubJwtT2LnwYSEM4NTLivfCJfTiMPQk7tXRlPxnchhJo3IYNwBksIQfVoasgti9HS9K5m6EiSkN+5HAm+KS5NZcla5SXDVbMmdIax7Eh6NwyoourLambtjkFIx4ALaFJ20Wyx1gXp6cuLJaU9o9OE7hLYVzJtf4HpGUIJ6T5jPN4ExD1Pe9/nuz7Xv4ni3n0/7aFH9qzT1hkPLVzqVglyBIDKEPJVOluB3eK6/B7CbaocEL4modym9r1LcWhP7Ve4FVzCYjbet3u+Vj5TeArVJUIcpDPO79h5jz9miuDBM++TLRRKZFeV7rL25mpas+NlaHQbeqdxsmKHKpwBfzGB64UzH83G05ua3aj3mvVnMKhiMCUelM2bjPevhv3P79Dw6a+rp7+vkdOfauge0PzT+4GG+trndymBxLecwokpsQTqReiqVglBiLLJHRkCyCT2JlwRn78F5BCfbDlHr54+uCsQ3MJHniU4Ay63TnTL+D2PX2mxG8JVjmnG/pqEZPc24dXlSVP4Qx2rbL3da+wkLjd6HEOomQhvuD0yFQo+f/oYrvkWyut6KG0JkoW/WNlswefkMTmOlFKsMhZIOp/eTwf9aSnHjEopVK4zTu05YzZWkIvAl+osfbLx05VbMyJUq35YP330SrhZuBLKwmdEqfBGcqL4QPvfEq2mesHorXqj3f7ekvHzaNYfLRw0mowG89nNdDwfoTmEnjqhrH2+3m3jREXUJCHIREe0ZwrJC4RkSFY8Pn+jAWFM6QeaBhqqt76PjDjcp2oq9L+cfIWcjP8dNbHwmV2cUHbu+CY+tiRD+R2FyzXpZEP3qVR3yr05O7r1dMPCFQ5fxkguC3UjvlI01RG8p7fazW7+SlHiXkDMpZ1PA5/mYeHTGiTxuxtIfH84roxdR+Vn1yTmHpi6sitNkVsU+VzGynZZG7SNmt3a8z92LFZ6LMEr5rNvFEpWLlnDukI8klTAddV9Nsb4Gt20lUx2dKWW1TJ5HtHCRdoWPq2ghQt3OvsfUEsBAh8AFAAAAAgAO20iUcXEC00KBQAAOxMAAAkAJAAAAAAAAAAgAAAAAAAAAGNldmFwLnhtbAoAIAAAAAAAAQAYAONBH60VgdYB40EfrRWB1gEr5awiFYHWAVBLBQYAAAAAAQABAFsAAAAxBQAAAAA=\",\r\n    \"prefix\":null,\r\n    \"useManualReceiptAdviceId\":true,\r\n    \"status\":20\r\n}"
-						},
-						"url": {
-							"raw": "https://eirsaliyeservicetest.isim360.com/v1/outboxreceipt",
-							"protocol": "https",
-							"host": [
-								"eirsaliyeservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v1",
-								"outboxreceipt"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Outbox_Receipt_Put(UBL)",
-					"request": {
-						"method": "PUT",
-						"header": [
-							{
-								"key": "x-api-key",
-								"type": "text",
-								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"type": "text",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"receiptAdvice\":\"UEsDBBQAAAAIABtRn08IqJZBPwYAAFAbAAAoAAAARjZCOThCNTMtMkM0Ri00RUU5LUI2NDItMzNFOTRDQkJEMDAwLnhtbO1Yy27TQBTdI/EPVlgix47tJLUFFnm4KGpSIA9eGzSxJ8lQP8J4DAk/wE8g+AXYsGLX8l/M2LEH20lIACFAVFXbzL333MfMnHs7t4bQhmhJWs5LZENh5bl+eLsSYd8IQIhCwwceDI1wCW00QzYgKPCNaOoaob2AHjBWoWPkEESlkoAYNrCPBOoEnhf4rfkcwzkgkH5cBj70SfgN6PTHQNtU3d4KaJMNYsS+aSr0pw1nwCaGE9iRR9UT3MzEoQVaELI0JOnVq1fVV2o1wHNJkWVZknWJ6jghmt9IteGK/FDE1opAP6TibVG/cI4FfRABlwqh0wU0n/UScjSmSvCReOMIX6Bw0YlCEnjoNdXZGnLmwiE7q0wDKvia+C++DXfMwh3FvgeBE7mQ78UKOJBvR4RRFZIQxRsi13RZlV7WqmpVuZHph2jH5tWkx4N+4kREfkgAja9iXr8mCLfooTMm7f5DiFlyva6pVGu3pOIq1+VFSQTjYa2qJAZcVLC5j4MZciHTtgZWvzcctfq9J1ZsxYVcn/7dGz5RWJLxV03TE91cIMFy3fMdVtYAmzPghpAqlQQ8yQm1Pm209ZN2XRWVjnYqapali+2Gpoiqaulap93uUm+b7Ce5iMIwgnS7oMmiEmvUIqkSlxSUx8iDpqwbddmoyVVV0xVd127KqpE44FrcME827GB0AgeaI+vhGTXZIU/NgW10YbgExF50N1d7CGcQQ99OVHhtG1MNnGhAFqGsyaKmOzNRh01dhHV9ZkNZbui6kqv3sUWQvh9NHHDLcRA7K8D9Xsj0yGTHoa7r9Z8Jb6OeuszqmAaclLfXpbZltV0QRXNhi31anUNSP7I+3bamKDXrVOw26yo91/WmeHJi1UVV01S1qTVqzdMDt1RWD6yZ+Th0yY4c0/gJAfaCSeLVDMbyptBxoJPatZEP8Pre9Dm0iWAvAKbUCfEIElbw25XJ+FQ8qQg07cBB/jxZpE0PNrSKwLiDUjpdKVJGdUUDrAgevWKJCVgu3Q0Ls05WkdJYpXywx27TCM19QCJc2BQh7ij0IN2uPDw7fzbunJ1XTFVtyPUTesVqxe3gSAFe3weYrPNFewSnISJwMuyZ33A8XLqAzALsVe3AqxKcoHLdGCPDj2F7Dk0j60cbhR1x7wk5qdz3ULnbc7pJRWfxmnW/3xqf3hsOhPakPxkL7asP/asPX95dfRgIrfN75+w3+zQ8s8ZXH6jLjeG2KPLr8XJA251L9xHDMCz6HwaBZ9KLkf5dlI8IhpDEoPewUxVYr6oKp2CBISHIF84gRp5w9/LTBVgLHUDPdIgSNG5ZxGxHyGXHOMn9y3sMZ8LlG3DhgQvhvgteAwbA1fZCRPQiYVOlGZSXi0YdRNajaOqgl4j19Bj38m14cfnZAfTY7FDZhhKvX31gY8Q0crlpWT8t/1M6MJmqpiqb3sdXSzsC5+z4tFwS+XSScGhP58s5ZcA6feQTnN0TjpI/jDFtj4cJUllUNo8TGV9+plPgehNAMTcp7z9dLZ+48kUYg9UovmHFdLigHFF5t8ohlTD4etlzItpBOulAgeaIppLxW4EiMz02G2PKkYXuxMNnRHQjg9k+2+XIStoFm0gPCC5RSqW5KclFLyFeJ9MqxKWs93Kv9J9Qv0eo0m4WlfaRobSf5qRDCO0MOFcfLy4/rX8DoUk7uGsAXAKXu4lrys5uSDCyST5evn4w0f2ZTCX9HC1lSfv0RpNi7cbQhctFUv+yZAZWpXXLpXMlDnxkDwBypUII3E0hrA2N7OSM8j9eo4hNmMdSyt85zh3hdtzrtIbWeNTr9Prn9yqmpulyQ6z/LvcDazjqjZhjmefOOo/yUxH8qfT7f579bfNso6H8unn2G/rnefxTbeHXD7AHdgpTqTX0ZrOZPu5xyf5WYcIZGx7BnTItl5V/qK1s6xv8XWGBluk8y5lNyj7yxlToLS2b0CfmVFZ6Etuusg8iecyUjfi7Kidf6WPmdvVc4hsBz50nl6abvW72kV983Sp0Kv5YSkEd+vjvE3pbBXrBNg9GnYZSMWtJbGXFb+tHWRBi5jH/P0bmhImSAPinLLM9AIXB4Gc8pBg7nfQI5ETPL1t2ZrvQh16ZBegCN2Yfy3twS8q9OJtfAVBLAQI/ABQAAAAIABtRn08IqJZBPwYAAFAbAAAoACQAAAAAAAAAIAAAAAAAAABGNkI5OEI1My0yQzRGLTRFRTktQjY0Mi0zM0U5NENCQkQwMDAueG1sCgAgAAAAAAABABgAd0YkKam/1QGhd78pqb/VAbmyFimpv9UBUEsFBgAAAAABAAEAegAAAIUGAAAAAA==\",\r\n    \"prefix\":null,\r\n    \"useManualReceiptAdviceId\":false,\r\n    \"status\":20\r\n}"
-						},
-						"url": {
-							"raw": "https://eirsaliyeservicetest.isim360.com/v1/outboxreceipt/005056AA-79C5-1EEA-AFF1-67F336E7E2D9",
-							"protocol": "https",
-							"host": [
-								"eirsaliyeservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v1",
-								"outboxreceipt",
-								"005056AA-79C5-1EEA-AFF1-67F336E7E2D9"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get_Receipt_Status_List_v2",
-					"request": {
-						"method": "PUT",
-						"header": [
-							{
-								"key": "x-api-key",
-								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n\t\"ids\":[\"F53461BE-E11E-4C07-88CC-FFB4542E32B7\"],\r\n    \"status\":20\r\n\t\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "https://eirsaliyeservicetest.isim360.com/v2/outboxreceipt/updatestatus",
-							"protocol": "https",
-							"host": [
-								"eirsaliyeservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v2",
-								"outboxreceipt",
-								"updatestatus"
-							]
-						}
-					},
-					"response": []
-				}
-			]
-		},
-		{
-			"name": "Inbox_Despatch",
-			"item": [
-				{
-					"name": "Get_Inbox_Despatch_Statu",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "x-api-key",
-								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "https://eirsaliyeservicetest.isim360.com/v2/inboxdespatch/7adadedc-d0f4-47b2-b1fb-b1dfa98c2dc0/status",
-							"protocol": "https",
-							"host": [
-								"eirsaliyeservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v2",
-								"inboxdespatch",
-								"7adadedc-d0f4-47b2-b1fb-b1dfa98c2dc0",
-								"status"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get_Inbox_Despatch_List_v2",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "x-api-key",
-								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "https://eirsaliyeservicetest.isim360.com/v2/inboxdespatch?pageIndex=1&pageSize=50&isDesc=false&startDate=2020-06-01 00:00:00&endDate=2019-06-10 00:00:00",
-							"protocol": "https",
-							"host": [
-								"eirsaliyeservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v2",
-								"inboxdespatch"
-							],
-							"query": [
-								{
-									"key": "pageIndex",
-									"value": "1"
-								},
-								{
-									"key": "pageSize",
-									"value": "50"
-								},
-								{
-									"key": "isDesc",
-									"value": "false"
-								},
-								{
-									"key": "startDate",
-									"value": "2020-06-01 00:00:00"
-								},
-								{
-									"key": "endDate",
-									"value": "2019-06-10 00:00:00"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get_Inbox_Despatch_Ubl_v2",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "x-api-key",
-								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "https://eirsaliyeservicetest.isim360.com/v2/inboxdespatch/00215E5D-17BE-1EDA-8BAD-39B03925413C/ubl",
-							"protocol": "https",
-							"host": [
-								"eirsaliyeservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v2",
-								"inboxdespatch",
-								"00215E5D-17BE-1EDA-8BAD-39B03925413C",
-								"ubl"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get_Inbox_Despatch_Pdf_v2",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "x-api-key",
-								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "https://eirsaliyeservicetest.isim360.com/v2/inboxdespatch/00215E5D-17BE-1EDA-8BAD-39B03925413C/pdf/false",
-							"protocol": "https",
-							"host": [
-								"eirsaliyeservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v2",
-								"inboxdespatch",
-								"00215E5D-17BE-1EDA-8BAD-39B03925413C",
-								"pdf",
-								"false"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get_Inbox_Despatch_Zip_v2",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "x-api-key",
-								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "https://eirsaliyeservicetest.isim360.com/v2/inboxdespatch/00215E5D-17BE-1EDA-8BAD-39B03925413C/zip",
-							"protocol": "https",
-							"host": [
-								"eirsaliyeservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v2",
-								"inboxdespatch",
-								"00215E5D-17BE-1EDA-8BAD-39B03925413C",
-								"zip"
-							]
-						}
-					},
-					"response": []
-				}
-			]
-		},
-		{
-			"name": "Gib_User",
-			"item": [
-				{
-					"name": "Get_GibUserList Zip",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "x-api-key",
-								"type": "text",
-								"value": ""
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "https://eirsaliyeservicetest.isim360.com/v1/gibuser/receiverboxalias/zip",
-							"protocol": "https",
-							"host": [
-								"eirsaliyeservicetest",
-								"isim360",
-								"com"
-							],
-							"path": [
-								"v1",
-								"gibuser",
-								"receiverboxalias",
-								"zip"
-							]
-						}
-					},
-					"response": []
-				}
-			],
-			"event": [
-				{
-					"listen": "prerequest",
-					"script": {
-						"type": "text/javascript",
-						"exec": [
-							""
-						]
-					}
-				},
-				{
-					"listen": "test",
-					"script": {
-						"type": "text/javascript",
-						"exec": [
-							""
-						]
-					}
-				}
-			]
-		}
-	]
+  "info": {
+    "_postman_id": "f34b51e1-1cc1-4e8a-afe0-eed0bc358ac0",
+    "name": "e-İrsaliye Entegrasyon (Github)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "39898782"
+  },
+  "item": [
+    {
+      "name": "Outbox_Despatch",
+      "item": [
+        {
+          "name": "Get_Outbox_Despatch_Ubl_v2",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": ""
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://eirsaliyeservicetest.isim360.com/v2/outboxdespatch/7adadedc-d0f4-47b2-b1fb-b1dfa98c2dc0/ubl",
+              "protocol": "https",
+              "host": [
+                "eirsaliyeservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "outboxdespatch",
+                "7adadedc-d0f4-47b2-b1fb-b1dfa98c2dc0",
+                "ubl"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get_Outbox_Despatch_Pdf_v2",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": ""
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://eirsaliyeservicetest.isim360.com/v2/outboxdespatch/7adadedc-d0f4-47b2-b1fb-b1dfa98c2dc0/pdf/false",
+              "protocol": "https",
+              "host": [
+                "eirsaliyeservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "outboxdespatch",
+                "7adadedc-d0f4-47b2-b1fb-b1dfa98c2dc0",
+                "pdf",
+                "false"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get_Outbox_Despatch_Html_v2",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": ""
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://eirsaliyeservicetest.isim360.com/v2/outboxdespatch/7adadedc-d0f4-47b2-b1fb-b1dfa98c2dc0/html/false",
+              "protocol": "https",
+              "host": [
+                "eirsaliyeservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "outboxdespatch",
+                "7adadedc-d0f4-47b2-b1fb-b1dfa98c2dc0",
+                "html",
+                "false"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get_Outbox_Despatch_Zip_v2",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": ""
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://eirsaliyeservicetest.isim360.com/v2/outboxdespatch/7adadedc-d0f4-47b2-b1fb-b1dfa98c2dc0/zip",
+              "protocol": "https",
+              "host": [
+                "eirsaliyeservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "outboxdespatch",
+                "7adadedc-d0f4-47b2-b1fb-b1dfa98c2dc0",
+                "zip"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get_Despatch_Statu",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": ""
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n\t\"ids\":[\"C2F1D172-FBB6-4E4E-B3EC-52C2DE8A02F4\"]\r\n\t\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://eirsaliyeservicetest.isim360.com/v2/outboxdespatch/7adadedc-d0f4-47b2-b1fb-b1dfa98c2dc0/status",
+              "protocol": "https",
+              "host": [
+                "eirsaliyeservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "outboxdespatch",
+                "7adadedc-d0f4-47b2-b1fb-b1dfa98c2dc0",
+                "status"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get_Outbox_Despatch_Ubl",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": ""
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://eirsaliyeservicetest.isim360.com/v2/outboxdespatch/7adadedc-d0f4-47b2-b1fb-b1dfa98c2dc0/ubl",
+              "protocol": "https",
+              "host": [
+                "eirsaliyeservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "outboxdespatch",
+                "7adadedc-d0f4-47b2-b1fb-b1dfa98c2dc0",
+                "ubl"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get_Outbox_Despatch_PdfList_v2",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": ""
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"selected\":[\"d9621cb9-20f6-4d0a-be56-60ee527007c0\",\"7f9bc059-b9a1-4e41-892a-77b67037c554\"],\n\t\"IsStandartXslt\":true\n}"
+            },
+            "url": {
+              "raw": "https://eirsaliyeservicetest.isim360.com/v2/outboxdespatch/7adadedc-d0f4-47b2-b1fb-b1dfa98c2dc0/pdf/true",
+              "protocol": "https",
+              "host": [
+                "eirsaliyeservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "outboxdespatch",
+                "7adadedc-d0f4-47b2-b1fb-b1dfa98c2dc0",
+                "pdf",
+                "true"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Send_Outbox_Despatch_UBL_v1",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"despatchAdviceZip\":\"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\",\n\t\"targetAlias\":\"urn:mail:defaultpk@eplatform.com.tr\",\n    \"localReferenceId\":\"1\",\n\t\"useManualDespatchAdviceId\":false,\n\t\"status\":0\n}\n"
+            },
+            "url": {
+              "raw": "https://eirsaliyeservicetest.isim360.com/v1/outboxdespatch",
+              "protocol": "https",
+              "host": [
+                "eirsaliyeservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v1",
+                "outboxdespatch"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Send_Outbox_Despatch_Json_v1",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n\t\t\"status\": 0,\r\n\t\t\"useManualDespatchAdviceId\": false,\r\n\t\t\"isNew\": true,\r\n\t\t\"localReferenceId\": null,\r\n\t\t\"note\": null,\r\n\t\t\"generalInfo\": {\r\n\t\t\t\"currencyCode\": \"TRY\",\r\n\t\t\t\"despatchNumber\": null,\r\n\t\t\t\"despatchProfileType\": 0,\r\n\t\t\t\"despatchType\": 1,\r\n\t\t\t\"ettn\": null,\r\n\t\t\t\"exchangeRate\": 0,\r\n\t\t\t\"issueDate\": \"2020-03-10T09:32:09.0450412+03:00\",\r\n\t\t\t\"issueTime\": null,\r\n\t\t\t\"prefix\":null\r\n\t\t},\r\n\t\t\"addressBook\": {\r\n\t\t\t\"alias\": \"urn:mail:defaultpk@eplatform.com.tr\",\r\n\t\t\t\"identificationNumber\": \"3360580691\",\r\n\t\t\t\"name\": \"EPLATFORM BULUT BİLİŞİM ANONİM ŞİRKETİ\",\r\n\t\t\t\"receiverBuildingName\": \"bina adı-1\",\r\n\t\t\t\"receiverBuildingNumber\": \"1\",\r\n\t\t\t\"receiverCity\": \"İstanbul\",\r\n\t\t\t\"receiverCountry\": \"Türkiye\",\r\n\t\t\t\"receiverDistrict\": \"Kadıköy\",\r\n\t\t\t\"receiverDoorNumber\": \"11\",\r\n\t\t\t\"receiverEmail\": \"deneme1@deneme.com\",\r\n\t\t\t\"receiverFaxNumber\": \"02163548899\",\r\n\t\t\t\"receiverPersonSurName\": \"soyad-1\",\r\n\t\t\t\"receiverPhoneNumber\": \"02163549988\",\r\n\t\t\t\"receiverSmallTown\": \"Maltepe\",\r\n\t\t\t\"receiverStreet\": \"sokak-1\",\r\n\t\t\t\"receiverTaxOffice\": \"Kadıköy vergisi-1\",\r\n\t\t\t\"receiverWebSite\": \"www.deneme1.com\",\r\n\t\t\t\"receiverZipCode\": \"34000\",\r\n\t\t\t\"registerNumber\": \"111222333444\"\r\n\t\t},\r\n\t\t\"deliveryAddressInfo\": {\r\n\t\t\t\"buildingName\": \"Bina adı-2\",\r\n\t\t\t\"buildingNo\": \"2\",\r\n\t\t\t\"city\": \"şehir-2\",\r\n\t\t\t\"countryName\": \"Türkiye\",\r\n\t\t\t\"district\": \"ilçe-2\",\r\n\t\t\t\"doorNumber\": \"22\",\r\n\t\t\t\"smallTown\": \"Köy-2\",\r\n\t\t\t\"street\": \"sokak-2\",\r\n\t\t\t\"zipCode\": \"34002\"\r\n\t\t},\r\n\t\t\"despatchLines\": [\r\n\t\t\t{\r\n\t\t\t\t\"amount\": 100,\r\n\t\t\t\t\"lineAmount\": 150,\r\n\t\t\t\t\"productName\": \"mal hizmet -1\",\r\n\t\t\t\t\"unitCode\": \"C62\",\r\n\t\t\t\t\"unitPrice\": 1.5,\r\n\t\t\t\t\"sellersItemIdentification\":\"123456\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"amount\": 50,\r\n\t\t\t\t\"lineAmount\": 175,\r\n\t\t\t\t\"productName\": \"mal hizmet -2 \",\r\n\t\t\t\t\"unitCode\": \"C62\",\r\n\t\t\t\t\"unitPrice\": 3.5,\r\n\t\t\t\t\"buyersItemIdentification\":\"321456\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"amount\": 10,\r\n\t\t\t\t\"lineAmount\": 35,\r\n\t\t\t\t\"productName\": \"mal hizmet -3 \",\r\n\t\t\t\t\"unitCode\": \"C62\",\r\n\t\t\t\t\"unitPrice\": 3.5,\r\n\t\t\t\t\"manufacturersItemIdentification\":\"111111\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"amount\": 10,\r\n\t\t\t\t\"lineAmount\": 35,\r\n\t\t\t\t\"productName\": \"mal hizmet -4 \",\r\n\t\t\t\t\"unitCode\": \"C62\",\r\n\t\t\t\t\"unitPrice\": 3.5,\r\n\t\t\t\t\"manufacturersItemIdentification\":\"111111\",\r\n\t\t\t\t\"sellersItemIdentification\":\"123456\",\r\n\t\t\t\t\"buyersItemIdentification\":\"321456\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"amount\": 10,\r\n\t\t\t\t\"lineAmount\": 35,\r\n\t\t\t\t\"productName\": \"mal hizmet -5 \",\r\n\t\t\t\t\"unitCode\": \"C62\",\r\n\t\t\t\t\"unitPrice\": 3.5\r\n\t\t\t}\r\n\t\t],\r\n\t\t\"despatchShipmentInfo\": {\r\n\t\t\t\"driverLines\": [\r\n\t\t\t\t{\r\n\t\t\t\t\t\"driverName\": \"sürücü adı-1\",\r\n\t\t\t\t\t\"driverSurname\": \"sürücü soyadı-1\",\r\n\t\t\t\t\t\"driverTckn\": \"11111111110\"\r\n\t\t\t\t},\r\n\t\t\t\t{\r\n\t\t\t\t\t\"driverName\": \"sürücü adı-2\",\r\n\t\t\t\t\t\"driverSurname\": \"sürücü soyadı-2\",\r\n\t\t\t\t\t\"driverTckn\": \"22222222220\"\r\n\t\t\t\t}\r\n\t\t\t],\r\n\t\t\t\"plateLines\": [\r\n\t\t\t\t{\r\n\t\t\t\t\t\"plateNumber\": \"plaka-2\"\r\n\t\t\t\t},\r\n\t\t\t\t{\r\n\t\t\t\t\t\"plateNumber\": \"plaka-3\"\r\n\t\t\t\t}\r\n\t\t\t],\r\n\t\t\t\"shipmentPlateNo\": \"plaka-1\",\r\n\t\t\t\"shipmentSenderTcknVkn\": \"9874563210\",\r\n\t\t\t\"shipmentSenderTitle\": \"taşıyıcı ünvanı\"\r\n\t\t},\r\n\t\t\r\n\t\t\"notes\": [\r\n\t\t\t{note:\"not-1\"},\r\n\t\t\t{note:\"not-2\"}\r\n\t\t],\r\n\t\t\"orderInfo\": {\r\n\t\t\t\"dispatcherNameSurname\": \"Sevk Eden-1\",\r\n\t\t\t\"orderDate\": \"Tue Mar 10 2020\",\r\n\t\t\t\"orderNumber\": \"123456\",\r\n\t\t\t\"shipmentDate\": \"2020-03-10T09:30:16+03:00\"\r\n\t\t}\r\n\t}"
+            },
+            "url": {
+              "raw": "http://eirsaliyeservicetest.isim360.com/v1/outboxdespatch/create",
+              "protocol": "http",
+              "host": [
+                "eirsaliyeservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v1",
+                "outboxdespatch",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Send_Outbox_Despatch_Json_v1_İDİSİrsaliye",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"despatchId\": \"d8233453-9f77-40fc-a2f6-08dea627796e\",\r\n    \"status\": 0,\r\n    \"isNew\": false,\r\n    \"xsltCode\": \"master\",\r\n    \"useManualDespatchAdviceId\": false,\r\n    \"addressBook\": {\r\n        \"id\": 0,\r\n        \"customerId\": \"00000000-0000-0000-0000-000000000000\",\r\n        \"createdDate\": \"0001-01-01T00:00:00\",\r\n        \"alias\": \"urn:mail:irsaliyepk@brisa.com.tr\",\r\n        \"identificationNumber\": \"1870023894\",\r\n        \"name\": \"Test15\",\r\n        \"receiverDistrict\": \"dasdsad\",\r\n        \"receiverCity\": \"asdasd\",\r\n        \"receiverCountry\": \"Türkiye\",\r\n        \"receiverCountryId\": 1,\r\n        \"type\": 0,\r\n        \"isDefault\": false\r\n    },\r\n    \"sendEMail\": false,\r\n    \"isSend\": false,\r\n    \"recordType\": 0,\r\n    \"isFit\": false,\r\n    \"notes\": [],\r\n    \"generalInfo\": {\r\n        \"ettn\": \"d8233453-9f77-40fc-a2f6-08dea627796e\",\r\n        \"prefix\": \"ASD\",\r\n        \"customizationId\": \"TR1.2\",\r\n        \"issueDate\": \"2026-04-29T19:41:56\",\r\n        \"issueTime\": \"2026-04-29T19:41:56\",\r\n        \"type\": 0,\r\n        \"currencyId\": 1,\r\n        \"currencyCode\": \"TRY\",\r\n        \"exchangeRate\": 0.0,\r\n        \"despatchNumber\": \"ASD2026000000001\",\r\n        \"despatchType\": 1,\r\n        \"despatchProfileType\": 2,\r\n        \"totalAmount\": 100.0\r\n    },\r\n    \"despatchLines\": [\r\n        {\r\n            \"labelNo\": \"CV0152457\",\r\n            \"lineId\": 1,\r\n            \"productName\": \"10 mm İnşaat Demiri\",\r\n            \"amount\": 2.0,\r\n            \"unitCodeId\": 1,\r\n            \"unitCode\": \"C62\",\r\n            \"unitPrice\": 50.0,\r\n            \"subInvoiceLineModels\": []\r\n        }\r\n    ],\r\n    \"orderInfo\": {\r\n        \"orderNumber\": \"D032024000000066\",\r\n        \"orderDate\": \"2025-09-13T00:00:00\",\r\n        \"invoiceDocumentModel\": {\r\n            \"isFileExist\": false,\r\n            \"documentDateInString\": \"\"\r\n        },\r\n        \"dispatcherNameSurname\": \"test\",\r\n        \"shipmentDate\": \"2025-09-15T22:30:21\"\r\n    },\r\n    \"despatchShipmentInfo\": {\r\n        \"shipmentSenderTcknVkn\": \"17591276651\",\r\n        \"shipmentSenderTitle\": \"Test\",\r\n        \"shipmentPlateNo\": \"34UE1234\"\r\n    },\r\n    \"deliveryAddressInfo\": {\r\n        \"city\": \"543543t\",\r\n        \"zipCode\": \"53453\",\r\n        \"district\": \"43t43t34\",\r\n        \"countryName\": \"Türkiye\",\r\n        \"countryId\": 1\r\n    },\r\n    \"sellerSupplierInfo\": {\r\n        \"shipmentNo\": \"SE-1345840\",\r\n        \"countryId\": 0\r\n    },\r\n    \"despatchBuyerCustomerInfo\": {\r\n        \"countryId\": 0\r\n    },\r\n    \"customDocumentReferenceList\": [\r\n        {\r\n            \"id\": \"isAdvancedNote\",\r\n            \"documentTypeCode\": \"CUSTOM\",\r\n            \"documentType\": \"true\",\r\n            \"issueDate\": \"2026-04-29T00:00:00\"\r\n        }\r\n    ]\r\n}"
+            },
+            "url": {
+              "raw": "http://eirsaliyeservicetest.isim360.com/v1/outboxdespatch/create",
+              "protocol": "http",
+              "host": [
+                "eirsaliyeservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v1",
+                "outboxdespatch",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update_Outbox_Despatch_UBL_v1",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"despatchAdviceZip\":\"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\",\n\t\"targetAlias\":\"urn:mail:defaultpk@eplatform.com.tr\",\n\t\"useManualDespatchAdviceId\":true,\n\t\"status\":20\n}\n"
+            },
+            "url": {
+              "raw": "https://eirsaliyeservicetest.isim360.com/v1/outboxdespatch/3ed48427-ac7a-4d70-9b6c-b2d218796124",
+              "protocol": "https",
+              "host": [
+                "eirsaliyeservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v1",
+                "outboxdespatch",
+                "3ed48427-ac7a-4d70-9b6c-b2d218796124"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update_Outbox_Despatch_Json_v1",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n\t\t\"status\": 20,\r\n\t\t\"useManualDespatchAdviceId\": false,\r\n\t\t\"isNew\": true,\r\n\t\t\"localReferenceId\": null,\r\n\t\t\"note\": null,\r\n\t\t\"generalInfo\": {\r\n\t\t\t\"currencyCode\": \"TRY\",\r\n\t\t\t\"despatchNumber\": \"IS12020000000292\",\r\n\t\t\t\"despatchProfileType\": 0,\r\n\t\t\t\"despatchType\": 1,\r\n\t\t\t\"ettn\": \"c80d504a-9ba1-4516-8683-2e88617004a9\",\r\n\t\t\t\"exchangeRate\": 0,\r\n\t\t\t\"issueDate\": \"2020-03-10T09:32:09.0450412+03:00\",\r\n\t\t\t\"issueTime\": null,\r\n\t\t\t\"prefix\":null\r\n\t\t},\r\n\t\t\"addressBook\": {\r\n\t\t\t\"alias\": \"urn:mail:defaultpk@eplatform.com.tr\",\r\n\t\t\t\"identificationNumber\": \"3360580691\",\r\n\t\t\t\"name\": \"EPLATFORM BULUT BİLİŞİM ANONİM ŞİRKETİ\",\r\n\t\t\t\"receiverBuildingName\": \"bina adı-1\",\r\n\t\t\t\"receiverBuildingNumber\": \"1\",\r\n\t\t\t\"receiverCity\": \"İstanbul\",\r\n\t\t\t\"receiverCountry\": \"Türkiye\",\r\n\t\t\t\"receiverDistrict\": \"Kadıköy\",\r\n\t\t\t\"receiverDoorNumber\": \"11\",\r\n\t\t\t\"receiverEmail\": \"deneme1@deneme.com\",\r\n\t\t\t\"receiverFaxNumber\": \"02163548899\",\r\n\t\t\t\"receiverPersonSurName\": \"soyad-1\",\r\n\t\t\t\"receiverPhoneNumber\": \"02163549988\",\r\n\t\t\t\"receiverSmallTown\": \"Maltepe\",\r\n\t\t\t\"receiverStreet\": \"sokak-1\",\r\n\t\t\t\"receiverTaxOffice\": \"Kadıköy vergisi-1\",\r\n\t\t\t\"receiverWebSite\": \"www.deneme1.com\",\r\n\t\t\t\"receiverZipCode\": \"34000\",\r\n\t\t\t\"registerNumber\": \"111222333444\"\r\n\t\t},\r\n\t\t\"deliveryAddressInfo\": {\r\n\t\t\t\"buildingName\": \"Bina adı-2\",\r\n\t\t\t\"buildingNo\": \"2\",\r\n\t\t\t\"city\": \"şehir-2\",\r\n\t\t\t\"countryName\": \"Türkiye\",\r\n\t\t\t\"district\": \"ilçe-2\",\r\n\t\t\t\"doorNumber\": \"22\",\r\n\t\t\t\"smallTown\": \"Köy-2\",\r\n\t\t\t\"street\": \"sokak-2\",\r\n\t\t\t\"zipCode\": \"34002\"\r\n\t\t},\r\n\t\t\"despatchLines\": [\r\n\t\t\t{\r\n\t\t\t\t\"amount\": 100,\r\n\t\t\t\t\"lineAmount\": 150,\r\n\t\t\t\t\"productName\": \"mal hizmet -1\",\r\n\t\t\t\t\"unitCode\": \"C62\",\r\n\t\t\t\t\"unitPrice\": 1.5\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"amount\": 50,\r\n\t\t\t\t\"lineAmount\": 175,\r\n\t\t\t\t\"productName\": \"mal hizmet -2 \",\r\n\t\t\t\t\"unitCode\": \"C62\",\r\n\t\t\t\t\"unitPrice\": 3.5\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"amount\": 10,\r\n\t\t\t\t\"lineAmount\": 35,\r\n\t\t\t\t\"productName\": \"mal hizmet -3 \",\r\n\t\t\t\t\"unitCode\": \"C62\",\r\n\t\t\t\t\"unitPrice\": 3.5\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"amount\": 10,\r\n\t\t\t\t\"lineAmount\": 35,\r\n\t\t\t\t\"productName\": \"mal hizmet -4 \",\r\n\t\t\t\t\"unitCode\": \"C62\",\r\n\t\t\t\t\"unitPrice\": 3.5\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"amount\": 10,\r\n\t\t\t\t\"lineAmount\": 35,\r\n\t\t\t\t\"productName\": \"mal hizmet -5 \",\r\n\t\t\t\t\"unitCode\": \"C62\",\r\n\t\t\t\t\"unitPrice\": 3.5\r\n\t\t\t}\r\n\t\t],\r\n\t\t\"despatchShipmentInfo\": {\r\n\t\t\t\"driverLines\": [\r\n\t\t\t\t{\r\n\t\t\t\t\t\"driverName\": \"sürücü adı-1\",\r\n\t\t\t\t\t\"driverSurname\": \"sürücü soyadı-1\",\r\n\t\t\t\t\t\"driverTckn\": \"11111111110\"\r\n\t\t\t\t},\r\n\t\t\t\t{\r\n\t\t\t\t\t\"driverName\": \"sürücü adı-2\",\r\n\t\t\t\t\t\"driverSurname\": \"sürücü soyadı-2\",\r\n\t\t\t\t\t\"driverTckn\": \"22222222220\"\r\n\t\t\t\t}\r\n\t\t\t],\r\n\t\t\t\"plateLines\": [\r\n\t\t\t\t{\r\n\t\t\t\t\t\"plateNumber\": \"plaka-2\"\r\n\t\t\t\t},\r\n\t\t\t\t{\r\n\t\t\t\t\t\"plateNumber\": \"plaka-3\"\r\n\t\t\t\t}\r\n\t\t\t],\r\n\t\t\t\"shipmentPlateNo\": \"plaka-1\",\r\n\t\t\t\"shipmentSenderTcknVkn\": \"9874563210\",\r\n\t\t\t\"shipmentSenderTitle\": \"taşıyıcı ünvanı\"\r\n\t\t},\r\n\t\t\r\n\t\t\"notes\": [\r\n\t\t\t{note:\"not-1\"},\r\n\t\t\t{note:\"not-2\"}\r\n\t\t],\r\n\t\t\"orderInfo\": {\r\n\t\t\t\"dispatcherNameSurname\": \"Sevk Eden-1\",\r\n\t\t\t\"orderDate\": \"Tue Mar 10 2020\",\r\n\t\t\t\"orderNumber\": \"123456\",\r\n\t\t\t\"shipmentDate\": \"2020-03-10T09:30:16+03:00\"\r\n\t\t}\r\n\t}"
+            },
+            "url": {
+              "raw": "https://eirsaliyeservicetest.isim360.com/v1/outboxdespatch/update/c80d504a-9ba1-4516-8683-2e88617004a9",
+              "protocol": "https",
+              "host": [
+                "eirsaliyeservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v1",
+                "outboxdespatch",
+                "update",
+                "c80d504a-9ba1-4516-8683-2e88617004a9"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "UpdateStatus_Outbox_Despatch_v2",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": ""
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"id\":\"951165e2-2013-4dcc-b94b-af8ccc72db05\",\n\t\"status\":0\n}"
+            },
+            "url": {
+              "raw": "https://eirsaliyeservicetest.isim360.com/v2/outboxdespatch/updatestatus",
+              "protocol": "https",
+              "host": [
+                "eirsaliyeservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "outboxdespatch",
+                "updatestatus"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "UpdateStatusList_Outbox_Despatch_v2",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": ""
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"ids\":[\"D7BBE177-4FD7-41B7-838C-188341BB3DA8\",\"60db4366-4ec6-4684-b09b-8ae2d3855feb\"],\n\t\"status\":20\n}"
+            },
+            "url": {
+              "raw": "https://eirsaliyeservicetest.isim360.com/v2/outboxdespatch/updatestatuslist",
+              "protocol": "https",
+              "host": [
+                "eirsaliyeservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "outboxdespatch",
+                "updatestatuslist"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Outbox_Receipt",
+      "item": [
+        {
+          "name": "Get_Outbox_Receipt_List_v2",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": ""
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://eirsaliyeservicetest.isim360.com/v2/outboxreceipt?pageIndex=1&pageSize=50&IsDesc=true",
+              "protocol": "https",
+              "host": [
+                "eirsaliyeservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "outboxreceipt"
+              ],
+              "query": [
+                {
+                  "key": "pageIndex",
+                  "value": "1"
+                },
+                {
+                  "key": "pageSize",
+                  "value": "50"
+                },
+                {
+                  "key": "IsDesc",
+                  "value": "true"
+                },
+                {
+                  "key": "startDate",
+                  "value": "2019-12-20 09:24:53",
+                  "disabled": true
+                },
+                {
+                  "key": "endDate",
+                  "value": "2019-12-25 00:00:00",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get_Receipt_Statu",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": ""
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://eirsaliyeservicetest.isim360.com/v2/outboxreceipt/94765882-A650-4C6A-9544-72E0D0333EE8/status",
+              "protocol": "https",
+              "host": [
+                "eirsaliyeservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "outboxreceipt",
+                "94765882-A650-4C6A-9544-72E0D0333EE8",
+                "status"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get_Outbox_Receipt_Ubl_v2",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": ""
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://eirsaliyeservicetest.isim360.com/v2/outboxreceipt/83186ea2-623a-4bb2-90b1-108ecfde1d59/ubl",
+              "protocol": "https",
+              "host": [
+                "eirsaliyeservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "outboxreceipt",
+                "83186ea2-623a-4bb2-90b1-108ecfde1d59",
+                "ubl"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get_Outbox_Receipt_Pdf_v2",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": ""
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://eirsaliyeservicetest.isim360.com/v2/outboxreceipt/dba1c5ea-0229-410a-8193-958ff76b7d19/pdf/false",
+              "protocol": "https",
+              "host": [
+                "eirsaliyeservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "outboxreceipt",
+                "dba1c5ea-0229-410a-8193-958ff76b7d19",
+                "pdf",
+                "false"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get_Outbox_Receipt_Zip_v2",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": ""
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://eirsaliyeservicetest.isim360.com/v2/outboxreceipt/83186ea2-623a-4bb2-90b1-108ecfde1d59/zip",
+              "protocol": "https",
+              "host": [
+                "eirsaliyeservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "outboxreceipt",
+                "83186ea2-623a-4bb2-90b1-108ecfde1d59",
+                "zip"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Outbox_Receipt_ApproveRejectDespatch",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://eirsaliyeservicetest.isim360.com/v1/outboxreceipt/approverejectdespatch?ids=b554c821-3215-46b4-b1e2-24caf502a584&isApprove=false&reason=Hatalı ürünler&actualDeliveryDate=2019-12-30 00:00:00",
+              "protocol": "https",
+              "host": [
+                "eirsaliyeservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v1",
+                "outboxreceipt",
+                "approverejectdespatch"
+              ],
+              "query": [
+                {
+                  "key": "ids",
+                  "value": "b554c821-3215-46b4-b1e2-24caf502a584"
+                },
+                {
+                  "key": "isApprove",
+                  "value": "false"
+                },
+                {
+                  "key": "prefix",
+                  "value": "IRY",
+                  "disabled": true
+                },
+                {
+                  "key": "reason",
+                  "value": "Hatalı ürünler"
+                },
+                {
+                  "key": "actualDeliveryDate",
+                  "value": "2019-12-30 00:00:00"
+                },
+                {
+                  "key": "ids",
+                  "value": "b554c821-3215-46b4-b1e2-24caf502a798",
+                  "description": "Toplu onaylama için ids parametresi çoklanabilir. Toplu onaylama yapılamıyor.",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Partial_Accept_v1",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": ""
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"despatchAdviceUUID\": \"b4b26383-07b2-4c02-bef8-3987406e274f\",\r\n    \"actualDeliveryDateTime\": \"2019-11-18T09:30:33.6818244+03:00\",\r\n    \"deliveryContact\": \"Test\",\r\n    \"note\": \"\",\r\n    \"prefix\": \"IRY\",\r\n    \"items\": [\r\n        {\r\n            \"id\": 1,\r\n            \"deliveredQuantity\": 10,\r\n            \"receivedQuantity\": 5,\r\n            \"rejectedQuantity\": 0,\r\n            \"rejectReason\": \"\",\r\n            \"shortQuantity\": 5,\r\n            \"oversupplyQuantity\": 0,\r\n            \"timingComplaint\": null,\r\n            \"index\": 0\r\n        }\r\n    ]\r\n}"
+            },
+            "url": {
+              "raw": "https://eirsaliyeservicetest.isim360.com/v1/outboxreceipt/partialaccept",
+              "protocol": "https",
+              "host": [
+                "eirsaliyeservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v1",
+                "outboxreceipt",
+                "partialaccept"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Outbox_Receipt_Post(UBL)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"receiptAdvice\":\"UEsDBBQAAAAIADttIlHFxAtNCgUAADsTAAAJAAAAY2V2YXAueG1s7VfNjuI4EL6vtO9gcV11HMJ/lI7EANKipulZArM/N7dd0Bb5YWOnu5kH2dNqnmFOc5pbz7zXOgmQBJJhukez0kqLACmuqs9flctfbGsGFPhG9tk9p4AePdcXl7Uo9M2ACC5Mn3ggTLEBypecEskD34xuXVPQO/CI+SiYWUAwaimGSQl9Js4g8LzA769WIayIBPW4CXzwpcgwb1+G+Uq50zI8KoX6pZhR/FWpqH8KS0KlyYgkR/CDIMyIzbcbcJK5rgMWuWAegOFRvojo6FGCL5S5hKzfvKzdSbkxMX54eNCIK4N7otHAw4J4GxeUFw7kHYTJbBtC4RApus9k099s3J1pprACX2QL+yd7bm6/RMRVRmBDVdC4aFlS0bPBFv6f1XCPolCjh4YWhCts6Hod/3Y9Sdcq8+XnnbkvJPGTUgq+ozEJUmbftE2QpmE1GkocT8ICihevJkUXra4pj5r94w8IIUv1vqlc3kAY98d4aCu7hU9GM+dBJGTg8bdEppb5rK4dYo6NWdjrMFhyF+KA0fVoMp45/cn495GFi8YsQD2MnbqhG3r6add3cxTZBJvt2GdxbYLQXhJXgIVPDblcFyq+02saLb2r006r0dQ7yx7pMIPd3uqMMaPe0ncFWOynSgkJEYHqDbATUl2jbeHi+JHvnHtg67qZfLVdGj/pDfVk4aJXFllYq7gLBwED2xm9ubJwtT2LnwYSEM4NTLivfCJfTiMPQk7tXRlPxnchhJo3IYNwBksIQfVoasgti9HS9K5m6EiSkN+5HAm+KS5NZcla5SXDVbMmdIax7Eh6NwyoourLambtjkFIx4ALaFJ20Wyx1gXp6cuLJaU9o9OE7hLYVzJtf4HpGUIJ6T5jPN4ExD1Pe9/nuz7Xv4ni3n0/7aFH9qzT1hkPLVzqVglyBIDKEPJVOluB3eK6/B7CbaocEL4modym9r1LcWhP7Ve4FVzCYjbet3u+Vj5TeArVJUIcpDPO79h5jz9miuDBM++TLRRKZFeV7rL25mpas+NlaHQbeqdxsmKHKpwBfzGB64UzH83G05ua3aj3mvVnMKhiMCUelM2bjPevhv3P79Dw6a+rp7+vkdOfauge0PzT+4GG+trndymBxLecwokpsQTqReiqVglBiLLJHRkCyCT2JlwRn78F5BCfbDlHr54+uCsQ3MJHniU4Ay63TnTL+D2PX2mxG8JVjmnG/pqEZPc24dXlSVP4Qx2rbL3da+wkLjd6HEOomQhvuD0yFQo+f/oYrvkWyut6KG0JkoW/WNlswefkMTmOlFKsMhZIOp/eTwf9aSnHjEopVK4zTu05YzZWkIvAl+osfbLx05VbMyJUq35YP330SrhZuBLKwmdEqfBGcqL4QPvfEq2mesHorXqj3f7ekvHzaNYfLRw0mowG89nNdDwfoTmEnjqhrH2+3m3jREXUJCHIREe0ZwrJC4RkSFY8Pn+jAWFM6QeaBhqqt76PjDjcp2oq9L+cfIWcjP8dNbHwmV2cUHbu+CY+tiRD+R2FyzXpZEP3qVR3yr05O7r1dMPCFQ5fxkguC3UjvlI01RG8p7fazW7+SlHiXkDMpZ1PA5/mYeHTGiTxuxtIfH84roxdR+Vn1yTmHpi6sitNkVsU+VzGynZZG7SNmt3a8z92LFZ6LMEr5rNvFEpWLlnDukI8klTAddV9Nsb4Gt20lUx2dKWW1TJ5HtHCRdoWPq2ghQt3OvsfUEsBAh8AFAAAAAgAO20iUcXEC00KBQAAOxMAAAkAJAAAAAAAAAAgAAAAAAAAAGNldmFwLnhtbAoAIAAAAAAAAQAYAONBH60VgdYB40EfrRWB1gEr5awiFYHWAVBLBQYAAAAAAQABAFsAAAAxBQAAAAA=\",\r\n    \"prefix\":null,\r\n    \"useManualReceiptAdviceId\":true,\r\n    \"status\":20\r\n}"
+            },
+            "url": {
+              "raw": "https://eirsaliyeservicetest.isim360.com/v1/outboxreceipt",
+              "protocol": "https",
+              "host": [
+                "eirsaliyeservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v1",
+                "outboxreceipt"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Outbox_Receipt_Put(UBL)",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"receiptAdvice\":\"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\",\r\n    \"prefix\":null,\r\n    \"useManualReceiptAdviceId\":false,\r\n    \"status\":20\r\n}"
+            },
+            "url": {
+              "raw": "https://eirsaliyeservicetest.isim360.com/v1/outboxreceipt/005056AA-79C5-1EEA-AFF1-67F336E7E2D9",
+              "protocol": "https",
+              "host": [
+                "eirsaliyeservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v1",
+                "outboxreceipt",
+                "005056AA-79C5-1EEA-AFF1-67F336E7E2D9"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get_Receipt_Status_List_v2",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": ""
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n\t\"ids\":[\"F53461BE-E11E-4C07-88CC-FFB4542E32B7\"],\r\n    \"status\":20\r\n\t\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://eirsaliyeservicetest.isim360.com/v2/outboxreceipt/updatestatus",
+              "protocol": "https",
+              "host": [
+                "eirsaliyeservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "outboxreceipt",
+                "updatestatus"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Inbox_Despatch",
+      "item": [
+        {
+          "name": "Get_Inbox_Despatch_Statu",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": ""
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://eirsaliyeservicetest.isim360.com/v2/inboxdespatch/7adadedc-d0f4-47b2-b1fb-b1dfa98c2dc0/status",
+              "protocol": "https",
+              "host": [
+                "eirsaliyeservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "inboxdespatch",
+                "7adadedc-d0f4-47b2-b1fb-b1dfa98c2dc0",
+                "status"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get_Inbox_Despatch_List_v2",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": ""
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://eirsaliyeservicetest.isim360.com/v2/inboxdespatch?pageIndex=1&pageSize=50&isDesc=false&startDate=2020-06-01 00:00:00&endDate=2019-06-10 00:00:00",
+              "protocol": "https",
+              "host": [
+                "eirsaliyeservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "inboxdespatch"
+              ],
+              "query": [
+                {
+                  "key": "pageIndex",
+                  "value": "1"
+                },
+                {
+                  "key": "pageSize",
+                  "value": "50"
+                },
+                {
+                  "key": "isDesc",
+                  "value": "false"
+                },
+                {
+                  "key": "startDate",
+                  "value": "2020-06-01 00:00:00"
+                },
+                {
+                  "key": "endDate",
+                  "value": "2019-06-10 00:00:00"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get_Inbox_Despatch_Ubl_v2",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": ""
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://eirsaliyeservicetest.isim360.com/v2/inboxdespatch/00215E5D-17BE-1EDA-8BAD-39B03925413C/ubl",
+              "protocol": "https",
+              "host": [
+                "eirsaliyeservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "inboxdespatch",
+                "00215E5D-17BE-1EDA-8BAD-39B03925413C",
+                "ubl"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get_Inbox_Despatch_Pdf_v2",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": ""
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://eirsaliyeservicetest.isim360.com/v2/inboxdespatch/00215E5D-17BE-1EDA-8BAD-39B03925413C/pdf/false",
+              "protocol": "https",
+              "host": [
+                "eirsaliyeservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "inboxdespatch",
+                "00215E5D-17BE-1EDA-8BAD-39B03925413C",
+                "pdf",
+                "false"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get_Inbox_Despatch_Zip_v2",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": ""
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://eirsaliyeservicetest.isim360.com/v2/inboxdespatch/00215E5D-17BE-1EDA-8BAD-39B03925413C/zip",
+              "protocol": "https",
+              "host": [
+                "eirsaliyeservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "inboxdespatch",
+                "00215E5D-17BE-1EDA-8BAD-39B03925413C",
+                "zip"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Gib_User",
+      "item": [
+        {
+          "name": "Get_GibUserList Zip",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://eirsaliyeservicetest.isim360.com/v1/gibuser/receiverboxalias/zip",
+              "protocol": "https",
+              "host": [
+                "eirsaliyeservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v1",
+                "gibuser",
+                "receiverboxalias",
+                "zip"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        }
+      ]
+    }
+  ]
 }

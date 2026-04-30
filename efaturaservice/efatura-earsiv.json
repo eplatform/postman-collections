@@ -872,6 +872,111 @@
           "response": []
         },
         {
+          "name": "E-Fatura Json Model Gönderim_İlaçTıbbiCihaz",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": ""
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"invoiceId\": \"bc44a8cd-a508-41ed-08bd-08dea6253a42\",\n    \"status\": 0,\n    \"isNew\": false,\n    \"xsltCode\": \"master\",\n    \"useManualInvoiceId\": false,\n    \"allowOldEArsivCustomer\": false,\n    \"checkLocalReferenceId\": false,\n    \"useFirstAlias\": false,\n    \"addressBook\": {\n        \"id\": 0,\n        \"customerId\": \"00000000-0000-0000-0000-000000000000\",\n        \"createdDate\": \"0001-01-01T00:00:00\",\n        \"alias\": \"urn:mail:defaulttest3pk@medyasoft.com.tr\",\n        \"identificationNumber\": \"1234567803\",\n        \"name\": \"Test Kurum Üç\",\n        \"receiverStreet\": \"Test Mah. Test Sk. No:1\",\n        \"receiverBuildingNumber\": \"1\",\n        \"receiverDistrict\": \"Çankaya\",\n        \"receiverCity\": \"Ankara\",\n        \"receiverCountry\": \"Türkiye\",\n        \"receiverCountryId\": 1,\n        \"receiverEmail\": \"test@test.com\",\n        \"receiverTaxOffice\": \"Çankaya V.D.\",\n        \"type\": 0,\n        \"isDefault\": false\n    },\n    \"isSend\": false,\n    \"recordType\": 1,\n    \"isTdevice\": false,\n    \"notes\": [],\n    \"generalInfoModel\": {\n        \"ettn\": \"BC44A8CD-A508-41ED-08BD-08DEA6253A42\",\n        \"prefix\": \"AYK\",\n        \"customizationId\": \"TR1.2\",\n        \"invoiceNumber\": \"AYK2026000000003\",\n        \"invoiceProfileType\": 11,\n        \"issueDate\": \"2026-04-29T19:24:58.785\",\n        \"issueTime\": \"2026-04-29T19:24:58.785\",\n        \"type\": 1,\n        \"returnInvoiceDate\": \"2026-04-29T19:26:36.7404589Z\",\n        \"currencyId\": 1,\n        \"currencyCode\": \"TRY\",\n        \"exchangeRate\": 1.0,\n        \"periodDate\": \"2026-04-01T00:00:00\",\n        \"despatchType\": 0,\n        \"standard\": 0\n    },\n    \"taxes\": [\n        {\n            \"taxTypeCode\": \"0015\",\n            \"taxName\": \"KDV GERCEK\",\n            \"taxRate\": 10.0,\n            \"taxAmount\": 2.5,\n            \"isWithHolding\": false,\n            \"isNegative\": false,\n            \"isYtbIstisnaCancelVatRate\": false,\n            \"taxableAmount\": 0.0\n        }\n    ],\n    \"invoiceLines\": [\n        {\n            \"delivery\": [],\n            \"inventoryServiceType\": 0,\n            \"inventoryCard\": \"Parol Tablet\",\n            \"serialNoEnabled\": false,\n            \"amount\": 1.0,\n            \"unitCodeId\": 1,\n            \"unitCode\": \"C62\",\n            \"unitPrice\": 25.0,\n            \"discountRate\": 0.00,\n            \"discountAmount\": 0.00,\n            \"discounts\": [\n                {\n                    \"discountRate\": 0.00,\n                    \"discountAmount\": 0.00\n                }\n            ],\n            \"lineExtensionAmount\": 25.0,\n            \"vatRate\": 10.0,\n            \"vatAmount\": 2.5,\n            \"vatExemptionReasonCode\": \"\",\n            \"vatExemptionReason\": \"\",\n            \"taxes\": [],\n            \"invoiceLineDeliveryInfoModel\": {},\n            \"serialNumberList\": [],\n            \"medicalItems\": [\n                {\n                    \"medicalType\": 0,\n                    \"globalTradeItemNumber\": \"08699502010101\",\n                    \"batchNumber\": \"\",\n                    \"serialNumber\": \"\",\n                    \"expirationDate\": \"250101\"\n                }\n            ],\n            \"ozelMatrahAmount\": 0.0,\n            \"canceledVatAmount\": 0.0\n        }\n    ],\n    \"invoiceTotalsModel\": {\n        \"lineExtensionAmount\": \"25\",\n        \"taxExclusiveAmount\": \"25\",\n        \"taxInclusiveAmount\": \"27.5\",\n        \"allowanceTotalAmount\": \"0\",\n        \"payableAmount\": \"27.5\"\n    },\n    \"paymentMeansModel\": {\n        \"paymentMeansCode\": 0\n    },\n    \"paymentTermsModel\": {},\n    \"orderInfoModel\": {\n        \"invoiceDocumentModel\": {\n            \"isFileExist\": false,\n            \"documentDateInString\": \"\"\n        }\n    },\n    \"archiveInfoModel\": {\n        \"isInternetSale\": false,\n        \"hideDespatchMessage\": false\n    },\n    \"ublSettingsModel\": {\n        \"useCalculatedVatAmount\": false,\n        \"useCalculatedTotalSummary\": false,\n        \"hideDespatchMessage\": false,\n        \"isFit\": false,\n        \"isFreeOfCharge\": false\n    },\n    \"relatedDespatchList\": [],\n    \"customDocumentReferenceList\": [\n        {\n            \"id\": \"isAdvancedNote\",\n            \"documentTypeCode\": \"CUSTOM\",\n            \"documentType\": \"true\",\n            \"issueDate\": \"2026-04-15T00:00:00\"\n        }\n    ],\n    \"additionalInvoiceTypeInfo\": {},\n    \"customerAddress\": {\n        \"id\": 0,\n        \"currentAccountId\": 0,\n        \"streetName\": \"Test Mah. Test Sk. No:1\",\n        \"buildingNumber\": \"1\",\n        \"country\": \"Türkiye\",\n        \"city\": \"Ankara\",\n        \"subDivisionName\": \"Çankaya\",\n        \"emailAddress\": \"test@test.com\",\n        \"isDefault\": false,\n        \"branchId\": 0,\n        \"createDate\": \"0001-01-01T00:00:00\",\n        \"status\": 0,\n        \"currentAccountIdentifier\": \"1234567803\",\n        \"currentAccountTaxOffice\": \"Çankaya V.D.\"\n    },\n    \"supplierAddress\": {\n        \"id\": 0,\n        \"currentAccountId\": 0,\n        \"streetName\": \"IVEDIKOSB MAH. 2224 CAD. NO: 1 IÇ KAPI NO: 116\",\n        \"buildingName\": \"-\",\n        \"buildingNumber\": \"1\",\n        \"doorNumber\": \"-\",\n        \"region\": \"Yenimahalle\",\n        \"country\": \"Türkiye\",\n        \"city\": \"Ankara\",\n        \"subDivisionName\": \"Merkez\",\n        \"postalZone\": \"06374\",\n        \"phoneNumber\": \"5555555556\",\n        \"faxNumber\": \"5555555555\",\n        \"emailAddress\": \"info@solofor.com\",\n        \"webSite\": \"https://solofor.com\",\n        \"isDefault\": false,\n        \"branchId\": 0,\n        \"createDate\": \"0001-01-01T00:00:00\",\n        \"status\": 0,\n        \"currentAccountIdentifier\": \"1234567803\",\n        \"currentAccountTaxOffice\": \"İVEDİK VERGİ DAİRESİ MÜDÜRLÜĞÜ\",\n        \"currentAccountRegistrationNumber\": \"252596\"\n    },\n    \"buyerCustomerInfoModel\": {\n        \"issueDate\": \"0001-01-01T00:00:00\"\n    },\n    \"taxRepresentativePartyInfoModel\": {},\n    \"allowanceCharges\": [],\n    \"allDiscount\": false,\n    \"allDiscountRate\": 0.0\n}"
+            },
+            "url": {
+              "raw": "https://efaturaservicetest.isim360.com/v1/outboxinvoice/create",
+              "protocol": "https",
+              "host": [
+                "efaturaservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v1",
+                "outboxinvoice",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "E-Fatura Json Model Gönderim_YatırımTeşvik",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": ""
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"invoiceId\": \"4885ba4d-1e92-4a1a-6449-08dea625e362\",\n    \"status\": 0,\n    \"isNew\": false,\n    \"xsltCode\": \"master\",\n    \"useManualInvoiceId\": false,\n    \"allowOldEArsivCustomer\": false,\n    \"checkLocalReferenceId\": false,\n    \"useFirstAlias\": false,\n    \"addressBook\": {\n        \"id\": 0,\n        \"customerId\": \"00000000-0000-0000-0000-000000000000\",\n        \"createdDate\": \"0001-01-01T00:00:00\",\n        \"alias\": \"urn:mail:defaulttest3pk@medyasoft.com.tr\",\n        \"identificationNumber\": \"1234567803\",\n        \"name\": \"Test Kurum Üç\",\n        \"receiverStreet\": \"Test Mah. Test Sk. No:1\",\n        \"receiverBuildingNumber\": \"1\",\n        \"receiverDistrict\": \"Çankaya\",\n        \"receiverCity\": \"Ankara\",\n        \"receiverCountry\": \"Türkiye\",\n        \"receiverCountryId\": 1,\n        \"receiverEmail\": \"test@test.com\",\n        \"receiverTaxOffice\": \"Çankaya V.D.\",\n        \"type\": 0,\n        \"isDefault\": false\n    },\n    \"isSend\": false,\n    \"recordType\": 1,\n    \"isTdevice\": false,\n    \"note\": \"Yatırım Teşvik Belge Tarihi: 2026-01-15\",\n    \"notes\": [\n        {\n            \"note\": \"Yatırım Teşvik Belge Tarihi: 2026-01-15\"\n        }\n    ],\n    \"generalInfoModel\": {\n        \"ettn\": \"4885BA4D-1E92-4A1A-6449-08DEA625E362\",\n        \"prefix\": \"AYK\",\n        \"customizationId\": \"TR1.2\",\n        \"invoiceNumber\": \"AYK2026000000004\",\n        \"invoiceProfileType\": 12,\n        \"issueDate\": \"2026-04-29T19:31:14.775\",\n        \"issueTime\": \"2026-04-29T19:31:14.775\",\n        \"type\": 1,\n        \"returnInvoiceDate\": \"2026-04-29T19:31:21.0932949Z\",\n        \"currencyId\": 1,\n        \"currencyCode\": \"TRY\",\n        \"exchangeRate\": 1.0,\n        \"periodDate\": \"2026-04-01T00:00:00\",\n        \"despatchType\": 0,\n        \"contractDocument\": {\n            \"documentDate\": \"2026-01-15T00:00:00\",\n            \"documentNumber\": \"098765\"\n        },\n        \"standard\": 0\n    },\n    \"taxes\": [\n        {\n            \"taxTypeCode\": \"0015\",\n            \"taxName\": \"KDV GERCEK\",\n            \"taxRate\": 20.0,\n            \"taxAmount\": 15000.0,\n            \"isWithHolding\": false,\n            \"isNegative\": false,\n            \"isYtbIstisnaCancelVatRate\": false,\n            \"taxableAmount\": 0.0\n        }\n    ],\n    \"invoiceLines\": [\n        {\n            \"delivery\": [],\n            \"inventoryServiceType\": 0,\n            \"inventoryCard\": \"CNC Makine\",\n            \"serialNoEnabled\": false,\n            \"amount\": 1.0,\n            \"unitCodeId\": 1,\n            \"unitCode\": \"C62\",\n            \"unitPrice\": 75000.0,\n            \"discountRate\": 0.00,\n            \"discountAmount\": 0.00,\n            \"discounts\": [\n                {\n                    \"discountRate\": 0.00,\n                    \"discountAmount\": 0.00\n                }\n            ],\n            \"lineExtensionAmount\": 75000.0,\n            \"vatRate\": 20.0,\n            \"vatAmount\": 15000.0,\n            \"vatExemptionReasonCode\": \"\",\n            \"vatExemptionReason\": \"\",\n            \"taxes\": [],\n            \"invoiceLineDeliveryInfoModel\": {},\n            \"serialNumberList\": [],\n            \"medicalItems\": [],\n            \"commodityClassifications\": [],\n            \"additionalIdentification\": {\n                \"modelName\": \"HAAS-VF2\",\n                \"unitCode\": \"01\",\n                \"serialNumber\": \"SN-VF2-98765\",\n                \"productTraceNumber\": \"PT-2026-0001\"\n            },\n            \"ozelMatrahAmount\": 0.0,\n            \"canceledVatAmount\": 0.0\n        }\n    ],\n    \"invoiceTotalsModel\": {\n        \"lineExtensionAmount\": \"75000\",\n        \"taxExclusiveAmount\": \"75000\",\n        \"taxInclusiveAmount\": \"90000\",\n        \"allowanceTotalAmount\": \"0\",\n        \"payableAmount\": \"90000\"\n    },\n    \"paymentMeansModel\": {\n        \"paymentMeansCode\": 0\n    },\n    \"paymentTermsModel\": {},\n    \"orderInfoModel\": {\n        \"invoiceDocumentModel\": {\n            \"isFileExist\": false,\n            \"documentDateInString\": \"\"\n        }\n    },\n    \"archiveInfoModel\": {\n        \"isInternetSale\": false,\n        \"hideDespatchMessage\": false\n    },\n    \"ublSettingsModel\": {\n        \"useCalculatedVatAmount\": false,\n        \"useCalculatedTotalSummary\": false,\n        \"hideDespatchMessage\": false,\n        \"isFit\": false,\n        \"isFreeOfCharge\": false\n    },\n    \"relatedDespatchList\": [],\n    \"customDocumentReferenceList\": [\n        {\n            \"id\": \"isAdvancedNote\",\n            \"documentTypeCode\": \"CUSTOM\",\n            \"documentType\": \"true\",\n            \"issueDate\": \"2026-04-15T00:00:00\"\n        }\n    ],\n    \"additionalInvoiceTypeInfo\": {},\n    \"customerAddress\": {\n        \"id\": 0,\n        \"currentAccountId\": 0,\n        \"streetName\": \"Test Mah. Test Sk. No:1\",\n        \"buildingNumber\": \"1\",\n        \"country\": \"Türkiye\",\n        \"city\": \"Ankara\",\n        \"subDivisionName\": \"Çankaya\",\n        \"emailAddress\": \"test@test.com\",\n        \"isDefault\": false,\n        \"branchId\": 0,\n        \"createDate\": \"0001-01-01T00:00:00\",\n        \"status\": 0,\n        \"currentAccountIdentifier\": \"1234567803\",\n        \"currentAccountTaxOffice\": \"Çankaya V.D.\"\n    },\n    \"supplierAddress\": {\n        \"id\": 0,\n        \"currentAccountId\": 0,\n        \"streetName\": \"IVEDIKOSB MAH. 2224 CAD. NO: 1 IÇ KAPI NO: 116\",\n        \"buildingName\": \"-\",\n        \"buildingNumber\": \"1\",\n        \"doorNumber\": \"-\",\n        \"region\": \"Yenimahalle\",\n        \"country\": \"Türkiye\",\n        \"city\": \"Ankara\",\n        \"subDivisionName\": \"Merkez\",\n        \"postalZone\": \"06374\",\n        \"phoneNumber\": \"5555555556\",\n        \"faxNumber\": \"5555555555\",\n        \"emailAddress\": \"info@solofor.com\",\n        \"webSite\": \"https://solofor.com\",\n        \"isDefault\": false,\n        \"branchId\": 0,\n        \"createDate\": \"0001-01-01T00:00:00\",\n        \"status\": 0,\n        \"currentAccountIdentifier\": \"1234567803\",\n        \"currentAccountTaxOffice\": \"İVEDİK VERGİ DAİRESİ MÜDÜRLÜĞÜ\",\n        \"currentAccountRegistrationNumber\": \"252596\"\n    },\n    \"buyerCustomerInfoModel\": {\n        \"issueDate\": \"0001-01-01T00:00:00\"\n    },\n    \"taxRepresentativePartyInfoModel\": {},\n    \"allowanceCharges\": [],\n    \"allDiscount\": false,\n    \"allDiscountRate\": 0.0\n}"
+            },
+            "url": {
+              "raw": "https://efaturaservicetest.isim360.com/v1/outboxinvoice/create",
+              "protocol": "https",
+              "host": [
+                "efaturaservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v1",
+                "outboxinvoice",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "E-Fatura Json Model Gönderim_İDİSFatura",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": ""
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"invoiceId\": \"01d11aed-6aa0-4db5-9654-08dea62671c4\",\n    \"status\": 0,\n    \"isNew\": false,\n    \"xsltCode\": \"master\",\n    \"useManualInvoiceId\": false,\n    \"allowOldEArsivCustomer\": false,\n    \"checkLocalReferenceId\": false,\n    \"useFirstAlias\": false,\n    \"addressBook\": {\n        \"id\": 0,\n        \"customerId\": \"00000000-0000-0000-0000-000000000000\",\n        \"createdDate\": \"0001-01-01T00:00:00\",\n        \"alias\": \"urn:mail:defaulttest3pk@medyasoft.com.tr\",\n        \"identificationNumber\": \"1234567803\",\n        \"name\": \"Test Kurum Üç\",\n        \"receiverStreet\": \"Test Mah. Test Sk. No:1\",\n        \"receiverBuildingNumber\": \"1\",\n        \"receiverDistrict\": \"Çankaya\",\n        \"receiverCity\": \"Ankara\",\n        \"receiverCountry\": \"Türkiye\",\n        \"receiverCountryId\": 1,\n        \"receiverEmail\": \"test@test.com\",\n        \"receiverTaxOffice\": \"Çankaya V.D.\",\n        \"type\": 0,\n        \"isDefault\": false\n    },\n    \"isSend\": false,\n    \"recordType\": 1,\n    \"isTdevice\": false,\n    \"notes\": [],\n    \"generalInfoModel\": {\n        \"ettn\": \"01D11AED-6AA0-4DB5-9654-08DEA62671C4\",\n        \"prefix\": \"AYK\",\n        \"customizationId\": \"TR1.2\",\n        \"invoiceNumber\": \"AYK2026000000005\",\n        \"invoiceProfileType\": 13,\n        \"issueDate\": \"2026-04-29T19:35:12.423\",\n        \"issueTime\": \"2026-04-29T19:35:12.423\",\n        \"type\": 1,\n        \"returnInvoiceDate\": \"2026-04-29T19:35:19.5237363Z\",\n        \"currencyId\": 1,\n        \"currencyCode\": \"TRY\",\n        \"exchangeRate\": 1.0,\n        \"periodDate\": \"2026-04-01T00:00:00\",\n        \"despatchType\": 0,\n        \"standard\": 0\n    },\n    \"taxes\": [\n        {\n            \"taxTypeCode\": \"0015\",\n            \"taxName\": \"KDV GERCEK\",\n            \"taxRate\": 20.0,\n            \"taxAmount\": 100.0,\n            \"isWithHolding\": false,\n            \"isNegative\": false,\n            \"isYtbIstisnaCancelVatRate\": false,\n            \"taxableAmount\": 0.0\n        }\n    ],\n    \"invoiceLines\": [\n        {\n            \"labelNo\": \"CV0000002\",\n            \"delivery\": [],\n            \"inventoryServiceType\": 0,\n            \"inventoryCard\": \"İDİS Ürün\",\n            \"serialNoEnabled\": false,\n            \"amount\": 1.0,\n            \"unitCodeId\": 1,\n            \"unitCode\": \"C62\",\n            \"unitPrice\": 500.0,\n            \"discountRate\": 0.00,\n            \"discountAmount\": 0.00,\n            \"discounts\": [\n                {\n                    \"discountRate\": 0.00,\n                    \"discountAmount\": 0.00\n                }\n            ],\n            \"lineExtensionAmount\": 500.0,\n            \"vatRate\": 20.0,\n            \"vatAmount\": 100.0,\n            \"vatExemptionReasonCode\": \"\",\n            \"vatExemptionReason\": \"\",\n            \"taxes\": [],\n            \"invoiceLineDeliveryInfoModel\": {},\n            \"serialNumberList\": [],\n            \"medicalItems\": [],\n            \"ozelMatrahAmount\": 0.0,\n            \"canceledVatAmount\": 0.0\n        }\n    ],\n    \"invoiceTotalsModel\": {\n        \"lineExtensionAmount\": \"500\",\n        \"taxExclusiveAmount\": \"500\",\n        \"taxInclusiveAmount\": \"600\",\n        \"allowanceTotalAmount\": \"0\",\n        \"payableAmount\": \"600\"\n    },\n    \"paymentMeansModel\": {\n        \"paymentMeansCode\": 0\n    },\n    \"paymentTermsModel\": {},\n    \"orderInfoModel\": {\n        \"invoiceDocumentModel\": {\n            \"isFileExist\": false,\n            \"documentDateInString\": \"\"\n        }\n    },\n    \"archiveInfoModel\": {\n        \"isInternetSale\": false,\n        \"hideDespatchMessage\": false\n    },\n    \"ublSettingsModel\": {\n        \"useCalculatedVatAmount\": false,\n        \"useCalculatedTotalSummary\": false,\n        \"hideDespatchMessage\": false,\n        \"isFit\": false,\n        \"isFreeOfCharge\": false\n    },\n    \"relatedDespatchList\": [],\n    \"customDocumentReferenceList\": [\n        {\n            \"id\": \"isAdvancedNote\",\n            \"documentTypeCode\": \"CUSTOM\",\n            \"documentType\": \"true\",\n            \"issueDate\": \"2026-04-15T00:00:00\"\n        }\n    ],\n    \"additionalInvoiceTypeInfo\": {},\n    \"customerAddress\": {\n        \"id\": 0,\n        \"currentAccountId\": 0,\n        \"streetName\": \"Test Mah. Test Sk. No:1\",\n        \"buildingNumber\": \"1\",\n        \"country\": \"Türkiye\",\n        \"city\": \"Ankara\",\n        \"subDivisionName\": \"Çankaya\",\n        \"emailAddress\": \"test@test.com\",\n        \"isDefault\": false,\n        \"branchId\": 0,\n        \"createDate\": \"0001-01-01T00:00:00\",\n        \"status\": 0,\n        \"currentAccountIdentifier\": \"1234567803\",\n        \"currentAccountTaxOffice\": \"Çankaya V.D.\"\n    },\n    \"supplierAddress\": {\n        \"shipmentNo\": \"SE-1234567\",\n        \"id\": 0,\n        \"currentAccountId\": 0,\n        \"streetName\": \"IVEDIKOSB MAH. 2224 CAD. NO: 1 IÇ KAPI NO: 116\",\n        \"buildingName\": \"-\",\n        \"buildingNumber\": \"1\",\n        \"doorNumber\": \"-\",\n        \"region\": \"Yenimahalle\",\n        \"country\": \"Türkiye\",\n        \"city\": \"Ankara\",\n        \"subDivisionName\": \"Merkez\",\n        \"postalZone\": \"06374\",\n        \"phoneNumber\": \"5555555556\",\n        \"faxNumber\": \"5555555555\",\n        \"emailAddress\": \"info@solofor.com\",\n        \"webSite\": \"https://solofor.com\",\n        \"isDefault\": false,\n        \"branchId\": 0,\n        \"createDate\": \"0001-01-01T00:00:00\",\n        \"status\": 0,\n        \"currentAccountIdentifier\": \"1234567803\",\n        \"currentAccountTaxOffice\": \"İVEDİK VERGİ DAİRESİ MÜDÜRLÜĞÜ\",\n        \"currentAccountRegistrationNumber\": \"252596\"\n    },\n    \"buyerCustomerInfoModel\": {\n        \"issueDate\": \"0001-01-01T00:00:00\"\n    },\n    \"taxRepresentativePartyInfoModel\": {},\n    \"allowanceCharges\": [],\n    \"allDiscount\": false,\n    \"allDiscountRate\": 0.0\n}"
+            },
+            "url": {
+              "raw": "https://efaturaservicetest.isim360.com/v1/outboxinvoice/create",
+              "protocol": "https",
+              "host": [
+                "efaturaservicetest",
+                "isim360",
+                "com"
+              ],
+              "path": [
+                "v1",
+                "outboxinvoice",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
           "name": "Put_OutboxInvoice_UBL",
           "protocolProfileBehavior": {
             "disabledSystemHeaders": {}
